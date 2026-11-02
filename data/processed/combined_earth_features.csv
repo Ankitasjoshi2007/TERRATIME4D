@@ -1,0 +1,7 @@
+location_tile,land_pixels,minimum_elevation_m,maximum_elevation_m,average_elevation_m,average_slope_degrees,maximum_slope_degrees,pixel_width_m_approx,pixel_height_m_approx,tile,valid_pixels,average_roughness_m,maximum_roughness_m,minimum_roughness_m,location,target_latitude,target_longitude
+Copernicus_DSM_COG_30_N13_00_E077_00_DEM,1440000,579.48,1474.37,803.05,2.5,51.43,90.2,92.77,Copernicus_DSM_COG_30_N13_00_E077_00_DEM,1440000,3.44,88.42,0.0,Bengaluru,13.0,77.6
+Copernicus_DSM_COG_30_N19_00_W155_00_DEM,49219,1.02,510.81,137.79,2.59,26.96,87.45,92.77,Copernicus_DSM_COG_30_N19_00_W155_00_DEM,49219,3.52,32.69,0.11,Hawaii,19.0,-155.0
+Copernicus_DSM_COG_30_N64_00_W019_00_DEM,720000,463.0,1785.77,773.38,3.98,45.29,79.87,92.77,Copernicus_DSM_COG_30_N64_00_W019_00_DEM,720000,5.16,66.65,0.0,Iceland,64.0,-19.0
+Copernicus_DSM_COG_30_S23_00_W069_00_DEM,1440000,2070.52,5948.15,3106.13,5.43,57.03,85.71,92.77,Copernicus_DSM_COG_30_S23_00_W069_00_DEM,1440000,7.28,112.53,0.0,Atacama Desert,-23.0,-69.0
+Copernicus_DSM_COG_30_S25_00_E135_00_DEM,1440000,163.15,502.44,242.39,1.17,35.84,84.41,92.77,Copernicus_DSM_COG_30_S25_00_E135_00_DEM,1440000,1.61,48.25,0.02,Australian Outback,-25.0,135.0
+Copernicus_DSM_COG_30_S77_00_E000_00_DEM,480000,2611.38,2825.14,2719.79,0.28,1.95,64.97,92.77,Copernicus_DSM_COG_30_S77_00_E000_00_DEM,480000,0.35,1.47,0.03,Antarctica,-77.0,0.0
