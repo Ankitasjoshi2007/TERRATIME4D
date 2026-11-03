@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Generated terrain test files
+terrain_analysis/sample_elevation.tif
+terrain_analysis/terrain_metrics.json
+
+# Python cache files
+__pycache__/
+*.py[cod]
