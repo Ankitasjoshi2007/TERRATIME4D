@@ -1,28 +1,44 @@
 from pathlib import Path
+import numpy as np
+import matplotlib.pyplot as plt
 
-# Project data folder
-DATA_DIR = Path(__file__).resolve().parents[2] / "data"
+PROJECT_DIR = Path(__file__).resolve().parents[1]
+MARS_DATA_DIR = PROJECT_DIR / "data" / "raw" / "mars"
 
-# Raw Mars data folder
-MARS_DATA_DIR = DATA_DIR / "raw" / "mars"
+IMG_FILE = MARS_DATA_DIR / "megt90n000eb.img"
 
 
-def get_mars_data_files():
-    """Find available files in the raw Mars data folder."""
-    if not MARS_DATA_DIR.exists():
-        return []
+def main():
+    print("Loading NASA MOLA Mars elevation data...")
 
-    return [
-        file for file in MARS_DATA_DIR.rglob("*")
-        if file.is_file()
-    ]
+    elevation = np.fromfile(IMG_FILE, dtype=">i2")
+    elevation = elevation.reshape((2880, 5760))
+
+    plt.figure(figsize=(12, 6))
+
+    plt.imshow(
+        elevation,
+        cmap="terrain",
+        extent=[0, 360, -90, 90],
+        origin="upper"
+    )
+
+    plt.colorbar(label="Elevation above Mars areoid (meters)")
+    plt.xlabel("Longitude (degrees east)")
+    plt.ylabel("Latitude (degrees)")
+    plt.title("NASA MOLA Mars Elevation Map")
+    plt.tight_layout()
+
+    output_file = (
+        PROJECT_DIR / "data" / "processed" / "mars" / "mars_elevation.png"
+    )
+
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    plt.savefig(output_file, dpi=200)
+
+    print("Mars elevation map saved at:", output_file)
+    plt.show()
 
 
 if __name__ == "__main__":
-    files = get_mars_data_files()
-
-    print("Mars data folder:", MARS_DATA_DIR)
-    print("Number of files found:", len(files))
-
-    for file in files:
-        print(file.name)
+    main()
