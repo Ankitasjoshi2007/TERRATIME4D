@@ -1,0 +1,7 @@
+location,target_latitude,target_longitude,cell_id,grid_latitude,grid_longitude
+Bengaluru,13.0,77.6,1492,12.5,77.5
+Atacama Desert,-23.0,-69.0,959,-22.5,-67.5
+Iceland,64.0,-19.0,2193,62.5,-17.5
+Hawaii,19.0,-155.0,1517,17.5,-157.5
+Antarctica,-77.0,0.0,180,-77.5,-2.5
+Australian Outback,-25.0,135.0,927,-27.5,132.5

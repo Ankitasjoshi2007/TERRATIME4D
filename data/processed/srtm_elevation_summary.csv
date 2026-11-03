@@ -1,0 +1,3 @@
+file,rows,columns,coordinate_system,minimum_elevation_m,maximum_elevation_m,average_elevation_m
+N12E077.hgt,3601,3601,EPSG:4326,233,1505,724.04
+N13E077.hgt,3601,3601,EPSG:4326,579,1474,805.57

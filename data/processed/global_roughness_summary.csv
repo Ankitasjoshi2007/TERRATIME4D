@@ -1,0 +1,7 @@
+tile,valid_pixels,average_roughness_m,maximum_roughness_m,minimum_roughness_m
+Copernicus_DSM_COG_30_N13_00_E077_00_DEM,1440000,3.44,88.42,0.0
+Copernicus_DSM_COG_30_N19_00_W155_00_DEM,49219,3.52,32.69,0.11
+Copernicus_DSM_COG_30_N64_00_W019_00_DEM,720000,5.16,66.65,0.0
+Copernicus_DSM_COG_30_S23_00_W069_00_DEM,1440000,7.28,112.53,0.0
+Copernicus_DSM_COG_30_S25_00_E135_00_DEM,1440000,1.61,48.25,0.02
+Copernicus_DSM_COG_30_S77_00_E000_00_DEM,480000,0.35,1.47,0.03
