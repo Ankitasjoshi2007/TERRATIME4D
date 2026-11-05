@@ -1,0 +1,7 @@
+location,target_latitude,target_longitude,tile_name,availability
+Bengaluru,13.0,77.6,Copernicus_DSM_COG_30_N13_00_E077_00_DEM,Available
+Atacama Desert,-23.0,-69.0,Copernicus_DSM_COG_30_S23_00_W069_00_DEM,Available
+Iceland,64.0,-19.0,Copernicus_DSM_COG_30_N64_00_W019_00_DEM,Available
+Hawaii,19.0,-155.0,Copernicus_DSM_COG_30_N19_00_W155_00_DEM,Available
+Antarctica,-77.0,0.0,Copernicus_DSM_COG_30_S77_00_E000_00_DEM,Available
+Australian Outback,-25.0,135.0,Copernicus_DSM_COG_30_S25_00_E135_00_DEM,Available

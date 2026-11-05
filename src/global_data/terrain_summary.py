@@ -1,4 +1,3 @@
-
 from pathlib import Path
 
 import numpy as np
@@ -31,6 +30,7 @@ def analyze_tile(file_path):
 
         # Provisional ocean exclusion for the Hawaii tile.
         # This is not a universal land/water classification method.
+        # Replace with a proper coastline or land/water mask when available.
         if "N19_00_W155" in file_path.name:
             valid_mask &= elevation > 1.0
 
@@ -50,19 +50,22 @@ def analyze_tile(file_path):
 
         pixel_height = abs(dataset.transform.e) * 111320
 
-        if pixel_width <= 0 or pixel_height <= 0:
+        if (
+            not np.isfinite(pixel_width)
+            or not np.isfinite(pixel_height)
+            or pixel_width <= 0
+            or pixel_height <= 0
+        ):
             raise ValueError(
                 f"Invalid pixel dimensions in {file_path.name}"
             )
 
-        # Replace invalid cells with NaN.
+        # Replace invalid cells with NaN before calculating slope.
         elevation_for_slope = np.where(
             valid_mask, elevation, np.nan
         )
 
-        # Calculate gradients.
-        # NaN contamination is removed by requiring valid
-        # neighbouring pixels for each slope estimate.
+        # Pad the DEM so edge pixels do not wrap around.
         padded = np.pad(
             elevation_for_slope,
             1,
@@ -71,12 +74,13 @@ def analyze_tile(file_path):
         )
 
         center = padded[1:-1, 1:-1]
-
         left = padded[1:-1, :-2]
         right = padded[1:-1, 2:]
         top = padded[:-2, 1:-1]
         bottom = padded[2:, 1:-1]
 
+        # Use central differences only where all five required
+        # elevation values are valid.
         slope_mask = (
             np.isfinite(center)
             & np.isfinite(left)
@@ -93,7 +97,6 @@ def analyze_tile(file_path):
         )
 
         valid_slope = slope[slope_mask]
-
         land_elevation = elevation[valid_mask]
 
         if land_elevation.size == 0 or valid_slope.size == 0:
@@ -129,7 +132,6 @@ def analyze_tile(file_path):
 
 def main():
     files = sorted(DATA_FOLDER.glob("*.tif"))
-
     results = []
 
     print("\nTERRATIME 4D - GLOBAL TERRAIN FEATURES")
@@ -140,7 +142,6 @@ def main():
         return
 
     for file_path in files:
-
         try:
             result = analyze_tile(file_path)
 
@@ -170,17 +171,21 @@ def main():
                 error
             )
 
-    OUTPUT_FILE.parent.mkdir(
-        parents=True,
-        exist_ok=True
-    )
+    if not results:
+        raise RuntimeError(
+            "No DEM tiles were successfully processed. "
+            "No terrain report was created."
+        )
+
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     pd.DataFrame(results).to_csv(
         OUTPUT_FILE,
         index=False
     )
 
-    print("\nTerrain feature report saved to:")
+    print("\nSuccessfully processed", len(results), "DEM tile(s).")
+    print("Terrain feature report saved to:")
     print(OUTPUT_FILE)
 
 
