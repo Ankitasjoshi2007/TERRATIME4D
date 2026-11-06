@@ -1,0 +1,26 @@
+cell_id,latitude,longitude,map_id,name,lithology,top_age_ma,bottom_age_ma,geological_period,source_id
+253,-72.5,2.5,3184880,Archean-Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,2300.0,4000.0,,154
+271,-72.5,92.5,3185487,Phanerozoic ice,,,,,154
+1531,17.5,-87.5,948620,Neogene sedimentary,sedimentary,2.588,23.03,Neogene,7
+1549,17.5,2.5,3308965,,sedimentary,0.0,2.588,Cenozoic,190
+1549,17.5,2.5,3186962,Mesozoic sedimentary rocks,sedimentary rocks,66.0,145.0,Mesozoic,154
+1963,47.5,-87.5,4136754,water,,,,,529
+1963,47.5,-87.5,3893286,water,,,,,483
+1963,47.5,-87.5,3900482,water,,,,,488
+1963,47.5,-87.5,4070864,"Lake Silt And Clay Under Lakes Michigan, Huron, And Superior","clay, silt",0.0,0.0117,Holocene,519
+1963,47.5,-87.5,952123,Mesoproterozoic sedimentary,sedimentary,1000.0,1600.0,Mesoproterozoic,7
+1963,47.5,-87.5,3185648,,,,,,154
+1981,47.5,2.5,3471222,,clay [95.0%..100.0%],66.0,100.5,Late Cretaceous,249
+1981,47.5,2.5,4283991,"Clay, Upper Cretaceous",clay,66.0,100.5,Late Cretaceous,1056
+1981,47.5,2.5,3146785,detrital and biogenic deposit,"Major:{limestone}, Minor{sandstone,siltstone,marl}",66.0,100.5,Late Cretaceous,147
+1981,47.5,2.5,3185222,Mesozoic sedimentary rocks,sedimentary rocks,145.0,201.3,Jurassic,154
+1999,47.5,92.5,3184511,Cenozoic sedimentary rocks,sedimentary rocks,2.588,23.03,Neogene,154
+2377,77.5,-177.5,969960,Cretaceous-Tertiary sedimentary,sedimentary,2.588,145.0,Phanerozoic,7
+2377,77.5,-177.5,656074,Sedimentary; Sedimentary: undivided,sedimentary and/or volcanic rock: undivided; ,23.03,145.0,Phanerozoic,2
+2395,77.5,-87.5,4858082,ISACHSEN assemblage,"major:{quartz sandstone, siltstone, shale}, minor:{conglomerate, ironstone, coal}, rare:{basalt}",115.25,122.4925,Early Cretaceous,1083
+2395,77.5,-87.5,961190,Early Cretaceous sedimentary,sedimentary,100.5,145.0,Mesozoic,7
+2395,77.5,-87.5,634036,Sedimentary; Clastic: deltaic and nearshore,"sandstone, siltstone, shale, coal; plant fossils",100.5,125.0,Early Cretaceous,2
+2395,77.5,-87.5,3189055,Mesozoic sedimentary rocks,sedimentary rocks,145.0,251.902,Mesozoic,154
+2413,77.5,2.5,3162500,North Atlantic Ocean,tholeiitic basalt,5.333,23.03,Miocene,147
+2413,77.5,2.5,638783,Sedimentary; Slope and deep water,"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate",5.333,33.9,Cenozoic,2
+2431,77.5,92.5,639354,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",100.5,145.0,Mesozoic,2
