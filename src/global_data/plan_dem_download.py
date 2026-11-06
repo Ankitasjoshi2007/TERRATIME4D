@@ -50,6 +50,8 @@ def main():
         )
     )
 
+    inventory["download_status"] = inventory["local_status"]
+
     inventory["download_priority"] = "Candidate"
 
     inventory.loc[
