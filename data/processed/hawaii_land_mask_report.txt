@@ -1,12 +1,52 @@
 HAWAII DEM LAND MASK REPORT
 ===========================
 Total DEM pixels: 1440000
+Valid DEM pixels: 1440000
 Pixels with classified WorldCover: 498696
 Permanent water pixels (class 80): 449667
 Land-classified pixels: 49029
 Unclassified or NoData pixels: 941304
 
+CLASS-BY-CLASS ELEVATION CHECK
+==============================
+Class 10:
+  Pixels: 30158
+  Minimum elevation: 0.00 m
+  Maximum elevation: 505.95 m
+  Mean elevation: 125.24 m
+Class 20:
+  Pixels: 1522
+  Minimum elevation: 6.99 m
+  Maximum elevation: 510.50 m
+  Mean elevation: 366.96 m
+Class 30:
+  Pixels: 12829
+  Minimum elevation: 1.00 m
+  Maximum elevation: 510.81 m
+  Mean elevation: 156.97 m
+Class 50:
+  Pixels: 388
+  Minimum elevation: 8.51 m
+  Maximum elevation: 301.34 m
+  Mean elevation: 120.67 m
+Class 60:
+  Pixels: 4067
+  Minimum elevation: 0.00 m
+  Maximum elevation: 452.21 m
+  Mean elevation: 92.98 m
+Class 80:
+  Pixels: 449667
+  Minimum elevation: -0.11 m
+  Maximum elevation: 135.99 m
+  Mean elevation: 0.01 m
+Class 90:
+  Pixels: 65
+  Minimum elevation: 0.00 m
+  Maximum elevation: 35.04 m
+  Mean elevation: 23.00 m
+
 LAND-ONLY ELEVATION STATISTICS
+==============================
 Minimum: 0.00 m
 Maximum: 510.81 m
 Mean: 138.20 m
