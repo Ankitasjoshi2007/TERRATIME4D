@@ -56,8 +56,10 @@ valid = valid_dem & valid_cover
 
 water = valid & (land_cover == 80)
 land = valid & (land_cover != 80)
+unclassified = valid_dem & (land_cover == 0)
 
 land_elevation = elevation[land]
+unclassified_elevation = elevation[unclassified]
 
 lines = [
     "HAWAII DEM LAND MASK REPORT",
@@ -67,11 +69,30 @@ lines = [
     f"Pixels with classified WorldCover: {int(valid.sum())}",
     f"Permanent water pixels (class 80): {int(water.sum())}",
     f"Land-classified pixels: {int(land.sum())}",
-    f"Unclassified or NoData pixels: {int((~valid).sum())}",
+    f"Unclassified pixels: {int(unclassified.sum())}",
+    "",
+    "UNCLASSIFIED PIXEL INVESTIGATION",
+    "================================",
+    f"Unclassified percentage of DEM: {unclassified.sum() / elevation.size * 100:.2f}%",
+]
+
+if unclassified_elevation.size:
+    lines.extend([
+        f"Unclassified DEM minimum: {unclassified_elevation.min():.2f} m",
+        f"Unclassified DEM maximum: {unclassified_elevation.max():.2f} m",
+        f"Unclassified DEM mean: {unclassified_elevation.mean():.2f} m",
+        f"Unclassified DEM standard deviation: {unclassified_elevation.std():.2f} m",
+        f"Unclassified pixels at or below 1 m: {int((unclassified_elevation <= 1).sum())}",
+        f"Unclassified pixels above 1 m: {int((unclassified_elevation > 1).sum())}",
+    ])
+else:
+    lines.append("No unclassified DEM pixels found.")
+
+lines.extend([
     "",
     "CLASS-BY-CLASS ELEVATION CHECK",
     "==============================",
-]
+])
 
 for class_id in sorted(np.unique(land_cover[valid])):
     selected = valid & (land_cover == class_id)
@@ -95,6 +116,15 @@ if land_elevation.size:
         f"Mean: {land_elevation.mean():.2f} m",
         f"Standard deviation: {land_elevation.std():.2f} m",
     ])
+
+lines.extend([
+    "",
+    "SCIENTIFIC LIMITATION",
+    "=====================",
+    "WorldCover class 0 is treated as unclassified, not as confirmed ocean.",
+    "Unclassified DEM elevations cannot independently establish land or water.",
+    "Land-only statistics include pixels classified as land by WorldCover.",
+])
 
 output_path.parent.mkdir(parents=True, exist_ok=True)
 output_path.write_text("\n".join(lines), encoding="utf-8")

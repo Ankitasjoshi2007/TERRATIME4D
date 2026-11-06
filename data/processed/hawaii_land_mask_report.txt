@@ -5,7 +5,17 @@ Valid DEM pixels: 1440000
 Pixels with classified WorldCover: 498696
 Permanent water pixels (class 80): 449667
 Land-classified pixels: 49029
-Unclassified or NoData pixels: 941304
+Unclassified pixels: 941304
+
+UNCLASSIFIED PIXEL INVESTIGATION
+================================
+Unclassified percentage of DEM: 65.37%
+Unclassified DEM minimum: 0.00 m
+Unclassified DEM maximum: 0.00 m
+Unclassified DEM mean: 0.00 m
+Unclassified DEM standard deviation: 0.00 m
+Unclassified pixels at or below 1 m: 941304
+Unclassified pixels above 1 m: 0
 
 CLASS-BY-CLASS ELEVATION CHECK
 ==============================
@@ -51,3 +61,26 @@ Minimum: 0.00 m
 Maximum: 510.81 m
 Mean: 138.20 m
 Standard deviation: 114.83 m
+
+SCIENTIFIC LIMITATION
+=====================
+WorldCover class 0 is treated as unclassified, not as confirmed ocean.
+Unclassified DEM elevations cannot independently establish land or water.
+Land-only statistics include pixels classified as land by WorldCover.
+HAWAII WATER CLASSIFICATION INVESTIGATION
+=========================================
+Investigation result:
+- One connected class-80 patch was found.
+- Patch size: 58 pixels in the 101x101 WorldCover neighbourhood.
+- Water-classified percentage: 0.57%.
+- The class-80 label was confirmed in the original ESA WorldCover raster.
+- The corresponding Copernicus DEM location has an elevation of approximately 135.99 metres.
+- Surrounding terrain is elevated.
+
+Interpretation:
+This is a localized suspected land-cover classification anomaly.
+It has not been independently confirmed as an error.
+Original ESA WorldCover classes are retained without modification.
+
+Limitation:
+Further independent imagery or land-cover evidence is required before reclassifying these pixels.
