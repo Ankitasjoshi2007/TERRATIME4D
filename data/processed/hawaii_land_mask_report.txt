@@ -1,0 +1,13 @@
+HAWAII DEM LAND MASK REPORT
+===========================
+Total DEM pixels: 1440000
+Pixels with classified WorldCover: 498696
+Permanent water pixels (class 80): 449667
+Land-classified pixels: 49029
+Unclassified or NoData pixels: 941304
+
+LAND-ONLY ELEVATION STATISTICS
+Minimum: 0.00 m
+Maximum: 510.81 m
+Mean: 138.20 m
+Standard deviation: 114.83 m
