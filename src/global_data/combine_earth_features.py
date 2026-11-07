@@ -1,14 +1,20 @@
+
 from pathlib import Path
 import math
 import pandas as pd
 
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 PROCESSED = PROJECT_ROOT / "data" / "processed"
 
+OUTPUT_FILE = PROCESSED / "combined_earth_features.csv"
+
 
 def create_tile_name(latitude, longitude):
-    lat = math.floor(latitude)
-    lon = math.floor(longitude)
+    """Create a Copernicus tile name from latitude and longitude."""
+
+    lat = math.floor(float(latitude))
+    lon = math.floor(float(longitude))
 
     ns = "N" if lat >= 0 else "S"
     ew = "E" if lon >= 0 else "W"
@@ -21,31 +27,49 @@ def create_tile_name(latitude, longitude):
 
 
 def main():
-    elevation = pd.read_csv(
-        PROCESSED / "srtm_elevation_summary.csv"
-    )
+    required_files = {
+        "terrain": PROCESSED / "global_terrain_features.csv",
+        "roughness": PROCESSED / "global_roughness_summary.csv",
+        "locations": PROCESSED / "global_sample_locations.csv",
+    }
 
-    slope = pd.read_csv(
-        PROCESSED / "global_terrain_features.csv"
-    )
+    for name, file_path in required_files.items():
+        if not file_path.exists():
+            raise FileNotFoundError(
+                f"Missing {name} file: {file_path}"
+            )
 
-    roughness = pd.read_csv(
-        PROCESSED / "global_roughness_summary.csv"
-    )
+    terrain = pd.read_csv(required_files["terrain"])
+    roughness = pd.read_csv(required_files["roughness"])
+    locations = pd.read_csv(required_files["locations"])
 
-    locations = pd.read_csv(
-        PROCESSED / "global_sample_locations.csv"
-    )
+    # Validate required columns.
+    required_columns = {
+        "terrain": {"location_tile", "average_elevation_m",
+                    "average_slope_degrees"},
+        "roughness": {"tile", "average_roughness_m"},
+        "locations": {"location", "target_latitude",
+                      "target_longitude"},
+    }
 
-    # Match all reports using the DEM tile name.
-    elevation["tile"] = elevation["file"].str.replace(
-        ".hgt", "", regex=False
-    )
+    datasets = {
+        "terrain": terrain,
+        "roughness": roughness,
+        "locations": locations,
+    }
 
-    slope["tile"] = slope["location_tile"]
-    roughness["tile"] = roughness["tile"]
+    for name, columns in required_columns.items():
+        missing = columns - set(datasets[name].columns)
 
-    # Add location coordinates and tile names.
+        if missing:
+            raise ValueError(
+                f"{name} dataset is missing columns: {sorted(missing)}"
+            )
+
+    # Standardize tile identifiers.
+    terrain["tile"] = terrain["location_tile"].astype(str).str.strip()
+    roughness["tile"] = roughness["tile"].astype(str).str.strip()
+
     locations["tile"] = locations.apply(
         lambda row: create_tile_name(
             row["target_latitude"],
@@ -54,31 +78,64 @@ def main():
         axis=1
     )
 
-    # Combine the terrain reports.
-    combined = slope.merge(
+    # Prevent accidental duplicate matches.
+    for name, dataframe in datasets.items():
+        if name == "locations":
+            key = "tile"
+        elif name == "terrain":
+            key = "location_tile"
+        else:
+            key = "tile"
+
+        if dataframe[key].duplicated().any():
+            raise ValueError(
+                f"Duplicate tile identifiers found in {name} dataset."
+            )
+
+    terrain_data = terrain.merge(
         roughness,
         on="tile",
         how="left",
-        suffixes=("_slope", "_roughness")
+        validate="one_to_one",
+        suffixes=("_terrain", "_roughness")
     )
 
-    # Add location information.
-    combined = combined.merge(
+    combined = terrain_data.merge(
         locations[
-            ["tile", "location", "target_latitude", "target_longitude"]
+            ["tile", "location", "target_latitude",
+             "target_longitude"]
         ],
         on="tile",
-        how="left"
+        how="left",
+        validate="one_to_one",
+        indicator=True
     )
 
-    output_file = PROCESSED / "combined_earth_features.csv"
-    combined.to_csv(output_file, index=False)
+    unmatched = combined[combined["_merge"] != "both"]
+
+    if not unmatched.empty:
+        raise ValueError(
+            "Some terrain tiles could not be matched to locations: "
+            + ", ".join(unmatched["tile"].tolist())
+        )
+
+    combined = combined.drop(columns=["_merge"])
+
+    if combined["average_roughness_m"].isna().any():
+        raise ValueError(
+            "Some terrain tiles are missing roughness measurements."
+        )
+
+    # Save combined Earth features.
+    PROCESSED.mkdir(parents=True, exist_ok=True)
+    combined.to_csv(OUTPUT_FILE, index=False)
 
     print("\nTERRATIME 4D - COMBINED EARTH DATA")
     print("---------------------------------")
     print("Locations combined:", len(combined))
-    print("\n", combined.to_string(index=False))
-    print("\nSaved to:", output_file)
+    print("\nCombined dataset:")
+    print(combined.to_string(index=False))
+    print("\nSaved to:", OUTPUT_FILE)
 
 
 if __name__ == "__main__":

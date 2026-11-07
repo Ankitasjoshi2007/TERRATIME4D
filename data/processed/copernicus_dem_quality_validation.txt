@@ -1,0 +1,157 @@
+TERRATIME 4D
+COPERNICUS DEM QUALITY VALIDATION REPORT
+========================================
+
+1. DATASET OVERVIEW
+-------------------
+Dataset: Copernicus DEM GLO-30
+Number of downloaded TIFF tiles: 7
+Coordinate reference system: EPSG:4326
+Raster data type: Float32
+
+Tiles cover:
+- Bengaluru, India
+- Hawaii, USA
+- Iceland
+- Atacama Desert, Chile
+- Australian Outback
+- Antarctica (77 degrees South)
+- Antarctica (89 degrees South)
+
+2. BASIC RASTER VALIDATION
+--------------------------
+All seven TIFF files were successfully opened using Rasterio.
+
+All seven tiles:
+- Have readable elevation values.
+- Have valid raster dimensions.
+- Use EPSG:4326.
+- Have NoData metadata set to None.
+- Report MaskFlags.all_valid.
+- Have all pixels counted as valid by the raster mask.
+
+IMPORTANT:
+An all-valid raster mask does not prove that every pixel represents
+a genuine land elevation. Additional scientific checks are required.
+
+3. ELEVATION STATISTICS
+-----------------------
+
+BENGALURU:
+Minimum: 579.48 m
+Maximum: 1474.37 m
+Mean: 803.05 m
+
+HAWAII:
+Minimum: -0.11 m
+Maximum: 510.81 m
+Mean: 4.71 m
+
+ICELAND:
+Minimum: 463.00 m
+Maximum: 1785.77 m
+Mean: 773.38 m
+
+ATACAMA DESERT:
+Minimum: 2070.52 m
+Maximum: 5948.15 m
+Mean: 3106.13 m
+
+AUSTRALIAN OUTBACK:
+Minimum: 163.15 m
+Maximum: 502.44 m
+Mean: 242.39 m
+
+ANTARCTICA (77 SOUTH):
+Minimum: 2611.38 m
+Maximum: 2825.14 m
+Mean: 2719.79 m
+
+ANTARCTICA (89 SOUTH):
+Minimum: 2678.36 m
+Maximum: 2741.94 m
+Mean: 2717.56 m
+
+4. ZERO AND NEGATIVE ELEVATION CHECK
+------------------------------------
+Only the Hawaii tile contains zero and negative elevations.
+
+Hawaii:
+Zero pixels: 1,390,742
+Negative pixels: 1
+Pixels between 0 and 1 metre: 38
+Zero elevation percentage: 96.58%
+
+The other six tiles contain no zero or negative pixels.
+
+5. HAWAII SPATIAL ZERO-VALUE INVESTIGATION
+------------------------------------------
+Total pixels: 1,440,000
+Non-zero pixels: 49,258
+Zero pixels: 1,390,742
+Non-zero percentage: 3.42%
+
+Non-zero pixel geographic extent:
+Latitude: 19.3358 to 19.7308 degrees North
+Longitude: 155.0000 to 154.8075 degrees West
+
+A 10 by 10 block analysis revealed that zero elevations are
+strongly spatially clustered.
+
+Most non-zero elevations occur in the western portion of the tile.
+The eastern and northern portions contain predominantly zero values.
+
+The spatial pattern is consistent with the geography of the
+Big Island of Hawaii and surrounding ocean.
+
+6. WORLD COVER CROSS-VALIDATION
+-------------------------------
+An existing ESA WorldCover land-cover analysis was used for
+additional investigation.
+
+Total DEM pixels: 1,440,000
+Permanent water pixels (class 80): 449,667
+Land-classified pixels: 49,029
+Unclassified pixels (class 0): 941,304
+
+All 941,304 unclassified pixels have exactly zero DEM elevation.
+
+WorldCover class 0 represents unclassified or NoData pixels,
+not confirmed ocean.
+
+Some class 80 pixels have unexpectedly elevated DEM values.
+The maximum observed elevation in class 80 is 135.99 metres.
+
+These disagreements require further independent investigation.
+
+7. SCIENTIFIC LIMITATIONS
+-------------------------
+- NoData metadata is absent from all seven tiles.
+- Raster masks report all pixels as valid.
+- Zero elevation must not automatically be interpreted as NoData.
+- Zero elevation must not automatically be interpreted as ocean.
+- WorldCover classification is not assumed to be error-free.
+- Spatial agreement does not independently prove data correctness.
+- High-latitude raster resolution varies geographically.
+
+Original DEM and WorldCover values have been preserved.
+
+8. CONCLUSION
+-------------
+All seven Copernicus DEM tiles passed basic file and raster-mask
+validation.
+
+The Hawaii tile exhibits an unusual zero-elevation pattern that
+requires additional investigation.
+
+The combination of DEM statistics, spatial distribution analysis,
+and independent land-cover comparison provides a preliminary
+quality-control framework for Earth terrain data collection.
+
+Further validation using independent elevation, coastline,
+and satellite imagery sources is recommended before using
+ambiguous pixels for scientific terrain analysis.
+
+Prepared for:
+TERRATIME 4D - NASA Challenge
+Member 1: Earth Data Collection

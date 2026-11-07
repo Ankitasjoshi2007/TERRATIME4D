@@ -1,0 +1,7 @@
+location,latitude,longitude,elevation_m,dem_file,status
+Western Australia,-32.5,117.5,270.03,Copernicus_DSM_COG_30_S33_00_E117_00_DEM.tif,SAMPLED
+Queensland Australia,-22.5,147.5,308.77,Copernicus_DSM_COG_30_S23_00_E147_00_DEM.tif,SAMPLED
+Baja California Mexico,27.5,-112.5,521.06,Copernicus_DSM_COG_30_N27_00_W113_00_DEM.tif,SAMPLED
+Ontario Canada,47.5,-82.5,438.69,Copernicus_DSM_COG_30_N47_00_W083_00_DEM.tif,SAMPLED
+Brooks Range Alaska,67.5,-147.5,933.4,Copernicus_DSM_COG_30_N67_00_W148_00_DEM.tif,SAMPLED
+Scandinavia,67.5,17.5,1127.63,Copernicus_DSM_COG_30_N67_00_E017_00_DEM.tif,SAMPLED

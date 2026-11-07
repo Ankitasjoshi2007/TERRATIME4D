@@ -1,0 +1,11 @@
+cell_id,tile_latitude,tile_longitude,tile_name,availability
+1,-90,-180,Copernicus_DSM_COG_30_S90_00_W180_00_DEM,Available
+289,-70,-180,Copernicus_DSM_COG_30_S70_00_W180_00_DEM,Not available
+577,-50,-180,Copernicus_DSM_COG_30_S50_00_W180_00_DEM,Not available
+865,-30,-180,Copernicus_DSM_COG_30_S30_00_W180_00_DEM,Not available
+1153,-10,-180,Copernicus_DSM_COG_30_S10_00_W180_00_DEM,Not available
+1440,9,179,Copernicus_DSM_COG_30_N09_00_E179_00_DEM,Not available
+1728,29,179,Copernicus_DSM_COG_30_N29_00_E179_00_DEM,Not available
+2016,49,179,Copernicus_DSM_COG_30_N49_00_E179_00_DEM,Not available
+2304,69,179,Copernicus_DSM_COG_30_N69_00_E179_00_DEM,Available
+2592,89,179,Copernicus_DSM_COG_30_N89_00_E179_00_DEM,Not available

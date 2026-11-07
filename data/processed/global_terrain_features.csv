@@ -1,7 +1,7 @@
-location_tile,land_pixels,minimum_elevation_m,maximum_elevation_m,average_elevation_m,average_slope_degrees,maximum_slope_degrees,pixel_width_m_approx,pixel_height_m_approx
-Copernicus_DSM_COG_30_N13_00_E077_00_DEM,1440000,579.48,1474.37,803.05,2.5,51.43,90.2,92.77
-Copernicus_DSM_COG_30_N19_00_W155_00_DEM,49219,1.02,510.81,137.79,2.59,26.96,87.45,92.77
-Copernicus_DSM_COG_30_N64_00_W019_00_DEM,720000,463.0,1785.77,773.38,3.98,45.29,79.87,92.77
-Copernicus_DSM_COG_30_S23_00_W069_00_DEM,1440000,2070.52,5948.15,3106.13,5.43,57.03,85.71,92.77
-Copernicus_DSM_COG_30_S25_00_E135_00_DEM,1440000,163.15,502.44,242.39,1.17,35.84,84.41,92.77
-Copernicus_DSM_COG_30_S77_00_E000_00_DEM,480000,2611.38,2825.14,2719.79,0.28,1.95,64.97,92.77
+location_tile,valid_elevation_pixels,valid_slope_pixels,minimum_elevation_m,maximum_elevation_m,average_elevation_m,average_slope_degrees,maximum_slope_degrees,pixel_width_m_approx,pixel_height_m_approx
+Copernicus_DSM_COG_30_N13_00_E077_00_DEM,1440000,1435204,579.48,1474.37,803.05,2.5,51.43,90.2,92.77
+Copernicus_DSM_COG_30_N19_00_W155_00_DEM,49219,48073,1.02,510.81,137.79,2.55,26.96,87.45,92.77
+Copernicus_DSM_COG_30_N64_00_W019_00_DEM,720000,716404,463.0,1785.77,773.38,3.97,45.29,79.87,92.77
+Copernicus_DSM_COG_30_S23_00_W069_00_DEM,1440000,1435204,2070.52,5948.15,3106.13,5.42,57.03,85.71,92.77
+Copernicus_DSM_COG_30_S25_00_E135_00_DEM,1440000,1435204,163.15,502.44,242.39,1.17,35.84,84.41,92.77
+Copernicus_DSM_COG_30_S77_00_E000_00_DEM,480000,476804,2611.38,2825.14,2719.79,0.28,1.95,64.97,92.77

@@ -1,0 +1,101 @@
+sample_id,cell_id,tile_latitude,tile_longitude,tile_name,latitude_band,longitude_band,download_status,land_fraction,land_percentage,land_category
+1,40,-89,16,Copernicus_DSM_COG_30_S89_00_E016_00_DEM,60S to 90S,0 to 60E,Planned,1.0,100.0,Mostly land
+2,1,-88,-180,Copernicus_DSM_COG_30_S88_00_W180_00_DEM,60S to 90S,120W to 180W,Planned,1.0,100.0,Mostly land
+3,49,-88,63,Copernicus_DSM_COG_30_S88_00_E063_00_DEM,60S to 90S,60E to 120E,Planned,1.0,100.0,Mostly land
+4,31,-87,-27,Copernicus_DSM_COG_30_S87_00_W027_00_DEM,60S to 90S,0 to 60W,Planned,1.0,100.0,Mostly land
+5,103,-85,-29,Copernicus_DSM_COG_30_S85_00_W029_00_DEM,60S to 90S,0 to 60W,Planned,1.0,100.0,Mostly land
+6,129,-83,102,Copernicus_DSM_COG_30_S83_00_E102_00_DEM,60S to 90S,60E to 120E,Planned,1.0,100.0,Mostly land
+7,101,-82,-39,Copernicus_DSM_COG_30_S82_00_W039_00_DEM,60S to 90S,0 to 60W,Planned,1.0,100.0,Mostly land
+8,143,-82,172,Copernicus_DSM_COG_30_S82_00_E172_00_DEM,60S to 90S,120E to 180E,Planned,0.0,0.0,Mostly water
+9,146,-80,-175,Copernicus_DSM_COG_30_S80_00_W175_00_DEM,60S to 90S,120W to 180W,Planned,0.0,0.0,Mostly water
+10,155,-79,-126,Copernicus_DSM_COG_30_S79_00_W126_00_DEM,60S to 90S,120W to 180W,Planned,1.0,100.0,Mostly land
+11,161,-77,-98,Copernicus_DSM_COG_30_S77_00_W098_00_DEM,60S to 90S,60W to 120W,Planned,1.0,100.0,Mostly land
+12,213,-76,160,Copernicus_DSM_COG_30_S76_00_E160_00_DEM,60S to 90S,120E to 180E,Planned,1.0,100.0,Mostly land
+13,237,-74,-79,Copernicus_DSM_COG_30_S74_00_W079_00_DEM,60S to 90S,60W to 120W,Planned,0.64,64.0,Mixed land and water
+14,253,-74,2,Copernicus_DSM_COG_30_S74_00_E002_00_DEM,60S to 90S,0 to 60E,Planned,1.0,100.0,Mostly land
+15,238,-73,-75,Copernicus_DSM_COG_30_S73_00_W075_00_DEM,60S to 90S,60W to 120W,Planned,0.2,20.0,Mixed land and water
+16,275,-71,112,Copernicus_DSM_COG_30_S71_00_E112_00_DEM,60S to 90S,60E to 120E,Planned,1.0,100.0,Mostly land
+17,332,-70,36,Copernicus_DSM_COG_30_S70_00_E036_00_DEM,60S to 90S,0 to 60E,Planned,0.33,33.0,Mixed land and water
+18,349,-68,124,Copernicus_DSM_COG_30_S68_00_E124_00_DEM,60S to 90S,120E to 180E,Planned,1.0,100.0,Mostly land
+19,463,-60,-28,Copernicus_DSM_COG_30_S60_00_W028_00_DEM,30S to 60S,0 to 60W,Planned,0.02,2.0,Mostly water
+20,626,-49,69,Copernicus_DSM_COG_30_S49_00_E069_00_DEM,30S to 60S,60E to 120E,Planned,0.06,6.0,Mostly water
+21,623,-47,51,Copernicus_DSM_COG_30_S47_00_E051_00_DEM,30S to 60S,0 to 60E,Planned,0.03,3.0,Mostly water
+22,649,-45,-177,Copernicus_DSM_COG_30_S45_00_W177_00_DEM,30S to 60S,120W to 180W,Planned,0.06,6.0,Mostly water
+23,649,-45,-176,Copernicus_DSM_COG_30_S45_00_W176_00_DEM,30S to 60S,120W to 180W,Planned,0.0,0.0,Mostly water
+24,719,-43,174,Copernicus_DSM_COG_30_S43_00_E174_00_DEM,30S to 60S,120E to 180E,Planned,0.0,0.0,Mostly water
+25,672,-41,-65,Copernicus_DSM_COG_30_S41_00_W065_00_DEM,30S to 60S,60W to 120W,Planned,0.9,90.0,Mostly land
+26,745,-39,-59,Copernicus_DSM_COG_30_S39_00_W059_00_DEM,30S to 60S,0 to 60W,Planned,0.54,54.0,Mixed land and water
+27,786,-39,145,Copernicus_DSM_COG_30_S39_00_E145_00_DEM,30S to 60S,120E to 180E,Planned,0.51,51.0,Mixed land and water
+28,745,-37,-59,Copernicus_DSM_COG_30_S37_00_W059_00_DEM,30S to 60S,0 to 60W,Planned,1.0,100.0,Mostly land
+29,780,-36,118,Copernicus_DSM_COG_30_S36_00_E118_00_DEM,30S to 60S,60E to 120E,Planned,0.0,0.0,Mostly water
+30,832,-34,18,Copernicus_DSM_COG_30_S34_00_E018_00_DEM,30S to 60S,0 to 60E,Planned,0.74,74.0,Mixed land and water
+31,852,-34,119,Copernicus_DSM_COG_30_S34_00_E119_00_DEM,30S to 60S,60E to 120E,Planned,1.0,100.0,Mostly land
+32,815,-33,-70,Copernicus_DSM_COG_30_S33_00_W070_00_DEM,30S to 60S,60W to 120W,Planned,1.0,100.0,Mostly land
+33,834,-33,27,Copernicus_DSM_COG_30_S33_00_E027_00_DEM,30S to 60S,0 to 60E,Planned,1.0,100.0,Mostly land
+34,815,-32,-66,Copernicus_DSM_COG_30_S32_00_W066_00_DEM,30S to 60S,60W to 120W,Planned,1.0,100.0,Mostly land
+35,793,-31,-179,Copernicus_DSM_COG_30_S31_00_W179_00_DEM,30S to 60S,120W to 180W,Planned,0.0,0.0,Mostly water
+36,853,-31,122,Copernicus_DSM_COG_30_S31_00_E122_00_DEM,30S to 60S,120E to 180E,Planned,1.0,100.0,Mostly land
+37,891,-30,-50,Copernicus_DSM_COG_30_S30_00_W050_00_DEM,0 to 30S,0 to 60W,Planned,0.18,18.0,Mostly water
+38,924,-29,116,Copernicus_DSM_COG_30_S29_00_E116_00_DEM,0 to 30S,60E to 120E,Planned,1.0,100.0,Mostly land
+39,958,-23,-71,Copernicus_DSM_COG_30_S23_00_W071_00_DEM,0 to 30S,60W to 120W,Planned,0.27,27.0,Mixed land and water
+40,964,-23,-45,Copernicus_DSM_COG_30_S23_00_W045_00_DEM,0 to 30S,0 to 60W,Planned,1.0,100.0,Mostly land
+41,1006,-22,166,Copernicus_DSM_COG_30_S22_00_E166_00_DEM,0 to 30S,120E to 180E,Planned,0.18,18.0,Mostly water
+42,941,-21,-159,Copernicus_DSM_COG_30_S21_00_W159_00_DEM,0 to 30S,120W to 180W,Planned,0.0,0.0,Mostly water
+43,1072,-20,137,Copernicus_DSM_COG_30_S20_00_E137_00_DEM,0 to 30S,120E to 180E,Planned,1.0,100.0,Mostly land
+44,1034,-19,-53,Copernicus_DSM_COG_30_S19_00_W053_00_DEM,0 to 30S,0 to 60W,Planned,1.0,100.0,Mostly land
+45,1052,-18,38,Copernicus_DSM_COG_30_S18_00_E038_00_DEM,0 to 30S,0 to 60E,Planned,0.16,16.0,Mostly water
+46,1014,-17,-152,Copernicus_DSM_COG_30_S17_00_W152_00_DEM,0 to 30S,120W to 180W,Planned,0.05,5.0,Mostly water
+47,1145,-15,141,Copernicus_DSM_COG_30_S15_00_E141_00_DEM,0 to 30S,120E to 180E,Planned,0.43,43.0,Mixed land and water
+48,1160,-8,-141,Copernicus_DSM_COG_30_S08_00_W141_00_DEM,0 to 30S,120W to 180W,Planned,0.0,0.0,Mostly water
+49,1203,-6,71,Copernicus_DSM_COG_30_S06_00_E071_00_DEM,0 to 30S,60E to 120E,Planned,0.0,0.0,Mostly water
+50,1265,-5,24,Copernicus_DSM_COG_30_S05_00_E024_00_DEM,0 to 30S,0 to 60E,Planned,1.0,100.0,Mostly land
+51,1247,-3,-66,Copernicus_DSM_COG_30_S03_00_W066_00_DEM,0 to 30S,60W to 120W,Planned,1.0,100.0,Mostly land
+52,1266,-3,26,Copernicus_DSM_COG_30_S03_00_E026_00_DEM,0 to 30S,0 to 60E,Planned,1.0,100.0,Mostly land
+53,1284,-3,119,Copernicus_DSM_COG_30_S03_00_E119_00_DEM,0 to 30S,60E to 120E,Planned,0.93,93.0,Mostly land
+54,1246,-2,-74,Copernicus_DSM_COG_30_S02_00_W074_00_DEM,0 to 30S,60W to 120W,Planned,1.0,100.0,Mostly land
+55,1358,0,127,Copernicus_DSM_COG_30_N00_00_E127_00_DEM,0 to 30N,120E to 180E,Planned,0.34,34.0,Mixed land and water
+56,1404,5,-5,Copernicus_DSM_COG_30_N05_00_W005_00_DEM,0 to 30N,0 to 60W,Planned,0.83,83.0,Mostly land
+57,1410,6,28,Copernicus_DSM_COG_30_N06_00_E028_00_DEM,0 to 30N,0 to 60E,Planned,1.0,100.0,Mostly land
+58,1495,10,92,Copernicus_DSM_COG_30_N10_00_E092_00_DEM,0 to 30N,60E to 120E,Planned,0.06,6.0,Mostly water
+59,1483,11,30,Copernicus_DSM_COG_30_N11_00_E030_00_DEM,0 to 30N,0 to 60E,Planned,1.0,100.0,Mostly land
+60,1509,11,162,Copernicus_DSM_COG_30_N11_00_E162_00_DEM,0 to 30N,120E to 180E,Planned,0.0,0.0,Mostly water
+61,1460,12,-82,Copernicus_DSM_COG_30_N12_00_W082_00_DEM,0 to 30N,60W to 120W,Planned,0.0,0.0,Mostly water
+62,1501,12,124,Copernicus_DSM_COG_30_N12_00_E124_00_DEM,0 to 30N,120E to 180E,Planned,0.41,41.0,Mixed land and water
+63,1460,14,-85,Copernicus_DSM_COG_30_N14_00_W085_00_DEM,0 to 30N,60W to 120W,Planned,1.0,100.0,Mostly land
+64,1548,15,-5,Copernicus_DSM_COG_30_N15_00_W005_00_DEM,0 to 30N,0 to 60W,Planned,1.0,100.0,Mostly land
+65,1570,19,105,Copernicus_DSM_COG_30_N19_00_E105_00_DEM,0 to 30N,60E to 120E,Planned,0.81,81.0,Mostly land
+66,1588,21,-161,Copernicus_DSM_COG_30_N21_00_W161_00_DEM,0 to 30N,120W to 180W,Planned,0.0,0.0,Mostly water
+67,1589,21,-157,Copernicus_DSM_COG_30_N21_00_W157_00_DEM,0 to 30N,120W to 180W,Planned,0.04,4.0,Mostly water
+68,1658,25,-172,Copernicus_DSM_COG_30_N25_00_W172_00_DEM,0 to 30N,120W to 180W,Planned,0.0,0.0,Mostly water
+69,1692,26,-1,Copernicus_DSM_COG_30_N26_00_W001_00_DEM,0 to 30N,0 to 60W,Planned,1.0,100.0,Mostly land
+70,1712,26,95,Copernicus_DSM_COG_30_N26_00_E095_00_DEM,0 to 30N,60E to 120E,Planned,1.0,100.0,Mostly land
+71,1696,27,16,Copernicus_DSM_COG_30_N27_00_E016_00_DEM,0 to 30N,0 to 60E,Planned,1.0,100.0,Mostly land
+72,1669,29,-116,Copernicus_DSM_COG_30_N29_00_W116_00_DEM,0 to 30N,60W to 120W,Planned,0.34,34.0,Mixed land and water
+73,1747,30,-87,Copernicus_DSM_COG_30_N30_00_W087_00_DEM,30N to 60N,60W to 120W,Planned,0.59,59.0,Mixed land and water
+74,1770,30,29,Copernicus_DSM_COG_30_N30_00_E029_00_DEM,30N to 60N,0 to 60E,Planned,0.92,92.0,Mostly land
+75,1785,33,100,Copernicus_DSM_COG_30_N33_00_E100_00_DEM,30N to 60N,60E to 120E,Planned,1.0,100.0,Mostly land
+76,1743,34,-109,Copernicus_DSM_COG_30_N34_00_W109_00_DEM,30N to 60N,60W to 120W,Planned,1.0,100.0,Mostly land
+77,1839,35,11,Copernicus_DSM_COG_30_N35_00_E011_00_DEM,30N to 60N,0 to 60E,Planned,0.02,2.0,Mostly water
+78,1835,36,-8,Copernicus_DSM_COG_30_N36_00_W008_00_DEM,30N to 60N,0 to 60W,Planned,0.0,0.0,Mostly water
+79,1812,37,-122,Copernicus_DSM_COG_30_N37_00_W122_00_DEM,30N to 60N,120W to 180W,Planned,1.0,100.0,Mostly land
+80,1845,37,43,Copernicus_DSM_COG_30_N37_00_E043_00_DEM,30N to 60N,0 to 60E,Planned,1.0,100.0,Mostly land
+81,1907,42,-7,Copernicus_DSM_COG_30_N42_00_W007_00_DEM,30N to 60N,0 to 60W,Planned,1.0,100.0,Mostly land
+82,1934,42,125,Copernicus_DSM_COG_30_N42_00_E125_00_DEM,30N to 60N,120E to 180E,Planned,1.0,100.0,Mostly land
+83,1956,45,-124,Copernicus_DSM_COG_30_N45_00_W124_00_DEM,30N to 60N,120W to 180W,Planned,0.99,99.0,Mostly land
+84,1993,47,63,Copernicus_DSM_COG_30_N47_00_E063_00_DEM,30N to 60N,60E to 120E,Planned,1.0,100.0,Mostly land
+85,1980,48,-1,Copernicus_DSM_COG_30_N48_00_W001_00_DEM,30N to 60N,0 to 60W,Planned,1.0,100.0,Mostly land
+86,2079,50,131,Copernicus_DSM_COG_30_N50_00_E131_00_DEM,30N to 60N,120E to 180E,Planned,1.0,100.0,Mostly land
+87,2031,52,-110,Copernicus_DSM_COG_30_N52_00_W110_00_DEM,30N to 60N,60W to 120W,Planned,1.0,100.0,Mostly land
+88,2100,56,-124,Copernicus_DSM_COG_30_N56_00_W124_00_DEM,30N to 60N,120W to 180W,Planned,1.0,100.0,Mostly land
+89,2218,61,109,Copernicus_DSM_COG_30_N61_00_E109_00_DEM,60N to 90N,60E to 120E,Planned,1.0,100.0,Mostly land
+90,2165,62,-156,Copernicus_DSM_COG_30_N62_00_W156_00_DEM,60N to 90N,120W to 180W,Planned,1.0,100.0,Mostly land
+91,2240,65,-143,Copernicus_DSM_COG_30_N65_00_W143_00_DEM,60N to 90N,120W to 180W,Planned,1.0,100.0,Mostly land
+92,2272,67,19,Copernicus_DSM_COG_30_N67_00_E019_00_DEM,60N to 90N,0 to 60E,Planned,1.0,100.0,Mostly land
+93,2252,68,-85,Copernicus_DSM_COG_30_N68_00_W085_00_DEM,60N to 90N,60W to 120W,Planned,0.97,97.0,Mostly land
+94,2304,69,177,Copernicus_DSM_COG_30_N69_00_E177_00_DEM,60N to 90N,120E to 180E,Planned,0.56,56.0,Mixed land and water
+95,2358,70,86,Copernicus_DSM_COG_30_N70_00_E086_00_DEM,60N to 90N,60E to 120E,Planned,1.0,100.0,Mostly land
+96,2366,70,125,Copernicus_DSM_COG_30_N70_00_E125_00_DEM,60N to 90N,120E to 180E,Planned,1.0,100.0,Mostly land
+97,2389,75,-117,Copernicus_DSM_COG_30_N75_00_W117_00_DEM,60N to 90N,60W to 120W,Planned,0.64,64.0,Mixed land and water
+98,2404,75,-45,Copernicus_DSM_COG_30_N75_00_W045_00_DEM,60N to 90N,0 to 60W,Planned,1.0,100.0,Mostly land
+99,2408,78,-24,Copernicus_DSM_COG_30_N78_00_W024_00_DEM,60N to 90N,0 to 60W,Planned,1.0,100.0,Mostly land
+100,2493,80,44,Copernicus_DSM_COG_30_N80_00_E044_00_DEM,60N to 90N,0 to 60E,Planned,0.0,0.0,Mostly water

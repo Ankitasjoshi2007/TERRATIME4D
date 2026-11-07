@@ -1,0 +1,73 @@
+location,latitude,longitude,year_month,solar_irradiance_w_m2
+Western Australia,-32.5,117.5,202001,359.43
+Western Australia,-32.5,117.5,202002,276.41
+Western Australia,-32.5,117.5,202003,242.68
+Western Australia,-32.5,117.5,202004,185.18
+Western Australia,-32.5,117.5,202005,139.04
+Western Australia,-32.5,117.5,202006,112.6
+Western Australia,-32.5,117.5,202007,132.44
+Western Australia,-32.5,117.5,202008,164.99
+Western Australia,-32.5,117.5,202009,218.13
+Western Australia,-32.5,117.5,202010,282.4
+Western Australia,-32.5,117.5,202011,303.23
+Western Australia,-32.5,117.5,202012,364.89
+Queensland,-22.5,147.5,202001,277.43
+Queensland,-22.5,147.5,202002,273.71
+Queensland,-22.5,147.5,202003,268.33
+Queensland,-22.5,147.5,202004,238.34
+Queensland,-22.5,147.5,202005,179.28
+Queensland,-22.5,147.5,202006,168.6
+Queensland,-22.5,147.5,202007,175.03
+Queensland,-22.5,147.5,202008,233.88
+Queensland,-22.5,147.5,202009,256.99
+Queensland,-22.5,147.5,202010,299.77
+Queensland,-22.5,147.5,202011,332.43
+Queensland,-22.5,147.5,202012,280.51
+Baja California,27.5,-112.5,202001,172.73
+Baja California,27.5,-112.5,202002,189.24
+Baja California,27.5,-112.5,202003,225.52
+Baja California,27.5,-112.5,202004,309.81
+Baja California,27.5,-112.5,202005,343.5
+Baja California,27.5,-112.5,202006,347.01
+Baja California,27.5,-112.5,202007,317.43
+Baja California,27.5,-112.5,202008,289.46
+Baja California,27.5,-112.5,202009,266.44
+Baja California,27.5,-112.5,202010,228.36
+Baja California,27.5,-112.5,202011,192.25
+Baja California,27.5,-112.5,202012,175.74
+Ontario,47.5,-82.5,202001,41.15
+Ontario,47.5,-82.5,202002,91.82
+Ontario,47.5,-82.5,202003,133.84
+Ontario,47.5,-82.5,202004,210.18
+Ontario,47.5,-82.5,202005,233.72
+Ontario,47.5,-82.5,202006,255.49
+Ontario,47.5,-82.5,202007,237.03
+Ontario,47.5,-82.5,202008,192.21
+Ontario,47.5,-82.5,202009,137.09
+Ontario,47.5,-82.5,202010,85.08
+Ontario,47.5,-82.5,202011,47.79
+Ontario,47.5,-82.5,202012,39.8
+Brooks Range,67.5,-147.5,202001,1.96
+Brooks Range,67.5,-147.5,202002,28.19
+Brooks Range,67.5,-147.5,202003,98.04
+Brooks Range,67.5,-147.5,202004,184.41
+Brooks Range,67.5,-147.5,202005,263.5
+Brooks Range,67.5,-147.5,202006,249.68
+Brooks Range,67.5,-147.5,202007,204.49
+Brooks Range,67.5,-147.5,202008,148.05
+Brooks Range,67.5,-147.5,202009,77.66
+Brooks Range,67.5,-147.5,202010,35.3
+Brooks Range,67.5,-147.5,202011,5.0
+Brooks Range,67.5,-147.5,202012,0.02
+Scandinavia,67.5,17.5,202001,1.28
+Scandinavia,67.5,17.5,202002,10.29
+Scandinavia,67.5,17.5,202003,40.07
+Scandinavia,67.5,17.5,202004,110.6
+Scandinavia,67.5,17.5,202005,200.98
+Scandinavia,67.5,17.5,202006,247.58
+Scandinavia,67.5,17.5,202007,172.66
+Scandinavia,67.5,17.5,202008,143.26
+Scandinavia,67.5,17.5,202009,71.57
+Scandinavia,67.5,17.5,202010,25.43
+Scandinavia,67.5,17.5,202011,3.47
+Scandinavia,67.5,17.5,202012,0.02

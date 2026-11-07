@@ -1,0 +1,57 @@
+cell_id,latitude,longitude,map_id,name,lithology,top_age_ma,bottom_age_ma,geological_period,source_id
+83,-82.5,-127.5,3185487,Phanerozoic ice,,,,,154
+99,-82.5,-47.5,3185487,Phanerozoic ice,,,,,154
+182,-77.5,7.5,3185487,Phanerozoic ice,,,,,154
+204,-77.5,117.5,3185487,Phanerozoic ice,,,,,154
+743,-37.5,-67.5,4969569,Quaternary Siliciclastic,Siliciclastic,0.0,2.58,Quaternary,1087
+743,-37.5,-67.5,3185641,Cenozoic sedimentary rocks,sedimentary rocks,0.0,2.588,Cenozoic,154
+834,-32.5,27.5,2228160,Adelaide Subgroup of Beaufort Group of Karoo Supergroup,,251.902,298.9,Permian,41
+834,-32.5,27.5,3309804,,sedimentary (karoo),145.0,298.9,Phanerozoic,190
+834,-32.5,27.5,3189153,Paleozoic sedimentary rocks,sedimentary rocks,251.902,298.9,Permian,154
+852,-32.5,117.5,927348,colluvium 38491,,0.0,2.588,Cenozoic,5
+852,-32.5,117.5,1307068,Archean granites ,igneous felsic intrusive,2500.0,3200.0,Archean,11
+852,-32.5,117.5,3189638,Archean crystalline metamorphic rocks,amphibolite/granulite grade orthogneiss,2500.0,3200.0,Archean,154
+1105,-12.5,-57.5,2315324,Salto das Nuvens Formação,"conglomerate polymictic, conglomeratic mudstone",66.0,100.5,Late Cretaceous,43
+1105,-12.5,-57.5,4969803,Cretaceous Siliciclastic,Siliciclastic,66.0,143.1,Cretaceous,1087
+1105,-12.5,-57.5,3191855,Mesozoic sedimentary rocks,sedimentary rocks,66.0,145.0,Mesozoic,154
+1120,-12.5,17.5,3308505,,metamorphic,2500.0,3200.0,Archean,190
+1120,-12.5,17.5,3185837,Cenozoic sedimentary rocks,sedimentary rocks,0.0,66.0,Cenozoic,154
+1002,-22.5,147.5,700797,mafic volcanic rocks 38495,,0.0,66.0,Cenozoic,5
+1002,-22.5,147.5,1304846,Cambrian to Ordovician sedimentary rocks ,sedimentary,443.8,541.0,,11
+1002,-22.5,147.5,3187087,Cenozoic volcanic rocks,mafic volcanic rocks; basalt,2.588,66.0,Cenozoic,154
+1670,27.5,-112.5,2439222,,acidic igneous extrusive,0.0,2.588,Cenozoic,63
+1670,27.5,-112.5,945764,Miocene volcanic: felsic rocks,volcanic: felsic rocks,5.333,23.03,Miocene,7
+1670,27.5,-112.5,3185459,Cenozoic sedimentary and volcanic rocks,mafic-felsic mixed volcanic rocks,5.333,23.03,Miocene,154
+1474,12.5,-12.5,3308027,,sedimentary,443.8,635.0,,190
+1474,12.5,-12.5,3189443,Precambrian-Phanerozoic sedimentary rocks,sedimentary rocks,485.4,1000.0,,154
+1558,17.5,47.5,3192695,Cenozoic sedimentary rocks,sandstone-siltstone,0.0,0.0117,Holocene,154
+1641,22.5,102.5,3191222,Paleozoic sedimentary rocks,sedimentary rocks,251.902,358.9,Paleozoic,154
+1959,47.5,-107.5,3775972,Tectonically shortened rocks on margins of Wyoming province,,2500.0,4031.0,Archean,465
+1959,47.5,-107.5,2978340,Tullock Member of Fort Union Formation,"Major:{sandstone}, Minor:{black shale,coal}",62.7,66.0,Danian,133
+1959,47.5,-107.5,4498920,"Fort Union Formation, Tullock Member","coal, sandstone, shale",62.745,66.0,Danian,543
+1959,47.5,-107.5,4376247,"Fort Union Formation, Tullock Member","coal, sandstone, shale",62.745,66.0,Danian,542
+1959,47.5,-107.5,935772,Paleocene sedimentary,sedimentary,56.0,66.0,Paleocene,7
+1959,47.5,-107.5,3188050,Mesozoic sedimentary rocks,"siltstone,shale,sandstone",66.0,100.5,Late Cretaceous,154
+1964,47.5,-82.5,4023719,"Lake Clay, Silt, Sand, And Gravel","clay, gravel, sand, silt",0.0,0.129,Quaternary,505
+1964,47.5,-82.5,623926,Gneissic tonalite suite,tonalite to granodiorite-foliated to gneissic-with minor supracrustal inclusions,2500.0,3200.0,Archean,1
+1964,47.5,-82.5,973133,Neoarchean metamorphic and undivided crystalline: mainly tonalite gneiss,metamorphic and undivided crystalline: mainly tonalite gneiss,2500.0,2800.0,Neoarchean,7
+1964,47.5,-82.5,3186871,Archean sedimentary and volcanic rocks,intermediate volcanic rocks,2500.0,2800.0,Neoarchean,154
+1986,47.5,27.5,3149483,"Carpatian, Crimea, Caucasus","Major:{clay}, Minor{sand,sandstone,limestone}",5.333,23.03,Miocene,147
+1986,47.5,27.5,3184250,Paleozoic sedimentary rocks,sedimentary rocks,358.9,541.0,,154
+2005,47.5,122.5,3190022,Mesozoic volcanic rocks,intermediate-felsic volcanic rocks; dacite,145.0,201.3,Jurassic,154
+2239,67.5,-147.5,1624604,Quartz-mica schist of the Brooks Range,Metamorphic,541.0,419.2,Gorstian,21
+2239,67.5,-147.5,971805,Neoproterozoic-Devonian sedimentary,sedimentary,358.9,1000.0,,7
+2239,67.5,-147.5,4737527,Quartz-mica schist of the Brooks Range,"schist, granitic, marble, orthogneiss, minor metamorphic",358.86,2500.0,,556
+2239,67.5,-147.5,657501,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone or metamorphosed equivalent",0.0,2500.0,,2
+2239,67.5,-147.5,3191277,Precambrian-Phanerozoic sedimentary rocks,sedimentary rocks,443.8,4000.0,,154
+2336,72.5,-22.5,642439,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils",66.0,201.3,Mesozoic,2
+2336,72.5,-22.5,3156758,Cretaceous undifferentiated,,66.0,145.0,Mesozoic,147
+2336,72.5,-22.5,938551,Late Jurassic sedimentary,sedimentary,145.0,163.5,Jurassic,7
+2336,72.5,-22.5,3189012,Mesozoic sedimentary rocks,"shale,sandstone,conglomerate",66.0,163.5,Mesozoic,154
+2272,67.5,17.5,4425605,"Granitoid, Statherian 3",granite,1600.0,1800.0,Statherian,1056
+2272,67.5,17.5,2636151,,"Granitoid, syenitoid and metamorphic equivalents",720.0,1800.0,Proterozoic,95
+2272,67.5,17.5,3139414,Caledonian Orogenic Belt,"Major:{granite}, Minor{meta-granite,monzonite,meta-monzonite}",541.0,2500.0,Proterozoic,147
+2272,67.5,17.5,640875,Igneous: intrusive; Intrusive: granitic,"gneiss, migmatite, granite, augen gneiss, mica gneiss",1000.0,1600.0,Mesoproterozoic,2
+2272,67.5,17.5,3192231,Precambrian crystalline metamorphic rocks,crystalline metamorphic rocks,541.0,4000.0,,154
+2292,67.5,117.5,638932,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs; ",497.0,509.0,Cambrian,2
+2292,67.5,117.5,3186314,Paleozoic sedimentary rocks,sedimentary rocks,443.8,541.0,,154
