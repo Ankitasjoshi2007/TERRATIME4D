@@ -1,0 +1,870 @@
+cell_id,latitude,longitude,latitude_min,latitude_max,longitude_min,longitude_max,land_class,tile_latitude,tile_longitude,tile_name,availability,local_status,region
+1,-87.5,-177.5,-90,-85,-180,-175,land,-88,-178,Copernicus_DSM_COG_30_S88_00_W178_00_DEM,Listed by provider,Not downloaded,Antarctica
+2,-87.5,-172.5,-90,-85,-175,-170,land,-88,-173,Copernicus_DSM_COG_30_S88_00_W173_00_DEM,Listed by provider,Not downloaded,Antarctica
+3,-87.5,-167.5,-90,-85,-170,-165,land,-88,-168,Copernicus_DSM_COG_30_S88_00_W168_00_DEM,Listed by provider,Not downloaded,Antarctica
+4,-87.5,-162.5,-90,-85,-165,-160,land,-88,-163,Copernicus_DSM_COG_30_S88_00_W163_00_DEM,Listed by provider,Not downloaded,Antarctica
+5,-87.5,-157.5,-90,-85,-160,-155,land,-88,-158,Copernicus_DSM_COG_30_S88_00_W158_00_DEM,Listed by provider,Not downloaded,Antarctica
+6,-87.5,-152.5,-90,-85,-155,-150,land,-88,-153,Copernicus_DSM_COG_30_S88_00_W153_00_DEM,Listed by provider,Not downloaded,Antarctica
+7,-87.5,-147.5,-90,-85,-150,-145,land,-88,-148,Copernicus_DSM_COG_30_S88_00_W148_00_DEM,Listed by provider,Not downloaded,Antarctica
+8,-87.5,-142.5,-90,-85,-145,-140,land,-88,-143,Copernicus_DSM_COG_30_S88_00_W143_00_DEM,Listed by provider,Not downloaded,Antarctica
+9,-87.5,-137.5,-90,-85,-140,-135,land,-88,-138,Copernicus_DSM_COG_30_S88_00_W138_00_DEM,Listed by provider,Not downloaded,Antarctica
+10,-87.5,-132.5,-90,-85,-135,-130,land,-88,-133,Copernicus_DSM_COG_30_S88_00_W133_00_DEM,Listed by provider,Not downloaded,Antarctica
+11,-87.5,-127.5,-90,-85,-130,-125,land,-88,-128,Copernicus_DSM_COG_30_S88_00_W128_00_DEM,Listed by provider,Not downloaded,Antarctica
+12,-87.5,-122.5,-90,-85,-125,-120,land,-88,-123,Copernicus_DSM_COG_30_S88_00_W123_00_DEM,Listed by provider,Not downloaded,Antarctica
+13,-87.5,-117.5,-90,-85,-120,-115,land,-88,-118,Copernicus_DSM_COG_30_S88_00_W118_00_DEM,Listed by provider,Not downloaded,Antarctica
+14,-87.5,-112.5,-90,-85,-115,-110,land,-88,-113,Copernicus_DSM_COG_30_S88_00_W113_00_DEM,Listed by provider,Not downloaded,Antarctica
+15,-87.5,-107.5,-90,-85,-110,-105,land,-88,-108,Copernicus_DSM_COG_30_S88_00_W108_00_DEM,Listed by provider,Not downloaded,Antarctica
+16,-87.5,-102.5,-90,-85,-105,-100,land,-88,-103,Copernicus_DSM_COG_30_S88_00_W103_00_DEM,Listed by provider,Not downloaded,Antarctica
+17,-87.5,-97.5,-90,-85,-100,-95,land,-88,-98,Copernicus_DSM_COG_30_S88_00_W098_00_DEM,Listed by provider,Not downloaded,Antarctica
+18,-87.5,-92.5,-90,-85,-95,-90,land,-88,-93,Copernicus_DSM_COG_30_S88_00_W093_00_DEM,Listed by provider,Not downloaded,Antarctica
+19,-87.5,-87.5,-90,-85,-90,-85,land,-88,-88,Copernicus_DSM_COG_30_S88_00_W088_00_DEM,Listed by provider,Not downloaded,Antarctica
+20,-87.5,-82.5,-90,-85,-85,-80,land,-88,-83,Copernicus_DSM_COG_30_S88_00_W083_00_DEM,Listed by provider,Not downloaded,Antarctica
+21,-87.5,-77.5,-90,-85,-80,-75,land,-88,-78,Copernicus_DSM_COG_30_S88_00_W078_00_DEM,Listed by provider,Not downloaded,Antarctica
+22,-87.5,-72.5,-90,-85,-75,-70,land,-88,-73,Copernicus_DSM_COG_30_S88_00_W073_00_DEM,Listed by provider,Not downloaded,Antarctica
+23,-87.5,-67.5,-90,-85,-70,-65,land,-88,-68,Copernicus_DSM_COG_30_S88_00_W068_00_DEM,Listed by provider,Not downloaded,Antarctica
+24,-87.5,-62.5,-90,-85,-65,-60,land,-88,-63,Copernicus_DSM_COG_30_S88_00_W063_00_DEM,Listed by provider,Not downloaded,Antarctica
+25,-87.5,-57.5,-90,-85,-60,-55,land,-88,-58,Copernicus_DSM_COG_30_S88_00_W058_00_DEM,Listed by provider,Not downloaded,Antarctica
+26,-87.5,-52.5,-90,-85,-55,-50,land,-88,-53,Copernicus_DSM_COG_30_S88_00_W053_00_DEM,Listed by provider,Not downloaded,Antarctica
+27,-87.5,-47.5,-90,-85,-50,-45,land,-88,-48,Copernicus_DSM_COG_30_S88_00_W048_00_DEM,Listed by provider,Not downloaded,Antarctica
+28,-87.5,-42.5,-90,-85,-45,-40,land,-88,-43,Copernicus_DSM_COG_30_S88_00_W043_00_DEM,Listed by provider,Not downloaded,Antarctica
+29,-87.5,-37.5,-90,-85,-40,-35,land,-88,-38,Copernicus_DSM_COG_30_S88_00_W038_00_DEM,Listed by provider,Not downloaded,Antarctica
+30,-87.5,-32.5,-90,-85,-35,-30,land,-88,-33,Copernicus_DSM_COG_30_S88_00_W033_00_DEM,Listed by provider,Not downloaded,Antarctica
+31,-87.5,-27.5,-90,-85,-30,-25,land,-88,-28,Copernicus_DSM_COG_30_S88_00_W028_00_DEM,Listed by provider,Not downloaded,Antarctica
+32,-87.5,-22.5,-90,-85,-25,-20,land,-88,-23,Copernicus_DSM_COG_30_S88_00_W023_00_DEM,Listed by provider,Not downloaded,Antarctica
+33,-87.5,-17.5,-90,-85,-20,-15,land,-88,-18,Copernicus_DSM_COG_30_S88_00_W018_00_DEM,Listed by provider,Not downloaded,Antarctica
+34,-87.5,-12.5,-90,-85,-15,-10,land,-88,-13,Copernicus_DSM_COG_30_S88_00_W013_00_DEM,Listed by provider,Not downloaded,Antarctica
+35,-87.5,-7.5,-90,-85,-10,-5,land,-88,-8,Copernicus_DSM_COG_30_S88_00_W008_00_DEM,Listed by provider,Not downloaded,Antarctica
+36,-87.5,-2.5,-90,-85,-5,0,land,-88,-3,Copernicus_DSM_COG_30_S88_00_W003_00_DEM,Listed by provider,Not downloaded,Antarctica
+37,-87.5,2.5,-90,-85,0,5,land,-88,2,Copernicus_DSM_COG_30_S88_00_E002_00_DEM,Listed by provider,Not downloaded,Antarctica
+38,-87.5,7.5,-90,-85,5,10,land,-88,7,Copernicus_DSM_COG_30_S88_00_E007_00_DEM,Listed by provider,Not downloaded,Antarctica
+39,-87.5,12.5,-90,-85,10,15,land,-88,12,Copernicus_DSM_COG_30_S88_00_E012_00_DEM,Listed by provider,Not downloaded,Antarctica
+40,-87.5,17.5,-90,-85,15,20,land,-88,17,Copernicus_DSM_COG_30_S88_00_E017_00_DEM,Listed by provider,Not downloaded,Antarctica
+41,-87.5,22.5,-90,-85,20,25,land,-88,22,Copernicus_DSM_COG_30_S88_00_E022_00_DEM,Listed by provider,Not downloaded,Antarctica
+42,-87.5,27.5,-90,-85,25,30,land,-88,27,Copernicus_DSM_COG_30_S88_00_E027_00_DEM,Listed by provider,Not downloaded,Antarctica
+43,-87.5,32.5,-90,-85,30,35,land,-88,32,Copernicus_DSM_COG_30_S88_00_E032_00_DEM,Listed by provider,Not downloaded,Antarctica
+44,-87.5,37.5,-90,-85,35,40,land,-88,37,Copernicus_DSM_COG_30_S88_00_E037_00_DEM,Listed by provider,Not downloaded,Antarctica
+45,-87.5,42.5,-90,-85,40,45,land,-88,42,Copernicus_DSM_COG_30_S88_00_E042_00_DEM,Listed by provider,Not downloaded,Antarctica
+46,-87.5,47.5,-90,-85,45,50,land,-88,47,Copernicus_DSM_COG_30_S88_00_E047_00_DEM,Listed by provider,Not downloaded,Antarctica
+47,-87.5,52.5,-90,-85,50,55,land,-88,52,Copernicus_DSM_COG_30_S88_00_E052_00_DEM,Listed by provider,Not downloaded,Antarctica
+48,-87.5,57.5,-90,-85,55,60,land,-88,57,Copernicus_DSM_COG_30_S88_00_E057_00_DEM,Listed by provider,Not downloaded,Antarctica
+49,-87.5,62.5,-90,-85,60,65,land,-88,62,Copernicus_DSM_COG_30_S88_00_E062_00_DEM,Listed by provider,Not downloaded,Antarctica
+50,-87.5,67.5,-90,-85,65,70,land,-88,67,Copernicus_DSM_COG_30_S88_00_E067_00_DEM,Listed by provider,Not downloaded,Antarctica
+51,-87.5,72.5,-90,-85,70,75,land,-88,72,Copernicus_DSM_COG_30_S88_00_E072_00_DEM,Listed by provider,Not downloaded,Antarctica
+52,-87.5,77.5,-90,-85,75,80,land,-88,77,Copernicus_DSM_COG_30_S88_00_E077_00_DEM,Listed by provider,Not downloaded,Antarctica
+53,-87.5,82.5,-90,-85,80,85,land,-88,82,Copernicus_DSM_COG_30_S88_00_E082_00_DEM,Listed by provider,Not downloaded,Antarctica
+54,-87.5,87.5,-90,-85,85,90,land,-88,87,Copernicus_DSM_COG_30_S88_00_E087_00_DEM,Listed by provider,Not downloaded,Antarctica
+55,-87.5,92.5,-90,-85,90,95,land,-88,92,Copernicus_DSM_COG_30_S88_00_E092_00_DEM,Listed by provider,Not downloaded,Antarctica
+56,-87.5,97.5,-90,-85,95,100,land,-88,97,Copernicus_DSM_COG_30_S88_00_E097_00_DEM,Listed by provider,Not downloaded,Antarctica
+57,-87.5,102.5,-90,-85,100,105,land,-88,102,Copernicus_DSM_COG_30_S88_00_E102_00_DEM,Listed by provider,Not downloaded,Antarctica
+58,-87.5,107.5,-90,-85,105,110,land,-88,107,Copernicus_DSM_COG_30_S88_00_E107_00_DEM,Listed by provider,Not downloaded,Antarctica
+59,-87.5,112.5,-90,-85,110,115,land,-88,112,Copernicus_DSM_COG_30_S88_00_E112_00_DEM,Listed by provider,Not downloaded,Antarctica
+60,-87.5,117.5,-90,-85,115,120,land,-88,117,Copernicus_DSM_COG_30_S88_00_E117_00_DEM,Listed by provider,Not downloaded,Antarctica
+61,-87.5,122.5,-90,-85,120,125,land,-88,122,Copernicus_DSM_COG_30_S88_00_E122_00_DEM,Listed by provider,Not downloaded,Antarctica
+62,-87.5,127.5,-90,-85,125,130,land,-88,127,Copernicus_DSM_COG_30_S88_00_E127_00_DEM,Listed by provider,Not downloaded,Antarctica
+63,-87.5,132.5,-90,-85,130,135,land,-88,132,Copernicus_DSM_COG_30_S88_00_E132_00_DEM,Listed by provider,Not downloaded,Antarctica
+64,-87.5,137.5,-90,-85,135,140,land,-88,137,Copernicus_DSM_COG_30_S88_00_E137_00_DEM,Listed by provider,Not downloaded,Antarctica
+65,-87.5,142.5,-90,-85,140,145,land,-88,142,Copernicus_DSM_COG_30_S88_00_E142_00_DEM,Listed by provider,Not downloaded,Antarctica
+66,-87.5,147.5,-90,-85,145,150,land,-88,147,Copernicus_DSM_COG_30_S88_00_E147_00_DEM,Listed by provider,Not downloaded,Antarctica
+67,-87.5,152.5,-90,-85,150,155,land,-88,152,Copernicus_DSM_COG_30_S88_00_E152_00_DEM,Listed by provider,Not downloaded,Antarctica
+68,-87.5,157.5,-90,-85,155,160,land,-88,157,Copernicus_DSM_COG_30_S88_00_E157_00_DEM,Listed by provider,Not downloaded,Antarctica
+69,-87.5,162.5,-90,-85,160,165,land,-88,162,Copernicus_DSM_COG_30_S88_00_E162_00_DEM,Listed by provider,Not downloaded,Antarctica
+70,-87.5,167.5,-90,-85,165,170,land,-88,167,Copernicus_DSM_COG_30_S88_00_E167_00_DEM,Listed by provider,Not downloaded,Antarctica
+71,-87.5,172.5,-90,-85,170,175,land,-88,172,Copernicus_DSM_COG_30_S88_00_E172_00_DEM,Listed by provider,Not downloaded,Antarctica
+72,-87.5,177.5,-90,-85,175,180,land,-88,177,Copernicus_DSM_COG_30_S88_00_E177_00_DEM,Listed by provider,Not downloaded,Antarctica
+78,-82.5,-152.5,-85,-80,-155,-150,land,-83,-153,Copernicus_DSM_COG_30_S83_00_W153_00_DEM,Listed by provider,Not downloaded,Antarctica
+79,-82.5,-147.5,-85,-80,-150,-145,land,-83,-148,Copernicus_DSM_COG_30_S83_00_W148_00_DEM,Listed by provider,Not downloaded,Antarctica
+80,-82.5,-142.5,-85,-80,-145,-140,land,-83,-143,Copernicus_DSM_COG_30_S83_00_W143_00_DEM,Listed by provider,Not downloaded,Antarctica
+81,-82.5,-137.5,-85,-80,-140,-135,land,-83,-138,Copernicus_DSM_COG_30_S83_00_W138_00_DEM,Listed by provider,Not downloaded,Antarctica
+82,-82.5,-132.5,-85,-80,-135,-130,land,-83,-133,Copernicus_DSM_COG_30_S83_00_W133_00_DEM,Listed by provider,Not downloaded,Antarctica
+83,-82.5,-127.5,-85,-80,-130,-125,land,-83,-128,Copernicus_DSM_COG_30_S83_00_W128_00_DEM,Listed by provider,Not downloaded,Antarctica
+84,-82.5,-122.5,-85,-80,-125,-120,land,-83,-123,Copernicus_DSM_COG_30_S83_00_W123_00_DEM,Listed by provider,Not downloaded,Antarctica
+85,-82.5,-117.5,-85,-80,-120,-115,land,-83,-118,Copernicus_DSM_COG_30_S83_00_W118_00_DEM,Listed by provider,Not downloaded,Antarctica
+86,-82.5,-112.5,-85,-80,-115,-110,land,-83,-113,Copernicus_DSM_COG_30_S83_00_W113_00_DEM,Listed by provider,Not downloaded,Antarctica
+87,-82.5,-107.5,-85,-80,-110,-105,land,-83,-108,Copernicus_DSM_COG_30_S83_00_W108_00_DEM,Listed by provider,Not downloaded,Antarctica
+88,-82.5,-102.5,-85,-80,-105,-100,land,-83,-103,Copernicus_DSM_COG_30_S83_00_W103_00_DEM,Listed by provider,Not downloaded,Antarctica
+89,-82.5,-97.5,-85,-80,-100,-95,land,-83,-98,Copernicus_DSM_COG_30_S83_00_W098_00_DEM,Listed by provider,Not downloaded,Antarctica
+90,-82.5,-92.5,-85,-80,-95,-90,land,-83,-93,Copernicus_DSM_COG_30_S83_00_W093_00_DEM,Listed by provider,Not downloaded,Antarctica
+91,-82.5,-87.5,-85,-80,-90,-85,land,-83,-88,Copernicus_DSM_COG_30_S83_00_W088_00_DEM,Listed by provider,Not downloaded,Antarctica
+92,-82.5,-82.5,-85,-80,-85,-80,land,-83,-83,Copernicus_DSM_COG_30_S83_00_W083_00_DEM,Listed by provider,Not downloaded,Antarctica
+93,-82.5,-77.5,-85,-80,-80,-75,land,-83,-78,Copernicus_DSM_COG_30_S83_00_W078_00_DEM,Listed by provider,Not downloaded,Antarctica
+94,-82.5,-72.5,-85,-80,-75,-70,land,-83,-73,Copernicus_DSM_COG_30_S83_00_W073_00_DEM,Listed by provider,Not downloaded,Antarctica
+95,-82.5,-67.5,-85,-80,-70,-65,land,-83,-68,Copernicus_DSM_COG_30_S83_00_W068_00_DEM,Listed by provider,Not downloaded,Antarctica
+98,-82.5,-52.5,-85,-80,-55,-50,land,-83,-53,Copernicus_DSM_COG_30_S83_00_W053_00_DEM,Listed by provider,Not downloaded,Antarctica
+99,-82.5,-47.5,-85,-80,-50,-45,land,-83,-48,Copernicus_DSM_COG_30_S83_00_W048_00_DEM,Listed by provider,Not downloaded,Antarctica
+100,-82.5,-42.5,-85,-80,-45,-40,land,-83,-43,Copernicus_DSM_COG_30_S83_00_W043_00_DEM,Listed by provider,Not downloaded,Antarctica
+101,-82.5,-37.5,-85,-80,-40,-35,land,-83,-38,Copernicus_DSM_COG_30_S83_00_W038_00_DEM,Listed by provider,Not downloaded,Antarctica
+102,-82.5,-32.5,-85,-80,-35,-30,land,-83,-33,Copernicus_DSM_COG_30_S83_00_W033_00_DEM,Listed by provider,Not downloaded,Antarctica
+103,-82.5,-27.5,-85,-80,-30,-25,land,-83,-28,Copernicus_DSM_COG_30_S83_00_W028_00_DEM,Listed by provider,Not downloaded,Antarctica
+104,-82.5,-22.5,-85,-80,-25,-20,land,-83,-23,Copernicus_DSM_COG_30_S83_00_W023_00_DEM,Listed by provider,Not downloaded,Antarctica
+105,-82.5,-17.5,-85,-80,-20,-15,land,-83,-18,Copernicus_DSM_COG_30_S83_00_W018_00_DEM,Listed by provider,Not downloaded,Antarctica
+106,-82.5,-12.5,-85,-80,-15,-10,land,-83,-13,Copernicus_DSM_COG_30_S83_00_W013_00_DEM,Listed by provider,Not downloaded,Antarctica
+107,-82.5,-7.5,-85,-80,-10,-5,land,-83,-8,Copernicus_DSM_COG_30_S83_00_W008_00_DEM,Listed by provider,Not downloaded,Antarctica
+108,-82.5,-2.5,-85,-80,-5,0,land,-83,-3,Copernicus_DSM_COG_30_S83_00_W003_00_DEM,Listed by provider,Not downloaded,Antarctica
+109,-82.5,2.5,-85,-80,0,5,land,-83,2,Copernicus_DSM_COG_30_S83_00_E002_00_DEM,Listed by provider,Not downloaded,Antarctica
+110,-82.5,7.5,-85,-80,5,10,land,-83,7,Copernicus_DSM_COG_30_S83_00_E007_00_DEM,Listed by provider,Not downloaded,Antarctica
+111,-82.5,12.5,-85,-80,10,15,land,-83,12,Copernicus_DSM_COG_30_S83_00_E012_00_DEM,Listed by provider,Not downloaded,Antarctica
+112,-82.5,17.5,-85,-80,15,20,land,-83,17,Copernicus_DSM_COG_30_S83_00_E017_00_DEM,Listed by provider,Not downloaded,Antarctica
+113,-82.5,22.5,-85,-80,20,25,land,-83,22,Copernicus_DSM_COG_30_S83_00_E022_00_DEM,Listed by provider,Not downloaded,Antarctica
+114,-82.5,27.5,-85,-80,25,30,land,-83,27,Copernicus_DSM_COG_30_S83_00_E027_00_DEM,Listed by provider,Not downloaded,Antarctica
+115,-82.5,32.5,-85,-80,30,35,land,-83,32,Copernicus_DSM_COG_30_S83_00_E032_00_DEM,Listed by provider,Not downloaded,Antarctica
+116,-82.5,37.5,-85,-80,35,40,land,-83,37,Copernicus_DSM_COG_30_S83_00_E037_00_DEM,Listed by provider,Not downloaded,Antarctica
+117,-82.5,42.5,-85,-80,40,45,land,-83,42,Copernicus_DSM_COG_30_S83_00_E042_00_DEM,Listed by provider,Not downloaded,Antarctica
+118,-82.5,47.5,-85,-80,45,50,land,-83,47,Copernicus_DSM_COG_30_S83_00_E047_00_DEM,Listed by provider,Not downloaded,Antarctica
+119,-82.5,52.5,-85,-80,50,55,land,-83,52,Copernicus_DSM_COG_30_S83_00_E052_00_DEM,Listed by provider,Not downloaded,Antarctica
+120,-82.5,57.5,-85,-80,55,60,land,-83,57,Copernicus_DSM_COG_30_S83_00_E057_00_DEM,Listed by provider,Not downloaded,Antarctica
+121,-82.5,62.5,-85,-80,60,65,land,-83,62,Copernicus_DSM_COG_30_S83_00_E062_00_DEM,Listed by provider,Not downloaded,Antarctica
+122,-82.5,67.5,-85,-80,65,70,land,-83,67,Copernicus_DSM_COG_30_S83_00_E067_00_DEM,Listed by provider,Not downloaded,Antarctica
+123,-82.5,72.5,-85,-80,70,75,land,-83,72,Copernicus_DSM_COG_30_S83_00_E072_00_DEM,Listed by provider,Not downloaded,Antarctica
+124,-82.5,77.5,-85,-80,75,80,land,-83,77,Copernicus_DSM_COG_30_S83_00_E077_00_DEM,Listed by provider,Not downloaded,Antarctica
+125,-82.5,82.5,-85,-80,80,85,land,-83,82,Copernicus_DSM_COG_30_S83_00_E082_00_DEM,Listed by provider,Not downloaded,Antarctica
+126,-82.5,87.5,-85,-80,85,90,land,-83,87,Copernicus_DSM_COG_30_S83_00_E087_00_DEM,Listed by provider,Not downloaded,Antarctica
+127,-82.5,92.5,-85,-80,90,95,land,-83,92,Copernicus_DSM_COG_30_S83_00_E092_00_DEM,Listed by provider,Not downloaded,Antarctica
+128,-82.5,97.5,-85,-80,95,100,land,-83,97,Copernicus_DSM_COG_30_S83_00_E097_00_DEM,Listed by provider,Not downloaded,Antarctica
+129,-82.5,102.5,-85,-80,100,105,land,-83,102,Copernicus_DSM_COG_30_S83_00_E102_00_DEM,Listed by provider,Not downloaded,Antarctica
+130,-82.5,107.5,-85,-80,105,110,land,-83,107,Copernicus_DSM_COG_30_S83_00_E107_00_DEM,Listed by provider,Not downloaded,Antarctica
+131,-82.5,112.5,-85,-80,110,115,land,-83,112,Copernicus_DSM_COG_30_S83_00_E112_00_DEM,Listed by provider,Not downloaded,Antarctica
+132,-82.5,117.5,-85,-80,115,120,land,-83,117,Copernicus_DSM_COG_30_S83_00_E117_00_DEM,Listed by provider,Not downloaded,Antarctica
+133,-82.5,122.5,-85,-80,120,125,land,-83,122,Copernicus_DSM_COG_30_S83_00_E122_00_DEM,Listed by provider,Not downloaded,Antarctica
+134,-82.5,127.5,-85,-80,125,130,land,-83,127,Copernicus_DSM_COG_30_S83_00_E127_00_DEM,Listed by provider,Not downloaded,Antarctica
+135,-82.5,132.5,-85,-80,130,135,land,-83,132,Copernicus_DSM_COG_30_S83_00_E132_00_DEM,Listed by provider,Not downloaded,Antarctica
+136,-82.5,137.5,-85,-80,135,140,land,-83,137,Copernicus_DSM_COG_30_S83_00_E137_00_DEM,Listed by provider,Not downloaded,Antarctica
+137,-82.5,142.5,-85,-80,140,145,land,-83,142,Copernicus_DSM_COG_30_S83_00_E142_00_DEM,Listed by provider,Not downloaded,Antarctica
+138,-82.5,147.5,-85,-80,145,150,land,-83,147,Copernicus_DSM_COG_30_S83_00_E147_00_DEM,Listed by provider,Not downloaded,Antarctica
+139,-82.5,152.5,-85,-80,150,155,land,-83,152,Copernicus_DSM_COG_30_S83_00_E152_00_DEM,Listed by provider,Not downloaded,Antarctica
+140,-82.5,157.5,-85,-80,155,160,land,-83,157,Copernicus_DSM_COG_30_S83_00_E157_00_DEM,Listed by provider,Not downloaded,Antarctica
+141,-82.5,162.5,-85,-80,160,165,land,-83,162,Copernicus_DSM_COG_30_S83_00_E162_00_DEM,Listed by provider,Not downloaded,Antarctica
+149,-77.5,-157.5,-80,-75,-160,-155,land,-78,-158,Copernicus_DSM_COG_30_S78_00_W158_00_DEM,Listed by provider,Not downloaded,Antarctica
+150,-77.5,-152.5,-80,-75,-155,-150,land,-78,-153,Copernicus_DSM_COG_30_S78_00_W153_00_DEM,Listed by provider,Not downloaded,Antarctica
+151,-77.5,-147.5,-80,-75,-150,-145,land,-78,-148,Copernicus_DSM_COG_30_S78_00_W148_00_DEM,Listed by provider,Not downloaded,Antarctica
+152,-77.5,-142.5,-80,-75,-145,-140,land,-78,-143,Copernicus_DSM_COG_30_S78_00_W143_00_DEM,Listed by provider,Not downloaded,Antarctica
+153,-77.5,-137.5,-80,-75,-140,-135,land,-78,-138,Copernicus_DSM_COG_30_S78_00_W138_00_DEM,Listed by provider,Not downloaded,Antarctica
+154,-77.5,-132.5,-80,-75,-135,-130,land,-78,-133,Copernicus_DSM_COG_30_S78_00_W133_00_DEM,Listed by provider,Not downloaded,Antarctica
+155,-77.5,-127.5,-80,-75,-130,-125,land,-78,-128,Copernicus_DSM_COG_30_S78_00_W128_00_DEM,Listed by provider,Not downloaded,Antarctica
+156,-77.5,-122.5,-80,-75,-125,-120,land,-78,-123,Copernicus_DSM_COG_30_S78_00_W123_00_DEM,Listed by provider,Not downloaded,Antarctica
+157,-77.5,-117.5,-80,-75,-120,-115,land,-78,-118,Copernicus_DSM_COG_30_S78_00_W118_00_DEM,Listed by provider,Not downloaded,Antarctica
+158,-77.5,-112.5,-80,-75,-115,-110,land,-78,-113,Copernicus_DSM_COG_30_S78_00_W113_00_DEM,Listed by provider,Not downloaded,Antarctica
+159,-77.5,-107.5,-80,-75,-110,-105,land,-78,-108,Copernicus_DSM_COG_30_S78_00_W108_00_DEM,Listed by provider,Not downloaded,Antarctica
+160,-77.5,-102.5,-80,-75,-105,-100,land,-78,-103,Copernicus_DSM_COG_30_S78_00_W103_00_DEM,Listed by provider,Not downloaded,Antarctica
+161,-77.5,-97.5,-80,-75,-100,-95,land,-78,-98,Copernicus_DSM_COG_30_S78_00_W098_00_DEM,Listed by provider,Not downloaded,Antarctica
+162,-77.5,-92.5,-80,-75,-95,-90,land,-78,-93,Copernicus_DSM_COG_30_S78_00_W093_00_DEM,Listed by provider,Not downloaded,Antarctica
+163,-77.5,-87.5,-80,-75,-90,-85,land,-78,-88,Copernicus_DSM_COG_30_S78_00_W088_00_DEM,Listed by provider,Not downloaded,Antarctica
+164,-77.5,-82.5,-80,-75,-85,-80,land,-78,-83,Copernicus_DSM_COG_30_S78_00_W083_00_DEM,Listed by provider,Not downloaded,Antarctica
+165,-77.5,-77.5,-80,-75,-80,-75,land,-78,-78,Copernicus_DSM_COG_30_S78_00_W078_00_DEM,Listed by provider,Not downloaded,Antarctica
+174,-77.5,-32.5,-80,-75,-35,-30,land,-78,-33,Copernicus_DSM_COG_30_S78_00_W033_00_DEM,Listed by provider,Not downloaded,Antarctica
+175,-77.5,-27.5,-80,-75,-30,-25,land,-78,-28,Copernicus_DSM_COG_30_S78_00_W028_00_DEM,Listed by provider,Not downloaded,Antarctica
+176,-77.5,-22.5,-80,-75,-25,-20,land,-78,-23,Copernicus_DSM_COG_30_S78_00_W023_00_DEM,Listed by provider,Not downloaded,Antarctica
+177,-77.5,-17.5,-80,-75,-20,-15,land,-78,-18,Copernicus_DSM_COG_30_S78_00_W018_00_DEM,Listed by provider,Not downloaded,Antarctica
+178,-77.5,-12.5,-80,-75,-15,-10,land,-78,-13,Copernicus_DSM_COG_30_S78_00_W013_00_DEM,Listed by provider,Not downloaded,Antarctica
+179,-77.5,-7.5,-80,-75,-10,-5,land,-78,-8,Copernicus_DSM_COG_30_S78_00_W008_00_DEM,Listed by provider,Not downloaded,Antarctica
+180,-77.5,-2.5,-80,-75,-5,0,land,-78,-3,Copernicus_DSM_COG_30_S78_00_W003_00_DEM,Listed by provider,Not downloaded,Antarctica
+181,-77.5,2.5,-80,-75,0,5,land,-78,2,Copernicus_DSM_COG_30_S78_00_E002_00_DEM,Listed by provider,Not downloaded,Antarctica
+182,-77.5,7.5,-80,-75,5,10,land,-78,7,Copernicus_DSM_COG_30_S78_00_E007_00_DEM,Listed by provider,Not downloaded,Antarctica
+183,-77.5,12.5,-80,-75,10,15,land,-78,12,Copernicus_DSM_COG_30_S78_00_E012_00_DEM,Listed by provider,Not downloaded,Antarctica
+184,-77.5,17.5,-80,-75,15,20,land,-78,17,Copernicus_DSM_COG_30_S78_00_E017_00_DEM,Listed by provider,Not downloaded,Antarctica
+185,-77.5,22.5,-80,-75,20,25,land,-78,22,Copernicus_DSM_COG_30_S78_00_E022_00_DEM,Listed by provider,Not downloaded,Antarctica
+186,-77.5,27.5,-80,-75,25,30,land,-78,27,Copernicus_DSM_COG_30_S78_00_E027_00_DEM,Listed by provider,Not downloaded,Antarctica
+187,-77.5,32.5,-80,-75,30,35,land,-78,32,Copernicus_DSM_COG_30_S78_00_E032_00_DEM,Listed by provider,Not downloaded,Antarctica
+188,-77.5,37.5,-80,-75,35,40,land,-78,37,Copernicus_DSM_COG_30_S78_00_E037_00_DEM,Listed by provider,Not downloaded,Antarctica
+189,-77.5,42.5,-80,-75,40,45,land,-78,42,Copernicus_DSM_COG_30_S78_00_E042_00_DEM,Listed by provider,Not downloaded,Antarctica
+190,-77.5,47.5,-80,-75,45,50,land,-78,47,Copernicus_DSM_COG_30_S78_00_E047_00_DEM,Listed by provider,Not downloaded,Antarctica
+191,-77.5,52.5,-80,-75,50,55,land,-78,52,Copernicus_DSM_COG_30_S78_00_E052_00_DEM,Listed by provider,Not downloaded,Antarctica
+192,-77.5,57.5,-80,-75,55,60,land,-78,57,Copernicus_DSM_COG_30_S78_00_E057_00_DEM,Listed by provider,Not downloaded,Antarctica
+193,-77.5,62.5,-80,-75,60,65,land,-78,62,Copernicus_DSM_COG_30_S78_00_E062_00_DEM,Listed by provider,Not downloaded,Antarctica
+194,-77.5,67.5,-80,-75,65,70,land,-78,67,Copernicus_DSM_COG_30_S78_00_E067_00_DEM,Listed by provider,Not downloaded,Antarctica
+195,-77.5,72.5,-80,-75,70,75,land,-78,72,Copernicus_DSM_COG_30_S78_00_E072_00_DEM,Listed by provider,Not downloaded,Antarctica
+196,-77.5,77.5,-80,-75,75,80,land,-78,77,Copernicus_DSM_COG_30_S78_00_E077_00_DEM,Listed by provider,Not downloaded,Antarctica
+197,-77.5,82.5,-80,-75,80,85,land,-78,82,Copernicus_DSM_COG_30_S78_00_E082_00_DEM,Listed by provider,Not downloaded,Antarctica
+198,-77.5,87.5,-80,-75,85,90,land,-78,87,Copernicus_DSM_COG_30_S78_00_E087_00_DEM,Listed by provider,Not downloaded,Antarctica
+199,-77.5,92.5,-80,-75,90,95,land,-78,92,Copernicus_DSM_COG_30_S78_00_E092_00_DEM,Listed by provider,Not downloaded,Antarctica
+200,-77.5,97.5,-80,-75,95,100,land,-78,97,Copernicus_DSM_COG_30_S78_00_E097_00_DEM,Listed by provider,Not downloaded,Antarctica
+201,-77.5,102.5,-80,-75,100,105,land,-78,102,Copernicus_DSM_COG_30_S78_00_E102_00_DEM,Listed by provider,Not downloaded,Antarctica
+202,-77.5,107.5,-80,-75,105,110,land,-78,107,Copernicus_DSM_COG_30_S78_00_E107_00_DEM,Listed by provider,Not downloaded,Antarctica
+203,-77.5,112.5,-80,-75,110,115,land,-78,112,Copernicus_DSM_COG_30_S78_00_E112_00_DEM,Listed by provider,Not downloaded,Antarctica
+204,-77.5,117.5,-80,-75,115,120,land,-78,117,Copernicus_DSM_COG_30_S78_00_E117_00_DEM,Listed by provider,Not downloaded,Antarctica
+205,-77.5,122.5,-80,-75,120,125,land,-78,122,Copernicus_DSM_COG_30_S78_00_E122_00_DEM,Listed by provider,Not downloaded,Antarctica
+206,-77.5,127.5,-80,-75,125,130,land,-78,127,Copernicus_DSM_COG_30_S78_00_E127_00_DEM,Listed by provider,Not downloaded,Antarctica
+207,-77.5,132.5,-80,-75,130,135,land,-78,132,Copernicus_DSM_COG_30_S78_00_E132_00_DEM,Listed by provider,Not downloaded,Antarctica
+208,-77.5,137.5,-80,-75,135,140,land,-78,137,Copernicus_DSM_COG_30_S78_00_E137_00_DEM,Listed by provider,Not downloaded,Antarctica
+209,-77.5,142.5,-80,-75,140,145,land,-78,142,Copernicus_DSM_COG_30_S78_00_E142_00_DEM,Listed by provider,Not downloaded,Antarctica
+210,-77.5,147.5,-80,-75,145,150,land,-78,147,Copernicus_DSM_COG_30_S78_00_E147_00_DEM,Listed by provider,Not downloaded,Antarctica
+211,-77.5,152.5,-80,-75,150,155,land,-78,152,Copernicus_DSM_COG_30_S78_00_E152_00_DEM,Listed by provider,Not downloaded,Antarctica
+212,-77.5,157.5,-80,-75,155,160,land,-78,157,Copernicus_DSM_COG_30_S78_00_E157_00_DEM,Listed by provider,Not downloaded,Antarctica
+213,-77.5,162.5,-80,-75,160,165,land,-78,162,Copernicus_DSM_COG_30_S78_00_E162_00_DEM,Listed by provider,Not downloaded,Antarctica
+214,-77.5,167.5,-80,-75,165,170,land,-78,167,Copernicus_DSM_COG_30_S78_00_E167_00_DEM,Listed by provider,Not downloaded,Antarctica
+233,-72.5,-97.5,-75,-70,-100,-95,land,-73,-98,Copernicus_DSM_COG_30_S73_00_W098_00_DEM,Listed by provider,Not downloaded,Antarctica
+238,-72.5,-72.5,-75,-70,-75,-70,land,-73,-73,Copernicus_DSM_COG_30_S73_00_W073_00_DEM,Listed by provider,Not downloaded,Antarctica
+240,-72.5,-62.5,-75,-70,-65,-60,land,-73,-63,Copernicus_DSM_COG_30_S73_00_W063_00_DEM,Listed by provider,Not downloaded,Antarctica
+251,-72.5,-7.5,-75,-70,-10,-5,land,-73,-8,Copernicus_DSM_COG_30_S73_00_W008_00_DEM,Listed by provider,Not downloaded,Antarctica
+252,-72.5,-2.5,-75,-70,-5,0,land,-73,-3,Copernicus_DSM_COG_30_S73_00_W003_00_DEM,Listed by provider,Not downloaded,Antarctica
+253,-72.5,2.5,-75,-70,0,5,land,-73,2,Copernicus_DSM_COG_30_S73_00_E002_00_DEM,Listed by provider,Not downloaded,Antarctica
+254,-72.5,7.5,-75,-70,5,10,land,-73,7,Copernicus_DSM_COG_30_S73_00_E007_00_DEM,Listed by provider,Not downloaded,Antarctica
+255,-72.5,12.5,-75,-70,10,15,land,-73,12,Copernicus_DSM_COG_30_S73_00_E012_00_DEM,Listed by provider,Not downloaded,Antarctica
+256,-72.5,17.5,-75,-70,15,20,land,-73,17,Copernicus_DSM_COG_30_S73_00_E017_00_DEM,Listed by provider,Not downloaded,Antarctica
+257,-72.5,22.5,-75,-70,20,25,land,-73,22,Copernicus_DSM_COG_30_S73_00_E022_00_DEM,Listed by provider,Not downloaded,Antarctica
+258,-72.5,27.5,-75,-70,25,30,land,-73,27,Copernicus_DSM_COG_30_S73_00_E027_00_DEM,Listed by provider,Not downloaded,Antarctica
+259,-72.5,32.5,-75,-70,30,35,land,-73,32,Copernicus_DSM_COG_30_S73_00_E032_00_DEM,Listed by provider,Not downloaded,Antarctica
+260,-72.5,37.5,-75,-70,35,40,land,-73,37,Copernicus_DSM_COG_30_S73_00_E037_00_DEM,Listed by provider,Not downloaded,Antarctica
+261,-72.5,42.5,-75,-70,40,45,land,-73,42,Copernicus_DSM_COG_30_S73_00_E042_00_DEM,Listed by provider,Not downloaded,Antarctica
+262,-72.5,47.5,-75,-70,45,50,land,-73,47,Copernicus_DSM_COG_30_S73_00_E047_00_DEM,Listed by provider,Not downloaded,Antarctica
+263,-72.5,52.5,-75,-70,50,55,land,-73,52,Copernicus_DSM_COG_30_S73_00_E052_00_DEM,Listed by provider,Not downloaded,Antarctica
+264,-72.5,57.5,-75,-70,55,60,land,-73,57,Copernicus_DSM_COG_30_S73_00_E057_00_DEM,Listed by provider,Not downloaded,Antarctica
+265,-72.5,62.5,-75,-70,60,65,land,-73,62,Copernicus_DSM_COG_30_S73_00_E062_00_DEM,Listed by provider,Not downloaded,Antarctica
+267,-72.5,72.5,-75,-70,70,75,land,-73,72,Copernicus_DSM_COG_30_S73_00_E072_00_DEM,Listed by provider,Not downloaded,Antarctica
+268,-72.5,77.5,-75,-70,75,80,land,-73,77,Copernicus_DSM_COG_30_S73_00_E077_00_DEM,Listed by provider,Not downloaded,Antarctica
+269,-72.5,82.5,-75,-70,80,85,land,-73,82,Copernicus_DSM_COG_30_S73_00_E082_00_DEM,Listed by provider,Not downloaded,Antarctica
+270,-72.5,87.5,-75,-70,85,90,land,-73,87,Copernicus_DSM_COG_30_S73_00_E087_00_DEM,Listed by provider,Not downloaded,Antarctica
+271,-72.5,92.5,-75,-70,90,95,land,-73,92,Copernicus_DSM_COG_30_S73_00_E092_00_DEM,Listed by provider,Not downloaded,Antarctica
+272,-72.5,97.5,-75,-70,95,100,land,-73,97,Copernicus_DSM_COG_30_S73_00_E097_00_DEM,Listed by provider,Not downloaded,Antarctica
+273,-72.5,102.5,-75,-70,100,105,land,-73,102,Copernicus_DSM_COG_30_S73_00_E102_00_DEM,Listed by provider,Not downloaded,Antarctica
+274,-72.5,107.5,-75,-70,105,110,land,-73,107,Copernicus_DSM_COG_30_S73_00_E107_00_DEM,Listed by provider,Not downloaded,Antarctica
+275,-72.5,112.5,-75,-70,110,115,land,-73,112,Copernicus_DSM_COG_30_S73_00_E112_00_DEM,Listed by provider,Not downloaded,Antarctica
+276,-72.5,117.5,-75,-70,115,120,land,-73,117,Copernicus_DSM_COG_30_S73_00_E117_00_DEM,Listed by provider,Not downloaded,Antarctica
+277,-72.5,122.5,-75,-70,120,125,land,-73,122,Copernicus_DSM_COG_30_S73_00_E122_00_DEM,Listed by provider,Not downloaded,Antarctica
+278,-72.5,127.5,-75,-70,125,130,land,-73,127,Copernicus_DSM_COG_30_S73_00_E127_00_DEM,Listed by provider,Not downloaded,Antarctica
+279,-72.5,132.5,-75,-70,130,135,land,-73,132,Copernicus_DSM_COG_30_S73_00_E132_00_DEM,Listed by provider,Not downloaded,Antarctica
+280,-72.5,137.5,-75,-70,135,140,land,-73,137,Copernicus_DSM_COG_30_S73_00_E137_00_DEM,Listed by provider,Not downloaded,Antarctica
+281,-72.5,142.5,-75,-70,140,145,land,-73,142,Copernicus_DSM_COG_30_S73_00_E142_00_DEM,Listed by provider,Not downloaded,Antarctica
+282,-72.5,147.5,-75,-70,145,150,land,-73,147,Copernicus_DSM_COG_30_S73_00_E147_00_DEM,Listed by provider,Not downloaded,Antarctica
+283,-72.5,152.5,-75,-70,150,155,land,-73,152,Copernicus_DSM_COG_30_S73_00_E152_00_DEM,Listed by provider,Not downloaded,Antarctica
+284,-72.5,157.5,-75,-70,155,160,land,-73,157,Copernicus_DSM_COG_30_S73_00_E157_00_DEM,Listed by provider,Not downloaded,Antarctica
+285,-72.5,162.5,-75,-70,160,165,land,-73,162,Copernicus_DSM_COG_30_S73_00_E162_00_DEM,Listed by provider,Not downloaded,Antarctica
+286,-72.5,167.5,-75,-70,165,170,land,-73,167,Copernicus_DSM_COG_30_S73_00_E167_00_DEM,Listed by provider,Not downloaded,Antarctica
+311,-67.5,-67.5,-70,-65,-70,-65,land,-68,-68,Copernicus_DSM_COG_30_S68_00_W068_00_DEM,Listed by provider,Not downloaded,Antarctica
+335,-67.5,52.5,-70,-65,50,55,land,-68,52,Copernicus_DSM_COG_30_S68_00_E052_00_DEM,Listed by provider,Not downloaded,Antarctica
+336,-67.5,57.5,-70,-65,55,60,land,-68,57,Copernicus_DSM_COG_30_S68_00_E057_00_DEM,Listed by provider,Not downloaded,Antarctica
+342,-67.5,87.5,-70,-65,85,90,land,-68,87,Copernicus_DSM_COG_30_S68_00_E087_00_DEM,Listed by provider,Not downloaded,Antarctica
+343,-67.5,92.5,-70,-65,90,95,land,-68,92,Copernicus_DSM_COG_30_S68_00_E092_00_DEM,Listed by provider,Not downloaded,Antarctica
+344,-67.5,97.5,-70,-65,95,100,land,-68,97,Copernicus_DSM_COG_30_S68_00_E097_00_DEM,Listed by provider,Not downloaded,Antarctica
+345,-67.5,102.5,-70,-65,100,105,land,-68,102,Copernicus_DSM_COG_30_S68_00_E102_00_DEM,Listed by provider,Not downloaded,Antarctica
+346,-67.5,107.5,-70,-65,105,110,land,-68,107,Copernicus_DSM_COG_30_S68_00_E107_00_DEM,Listed by provider,Not downloaded,Antarctica
+347,-67.5,112.5,-70,-65,110,115,land,-68,112,Copernicus_DSM_COG_30_S68_00_E112_00_DEM,Listed by provider,Not downloaded,Antarctica
+348,-67.5,117.5,-70,-65,115,120,land,-68,117,Copernicus_DSM_COG_30_S68_00_E117_00_DEM,Listed by provider,Not downloaded,Antarctica
+349,-67.5,122.5,-70,-65,120,125,land,-68,122,Copernicus_DSM_COG_30_S68_00_E122_00_DEM,Listed by provider,Not downloaded,Antarctica
+350,-67.5,127.5,-70,-65,125,130,land,-68,127,Copernicus_DSM_COG_30_S68_00_E127_00_DEM,Listed by provider,Not downloaded,Antarctica
+351,-67.5,132.5,-70,-65,130,135,land,-68,132,Copernicus_DSM_COG_30_S68_00_E132_00_DEM,Listed by provider,Not downloaded,Antarctica
+352,-67.5,137.5,-70,-65,135,140,land,-68,137,Copernicus_DSM_COG_30_S68_00_E137_00_DEM,Listed by provider,Not downloaded,Antarctica
+353,-67.5,142.5,-70,-65,140,145,land,-68,142,Copernicus_DSM_COG_30_S68_00_E142_00_DEM,Listed by provider,Not downloaded,Antarctica
+526,-52.5,-72.5,-55,-50,-75,-70,land,-53,-73,Copernicus_DSM_COG_30_S53_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+598,-47.5,-72.5,-50,-45,-75,-70,land,-48,-73,Copernicus_DSM_COG_30_S48_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+599,-47.5,-67.5,-50,-45,-70,-65,land,-48,-68,Copernicus_DSM_COG_30_S48_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+670,-42.5,-72.5,-45,-40,-75,-70,land,-43,-73,Copernicus_DSM_COG_30_S43_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+671,-42.5,-67.5,-45,-40,-70,-65,land,-43,-68,Copernicus_DSM_COG_30_S43_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+714,-42.5,147.5,-45,-40,145,150,land,-43,147,Copernicus_DSM_COG_30_S43_00_E147_00_DEM,Listed by provider,Not downloaded,Other regions
+719,-42.5,172.5,-45,-40,170,175,land,-43,172,Copernicus_DSM_COG_30_S43_00_E172_00_DEM,Listed by provider,Not downloaded,Other regions
+742,-37.5,-72.5,-40,-35,-75,-70,land,-38,-73,Copernicus_DSM_COG_30_S38_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+743,-37.5,-67.5,-40,-35,-70,-65,land,-38,-68,Copernicus_DSM_COG_30_S38_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+744,-37.5,-62.5,-40,-35,-65,-60,land,-38,-63,Copernicus_DSM_COG_30_S38_00_W063_00_DEM,Listed by provider,Not downloaded,Other regions
+745,-37.5,-57.5,-40,-35,-60,-55,land,-38,-58,Copernicus_DSM_COG_30_S38_00_W058_00_DEM,Listed by provider,Not downloaded,Other regions
+785,-37.5,142.5,-40,-35,140,145,land,-38,142,Copernicus_DSM_COG_30_S38_00_E142_00_DEM,Listed by provider,Not downloaded,Other regions
+786,-37.5,147.5,-40,-35,145,150,land,-38,147,Copernicus_DSM_COG_30_S38_00_E147_00_DEM,Listed by provider,Not downloaded,Other regions
+815,-32.5,-67.5,-35,-30,-70,-65,land,-33,-68,Copernicus_DSM_COG_30_S33_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+816,-32.5,-62.5,-35,-30,-65,-60,land,-33,-63,Copernicus_DSM_COG_30_S33_00_W063_00_DEM,Listed by provider,Not downloaded,Other regions
+817,-32.5,-57.5,-35,-30,-60,-55,land,-33,-58,Copernicus_DSM_COG_30_S33_00_W058_00_DEM,Listed by provider,Not downloaded,Other regions
+818,-32.5,-52.5,-35,-30,-55,-50,land,-33,-53,Copernicus_DSM_COG_30_S33_00_W053_00_DEM,Listed by provider,Not downloaded,Other regions
+833,-32.5,22.5,-35,-30,20,25,land,-33,22,Copernicus_DSM_COG_30_S33_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+834,-32.5,27.5,-35,-30,25,30,land,-33,27,Copernicus_DSM_COG_30_S33_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+852,-32.5,117.5,-35,-30,115,120,land,-33,117,Copernicus_DSM_COG_30_S33_00_E117_00_DEM,Listed by provider,Already downloaded,Other regions
+853,-32.5,122.5,-35,-30,120,125,land,-33,122,Copernicus_DSM_COG_30_S33_00_E122_00_DEM,Listed by provider,Not downloaded,Other regions
+856,-32.5,137.5,-35,-30,135,140,land,-33,137,Copernicus_DSM_COG_30_S33_00_E137_00_DEM,Listed by provider,Not downloaded,Other regions
+857,-32.5,142.5,-35,-30,140,145,land,-33,142,Copernicus_DSM_COG_30_S33_00_E142_00_DEM,Listed by provider,Not downloaded,Other regions
+858,-32.5,147.5,-35,-30,145,150,land,-33,147,Copernicus_DSM_COG_30_S33_00_E147_00_DEM,Listed by provider,Not downloaded,Other regions
+887,-27.5,-67.5,-30,-25,-70,-65,land,-28,-68,Copernicus_DSM_COG_30_S28_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+888,-27.5,-62.5,-30,-25,-65,-60,land,-28,-63,Copernicus_DSM_COG_30_S28_00_W063_00_DEM,Listed by provider,Not downloaded,Other regions
+889,-27.5,-57.5,-30,-25,-60,-55,land,-28,-58,Copernicus_DSM_COG_30_S28_00_W058_00_DEM,Listed by provider,Not downloaded,Other regions
+890,-27.5,-52.5,-30,-25,-55,-50,land,-28,-53,Copernicus_DSM_COG_30_S28_00_W053_00_DEM,Listed by provider,Not downloaded,Other regions
+904,-27.5,17.5,-30,-25,15,20,land,-28,17,Copernicus_DSM_COG_30_S28_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+905,-27.5,22.5,-30,-25,20,25,land,-28,22,Copernicus_DSM_COG_30_S28_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+906,-27.5,27.5,-30,-25,25,30,land,-28,27,Copernicus_DSM_COG_30_S28_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+907,-27.5,32.5,-30,-25,30,35,land,-28,32,Copernicus_DSM_COG_30_S28_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+924,-27.5,117.5,-30,-25,115,120,land,-28,117,Copernicus_DSM_COG_30_S28_00_E117_00_DEM,Listed by provider,Not downloaded,Other regions
+925,-27.5,122.5,-30,-25,120,125,land,-28,122,Copernicus_DSM_COG_30_S28_00_E122_00_DEM,Listed by provider,Not downloaded,Other regions
+926,-27.5,127.5,-30,-25,125,130,land,-28,127,Copernicus_DSM_COG_30_S28_00_E127_00_DEM,Listed by provider,Not downloaded,Other regions
+927,-27.5,132.5,-30,-25,130,135,land,-28,132,Copernicus_DSM_COG_30_S28_00_E132_00_DEM,Listed by provider,Not downloaded,Other regions
+928,-27.5,137.5,-30,-25,135,140,land,-28,137,Copernicus_DSM_COG_30_S28_00_E137_00_DEM,Listed by provider,Not downloaded,Other regions
+929,-27.5,142.5,-30,-25,140,145,land,-28,142,Copernicus_DSM_COG_30_S28_00_E142_00_DEM,Listed by provider,Not downloaded,Other regions
+930,-27.5,147.5,-30,-25,145,150,land,-28,147,Copernicus_DSM_COG_30_S28_00_E147_00_DEM,Listed by provider,Not downloaded,Other regions
+931,-27.5,152.5,-30,-25,150,155,land,-28,152,Copernicus_DSM_COG_30_S28_00_E152_00_DEM,Listed by provider,Not downloaded,Other regions
+959,-22.5,-67.5,-25,-20,-70,-65,land,-23,-68,Copernicus_DSM_COG_30_S23_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+960,-22.5,-62.5,-25,-20,-65,-60,land,-23,-63,Copernicus_DSM_COG_30_S23_00_W063_00_DEM,Listed by provider,Not downloaded,Other regions
+961,-22.5,-57.5,-25,-20,-60,-55,land,-23,-58,Copernicus_DSM_COG_30_S23_00_W058_00_DEM,Listed by provider,Not downloaded,Other regions
+962,-22.5,-52.5,-25,-20,-55,-50,land,-23,-53,Copernicus_DSM_COG_30_S23_00_W053_00_DEM,Listed by provider,Not downloaded,Other regions
+963,-22.5,-47.5,-25,-20,-50,-45,land,-23,-48,Copernicus_DSM_COG_30_S23_00_W048_00_DEM,Listed by provider,Not downloaded,Other regions
+964,-22.5,-42.5,-25,-20,-45,-40,land,-23,-43,Copernicus_DSM_COG_30_S23_00_W043_00_DEM,Listed by provider,Not downloaded,Other regions
+976,-22.5,17.5,-25,-20,15,20,land,-23,17,Copernicus_DSM_COG_30_S23_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+977,-22.5,22.5,-25,-20,20,25,land,-23,22,Copernicus_DSM_COG_30_S23_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+978,-22.5,27.5,-25,-20,25,30,land,-23,27,Copernicus_DSM_COG_30_S23_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+979,-22.5,32.5,-25,-20,30,35,land,-23,32,Copernicus_DSM_COG_30_S23_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+982,-22.5,47.5,-25,-20,45,50,land,-23,47,Copernicus_DSM_COG_30_S23_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+996,-22.5,117.5,-25,-20,115,120,land,-23,117,Copernicus_DSM_COG_30_S23_00_E117_00_DEM,Listed by provider,Not downloaded,Other regions
+997,-22.5,122.5,-25,-20,120,125,land,-23,122,Copernicus_DSM_COG_30_S23_00_E122_00_DEM,Listed by provider,Not downloaded,Other regions
+998,-22.5,127.5,-25,-20,125,130,land,-23,127,Copernicus_DSM_COG_30_S23_00_E127_00_DEM,Listed by provider,Not downloaded,Other regions
+999,-22.5,132.5,-25,-20,130,135,land,-23,132,Copernicus_DSM_COG_30_S23_00_E132_00_DEM,Listed by provider,Not downloaded,Other regions
+1000,-22.5,137.5,-25,-20,135,140,land,-23,137,Copernicus_DSM_COG_30_S23_00_E137_00_DEM,Listed by provider,Not downloaded,Other regions
+1001,-22.5,142.5,-25,-20,140,145,land,-23,142,Copernicus_DSM_COG_30_S23_00_E142_00_DEM,Listed by provider,Not downloaded,Other regions
+1002,-22.5,147.5,-25,-20,145,150,land,-23,147,Copernicus_DSM_COG_30_S23_00_E147_00_DEM,Listed by provider,Already downloaded,Other regions
+1031,-17.5,-67.5,-20,-15,-70,-65,land,-18,-68,Copernicus_DSM_COG_30_S18_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+1032,-17.5,-62.5,-20,-15,-65,-60,land,-18,-63,Copernicus_DSM_COG_30_S18_00_W063_00_DEM,Listed by provider,Not downloaded,Other regions
+1033,-17.5,-57.5,-20,-15,-60,-55,land,-18,-58,Copernicus_DSM_COG_30_S18_00_W058_00_DEM,Listed by provider,Not downloaded,Other regions
+1034,-17.5,-52.5,-20,-15,-55,-50,land,-18,-53,Copernicus_DSM_COG_30_S18_00_W053_00_DEM,Listed by provider,Not downloaded,Other regions
+1035,-17.5,-47.5,-20,-15,-50,-45,land,-18,-48,Copernicus_DSM_COG_30_S18_00_W048_00_DEM,Listed by provider,Not downloaded,Other regions
+1036,-17.5,-42.5,-20,-15,-45,-40,land,-18,-43,Copernicus_DSM_COG_30_S18_00_W043_00_DEM,Listed by provider,Not downloaded,Other regions
+1047,-17.5,12.5,-20,-15,10,15,land,-18,12,Copernicus_DSM_COG_30_S18_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+1048,-17.5,17.5,-20,-15,15,20,land,-18,17,Copernicus_DSM_COG_30_S18_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+1049,-17.5,22.5,-20,-15,20,25,land,-18,22,Copernicus_DSM_COG_30_S18_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1050,-17.5,27.5,-20,-15,25,30,land,-18,27,Copernicus_DSM_COG_30_S18_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1051,-17.5,32.5,-20,-15,30,35,land,-18,32,Copernicus_DSM_COG_30_S18_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1052,-17.5,37.5,-20,-15,35,40,land,-18,37,Copernicus_DSM_COG_30_S18_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1054,-17.5,47.5,-20,-15,45,50,land,-18,47,Copernicus_DSM_COG_30_S18_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+1069,-17.5,122.5,-20,-15,120,125,land,-18,122,Copernicus_DSM_COG_30_S18_00_E122_00_DEM,Listed by provider,Not downloaded,Other regions
+1070,-17.5,127.5,-20,-15,125,130,land,-18,127,Copernicus_DSM_COG_30_S18_00_E127_00_DEM,Listed by provider,Not downloaded,Other regions
+1071,-17.5,132.5,-20,-15,130,135,land,-18,132,Copernicus_DSM_COG_30_S18_00_E132_00_DEM,Listed by provider,Not downloaded,Other regions
+1072,-17.5,137.5,-20,-15,135,140,land,-18,137,Copernicus_DSM_COG_30_S18_00_E137_00_DEM,Listed by provider,Not downloaded,Other regions
+1073,-17.5,142.5,-20,-15,140,145,land,-18,142,Copernicus_DSM_COG_30_S18_00_E142_00_DEM,Listed by provider,Not downloaded,Other regions
+1102,-12.5,-72.5,-15,-10,-75,-70,land,-13,-73,Copernicus_DSM_COG_30_S13_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+1103,-12.5,-67.5,-15,-10,-70,-65,land,-13,-68,Copernicus_DSM_COG_30_S13_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+1104,-12.5,-62.5,-15,-10,-65,-60,land,-13,-63,Copernicus_DSM_COG_30_S13_00_W063_00_DEM,Listed by provider,Not downloaded,Other regions
+1105,-12.5,-57.5,-15,-10,-60,-55,land,-13,-58,Copernicus_DSM_COG_30_S13_00_W058_00_DEM,Listed by provider,Not downloaded,Other regions
+1106,-12.5,-52.5,-15,-10,-55,-50,land,-13,-53,Copernicus_DSM_COG_30_S13_00_W053_00_DEM,Listed by provider,Not downloaded,Other regions
+1107,-12.5,-47.5,-15,-10,-50,-45,land,-13,-48,Copernicus_DSM_COG_30_S13_00_W048_00_DEM,Listed by provider,Not downloaded,Other regions
+1108,-12.5,-42.5,-15,-10,-45,-40,land,-13,-43,Copernicus_DSM_COG_30_S13_00_W043_00_DEM,Listed by provider,Not downloaded,Other regions
+1120,-12.5,17.5,-15,-10,15,20,land,-13,17,Copernicus_DSM_COG_30_S13_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+1121,-12.5,22.5,-15,-10,20,25,land,-13,22,Copernicus_DSM_COG_30_S13_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1122,-12.5,27.5,-15,-10,25,30,land,-13,27,Copernicus_DSM_COG_30_S13_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1123,-12.5,32.5,-15,-10,30,35,land,-13,32,Copernicus_DSM_COG_30_S13_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1124,-12.5,37.5,-15,-10,35,40,land,-13,37,Copernicus_DSM_COG_30_S13_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1143,-12.5,132.5,-15,-10,130,135,land,-13,132,Copernicus_DSM_COG_30_S13_00_E132_00_DEM,Listed by provider,Not downloaded,Other regions
+1145,-12.5,142.5,-15,-10,140,145,land,-13,142,Copernicus_DSM_COG_30_S13_00_E142_00_DEM,Listed by provider,Not downloaded,Other regions
+1173,-7.5,-77.5,-10,-5,-80,-75,land,-8,-78,Copernicus_DSM_COG_30_S08_00_W078_00_DEM,Listed by provider,Not downloaded,Other regions
+1174,-7.5,-72.5,-10,-5,-75,-70,land,-8,-73,Copernicus_DSM_COG_30_S08_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+1175,-7.5,-67.5,-10,-5,-70,-65,land,-8,-68,Copernicus_DSM_COG_30_S08_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+1176,-7.5,-62.5,-10,-5,-65,-60,land,-8,-63,Copernicus_DSM_COG_30_S08_00_W063_00_DEM,Listed by provider,Not downloaded,Other regions
+1177,-7.5,-57.5,-10,-5,-60,-55,land,-8,-58,Copernicus_DSM_COG_30_S08_00_W058_00_DEM,Listed by provider,Not downloaded,Other regions
+1178,-7.5,-52.5,-10,-5,-55,-50,land,-8,-53,Copernicus_DSM_COG_30_S08_00_W053_00_DEM,Listed by provider,Not downloaded,Other regions
+1179,-7.5,-47.5,-10,-5,-50,-45,land,-8,-48,Copernicus_DSM_COG_30_S08_00_W048_00_DEM,Listed by provider,Not downloaded,Other regions
+1180,-7.5,-42.5,-10,-5,-45,-40,land,-8,-43,Copernicus_DSM_COG_30_S08_00_W043_00_DEM,Listed by provider,Not downloaded,Other regions
+1181,-7.5,-37.5,-10,-5,-40,-35,land,-8,-38,Copernicus_DSM_COG_30_S08_00_W038_00_DEM,Listed by provider,Not downloaded,Other regions
+1192,-7.5,17.5,-10,-5,15,20,land,-8,17,Copernicus_DSM_COG_30_S08_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+1193,-7.5,22.5,-10,-5,20,25,land,-8,22,Copernicus_DSM_COG_30_S08_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1194,-7.5,27.5,-10,-5,25,30,land,-8,27,Copernicus_DSM_COG_30_S08_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1195,-7.5,32.5,-10,-5,30,35,land,-8,32,Copernicus_DSM_COG_30_S08_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1196,-7.5,37.5,-10,-5,35,40,land,-8,37,Copernicus_DSM_COG_30_S08_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1210,-7.5,107.5,-10,-5,105,110,land,-8,107,Copernicus_DSM_COG_30_S08_00_E107_00_DEM,Listed by provider,Not downloaded,Other regions
+1211,-7.5,112.5,-10,-5,110,115,land,-8,112,Copernicus_DSM_COG_30_S08_00_E112_00_DEM,Listed by provider,Not downloaded,Other regions
+1217,-7.5,142.5,-10,-5,140,145,land,-8,142,Copernicus_DSM_COG_30_S08_00_E142_00_DEM,Listed by provider,Not downloaded,Other regions
+1245,-2.5,-77.5,-5,0,-80,-75,land,-3,-78,Copernicus_DSM_COG_30_S03_00_W078_00_DEM,Listed by provider,Not downloaded,Other regions
+1246,-2.5,-72.5,-5,0,-75,-70,land,-3,-73,Copernicus_DSM_COG_30_S03_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+1247,-2.5,-67.5,-5,0,-70,-65,land,-3,-68,Copernicus_DSM_COG_30_S03_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+1248,-2.5,-62.5,-5,0,-65,-60,land,-3,-63,Copernicus_DSM_COG_30_S03_00_W063_00_DEM,Listed by provider,Not downloaded,Other regions
+1249,-2.5,-57.5,-5,0,-60,-55,land,-3,-58,Copernicus_DSM_COG_30_S03_00_W058_00_DEM,Listed by provider,Not downloaded,Other regions
+1250,-2.5,-52.5,-5,0,-55,-50,land,-3,-53,Copernicus_DSM_COG_30_S03_00_W053_00_DEM,Listed by provider,Not downloaded,Other regions
+1251,-2.5,-47.5,-5,0,-50,-45,land,-3,-48,Copernicus_DSM_COG_30_S03_00_W048_00_DEM,Listed by provider,Not downloaded,Other regions
+1263,-2.5,12.5,-5,0,10,15,land,-3,12,Copernicus_DSM_COG_30_S03_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+1264,-2.5,17.5,-5,0,15,20,land,-3,17,Copernicus_DSM_COG_30_S03_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+1265,-2.5,22.5,-5,0,20,25,land,-3,22,Copernicus_DSM_COG_30_S03_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1266,-2.5,27.5,-5,0,25,30,land,-3,27,Copernicus_DSM_COG_30_S03_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1267,-2.5,32.5,-5,0,30,35,land,-3,32,Copernicus_DSM_COG_30_S03_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1268,-2.5,37.5,-5,0,35,40,land,-3,37,Copernicus_DSM_COG_30_S03_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1281,-2.5,102.5,-5,0,100,105,land,-3,102,Copernicus_DSM_COG_30_S03_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+1283,-2.5,112.5,-5,0,110,115,land,-3,112,Copernicus_DSM_COG_30_S03_00_E112_00_DEM,Listed by provider,Not downloaded,Other regions
+1288,-2.5,137.5,-5,0,135,140,land,-3,137,Copernicus_DSM_COG_30_S03_00_E137_00_DEM,Listed by provider,Not downloaded,Other regions
+1317,2.5,-77.5,0,5,-80,-75,land,2,-78,Copernicus_DSM_COG_30_N02_00_W078_00_DEM,Listed by provider,Not downloaded,Other regions
+1318,2.5,-72.5,0,5,-75,-70,land,2,-73,Copernicus_DSM_COG_30_N02_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+1319,2.5,-67.5,0,5,-70,-65,land,2,-68,Copernicus_DSM_COG_30_N02_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+1320,2.5,-62.5,0,5,-65,-60,land,2,-63,Copernicus_DSM_COG_30_N02_00_W063_00_DEM,Listed by provider,Not downloaded,Other regions
+1321,2.5,-57.5,0,5,-60,-55,land,2,-58,Copernicus_DSM_COG_30_N02_00_W058_00_DEM,Listed by provider,Not downloaded,Other regions
+1322,2.5,-52.5,0,5,-55,-50,land,2,-53,Copernicus_DSM_COG_30_N02_00_W053_00_DEM,Listed by provider,Not downloaded,Other regions
+1335,2.5,12.5,0,5,10,15,land,2,12,Copernicus_DSM_COG_30_N02_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+1336,2.5,17.5,0,5,15,20,land,2,17,Copernicus_DSM_COG_30_N02_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+1337,2.5,22.5,0,5,20,25,land,2,22,Copernicus_DSM_COG_30_N02_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1338,2.5,27.5,0,5,25,30,land,2,27,Copernicus_DSM_COG_30_N02_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1339,2.5,32.5,0,5,30,35,land,2,32,Copernicus_DSM_COG_30_N02_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1340,2.5,37.5,0,5,35,40,land,2,37,Copernicus_DSM_COG_30_N02_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1341,2.5,42.5,0,5,40,45,land,2,42,Copernicus_DSM_COG_30_N02_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+1353,2.5,102.5,0,5,100,105,land,2,102,Copernicus_DSM_COG_30_N02_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+1355,2.5,112.5,0,5,110,115,land,2,112,Copernicus_DSM_COG_30_N02_00_E112_00_DEM,Listed by provider,Not downloaded,Other regions
+1356,2.5,117.5,0,5,115,120,land,2,117,Copernicus_DSM_COG_30_N02_00_E117_00_DEM,Listed by provider,Not downloaded,Other regions
+1389,7.5,-77.5,5,10,-80,-75,land,7,-78,Copernicus_DSM_COG_30_N07_00_W078_00_DEM,Listed by provider,Not downloaded,Other regions
+1390,7.5,-72.5,5,10,-75,-70,land,7,-73,Copernicus_DSM_COG_30_N07_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+1391,7.5,-67.5,5,10,-70,-65,land,7,-68,Copernicus_DSM_COG_30_N07_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+1392,7.5,-62.5,5,10,-65,-60,land,7,-63,Copernicus_DSM_COG_30_N07_00_W063_00_DEM,Listed by provider,Not downloaded,Other regions
+1403,7.5,-7.5,5,10,-10,-5,land,7,-8,Copernicus_DSM_COG_30_N07_00_W008_00_DEM,Listed by provider,Not downloaded,Other regions
+1404,7.5,-2.5,5,10,-5,0,land,7,-3,Copernicus_DSM_COG_30_N07_00_W003_00_DEM,Listed by provider,Not downloaded,Other regions
+1405,7.5,2.5,5,10,0,5,land,7,2,Copernicus_DSM_COG_30_N07_00_E002_00_DEM,Listed by provider,Not downloaded,Other regions
+1406,7.5,7.5,5,10,5,10,land,7,7,Copernicus_DSM_COG_30_N07_00_E007_00_DEM,Listed by provider,Not downloaded,Other regions
+1407,7.5,12.5,5,10,10,15,land,7,12,Copernicus_DSM_COG_30_N07_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+1408,7.5,17.5,5,10,15,20,land,7,17,Copernicus_DSM_COG_30_N07_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+1409,7.5,22.5,5,10,20,25,land,7,22,Copernicus_DSM_COG_30_N07_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1410,7.5,27.5,5,10,25,30,land,7,27,Copernicus_DSM_COG_30_N07_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1411,7.5,32.5,5,10,30,35,land,7,32,Copernicus_DSM_COG_30_N07_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1412,7.5,37.5,5,10,35,40,land,7,37,Copernicus_DSM_COG_30_N07_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1413,7.5,42.5,5,10,40,45,land,7,42,Copernicus_DSM_COG_30_N07_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+1414,7.5,47.5,5,10,45,50,land,7,47,Copernicus_DSM_COG_30_N07_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+1474,12.5,-12.5,10,15,-15,-10,land,12,-13,Copernicus_DSM_COG_30_N12_00_W013_00_DEM,Listed by provider,Not downloaded,Other regions
+1475,12.5,-7.5,10,15,-10,-5,land,12,-8,Copernicus_DSM_COG_30_N12_00_W008_00_DEM,Listed by provider,Not downloaded,Other regions
+1476,12.5,-2.5,10,15,-5,0,land,12,-3,Copernicus_DSM_COG_30_N12_00_W003_00_DEM,Listed by provider,Not downloaded,Other regions
+1477,12.5,2.5,10,15,0,5,land,12,2,Copernicus_DSM_COG_30_N12_00_E002_00_DEM,Listed by provider,Not downloaded,Other regions
+1478,12.5,7.5,10,15,5,10,land,12,7,Copernicus_DSM_COG_30_N12_00_E007_00_DEM,Listed by provider,Not downloaded,Other regions
+1479,12.5,12.5,10,15,10,15,land,12,12,Copernicus_DSM_COG_30_N12_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+1480,12.5,17.5,10,15,15,20,land,12,17,Copernicus_DSM_COG_30_N12_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+1481,12.5,22.5,10,15,20,25,land,12,22,Copernicus_DSM_COG_30_N12_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1482,12.5,27.5,10,15,25,30,land,12,27,Copernicus_DSM_COG_30_N12_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1483,12.5,32.5,10,15,30,35,land,12,32,Copernicus_DSM_COG_30_N12_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1484,12.5,37.5,10,15,35,40,land,12,37,Copernicus_DSM_COG_30_N12_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1485,12.5,42.5,10,15,40,45,land,12,42,Copernicus_DSM_COG_30_N12_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+1492,12.5,77.5,10,15,75,80,land,12,77,Copernicus_DSM_COG_30_N12_00_E077_00_DEM,Listed by provider,Not downloaded,Other regions
+1497,12.5,102.5,10,15,100,105,land,12,102,Copernicus_DSM_COG_30_N12_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+1498,12.5,107.5,10,15,105,110,land,12,107,Copernicus_DSM_COG_30_N12_00_E107_00_DEM,Listed by provider,Not downloaded,Other regions
+1529,17.5,-97.5,15,20,-100,-95,land,17,-98,Copernicus_DSM_COG_30_N17_00_W098_00_DEM,Listed by provider,Not downloaded,Other regions
+1530,17.5,-92.5,15,20,-95,-90,land,17,-93,Copernicus_DSM_COG_30_N17_00_W093_00_DEM,Listed by provider,Not downloaded,Other regions
+1546,17.5,-12.5,15,20,-15,-10,land,17,-13,Copernicus_DSM_COG_30_N17_00_W013_00_DEM,Listed by provider,Not downloaded,Other regions
+1547,17.5,-7.5,15,20,-10,-5,land,17,-8,Copernicus_DSM_COG_30_N17_00_W008_00_DEM,Listed by provider,Not downloaded,Other regions
+1548,17.5,-2.5,15,20,-5,0,land,17,-3,Copernicus_DSM_COG_30_N17_00_W003_00_DEM,Listed by provider,Not downloaded,Other regions
+1549,17.5,2.5,15,20,0,5,land,17,2,Copernicus_DSM_COG_30_N17_00_E002_00_DEM,Listed by provider,Not downloaded,Other regions
+1550,17.5,7.5,15,20,5,10,land,17,7,Copernicus_DSM_COG_30_N17_00_E007_00_DEM,Listed by provider,Not downloaded,Other regions
+1551,17.5,12.5,15,20,10,15,land,17,12,Copernicus_DSM_COG_30_N17_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+1552,17.5,17.5,15,20,15,20,land,17,17,Copernicus_DSM_COG_30_N17_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+1553,17.5,22.5,15,20,20,25,land,17,22,Copernicus_DSM_COG_30_N17_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1554,17.5,27.5,15,20,25,30,land,17,27,Copernicus_DSM_COG_30_N17_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1555,17.5,32.5,15,20,30,35,land,17,32,Copernicus_DSM_COG_30_N17_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1556,17.5,37.5,15,20,35,40,land,17,37,Copernicus_DSM_COG_30_N17_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1557,17.5,42.5,15,20,40,45,land,17,42,Copernicus_DSM_COG_30_N17_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+1558,17.5,47.5,15,20,45,50,land,17,47,Copernicus_DSM_COG_30_N17_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+1559,17.5,52.5,15,20,50,55,land,17,52,Copernicus_DSM_COG_30_N17_00_E052_00_DEM,Listed by provider,Not downloaded,Other regions
+1564,17.5,77.5,15,20,75,80,land,17,77,Copernicus_DSM_COG_30_N17_00_E077_00_DEM,Listed by provider,Not downloaded,Other regions
+1565,17.5,82.5,15,20,80,85,land,17,82,Copernicus_DSM_COG_30_N17_00_E082_00_DEM,Listed by provider,Not downloaded,Other regions
+1568,17.5,97.5,15,20,95,100,land,17,97,Copernicus_DSM_COG_30_N17_00_E097_00_DEM,Listed by provider,Not downloaded,Other regions
+1569,17.5,102.5,15,20,100,105,land,17,102,Copernicus_DSM_COG_30_N17_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+1600,22.5,-102.5,20,25,-105,-100,land,22,-103,Copernicus_DSM_COG_30_N22_00_W103_00_DEM,Listed by provider,Not downloaded,Other regions
+1618,22.5,-12.5,20,25,-15,-10,land,22,-13,Copernicus_DSM_COG_30_N22_00_W013_00_DEM,Listed by provider,Not downloaded,Other regions
+1619,22.5,-7.5,20,25,-10,-5,land,22,-8,Copernicus_DSM_COG_30_N22_00_W008_00_DEM,Listed by provider,Not downloaded,Other regions
+1620,22.5,-2.5,20,25,-5,0,land,22,-3,Copernicus_DSM_COG_30_N22_00_W003_00_DEM,Listed by provider,Not downloaded,Other regions
+1621,22.5,2.5,20,25,0,5,land,22,2,Copernicus_DSM_COG_30_N22_00_E002_00_DEM,Listed by provider,Not downloaded,Other regions
+1622,22.5,7.5,20,25,5,10,land,22,7,Copernicus_DSM_COG_30_N22_00_E007_00_DEM,Listed by provider,Not downloaded,Other regions
+1623,22.5,12.5,20,25,10,15,land,22,12,Copernicus_DSM_COG_30_N22_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+1624,22.5,17.5,20,25,15,20,land,22,17,Copernicus_DSM_COG_30_N22_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+1625,22.5,22.5,20,25,20,25,land,22,22,Copernicus_DSM_COG_30_N22_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1626,22.5,27.5,20,25,25,30,land,22,27,Copernicus_DSM_COG_30_N22_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1627,22.5,32.5,20,25,30,35,land,22,32,Copernicus_DSM_COG_30_N22_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1629,22.5,42.5,20,25,40,45,land,22,42,Copernicus_DSM_COG_30_N22_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+1630,22.5,47.5,20,25,45,50,land,22,47,Copernicus_DSM_COG_30_N22_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+1631,22.5,52.5,20,25,50,55,land,22,52,Copernicus_DSM_COG_30_N22_00_E052_00_DEM,Listed by provider,Not downloaded,Other regions
+1632,22.5,57.5,20,25,55,60,land,22,57,Copernicus_DSM_COG_30_N22_00_E057_00_DEM,Listed by provider,Not downloaded,Other regions
+1635,22.5,72.5,20,25,70,75,land,22,72,Copernicus_DSM_COG_30_N22_00_E072_00_DEM,Listed by provider,Not downloaded,Other regions
+1636,22.5,77.5,20,25,75,80,land,22,77,Copernicus_DSM_COG_30_N22_00_E077_00_DEM,Listed by provider,Not downloaded,Other regions
+1637,22.5,82.5,20,25,80,85,land,22,82,Copernicus_DSM_COG_30_N22_00_E082_00_DEM,Listed by provider,Not downloaded,Other regions
+1638,22.5,87.5,20,25,85,90,land,22,87,Copernicus_DSM_COG_30_N22_00_E087_00_DEM,Listed by provider,Not downloaded,Other regions
+1639,22.5,92.5,20,25,90,95,land,22,92,Copernicus_DSM_COG_30_N22_00_E092_00_DEM,Listed by provider,Not downloaded,Other regions
+1640,22.5,97.5,20,25,95,100,land,22,97,Copernicus_DSM_COG_30_N22_00_E097_00_DEM,Listed by provider,Not downloaded,Other regions
+1641,22.5,102.5,20,25,100,105,land,22,102,Copernicus_DSM_COG_30_N22_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+1642,22.5,107.5,20,25,105,110,land,22,107,Copernicus_DSM_COG_30_N22_00_E107_00_DEM,Listed by provider,Not downloaded,Other regions
+1643,22.5,112.5,20,25,110,115,land,22,112,Copernicus_DSM_COG_30_N22_00_E112_00_DEM,Listed by provider,Not downloaded,Other regions
+1670,27.5,-112.5,25,30,-115,-110,land,27,-113,Copernicus_DSM_COG_30_N27_00_W113_00_DEM,Listed by provider,Already downloaded,Other regions
+1671,27.5,-107.5,25,30,-110,-105,land,27,-108,Copernicus_DSM_COG_30_N27_00_W108_00_DEM,Listed by provider,Not downloaded,Other regions
+1672,27.5,-102.5,25,30,-105,-100,land,27,-103,Copernicus_DSM_COG_30_N27_00_W103_00_DEM,Listed by provider,Not downloaded,Other regions
+1673,27.5,-97.5,25,30,-100,-95,land,27,-98,Copernicus_DSM_COG_30_N27_00_W098_00_DEM,Listed by provider,Not downloaded,Other regions
+1676,27.5,-82.5,25,30,-85,-80,land,27,-83,Copernicus_DSM_COG_30_N27_00_W083_00_DEM,Listed by provider,Not downloaded,Other regions
+1690,27.5,-12.5,25,30,-15,-10,land,27,-13,Copernicus_DSM_COG_30_N27_00_W013_00_DEM,Listed by provider,Not downloaded,Other regions
+1691,27.5,-7.5,25,30,-10,-5,land,27,-8,Copernicus_DSM_COG_30_N27_00_W008_00_DEM,Listed by provider,Not downloaded,Other regions
+1692,27.5,-2.5,25,30,-5,0,land,27,-3,Copernicus_DSM_COG_30_N27_00_W003_00_DEM,Listed by provider,Not downloaded,Other regions
+1693,27.5,2.5,25,30,0,5,land,27,2,Copernicus_DSM_COG_30_N27_00_E002_00_DEM,Listed by provider,Not downloaded,Other regions
+1694,27.5,7.5,25,30,5,10,land,27,7,Copernicus_DSM_COG_30_N27_00_E007_00_DEM,Listed by provider,Not downloaded,Other regions
+1695,27.5,12.5,25,30,10,15,land,27,12,Copernicus_DSM_COG_30_N27_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+1696,27.5,17.5,25,30,15,20,land,27,17,Copernicus_DSM_COG_30_N27_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+1697,27.5,22.5,25,30,20,25,land,27,22,Copernicus_DSM_COG_30_N27_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1698,27.5,27.5,25,30,25,30,land,27,27,Copernicus_DSM_COG_30_N27_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1699,27.5,32.5,25,30,30,35,land,27,32,Copernicus_DSM_COG_30_N27_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1700,27.5,37.5,25,30,35,40,land,27,37,Copernicus_DSM_COG_30_N27_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1701,27.5,42.5,25,30,40,45,land,27,42,Copernicus_DSM_COG_30_N27_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+1702,27.5,47.5,25,30,45,50,land,27,47,Copernicus_DSM_COG_30_N27_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+1704,27.5,57.5,25,30,55,60,land,27,57,Copernicus_DSM_COG_30_N27_00_E057_00_DEM,Listed by provider,Not downloaded,Other regions
+1705,27.5,62.5,25,30,60,65,land,27,62,Copernicus_DSM_COG_30_N27_00_E062_00_DEM,Listed by provider,Not downloaded,Other regions
+1706,27.5,67.5,25,30,65,70,land,27,67,Copernicus_DSM_COG_30_N27_00_E067_00_DEM,Listed by provider,Not downloaded,Other regions
+1707,27.5,72.5,25,30,70,75,land,27,72,Copernicus_DSM_COG_30_N27_00_E072_00_DEM,Listed by provider,Not downloaded,Other regions
+1708,27.5,77.5,25,30,75,80,land,27,77,Copernicus_DSM_COG_30_N27_00_E077_00_DEM,Listed by provider,Not downloaded,Other regions
+1709,27.5,82.5,25,30,80,85,land,27,82,Copernicus_DSM_COG_30_N27_00_E082_00_DEM,Listed by provider,Not downloaded,Other regions
+1710,27.5,87.5,25,30,85,90,land,27,87,Copernicus_DSM_COG_30_N27_00_E087_00_DEM,Listed by provider,Not downloaded,Other regions
+1711,27.5,92.5,25,30,90,95,land,27,92,Copernicus_DSM_COG_30_N27_00_E092_00_DEM,Listed by provider,Not downloaded,Other regions
+1712,27.5,97.5,25,30,95,100,land,27,97,Copernicus_DSM_COG_30_N27_00_E097_00_DEM,Listed by provider,Not downloaded,Other regions
+1713,27.5,102.5,25,30,100,105,land,27,102,Copernicus_DSM_COG_30_N27_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+1714,27.5,107.5,25,30,105,110,land,27,107,Copernicus_DSM_COG_30_N27_00_E107_00_DEM,Listed by provider,Not downloaded,Other regions
+1715,27.5,112.5,25,30,110,115,land,27,112,Copernicus_DSM_COG_30_N27_00_E112_00_DEM,Listed by provider,Not downloaded,Other regions
+1716,27.5,117.5,25,30,115,120,land,27,117,Copernicus_DSM_COG_30_N27_00_E117_00_DEM,Listed by provider,Not downloaded,Other regions
+1742,32.5,-112.5,30,35,-115,-110,land,32,-113,Copernicus_DSM_COG_30_N32_00_W113_00_DEM,Listed by provider,Not downloaded,Other regions
+1743,32.5,-107.5,30,35,-110,-105,land,32,-108,Copernicus_DSM_COG_30_N32_00_W108_00_DEM,Listed by provider,Not downloaded,Other regions
+1744,32.5,-102.5,30,35,-105,-100,land,32,-103,Copernicus_DSM_COG_30_N32_00_W103_00_DEM,Listed by provider,Not downloaded,Other regions
+1745,32.5,-97.5,30,35,-100,-95,land,32,-98,Copernicus_DSM_COG_30_N32_00_W098_00_DEM,Listed by provider,Not downloaded,Other regions
+1746,32.5,-92.5,30,35,-95,-90,land,32,-93,Copernicus_DSM_COG_30_N32_00_W093_00_DEM,Listed by provider,Not downloaded,Other regions
+1747,32.5,-87.5,30,35,-90,-85,land,32,-88,Copernicus_DSM_COG_30_N32_00_W088_00_DEM,Listed by provider,Not downloaded,Other regions
+1748,32.5,-82.5,30,35,-85,-80,land,32,-83,Copernicus_DSM_COG_30_N32_00_W083_00_DEM,Listed by provider,Not downloaded,Other regions
+1763,32.5,-7.5,30,35,-10,-5,land,32,-8,Copernicus_DSM_COG_30_N32_00_W008_00_DEM,Listed by provider,Not downloaded,Other regions
+1764,32.5,-2.5,30,35,-5,0,land,32,-3,Copernicus_DSM_COG_30_N32_00_W003_00_DEM,Listed by provider,Not downloaded,Other regions
+1765,32.5,2.5,30,35,0,5,land,32,2,Copernicus_DSM_COG_30_N32_00_E002_00_DEM,Listed by provider,Not downloaded,Other regions
+1766,32.5,7.5,30,35,5,10,land,32,7,Copernicus_DSM_COG_30_N32_00_E007_00_DEM,Listed by provider,Not downloaded,Other regions
+1767,32.5,12.5,30,35,10,15,land,32,12,Copernicus_DSM_COG_30_N32_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+1769,32.5,22.5,30,35,20,25,land,32,22,Copernicus_DSM_COG_30_N32_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1772,32.5,37.5,30,35,35,40,land,32,37,Copernicus_DSM_COG_30_N32_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1773,32.5,42.5,30,35,40,45,land,32,42,Copernicus_DSM_COG_30_N32_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+1774,32.5,47.5,30,35,45,50,land,32,47,Copernicus_DSM_COG_30_N32_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+1775,32.5,52.5,30,35,50,55,land,32,52,Copernicus_DSM_COG_30_N32_00_E052_00_DEM,Listed by provider,Not downloaded,Other regions
+1776,32.5,57.5,30,35,55,60,land,32,57,Copernicus_DSM_COG_30_N32_00_E057_00_DEM,Listed by provider,Not downloaded,Other regions
+1777,32.5,62.5,30,35,60,65,land,32,62,Copernicus_DSM_COG_30_N32_00_E062_00_DEM,Listed by provider,Not downloaded,Other regions
+1778,32.5,67.5,30,35,65,70,land,32,67,Copernicus_DSM_COG_30_N32_00_E067_00_DEM,Listed by provider,Not downloaded,Other regions
+1779,32.5,72.5,30,35,70,75,land,32,72,Copernicus_DSM_COG_30_N32_00_E072_00_DEM,Listed by provider,Not downloaded,Other regions
+1780,32.5,77.5,30,35,75,80,land,32,77,Copernicus_DSM_COG_30_N32_00_E077_00_DEM,Listed by provider,Not downloaded,Other regions
+1781,32.5,82.5,30,35,80,85,land,32,82,Copernicus_DSM_COG_30_N32_00_E082_00_DEM,Listed by provider,Not downloaded,Other regions
+1782,32.5,87.5,30,35,85,90,land,32,87,Copernicus_DSM_COG_30_N32_00_E087_00_DEM,Listed by provider,Not downloaded,Other regions
+1783,32.5,92.5,30,35,90,95,land,32,92,Copernicus_DSM_COG_30_N32_00_E092_00_DEM,Listed by provider,Not downloaded,Other regions
+1784,32.5,97.5,30,35,95,100,land,32,97,Copernicus_DSM_COG_30_N32_00_E097_00_DEM,Listed by provider,Not downloaded,Other regions
+1785,32.5,102.5,30,35,100,105,land,32,102,Copernicus_DSM_COG_30_N32_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+1786,32.5,107.5,30,35,105,110,land,32,107,Copernicus_DSM_COG_30_N32_00_E107_00_DEM,Listed by provider,Not downloaded,Other regions
+1787,32.5,112.5,30,35,110,115,land,32,112,Copernicus_DSM_COG_30_N32_00_E112_00_DEM,Listed by provider,Not downloaded,Other regions
+1788,32.5,117.5,30,35,115,120,land,32,117,Copernicus_DSM_COG_30_N32_00_E117_00_DEM,Listed by provider,Not downloaded,Other regions
+1812,37.5,-122.5,35,40,-125,-120,land,37,-123,Copernicus_DSM_COG_30_N37_00_W123_00_DEM,Listed by provider,Not downloaded,Other regions
+1813,37.5,-117.5,35,40,-120,-115,land,37,-118,Copernicus_DSM_COG_30_N37_00_W118_00_DEM,Listed by provider,Not downloaded,Other regions
+1814,37.5,-112.5,35,40,-115,-110,land,37,-113,Copernicus_DSM_COG_30_N37_00_W113_00_DEM,Listed by provider,Not downloaded,Other regions
+1815,37.5,-107.5,35,40,-110,-105,land,37,-108,Copernicus_DSM_COG_30_N37_00_W108_00_DEM,Listed by provider,Not downloaded,Other regions
+1816,37.5,-102.5,35,40,-105,-100,land,37,-103,Copernicus_DSM_COG_30_N37_00_W103_00_DEM,Listed by provider,Not downloaded,Other regions
+1817,37.5,-97.5,35,40,-100,-95,land,37,-98,Copernicus_DSM_COG_30_N37_00_W098_00_DEM,Listed by provider,Not downloaded,Other regions
+1818,37.5,-92.5,35,40,-95,-90,land,37,-93,Copernicus_DSM_COG_30_N37_00_W093_00_DEM,Listed by provider,Not downloaded,Other regions
+1819,37.5,-87.5,35,40,-90,-85,land,37,-88,Copernicus_DSM_COG_30_N37_00_W088_00_DEM,Listed by provider,Not downloaded,Other regions
+1820,37.5,-82.5,35,40,-85,-80,land,37,-83,Copernicus_DSM_COG_30_N37_00_W083_00_DEM,Listed by provider,Not downloaded,Other regions
+1821,37.5,-77.5,35,40,-80,-75,land,37,-78,Copernicus_DSM_COG_30_N37_00_W078_00_DEM,Listed by provider,Not downloaded,Other regions
+1835,37.5,-7.5,35,40,-10,-5,land,37,-8,Copernicus_DSM_COG_30_N37_00_W008_00_DEM,Listed by provider,Not downloaded,Other regions
+1836,37.5,-2.5,35,40,-5,0,land,37,-3,Copernicus_DSM_COG_30_N37_00_W003_00_DEM,Listed by provider,Not downloaded,Other regions
+1841,37.5,22.5,35,40,20,25,land,37,22,Copernicus_DSM_COG_30_N37_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1842,37.5,27.5,35,40,25,30,land,37,27,Copernicus_DSM_COG_30_N37_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1843,37.5,32.5,35,40,30,35,land,37,32,Copernicus_DSM_COG_30_N37_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1844,37.5,37.5,35,40,35,40,land,37,37,Copernicus_DSM_COG_30_N37_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1845,37.5,42.5,35,40,40,45,land,37,42,Copernicus_DSM_COG_30_N37_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+1846,37.5,47.5,35,40,45,50,land,37,47,Copernicus_DSM_COG_30_N37_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+1848,37.5,57.5,35,40,55,60,land,37,57,Copernicus_DSM_COG_30_N37_00_E057_00_DEM,Listed by provider,Not downloaded,Other regions
+1849,37.5,62.5,35,40,60,65,land,37,62,Copernicus_DSM_COG_30_N37_00_E062_00_DEM,Listed by provider,Not downloaded,Other regions
+1850,37.5,67.5,35,40,65,70,land,37,67,Copernicus_DSM_COG_30_N37_00_E067_00_DEM,Listed by provider,Not downloaded,Other regions
+1851,37.5,72.5,35,40,70,75,land,37,72,Copernicus_DSM_COG_30_N37_00_E072_00_DEM,Listed by provider,Not downloaded,Other regions
+1852,37.5,77.5,35,40,75,80,land,37,77,Copernicus_DSM_COG_30_N37_00_E077_00_DEM,Listed by provider,Not downloaded,Other regions
+1853,37.5,82.5,35,40,80,85,land,37,82,Copernicus_DSM_COG_30_N37_00_E082_00_DEM,Listed by provider,Not downloaded,Other regions
+1854,37.5,87.5,35,40,85,90,land,37,87,Copernicus_DSM_COG_30_N37_00_E087_00_DEM,Listed by provider,Not downloaded,Other regions
+1855,37.5,92.5,35,40,90,95,land,37,92,Copernicus_DSM_COG_30_N37_00_E092_00_DEM,Listed by provider,Not downloaded,Other regions
+1856,37.5,97.5,35,40,95,100,land,37,97,Copernicus_DSM_COG_30_N37_00_E097_00_DEM,Listed by provider,Not downloaded,Other regions
+1857,37.5,102.5,35,40,100,105,land,37,102,Copernicus_DSM_COG_30_N37_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+1858,37.5,107.5,35,40,105,110,land,37,107,Copernicus_DSM_COG_30_N37_00_E107_00_DEM,Listed by provider,Not downloaded,Other regions
+1859,37.5,112.5,35,40,110,115,land,37,112,Copernicus_DSM_COG_30_N37_00_E112_00_DEM,Listed by provider,Not downloaded,Other regions
+1860,37.5,117.5,35,40,115,120,land,37,117,Copernicus_DSM_COG_30_N37_00_E117_00_DEM,Listed by provider,Not downloaded,Other regions
+1862,37.5,127.5,35,40,125,130,land,37,127,Copernicus_DSM_COG_30_N37_00_E127_00_DEM,Listed by provider,Not downloaded,Other regions
+1884,42.5,-122.5,40,45,-125,-120,land,42,-123,Copernicus_DSM_COG_30_N42_00_W123_00_DEM,Listed by provider,Not downloaded,Other regions
+1885,42.5,-117.5,40,45,-120,-115,land,42,-118,Copernicus_DSM_COG_30_N42_00_W118_00_DEM,Listed by provider,Not downloaded,Other regions
+1886,42.5,-112.5,40,45,-115,-110,land,42,-113,Copernicus_DSM_COG_30_N42_00_W113_00_DEM,Listed by provider,Not downloaded,Other regions
+1887,42.5,-107.5,40,45,-110,-105,land,42,-108,Copernicus_DSM_COG_30_N42_00_W108_00_DEM,Listed by provider,Not downloaded,Other regions
+1888,42.5,-102.5,40,45,-105,-100,land,42,-103,Copernicus_DSM_COG_30_N42_00_W103_00_DEM,Listed by provider,Not downloaded,Other regions
+1889,42.5,-97.5,40,45,-100,-95,land,42,-98,Copernicus_DSM_COG_30_N42_00_W098_00_DEM,Listed by provider,Not downloaded,Other regions
+1890,42.5,-92.5,40,45,-95,-90,land,42,-93,Copernicus_DSM_COG_30_N42_00_W093_00_DEM,Listed by provider,Not downloaded,Other regions
+1891,42.5,-87.5,40,45,-90,-85,land,42,-88,Copernicus_DSM_COG_30_N42_00_W088_00_DEM,Listed by provider,Not downloaded,Other regions
+1892,42.5,-82.5,40,45,-85,-80,land,42,-83,Copernicus_DSM_COG_30_N42_00_W083_00_DEM,Listed by provider,Not downloaded,Other regions
+1893,42.5,-77.5,40,45,-80,-75,land,42,-78,Copernicus_DSM_COG_30_N42_00_W078_00_DEM,Listed by provider,Not downloaded,Other regions
+1894,42.5,-72.5,40,45,-75,-70,land,42,-73,Copernicus_DSM_COG_30_N42_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+1907,42.5,-7.5,40,45,-10,-5,land,42,-8,Copernicus_DSM_COG_30_N42_00_W008_00_DEM,Listed by provider,Not downloaded,Other regions
+1908,42.5,-2.5,40,45,-5,0,land,42,-3,Copernicus_DSM_COG_30_N42_00_W003_00_DEM,Listed by provider,Not downloaded,Other regions
+1909,42.5,2.5,40,45,0,5,land,42,2,Copernicus_DSM_COG_30_N42_00_E002_00_DEM,Listed by provider,Not downloaded,Other regions
+1911,42.5,12.5,40,45,10,15,land,42,12,Copernicus_DSM_COG_30_N42_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+1913,42.5,22.5,40,45,20,25,land,42,22,Copernicus_DSM_COG_30_N42_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1917,42.5,42.5,40,45,40,45,land,42,42,Copernicus_DSM_COG_30_N42_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+1918,42.5,47.5,40,45,45,50,land,42,47,Copernicus_DSM_COG_30_N42_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+1920,42.5,57.5,40,45,55,60,land,42,57,Copernicus_DSM_COG_30_N42_00_E057_00_DEM,Listed by provider,Not downloaded,Other regions
+1921,42.5,62.5,40,45,60,65,land,42,62,Copernicus_DSM_COG_30_N42_00_E062_00_DEM,Listed by provider,Not downloaded,Other regions
+1922,42.5,67.5,40,45,65,70,land,42,67,Copernicus_DSM_COG_30_N42_00_E067_00_DEM,Listed by provider,Not downloaded,Other regions
+1923,42.5,72.5,40,45,70,75,land,42,72,Copernicus_DSM_COG_30_N42_00_E072_00_DEM,Listed by provider,Not downloaded,Other regions
+1924,42.5,77.5,40,45,75,80,land,42,77,Copernicus_DSM_COG_30_N42_00_E077_00_DEM,Listed by provider,Not downloaded,Other regions
+1925,42.5,82.5,40,45,80,85,land,42,82,Copernicus_DSM_COG_30_N42_00_E082_00_DEM,Listed by provider,Not downloaded,Other regions
+1926,42.5,87.5,40,45,85,90,land,42,87,Copernicus_DSM_COG_30_N42_00_E087_00_DEM,Listed by provider,Not downloaded,Other regions
+1927,42.5,92.5,40,45,90,95,land,42,92,Copernicus_DSM_COG_30_N42_00_E092_00_DEM,Listed by provider,Not downloaded,Other regions
+1928,42.5,97.5,40,45,95,100,land,42,97,Copernicus_DSM_COG_30_N42_00_E097_00_DEM,Listed by provider,Not downloaded,Other regions
+1929,42.5,102.5,40,45,100,105,land,42,102,Copernicus_DSM_COG_30_N42_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+1930,42.5,107.5,40,45,105,110,land,42,107,Copernicus_DSM_COG_30_N42_00_E107_00_DEM,Listed by provider,Not downloaded,Other regions
+1931,42.5,112.5,40,45,110,115,land,42,112,Copernicus_DSM_COG_30_N42_00_E112_00_DEM,Listed by provider,Not downloaded,Other regions
+1932,42.5,117.5,40,45,115,120,land,42,117,Copernicus_DSM_COG_30_N42_00_E117_00_DEM,Listed by provider,Not downloaded,Other regions
+1933,42.5,122.5,40,45,120,125,land,42,122,Copernicus_DSM_COG_30_N42_00_E122_00_DEM,Listed by provider,Not downloaded,Other regions
+1934,42.5,127.5,40,45,125,130,land,42,127,Copernicus_DSM_COG_30_N42_00_E127_00_DEM,Listed by provider,Not downloaded,Other regions
+1937,42.5,142.5,40,45,140,145,land,42,142,Copernicus_DSM_COG_30_N42_00_E142_00_DEM,Listed by provider,Not downloaded,Other regions
+1957,47.5,-117.5,45,50,-120,-115,land,47,-118,Copernicus_DSM_COG_30_N47_00_W118_00_DEM,Listed by provider,Not downloaded,Other regions
+1958,47.5,-112.5,45,50,-115,-110,land,47,-113,Copernicus_DSM_COG_30_N47_00_W113_00_DEM,Listed by provider,Not downloaded,Other regions
+1959,47.5,-107.5,45,50,-110,-105,land,47,-108,Copernicus_DSM_COG_30_N47_00_W108_00_DEM,Listed by provider,Not downloaded,Other regions
+1960,47.5,-102.5,45,50,-105,-100,land,47,-103,Copernicus_DSM_COG_30_N47_00_W103_00_DEM,Listed by provider,Not downloaded,Other regions
+1961,47.5,-97.5,45,50,-100,-95,land,47,-98,Copernicus_DSM_COG_30_N47_00_W098_00_DEM,Listed by provider,Not downloaded,Other regions
+1962,47.5,-92.5,45,50,-95,-90,land,47,-93,Copernicus_DSM_COG_30_N47_00_W093_00_DEM,Listed by provider,Not downloaded,Other regions
+1963,47.5,-87.5,45,50,-90,-85,land,47,-88,Copernicus_DSM_COG_30_N47_00_W088_00_DEM,Listed by provider,Not downloaded,Other regions
+1964,47.5,-82.5,45,50,-85,-80,land,47,-83,Copernicus_DSM_COG_30_N47_00_W083_00_DEM,Listed by provider,Already downloaded,Other regions
+1965,47.5,-77.5,45,50,-80,-75,land,47,-78,Copernicus_DSM_COG_30_N47_00_W078_00_DEM,Listed by provider,Not downloaded,Other regions
+1966,47.5,-72.5,45,50,-75,-70,land,47,-73,Copernicus_DSM_COG_30_N47_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+1967,47.5,-67.5,45,50,-70,-65,land,47,-68,Copernicus_DSM_COG_30_N47_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+1981,47.5,2.5,45,50,0,5,land,47,2,Copernicus_DSM_COG_30_N47_00_E002_00_DEM,Listed by provider,Not downloaded,Other regions
+1982,47.5,7.5,45,50,5,10,land,47,7,Copernicus_DSM_COG_30_N47_00_E007_00_DEM,Listed by provider,Not downloaded,Other regions
+1983,47.5,12.5,45,50,10,15,land,47,12,Copernicus_DSM_COG_30_N47_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+1984,47.5,17.5,45,50,15,20,land,47,17,Copernicus_DSM_COG_30_N47_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+1985,47.5,22.5,45,50,20,25,land,47,22,Copernicus_DSM_COG_30_N47_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+1986,47.5,27.5,45,50,25,30,land,47,27,Copernicus_DSM_COG_30_N47_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+1987,47.5,32.5,45,50,30,35,land,47,32,Copernicus_DSM_COG_30_N47_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+1988,47.5,37.5,45,50,35,40,land,47,37,Copernicus_DSM_COG_30_N47_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+1989,47.5,42.5,45,50,40,45,land,47,42,Copernicus_DSM_COG_30_N47_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+1990,47.5,47.5,45,50,45,50,land,47,47,Copernicus_DSM_COG_30_N47_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+1991,47.5,52.5,45,50,50,55,land,47,52,Copernicus_DSM_COG_30_N47_00_E052_00_DEM,Listed by provider,Not downloaded,Other regions
+1992,47.5,57.5,45,50,55,60,land,47,57,Copernicus_DSM_COG_30_N47_00_E057_00_DEM,Listed by provider,Not downloaded,Other regions
+1993,47.5,62.5,45,50,60,65,land,47,62,Copernicus_DSM_COG_30_N47_00_E062_00_DEM,Listed by provider,Not downloaded,Other regions
+1994,47.5,67.5,45,50,65,70,land,47,67,Copernicus_DSM_COG_30_N47_00_E067_00_DEM,Listed by provider,Not downloaded,Other regions
+1995,47.5,72.5,45,50,70,75,land,47,72,Copernicus_DSM_COG_30_N47_00_E072_00_DEM,Listed by provider,Not downloaded,Other regions
+1996,47.5,77.5,45,50,75,80,land,47,77,Copernicus_DSM_COG_30_N47_00_E077_00_DEM,Listed by provider,Not downloaded,Other regions
+1997,47.5,82.5,45,50,80,85,land,47,82,Copernicus_DSM_COG_30_N47_00_E082_00_DEM,Listed by provider,Not downloaded,Other regions
+1998,47.5,87.5,45,50,85,90,land,47,87,Copernicus_DSM_COG_30_N47_00_E087_00_DEM,Listed by provider,Not downloaded,Other regions
+1999,47.5,92.5,45,50,90,95,land,47,92,Copernicus_DSM_COG_30_N47_00_E092_00_DEM,Listed by provider,Not downloaded,Other regions
+2000,47.5,97.5,45,50,95,100,land,47,97,Copernicus_DSM_COG_30_N47_00_E097_00_DEM,Listed by provider,Not downloaded,Other regions
+2001,47.5,102.5,45,50,100,105,land,47,102,Copernicus_DSM_COG_30_N47_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+2002,47.5,107.5,45,50,105,110,land,47,107,Copernicus_DSM_COG_30_N47_00_E107_00_DEM,Listed by provider,Not downloaded,Other regions
+2003,47.5,112.5,45,50,110,115,land,47,112,Copernicus_DSM_COG_30_N47_00_E112_00_DEM,Listed by provider,Not downloaded,Other regions
+2004,47.5,117.5,45,50,115,120,land,47,117,Copernicus_DSM_COG_30_N47_00_E117_00_DEM,Listed by provider,Not downloaded,Other regions
+2005,47.5,122.5,45,50,120,125,land,47,122,Copernicus_DSM_COG_30_N47_00_E122_00_DEM,Listed by provider,Not downloaded,Other regions
+2006,47.5,127.5,45,50,125,130,land,47,127,Copernicus_DSM_COG_30_N47_00_E127_00_DEM,Listed by provider,Not downloaded,Other regions
+2007,47.5,132.5,45,50,130,135,land,47,132,Copernicus_DSM_COG_30_N47_00_E132_00_DEM,Listed by provider,Not downloaded,Other regions
+2008,47.5,137.5,45,50,135,140,land,47,137,Copernicus_DSM_COG_30_N47_00_E137_00_DEM,Listed by provider,Not downloaded,Other regions
+2009,47.5,142.5,45,50,140,145,land,47,142,Copernicus_DSM_COG_30_N47_00_E142_00_DEM,Listed by provider,Not downloaded,Other regions
+2027,52.5,-127.5,50,55,-130,-125,land,52,-128,Copernicus_DSM_COG_30_N52_00_W128_00_DEM,Listed by provider,Not downloaded,Other regions
+2028,52.5,-122.5,50,55,-125,-120,land,52,-123,Copernicus_DSM_COG_30_N52_00_W123_00_DEM,Listed by provider,Not downloaded,Other regions
+2029,52.5,-117.5,50,55,-120,-115,land,52,-118,Copernicus_DSM_COG_30_N52_00_W118_00_DEM,Listed by provider,Not downloaded,Other regions
+2030,52.5,-112.5,50,55,-115,-110,land,52,-113,Copernicus_DSM_COG_30_N52_00_W113_00_DEM,Listed by provider,Not downloaded,Other regions
+2031,52.5,-107.5,50,55,-110,-105,land,52,-108,Copernicus_DSM_COG_30_N52_00_W108_00_DEM,Listed by provider,Not downloaded,Other regions
+2032,52.5,-102.5,50,55,-105,-100,land,52,-103,Copernicus_DSM_COG_30_N52_00_W103_00_DEM,Listed by provider,Not downloaded,Other regions
+2033,52.5,-97.5,50,55,-100,-95,land,52,-98,Copernicus_DSM_COG_30_N52_00_W098_00_DEM,Listed by provider,Not downloaded,Other regions
+2034,52.5,-92.5,50,55,-95,-90,land,52,-93,Copernicus_DSM_COG_30_N52_00_W093_00_DEM,Listed by provider,Not downloaded,Other regions
+2035,52.5,-87.5,50,55,-90,-85,land,52,-88,Copernicus_DSM_COG_30_N52_00_W088_00_DEM,Listed by provider,Not downloaded,Other regions
+2036,52.5,-82.5,50,55,-85,-80,land,52,-83,Copernicus_DSM_COG_30_N52_00_W083_00_DEM,Listed by provider,Not downloaded,Other regions
+2037,52.5,-77.5,50,55,-80,-75,land,52,-78,Copernicus_DSM_COG_30_N52_00_W078_00_DEM,Listed by provider,Not downloaded,Other regions
+2038,52.5,-72.5,50,55,-75,-70,land,52,-73,Copernicus_DSM_COG_30_N52_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+2039,52.5,-67.5,50,55,-70,-65,land,52,-68,Copernicus_DSM_COG_30_N52_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+2040,52.5,-62.5,50,55,-65,-60,land,52,-63,Copernicus_DSM_COG_30_N52_00_W063_00_DEM,Listed by provider,Not downloaded,Other regions
+2041,52.5,-57.5,50,55,-60,-55,land,52,-58,Copernicus_DSM_COG_30_N52_00_W058_00_DEM,Listed by provider,Not downloaded,Other regions
+2051,52.5,-7.5,50,55,-10,-5,land,52,-8,Copernicus_DSM_COG_30_N52_00_W008_00_DEM,Listed by provider,Not downloaded,Other regions
+2052,52.5,-2.5,50,55,-5,0,land,52,-3,Copernicus_DSM_COG_30_N52_00_W003_00_DEM,Listed by provider,Not downloaded,Other regions
+2054,52.5,7.5,50,55,5,10,land,52,7,Copernicus_DSM_COG_30_N52_00_E007_00_DEM,Listed by provider,Not downloaded,Other regions
+2055,52.5,12.5,50,55,10,15,land,52,12,Copernicus_DSM_COG_30_N52_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+2056,52.5,17.5,50,55,15,20,land,52,17,Copernicus_DSM_COG_30_N52_00_E017_00_DEM,Listed by provider,Not downloaded,Other regions
+2057,52.5,22.5,50,55,20,25,land,52,22,Copernicus_DSM_COG_30_N52_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+2058,52.5,27.5,50,55,25,30,land,52,27,Copernicus_DSM_COG_30_N52_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+2059,52.5,32.5,50,55,30,35,land,52,32,Copernicus_DSM_COG_30_N52_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+2060,52.5,37.5,50,55,35,40,land,52,37,Copernicus_DSM_COG_30_N52_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+2061,52.5,42.5,50,55,40,45,land,52,42,Copernicus_DSM_COG_30_N52_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+2062,52.5,47.5,50,55,45,50,land,52,47,Copernicus_DSM_COG_30_N52_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+2063,52.5,52.5,50,55,50,55,land,52,52,Copernicus_DSM_COG_30_N52_00_E052_00_DEM,Listed by provider,Not downloaded,Other regions
+2064,52.5,57.5,50,55,55,60,land,52,57,Copernicus_DSM_COG_30_N52_00_E057_00_DEM,Listed by provider,Not downloaded,Other regions
+2065,52.5,62.5,50,55,60,65,land,52,62,Copernicus_DSM_COG_30_N52_00_E062_00_DEM,Listed by provider,Not downloaded,Other regions
+2066,52.5,67.5,50,55,65,70,land,52,67,Copernicus_DSM_COG_30_N52_00_E067_00_DEM,Listed by provider,Not downloaded,Other regions
+2067,52.5,72.5,50,55,70,75,land,52,72,Copernicus_DSM_COG_30_N52_00_E072_00_DEM,Listed by provider,Not downloaded,Other regions
+2068,52.5,77.5,50,55,75,80,land,52,77,Copernicus_DSM_COG_30_N52_00_E077_00_DEM,Listed by provider,Not downloaded,Other regions
+2069,52.5,82.5,50,55,80,85,land,52,82,Copernicus_DSM_COG_30_N52_00_E082_00_DEM,Listed by provider,Not downloaded,Other regions
+2070,52.5,87.5,50,55,85,90,land,52,87,Copernicus_DSM_COG_30_N52_00_E087_00_DEM,Listed by provider,Not downloaded,Other regions
+2071,52.5,92.5,50,55,90,95,land,52,92,Copernicus_DSM_COG_30_N52_00_E092_00_DEM,Listed by provider,Not downloaded,Other regions
+2072,52.5,97.5,50,55,95,100,land,52,97,Copernicus_DSM_COG_30_N52_00_E097_00_DEM,Listed by provider,Not downloaded,Other regions
+2073,52.5,102.5,50,55,100,105,land,52,102,Copernicus_DSM_COG_30_N52_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+2074,52.5,107.5,50,55,105,110,land,52,107,Copernicus_DSM_COG_30_N52_00_E107_00_DEM,Listed by provider,Not downloaded,Other regions
+2075,52.5,112.5,50,55,110,115,land,52,112,Copernicus_DSM_COG_30_N52_00_E112_00_DEM,Listed by provider,Not downloaded,Other regions
+2076,52.5,117.5,50,55,115,120,land,52,117,Copernicus_DSM_COG_30_N52_00_E117_00_DEM,Listed by provider,Not downloaded,Other regions
+2077,52.5,122.5,50,55,120,125,land,52,122,Copernicus_DSM_COG_30_N52_00_E122_00_DEM,Listed by provider,Not downloaded,Other regions
+2078,52.5,127.5,50,55,125,130,land,52,127,Copernicus_DSM_COG_30_N52_00_E127_00_DEM,Listed by provider,Not downloaded,Other regions
+2079,52.5,132.5,50,55,130,135,land,52,132,Copernicus_DSM_COG_30_N52_00_E132_00_DEM,Listed by provider,Not downloaded,Other regions
+2080,52.5,137.5,50,55,135,140,land,52,137,Copernicus_DSM_COG_30_N52_00_E137_00_DEM,Listed by provider,Not downloaded,Other regions
+2081,52.5,142.5,50,55,140,145,land,52,142,Copernicus_DSM_COG_30_N52_00_E142_00_DEM,Listed by provider,Not downloaded,Other regions
+2084,52.5,157.5,50,55,155,160,land,52,157,Copernicus_DSM_COG_30_N52_00_E157_00_DEM,Listed by provider,Not downloaded,Other regions
+2094,57.5,-152.5,55,60,-155,-150,land,57,-153,Copernicus_DSM_COG_30_N57_00_W153_00_DEM,Listed by provider,Not downloaded,Other regions
+2098,57.5,-132.5,55,60,-135,-130,land,57,-133,Copernicus_DSM_COG_30_N57_00_W133_00_DEM,Listed by provider,Not downloaded,Other regions
+2099,57.5,-127.5,55,60,-130,-125,land,57,-128,Copernicus_DSM_COG_30_N57_00_W128_00_DEM,Listed by provider,Not downloaded,Other regions
+2100,57.5,-122.5,55,60,-125,-120,land,57,-123,Copernicus_DSM_COG_30_N57_00_W123_00_DEM,Listed by provider,Not downloaded,Other regions
+2101,57.5,-117.5,55,60,-120,-115,land,57,-118,Copernicus_DSM_COG_30_N57_00_W118_00_DEM,Listed by provider,Not downloaded,Other regions
+2102,57.5,-112.5,55,60,-115,-110,land,57,-113,Copernicus_DSM_COG_30_N57_00_W113_00_DEM,Listed by provider,Not downloaded,Other regions
+2103,57.5,-107.5,55,60,-110,-105,land,57,-108,Copernicus_DSM_COG_30_N57_00_W108_00_DEM,Listed by provider,Not downloaded,Other regions
+2104,57.5,-102.5,55,60,-105,-100,land,57,-103,Copernicus_DSM_COG_30_N57_00_W103_00_DEM,Listed by provider,Not downloaded,Other regions
+2105,57.5,-97.5,55,60,-100,-95,land,57,-98,Copernicus_DSM_COG_30_N57_00_W098_00_DEM,Listed by provider,Not downloaded,Other regions
+2106,57.5,-92.5,55,60,-95,-90,land,57,-93,Copernicus_DSM_COG_30_N57_00_W093_00_DEM,Listed by provider,Not downloaded,Other regions
+2110,57.5,-72.5,55,60,-75,-70,land,57,-73,Copernicus_DSM_COG_30_N57_00_W073_00_DEM,Listed by provider,Not downloaded,Other regions
+2111,57.5,-67.5,55,60,-70,-65,land,57,-68,Copernicus_DSM_COG_30_N57_00_W068_00_DEM,Listed by provider,Not downloaded,Other regions
+2124,57.5,-2.5,55,60,-5,0,land,57,-3,Copernicus_DSM_COG_30_N57_00_W003_00_DEM,Listed by provider,Not downloaded,Other regions
+2127,57.5,12.5,55,60,10,15,land,57,12,Copernicus_DSM_COG_30_N57_00_E012_00_DEM,Listed by provider,Not downloaded,Other regions
+2129,57.5,22.5,55,60,20,25,land,57,22,Copernicus_DSM_COG_30_N57_00_E022_00_DEM,Listed by provider,Not downloaded,Other regions
+2130,57.5,27.5,55,60,25,30,land,57,27,Copernicus_DSM_COG_30_N57_00_E027_00_DEM,Listed by provider,Not downloaded,Other regions
+2131,57.5,32.5,55,60,30,35,land,57,32,Copernicus_DSM_COG_30_N57_00_E032_00_DEM,Listed by provider,Not downloaded,Other regions
+2132,57.5,37.5,55,60,35,40,land,57,37,Copernicus_DSM_COG_30_N57_00_E037_00_DEM,Listed by provider,Not downloaded,Other regions
+2133,57.5,42.5,55,60,40,45,land,57,42,Copernicus_DSM_COG_30_N57_00_E042_00_DEM,Listed by provider,Not downloaded,Other regions
+2134,57.5,47.5,55,60,45,50,land,57,47,Copernicus_DSM_COG_30_N57_00_E047_00_DEM,Listed by provider,Not downloaded,Other regions
+2135,57.5,52.5,55,60,50,55,land,57,52,Copernicus_DSM_COG_30_N57_00_E052_00_DEM,Listed by provider,Not downloaded,Other regions
+2136,57.5,57.5,55,60,55,60,land,57,57,Copernicus_DSM_COG_30_N57_00_E057_00_DEM,Listed by provider,Not downloaded,Other regions
+2137,57.5,62.5,55,60,60,65,land,57,62,Copernicus_DSM_COG_30_N57_00_E062_00_DEM,Listed by provider,Not downloaded,Other regions
+2138,57.5,67.5,55,60,65,70,land,57,67,Copernicus_DSM_COG_30_N57_00_E067_00_DEM,Listed by provider,Not downloaded,Other regions
+2139,57.5,72.5,55,60,70,75,land,57,72,Copernicus_DSM_COG_30_N57_00_E072_00_DEM,Listed by provider,Not downloaded,Other regions
+2140,57.5,77.5,55,60,75,80,land,57,77,Copernicus_DSM_COG_30_N57_00_E077_00_DEM,Listed by provider,Not downloaded,Other regions
+2141,57.5,82.5,55,60,80,85,land,57,82,Copernicus_DSM_COG_30_N57_00_E082_00_DEM,Listed by provider,Not downloaded,Other regions
+2142,57.5,87.5,55,60,85,90,land,57,87,Copernicus_DSM_COG_30_N57_00_E087_00_DEM,Listed by provider,Not downloaded,Other regions
+2143,57.5,92.5,55,60,90,95,land,57,92,Copernicus_DSM_COG_30_N57_00_E092_00_DEM,Listed by provider,Not downloaded,Other regions
+2144,57.5,97.5,55,60,95,100,land,57,97,Copernicus_DSM_COG_30_N57_00_E097_00_DEM,Listed by provider,Not downloaded,Other regions
+2145,57.5,102.5,55,60,100,105,land,57,102,Copernicus_DSM_COG_30_N57_00_E102_00_DEM,Listed by provider,Not downloaded,Other regions
+2146,57.5,107.5,55,60,105,110,land,57,107,Copernicus_DSM_COG_30_N57_00_E107_00_DEM,Listed by provider,Not downloaded,Other regions
+2147,57.5,112.5,55,60,110,115,land,57,112,Copernicus_DSM_COG_30_N57_00_E112_00_DEM,Listed by provider,Not downloaded,Other regions
+2148,57.5,117.5,55,60,115,120,land,57,117,Copernicus_DSM_COG_30_N57_00_E117_00_DEM,Listed by provider,Not downloaded,Other regions
+2149,57.5,122.5,55,60,120,125,land,57,122,Copernicus_DSM_COG_30_N57_00_E122_00_DEM,Listed by provider,Not downloaded,Other regions
+2150,57.5,127.5,55,60,125,130,land,57,127,Copernicus_DSM_COG_30_N57_00_E127_00_DEM,Listed by provider,Not downloaded,Other regions
+2151,57.5,132.5,55,60,130,135,land,57,132,Copernicus_DSM_COG_30_N57_00_E132_00_DEM,Listed by provider,Not downloaded,Other regions
+2152,57.5,137.5,55,60,135,140,land,57,137,Copernicus_DSM_COG_30_N57_00_E137_00_DEM,Listed by provider,Not downloaded,Other regions
+2156,57.5,157.5,55,60,155,160,land,57,157,Copernicus_DSM_COG_30_N57_00_E157_00_DEM,Listed by provider,Not downloaded,Other regions
+2157,57.5,162.5,55,60,160,165,land,57,162,Copernicus_DSM_COG_30_N57_00_E162_00_DEM,Listed by provider,Not downloaded,Other regions
+2164,62.5,-162.5,60,65,-165,-160,land,62,-163,Copernicus_DSM_COG_30_N62_00_W163_00_DEM,Listed by provider,Not downloaded,Arctic
+2165,62.5,-157.5,60,65,-160,-155,land,62,-158,Copernicus_DSM_COG_30_N62_00_W158_00_DEM,Listed by provider,Not downloaded,Arctic
+2166,62.5,-152.5,60,65,-155,-150,land,62,-153,Copernicus_DSM_COG_30_N62_00_W153_00_DEM,Listed by provider,Not downloaded,Arctic
+2167,62.5,-147.5,60,65,-150,-145,land,62,-148,Copernicus_DSM_COG_30_N62_00_W148_00_DEM,Listed by provider,Not downloaded,Arctic
+2168,62.5,-142.5,60,65,-145,-140,land,62,-143,Copernicus_DSM_COG_30_N62_00_W143_00_DEM,Listed by provider,Not downloaded,Arctic
+2169,62.5,-137.5,60,65,-140,-135,land,62,-138,Copernicus_DSM_COG_30_N62_00_W138_00_DEM,Listed by provider,Not downloaded,Arctic
+2170,62.5,-132.5,60,65,-135,-130,land,62,-133,Copernicus_DSM_COG_30_N62_00_W133_00_DEM,Listed by provider,Not downloaded,Arctic
+2171,62.5,-127.5,60,65,-130,-125,land,62,-128,Copernicus_DSM_COG_30_N62_00_W128_00_DEM,Listed by provider,Not downloaded,Arctic
+2172,62.5,-122.5,60,65,-125,-120,land,62,-123,Copernicus_DSM_COG_30_N62_00_W123_00_DEM,Listed by provider,Not downloaded,Arctic
+2173,62.5,-117.5,60,65,-120,-115,land,62,-118,Copernicus_DSM_COG_30_N62_00_W118_00_DEM,Listed by provider,Not downloaded,Arctic
+2174,62.5,-112.5,60,65,-115,-110,land,62,-113,Copernicus_DSM_COG_30_N62_00_W113_00_DEM,Listed by provider,Not downloaded,Arctic
+2175,62.5,-107.5,60,65,-110,-105,land,62,-108,Copernicus_DSM_COG_30_N62_00_W108_00_DEM,Listed by provider,Not downloaded,Arctic
+2176,62.5,-102.5,60,65,-105,-100,land,62,-103,Copernicus_DSM_COG_30_N62_00_W103_00_DEM,Listed by provider,Not downloaded,Arctic
+2177,62.5,-97.5,60,65,-100,-95,land,62,-98,Copernicus_DSM_COG_30_N62_00_W098_00_DEM,Listed by provider,Not downloaded,Arctic
+2180,62.5,-82.5,60,65,-85,-80,land,62,-83,Copernicus_DSM_COG_30_N62_00_W083_00_DEM,Listed by provider,Not downloaded,Arctic
+2181,62.5,-77.5,60,65,-80,-75,land,62,-78,Copernicus_DSM_COG_30_N62_00_W078_00_DEM,Listed by provider,Not downloaded,Arctic
+2183,62.5,-67.5,60,65,-70,-65,land,62,-68,Copernicus_DSM_COG_30_N62_00_W068_00_DEM,Listed by provider,Not downloaded,Arctic
+2187,62.5,-47.5,60,65,-50,-45,land,62,-48,Copernicus_DSM_COG_30_N62_00_W048_00_DEM,Listed by provider,Not downloaded,Arctic
+2188,62.5,-42.5,60,65,-45,-40,land,62,-43,Copernicus_DSM_COG_30_N62_00_W043_00_DEM,Listed by provider,Not downloaded,Arctic
+2198,62.5,7.5,60,65,5,10,land,62,7,Copernicus_DSM_COG_30_N62_00_E007_00_DEM,Listed by provider,Not downloaded,Arctic
+2199,62.5,12.5,60,65,10,15,land,62,12,Copernicus_DSM_COG_30_N62_00_E012_00_DEM,Listed by provider,Not downloaded,Arctic
+2200,62.5,17.5,60,65,15,20,land,62,17,Copernicus_DSM_COG_30_N62_00_E017_00_DEM,Listed by provider,Not downloaded,Arctic
+2201,62.5,22.5,60,65,20,25,land,62,22,Copernicus_DSM_COG_30_N62_00_E022_00_DEM,Listed by provider,Not downloaded,Arctic
+2202,62.5,27.5,60,65,25,30,land,62,27,Copernicus_DSM_COG_30_N62_00_E027_00_DEM,Listed by provider,Not downloaded,Arctic
+2203,62.5,32.5,60,65,30,35,land,62,32,Copernicus_DSM_COG_30_N62_00_E032_00_DEM,Listed by provider,Not downloaded,Arctic
+2204,62.5,37.5,60,65,35,40,land,62,37,Copernicus_DSM_COG_30_N62_00_E037_00_DEM,Listed by provider,Not downloaded,Arctic
+2205,62.5,42.5,60,65,40,45,land,62,42,Copernicus_DSM_COG_30_N62_00_E042_00_DEM,Listed by provider,Not downloaded,Arctic
+2206,62.5,47.5,60,65,45,50,land,62,47,Copernicus_DSM_COG_30_N62_00_E047_00_DEM,Listed by provider,Not downloaded,Arctic
+2207,62.5,52.5,60,65,50,55,land,62,52,Copernicus_DSM_COG_30_N62_00_E052_00_DEM,Listed by provider,Not downloaded,Arctic
+2208,62.5,57.5,60,65,55,60,land,62,57,Copernicus_DSM_COG_30_N62_00_E057_00_DEM,Listed by provider,Not downloaded,Arctic
+2209,62.5,62.5,60,65,60,65,land,62,62,Copernicus_DSM_COG_30_N62_00_E062_00_DEM,Listed by provider,Not downloaded,Arctic
+2210,62.5,67.5,60,65,65,70,land,62,67,Copernicus_DSM_COG_30_N62_00_E067_00_DEM,Listed by provider,Not downloaded,Arctic
+2211,62.5,72.5,60,65,70,75,land,62,72,Copernicus_DSM_COG_30_N62_00_E072_00_DEM,Listed by provider,Not downloaded,Arctic
+2212,62.5,77.5,60,65,75,80,land,62,77,Copernicus_DSM_COG_30_N62_00_E077_00_DEM,Listed by provider,Not downloaded,Arctic
+2213,62.5,82.5,60,65,80,85,land,62,82,Copernicus_DSM_COG_30_N62_00_E082_00_DEM,Listed by provider,Not downloaded,Arctic
+2214,62.5,87.5,60,65,85,90,land,62,87,Copernicus_DSM_COG_30_N62_00_E087_00_DEM,Listed by provider,Not downloaded,Arctic
+2215,62.5,92.5,60,65,90,95,land,62,92,Copernicus_DSM_COG_30_N62_00_E092_00_DEM,Listed by provider,Not downloaded,Arctic
+2216,62.5,97.5,60,65,95,100,land,62,97,Copernicus_DSM_COG_30_N62_00_E097_00_DEM,Listed by provider,Not downloaded,Arctic
+2217,62.5,102.5,60,65,100,105,land,62,102,Copernicus_DSM_COG_30_N62_00_E102_00_DEM,Listed by provider,Not downloaded,Arctic
+2218,62.5,107.5,60,65,105,110,land,62,107,Copernicus_DSM_COG_30_N62_00_E107_00_DEM,Listed by provider,Not downloaded,Arctic
+2219,62.5,112.5,60,65,110,115,land,62,112,Copernicus_DSM_COG_30_N62_00_E112_00_DEM,Listed by provider,Not downloaded,Arctic
+2220,62.5,117.5,60,65,115,120,land,62,117,Copernicus_DSM_COG_30_N62_00_E117_00_DEM,Listed by provider,Not downloaded,Arctic
+2221,62.5,122.5,60,65,120,125,land,62,122,Copernicus_DSM_COG_30_N62_00_E122_00_DEM,Listed by provider,Not downloaded,Arctic
+2222,62.5,127.5,60,65,125,130,land,62,127,Copernicus_DSM_COG_30_N62_00_E127_00_DEM,Listed by provider,Not downloaded,Arctic
+2223,62.5,132.5,60,65,130,135,land,62,132,Copernicus_DSM_COG_30_N62_00_E132_00_DEM,Listed by provider,Not downloaded,Arctic
+2224,62.5,137.5,60,65,135,140,land,62,137,Copernicus_DSM_COG_30_N62_00_E137_00_DEM,Listed by provider,Not downloaded,Arctic
+2225,62.5,142.5,60,65,140,145,land,62,142,Copernicus_DSM_COG_30_N62_00_E142_00_DEM,Listed by provider,Not downloaded,Arctic
+2226,62.5,147.5,60,65,145,150,land,62,147,Copernicus_DSM_COG_30_N62_00_E147_00_DEM,Listed by provider,Not downloaded,Arctic
+2227,62.5,152.5,60,65,150,155,land,62,152,Copernicus_DSM_COG_30_N62_00_E152_00_DEM,Listed by provider,Not downloaded,Arctic
+2228,62.5,157.5,60,65,155,160,land,62,157,Copernicus_DSM_COG_30_N62_00_E157_00_DEM,Listed by provider,Not downloaded,Arctic
+2229,62.5,162.5,60,65,160,165,land,62,162,Copernicus_DSM_COG_30_N62_00_E162_00_DEM,Listed by provider,Not downloaded,Arctic
+2230,62.5,167.5,60,65,165,170,land,62,167,Copernicus_DSM_COG_30_N62_00_E167_00_DEM,Listed by provider,Not downloaded,Arctic
+2231,62.5,172.5,60,65,170,175,land,62,172,Copernicus_DSM_COG_30_N62_00_E172_00_DEM,Listed by provider,Not downloaded,Arctic
+2233,67.5,-177.5,65,70,-180,-175,land,67,-178,Copernicus_DSM_COG_30_N67_00_W178_00_DEM,Listed by provider,Not downloaded,Arctic
+2236,67.5,-162.5,65,70,-165,-160,land,67,-163,Copernicus_DSM_COG_30_N67_00_W163_00_DEM,Listed by provider,Not downloaded,Arctic
+2237,67.5,-157.5,65,70,-160,-155,land,67,-158,Copernicus_DSM_COG_30_N67_00_W158_00_DEM,Listed by provider,Not downloaded,Arctic
+2238,67.5,-152.5,65,70,-155,-150,land,67,-153,Copernicus_DSM_COG_30_N67_00_W153_00_DEM,Listed by provider,Not downloaded,Arctic
+2239,67.5,-147.5,65,70,-150,-145,land,67,-148,Copernicus_DSM_COG_30_N67_00_W148_00_DEM,Listed by provider,Already downloaded,Arctic
+2240,67.5,-142.5,65,70,-145,-140,land,67,-143,Copernicus_DSM_COG_30_N67_00_W143_00_DEM,Listed by provider,Not downloaded,Arctic
+2241,67.5,-137.5,65,70,-140,-135,land,67,-138,Copernicus_DSM_COG_30_N67_00_W138_00_DEM,Listed by provider,Not downloaded,Arctic
+2242,67.5,-132.5,65,70,-135,-130,land,67,-133,Copernicus_DSM_COG_30_N67_00_W133_00_DEM,Listed by provider,Not downloaded,Arctic
+2243,67.5,-127.5,65,70,-130,-125,land,67,-128,Copernicus_DSM_COG_30_N67_00_W128_00_DEM,Listed by provider,Not downloaded,Arctic
+2244,67.5,-122.5,65,70,-125,-120,land,67,-123,Copernicus_DSM_COG_30_N67_00_W123_00_DEM,Listed by provider,Not downloaded,Arctic
+2245,67.5,-117.5,65,70,-120,-115,land,67,-118,Copernicus_DSM_COG_30_N67_00_W118_00_DEM,Listed by provider,Not downloaded,Arctic
+2246,67.5,-112.5,65,70,-115,-110,land,67,-113,Copernicus_DSM_COG_30_N67_00_W113_00_DEM,Listed by provider,Not downloaded,Arctic
+2247,67.5,-107.5,65,70,-110,-105,land,67,-108,Copernicus_DSM_COG_30_N67_00_W108_00_DEM,Listed by provider,Not downloaded,Arctic
+2248,67.5,-102.5,65,70,-105,-100,land,67,-103,Copernicus_DSM_COG_30_N67_00_W103_00_DEM,Listed by provider,Not downloaded,Arctic
+2249,67.5,-97.5,65,70,-100,-95,land,67,-98,Copernicus_DSM_COG_30_N67_00_W098_00_DEM,Listed by provider,Not downloaded,Arctic
+2250,67.5,-92.5,65,70,-95,-90,land,67,-93,Copernicus_DSM_COG_30_N67_00_W093_00_DEM,Listed by provider,Not downloaded,Arctic
+2252,67.5,-82.5,65,70,-85,-80,land,67,-83,Copernicus_DSM_COG_30_N67_00_W083_00_DEM,Listed by provider,Not downloaded,Arctic
+2254,67.5,-72.5,65,70,-75,-70,land,67,-73,Copernicus_DSM_COG_30_N67_00_W073_00_DEM,Listed by provider,Not downloaded,Arctic
+2255,67.5,-67.5,65,70,-70,-65,land,67,-68,Copernicus_DSM_COG_30_N67_00_W068_00_DEM,Listed by provider,Not downloaded,Arctic
+2258,67.5,-52.5,65,70,-55,-50,land,67,-53,Copernicus_DSM_COG_30_N67_00_W053_00_DEM,Listed by provider,Not downloaded,Arctic
+2259,67.5,-47.5,65,70,-50,-45,land,67,-48,Copernicus_DSM_COG_30_N67_00_W048_00_DEM,Listed by provider,Not downloaded,Arctic
+2260,67.5,-42.5,65,70,-45,-40,land,67,-43,Copernicus_DSM_COG_30_N67_00_W043_00_DEM,Listed by provider,Not downloaded,Arctic
+2261,67.5,-37.5,65,70,-40,-35,land,67,-38,Copernicus_DSM_COG_30_N67_00_W038_00_DEM,Listed by provider,Not downloaded,Arctic
+2272,67.5,17.5,65,70,15,20,land,67,17,Copernicus_DSM_COG_30_N67_00_E017_00_DEM,Listed by provider,Already downloaded,Arctic
+2273,67.5,22.5,65,70,20,25,land,67,22,Copernicus_DSM_COG_30_N67_00_E022_00_DEM,Listed by provider,Not downloaded,Arctic
+2274,67.5,27.5,65,70,25,30,land,67,27,Copernicus_DSM_COG_30_N67_00_E027_00_DEM,Listed by provider,Not downloaded,Arctic
+2275,67.5,32.5,65,70,30,35,land,67,32,Copernicus_DSM_COG_30_N67_00_E032_00_DEM,Listed by provider,Not downloaded,Arctic
+2276,67.5,37.5,65,70,35,40,land,67,37,Copernicus_DSM_COG_30_N67_00_E037_00_DEM,Listed by provider,Not downloaded,Arctic
+2279,67.5,52.5,65,70,50,55,land,67,52,Copernicus_DSM_COG_30_N67_00_E052_00_DEM,Listed by provider,Not downloaded,Arctic
+2280,67.5,57.5,65,70,55,60,land,67,57,Copernicus_DSM_COG_30_N67_00_E057_00_DEM,Listed by provider,Not downloaded,Arctic
+2281,67.5,62.5,65,70,60,65,land,67,62,Copernicus_DSM_COG_30_N67_00_E062_00_DEM,Listed by provider,Not downloaded,Arctic
+2282,67.5,67.5,65,70,65,70,land,67,67,Copernicus_DSM_COG_30_N67_00_E067_00_DEM,Listed by provider,Not downloaded,Arctic
+2284,67.5,77.5,65,70,75,80,land,67,77,Copernicus_DSM_COG_30_N67_00_E077_00_DEM,Listed by provider,Not downloaded,Arctic
+2285,67.5,82.5,65,70,80,85,land,67,82,Copernicus_DSM_COG_30_N67_00_E082_00_DEM,Listed by provider,Not downloaded,Arctic
+2286,67.5,87.5,65,70,85,90,land,67,87,Copernicus_DSM_COG_30_N67_00_E087_00_DEM,Listed by provider,Not downloaded,Arctic
+2287,67.5,92.5,65,70,90,95,land,67,92,Copernicus_DSM_COG_30_N67_00_E092_00_DEM,Listed by provider,Not downloaded,Arctic
+2288,67.5,97.5,65,70,95,100,land,67,97,Copernicus_DSM_COG_30_N67_00_E097_00_DEM,Listed by provider,Not downloaded,Arctic
+2289,67.5,102.5,65,70,100,105,land,67,102,Copernicus_DSM_COG_30_N67_00_E102_00_DEM,Listed by provider,Not downloaded,Arctic
+2290,67.5,107.5,65,70,105,110,land,67,107,Copernicus_DSM_COG_30_N67_00_E107_00_DEM,Listed by provider,Not downloaded,Arctic
+2291,67.5,112.5,65,70,110,115,land,67,112,Copernicus_DSM_COG_30_N67_00_E112_00_DEM,Listed by provider,Not downloaded,Arctic
+2292,67.5,117.5,65,70,115,120,land,67,117,Copernicus_DSM_COG_30_N67_00_E117_00_DEM,Listed by provider,Not downloaded,Arctic
+2293,67.5,122.5,65,70,120,125,land,67,122,Copernicus_DSM_COG_30_N67_00_E122_00_DEM,Listed by provider,Not downloaded,Arctic
+2294,67.5,127.5,65,70,125,130,land,67,127,Copernicus_DSM_COG_30_N67_00_E127_00_DEM,Listed by provider,Not downloaded,Arctic
+2295,67.5,132.5,65,70,130,135,land,67,132,Copernicus_DSM_COG_30_N67_00_E132_00_DEM,Listed by provider,Not downloaded,Arctic
+2296,67.5,137.5,65,70,135,140,land,67,137,Copernicus_DSM_COG_30_N67_00_E137_00_DEM,Listed by provider,Not downloaded,Arctic
+2297,67.5,142.5,65,70,140,145,land,67,142,Copernicus_DSM_COG_30_N67_00_E142_00_DEM,Listed by provider,Not downloaded,Arctic
+2298,67.5,147.5,65,70,145,150,land,67,147,Copernicus_DSM_COG_30_N67_00_E147_00_DEM,Listed by provider,Not downloaded,Arctic
+2299,67.5,152.5,65,70,150,155,land,67,152,Copernicus_DSM_COG_30_N67_00_E152_00_DEM,Listed by provider,Not downloaded,Arctic
+2300,67.5,157.5,65,70,155,160,land,67,157,Copernicus_DSM_COG_30_N67_00_E157_00_DEM,Listed by provider,Not downloaded,Arctic
+2301,67.5,162.5,65,70,160,165,land,67,162,Copernicus_DSM_COG_30_N67_00_E162_00_DEM,Listed by provider,Not downloaded,Arctic
+2302,67.5,167.5,65,70,165,170,land,67,167,Copernicus_DSM_COG_30_N67_00_E167_00_DEM,Listed by provider,Not downloaded,Arctic
+2303,67.5,172.5,65,70,170,175,land,67,172,Copernicus_DSM_COG_30_N67_00_E172_00_DEM,Listed by provider,Not downloaded,Arctic
+2304,67.5,177.5,65,70,175,180,land,67,177,Copernicus_DSM_COG_30_N67_00_E177_00_DEM,Listed by provider,Not downloaded,Arctic
+2316,72.5,-122.5,70,75,-125,-120,land,72,-123,Copernicus_DSM_COG_30_N72_00_W123_00_DEM,Listed by provider,Not downloaded,Arctic
+2317,72.5,-117.5,70,75,-120,-115,land,72,-118,Copernicus_DSM_COG_30_N72_00_W118_00_DEM,Listed by provider,Not downloaded,Arctic
+2318,72.5,-112.5,70,75,-115,-110,land,72,-113,Copernicus_DSM_COG_30_N72_00_W113_00_DEM,Listed by provider,Not downloaded,Arctic
+2319,72.5,-107.5,70,75,-110,-105,land,72,-108,Copernicus_DSM_COG_30_N72_00_W108_00_DEM,Listed by provider,Not downloaded,Arctic
+2321,72.5,-97.5,70,75,-100,-95,land,72,-98,Copernicus_DSM_COG_30_N72_00_W098_00_DEM,Listed by provider,Not downloaded,Arctic
+2323,72.5,-87.5,70,75,-90,-85,land,72,-88,Copernicus_DSM_COG_30_N72_00_W088_00_DEM,Listed by provider,Not downloaded,Arctic
+2324,72.5,-82.5,70,75,-85,-80,land,72,-83,Copernicus_DSM_COG_30_N72_00_W083_00_DEM,Listed by provider,Not downloaded,Arctic
+2325,72.5,-77.5,70,75,-80,-75,land,72,-78,Copernicus_DSM_COG_30_N72_00_W078_00_DEM,Listed by provider,Not downloaded,Arctic
+2330,72.5,-52.5,70,75,-55,-50,land,72,-53,Copernicus_DSM_COG_30_N72_00_W053_00_DEM,Listed by provider,Not downloaded,Arctic
+2331,72.5,-47.5,70,75,-50,-45,land,72,-48,Copernicus_DSM_COG_30_N72_00_W048_00_DEM,Listed by provider,Not downloaded,Arctic
+2332,72.5,-42.5,70,75,-45,-40,land,72,-43,Copernicus_DSM_COG_30_N72_00_W043_00_DEM,Listed by provider,Not downloaded,Arctic
+2333,72.5,-37.5,70,75,-40,-35,land,72,-38,Copernicus_DSM_COG_30_N72_00_W038_00_DEM,Listed by provider,Not downloaded,Arctic
+2334,72.5,-32.5,70,75,-35,-30,land,72,-33,Copernicus_DSM_COG_30_N72_00_W033_00_DEM,Listed by provider,Not downloaded,Arctic
+2335,72.5,-27.5,70,75,-30,-25,land,72,-28,Copernicus_DSM_COG_30_N72_00_W028_00_DEM,Listed by provider,Not downloaded,Arctic
+2336,72.5,-22.5,70,75,-25,-20,land,72,-23,Copernicus_DSM_COG_30_N72_00_W023_00_DEM,Listed by provider,Not downloaded,Arctic
+2355,72.5,72.5,70,75,70,75,land,72,72,Copernicus_DSM_COG_30_N72_00_E072_00_DEM,Listed by provider,Not downloaded,Arctic
+2356,72.5,77.5,70,75,75,80,land,72,77,Copernicus_DSM_COG_30_N72_00_E077_00_DEM,Listed by provider,Not downloaded,Arctic
+2357,72.5,82.5,70,75,80,85,land,72,82,Copernicus_DSM_COG_30_N72_00_E082_00_DEM,Listed by provider,Not downloaded,Arctic
+2358,72.5,87.5,70,75,85,90,land,72,87,Copernicus_DSM_COG_30_N72_00_E087_00_DEM,Listed by provider,Not downloaded,Arctic
+2359,72.5,92.5,70,75,90,95,land,72,92,Copernicus_DSM_COG_30_N72_00_E092_00_DEM,Listed by provider,Not downloaded,Arctic
+2360,72.5,97.5,70,75,95,100,land,72,97,Copernicus_DSM_COG_30_N72_00_E097_00_DEM,Listed by provider,Not downloaded,Arctic
+2361,72.5,102.5,70,75,100,105,land,72,102,Copernicus_DSM_COG_30_N72_00_E102_00_DEM,Listed by provider,Not downloaded,Arctic
+2362,72.5,107.5,70,75,105,110,land,72,107,Copernicus_DSM_COG_30_N72_00_E107_00_DEM,Listed by provider,Not downloaded,Arctic
+2363,72.5,112.5,70,75,110,115,land,72,112,Copernicus_DSM_COG_30_N72_00_E112_00_DEM,Listed by provider,Not downloaded,Arctic
+2364,72.5,117.5,70,75,115,120,land,72,117,Copernicus_DSM_COG_30_N72_00_E117_00_DEM,Listed by provider,Not downloaded,Arctic
+2365,72.5,122.5,70,75,120,125,land,72,122,Copernicus_DSM_COG_30_N72_00_E122_00_DEM,Listed by provider,Not downloaded,Arctic
+2366,72.5,127.5,70,75,125,130,land,72,127,Copernicus_DSM_COG_30_N72_00_E127_00_DEM,Listed by provider,Not downloaded,Arctic
+2369,72.5,142.5,70,75,140,145,land,72,142,Copernicus_DSM_COG_30_N72_00_E142_00_DEM,Listed by provider,Not downloaded,Arctic
+2390,77.5,-112.5,75,80,-115,-110,land,77,-113,Copernicus_DSM_COG_30_N77_00_W113_00_DEM,Listed by provider,Not downloaded,Arctic
+2395,77.5,-87.5,75,80,-90,-85,land,77,-88,Copernicus_DSM_COG_30_N77_00_W088_00_DEM,Listed by provider,Not downloaded,Arctic
+2396,77.5,-82.5,75,80,-85,-80,land,77,-83,Copernicus_DSM_COG_30_N77_00_W083_00_DEM,Listed by provider,Not downloaded,Arctic
+2400,77.5,-62.5,75,80,-65,-60,land,77,-63,Copernicus_DSM_COG_30_N77_00_W063_00_DEM,Listed by provider,Not downloaded,Arctic
+2401,77.5,-57.5,75,80,-60,-55,land,77,-58,Copernicus_DSM_COG_30_N77_00_W058_00_DEM,Listed by provider,Not downloaded,Arctic
+2402,77.5,-52.5,75,80,-55,-50,land,77,-53,Copernicus_DSM_COG_30_N77_00_W053_00_DEM,Listed by provider,Not downloaded,Arctic
+2403,77.5,-47.5,75,80,-50,-45,land,77,-48,Copernicus_DSM_COG_30_N77_00_W048_00_DEM,Listed by provider,Not downloaded,Arctic
+2404,77.5,-42.5,75,80,-45,-40,land,77,-43,Copernicus_DSM_COG_30_N77_00_W043_00_DEM,Listed by provider,Not downloaded,Arctic
+2405,77.5,-37.5,75,80,-40,-35,land,77,-38,Copernicus_DSM_COG_30_N77_00_W038_00_DEM,Listed by provider,Not downloaded,Arctic
+2406,77.5,-32.5,75,80,-35,-30,land,77,-33,Copernicus_DSM_COG_30_N77_00_W033_00_DEM,Listed by provider,Not downloaded,Arctic
+2407,77.5,-27.5,75,80,-30,-25,land,77,-28,Copernicus_DSM_COG_30_N77_00_W028_00_DEM,Listed by provider,Not downloaded,Arctic
+2408,77.5,-22.5,75,80,-25,-20,land,77,-23,Copernicus_DSM_COG_30_N77_00_W023_00_DEM,Listed by provider,Not downloaded,Arctic
+2416,77.5,17.5,75,80,15,20,land,77,17,Copernicus_DSM_COG_30_N77_00_E017_00_DEM,Listed by provider,Not downloaded,Arctic
+2468,82.5,-82.5,80,85,-85,-80,land,82,-83,Copernicus_DSM_COG_30_N82_00_W083_00_DEM,Listed by provider,Not downloaded,Arctic
+2469,82.5,-77.5,80,85,-80,-75,land,82,-78,Copernicus_DSM_COG_30_N82_00_W078_00_DEM,Listed by provider,Not downloaded,Arctic
+2470,82.5,-72.5,80,85,-75,-70,land,82,-73,Copernicus_DSM_COG_30_N82_00_W073_00_DEM,Listed by provider,Not downloaded,Arctic
+2471,82.5,-67.5,80,85,-70,-65,land,82,-68,Copernicus_DSM_COG_30_N82_00_W068_00_DEM,Listed by provider,Not downloaded,Arctic
+2472,82.5,-62.5,80,85,-65,-60,land,82,-63,Copernicus_DSM_COG_30_N82_00_W063_00_DEM,Listed by provider,Not downloaded,Arctic
+2476,82.5,-42.5,80,85,-45,-40,land,82,-43,Copernicus_DSM_COG_30_N82_00_W043_00_DEM,Listed by provider,Not downloaded,Arctic
+2477,82.5,-37.5,80,85,-40,-35,land,82,-38,Copernicus_DSM_COG_30_N82_00_W038_00_DEM,Listed by provider,Not downloaded,Arctic
+2478,82.5,-32.5,80,85,-35,-30,land,82,-33,Copernicus_DSM_COG_30_N82_00_W033_00_DEM,Listed by provider,Not downloaded,Arctic
+2479,82.5,-27.5,80,85,-30,-25,land,82,-28,Copernicus_DSM_COG_30_N82_00_W028_00_DEM,Listed by provider,Not downloaded,Arctic
+2480,82.5,-22.5,80,85,-25,-20,land,82,-23,Copernicus_DSM_COG_30_N82_00_W023_00_DEM,Listed by provider,Not downloaded,Arctic

@@ -1,0 +1,7 @@
+location,latitude,longitude,elevation_m,slope_mean_degrees,slope_median_degrees,slope_90th_percentile_degrees,slope_max_degrees,roughness_mean_m,roughness_median_m,roughness_90th_percentile_m,roughness_max_m
+Western Australia,-32.5,117.5,270.03,0.69,0.38,1.66,5.64,0.86,0.52,2.0,5.06
+Queensland Australia,-22.5,147.5,308.77,0.73,0.63,1.3,7.17,0.95,0.84,1.62,8.82
+Baja California Mexico,27.5,-112.5,521.06,6.36,3.58,17.22,43.66,8.38,4.84,22.77,59.69
+Ontario Canada,47.5,-82.5,438.69,3.53,3.01,6.92,18.49,4.1,3.78,7.12,16.72
+Brooks Range Alaska,67.5,-147.5,933.4,6.78,5.16,14.86,32.68,8.13,6.21,17.94,42.94
+Scandinavia,67.5,17.5,1127.63,13.52,10.33,30.89,64.65,18.04,12.73,41.94,151.85

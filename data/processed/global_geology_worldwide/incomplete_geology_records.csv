@@ -1,0 +1,434 @@
+cell_id,latitude,longitude,map_id,name,lithology,top_age_ma,bottom_age_ma,geological_period,source_id
+79,-82.5,-147.5,3185487,Phanerozoic ice,,,,,154
+80,-82.5,-142.5,3185487,Phanerozoic ice,,,,,154
+81,-82.5,-137.5,3185487,Phanerozoic ice,,,,,154
+82,-82.5,-132.5,3185487,Phanerozoic ice,,,,,154
+83,-82.5,-127.5,3185487,Phanerozoic ice,,,,,154
+84,-82.5,-122.5,3185487,Phanerozoic ice,,,,,154
+85,-82.5,-117.5,3185487,Phanerozoic ice,,,,,154
+86,-82.5,-112.5,3185487,Phanerozoic ice,,,,,154
+87,-82.5,-107.5,3185487,Phanerozoic ice,,,,,154
+88,-82.5,-102.5,3185487,Phanerozoic ice,,,,,154
+89,-82.5,-97.5,3185487,Phanerozoic ice,,,,,154
+90,-82.5,-92.5,3185487,Phanerozoic ice,,,,,154
+91,-82.5,-87.5,3185487,Phanerozoic ice,,,,,154
+92,-82.5,-82.5,3185487,Phanerozoic ice,,,,,154
+93,-82.5,-77.5,3185487,Phanerozoic ice,,,,,154
+94,-82.5,-72.5,3185487,Phanerozoic ice,,,,,154
+95,-82.5,-67.5,3185487,Phanerozoic ice,,,,,154
+98,-82.5,-52.5,3185487,Phanerozoic ice,,,,,154
+99,-82.5,-47.5,3185487,Phanerozoic ice,,,,,154
+100,-82.5,-42.5,3185487,Phanerozoic ice,,,,,154
+101,-82.5,-37.5,3185487,Phanerozoic ice,,,,,154
+102,-82.5,-32.5,3185487,Phanerozoic ice,,,,,154
+103,-82.5,-27.5,3185487,Phanerozoic ice,,,,,154
+104,-82.5,-22.5,3185487,Phanerozoic ice,,,,,154
+105,-82.5,-17.5,3185487,Phanerozoic ice,,,,,154
+106,-82.5,-12.5,3185487,Phanerozoic ice,,,,,154
+107,-82.5,-7.5,3185487,Phanerozoic ice,,,,,154
+108,-82.5,-2.5,3185487,Phanerozoic ice,,,,,154
+109,-82.5,2.5,3185487,Phanerozoic ice,,,,,154
+110,-82.5,7.5,3185487,Phanerozoic ice,,,,,154
+111,-82.5,12.5,3185487,Phanerozoic ice,,,,,154
+112,-82.5,17.5,3185487,Phanerozoic ice,,,,,154
+113,-82.5,22.5,3185487,Phanerozoic ice,,,,,154
+114,-82.5,27.5,3185487,Phanerozoic ice,,,,,154
+115,-82.5,32.5,3185487,Phanerozoic ice,,,,,154
+116,-82.5,37.5,3185487,Phanerozoic ice,,,,,154
+117,-82.5,42.5,3185487,Phanerozoic ice,,,,,154
+118,-82.5,47.5,3185487,Phanerozoic ice,,,,,154
+119,-82.5,52.5,3185487,Phanerozoic ice,,,,,154
+120,-82.5,57.5,3185487,Phanerozoic ice,,,,,154
+121,-82.5,62.5,3185487,Phanerozoic ice,,,,,154
+122,-82.5,67.5,3185487,Phanerozoic ice,,,,,154
+123,-82.5,72.5,3185487,Phanerozoic ice,,,,,154
+124,-82.5,77.5,3185487,Phanerozoic ice,,,,,154
+125,-82.5,82.5,3185487,Phanerozoic ice,,,,,154
+126,-82.5,87.5,3185487,Phanerozoic ice,,,,,154
+127,-82.5,92.5,3185487,Phanerozoic ice,,,,,154
+128,-82.5,97.5,3185487,Phanerozoic ice,,,,,154
+129,-82.5,102.5,3185487,Phanerozoic ice,,,,,154
+130,-82.5,107.5,3185487,Phanerozoic ice,,,,,154
+131,-82.5,112.5,3185487,Phanerozoic ice,,,,,154
+132,-82.5,117.5,3185487,Phanerozoic ice,,,,,154
+133,-82.5,122.5,3185487,Phanerozoic ice,,,,,154
+134,-82.5,127.5,3185487,Phanerozoic ice,,,,,154
+135,-82.5,132.5,3185487,Phanerozoic ice,,,,,154
+136,-82.5,137.5,3185487,Phanerozoic ice,,,,,154
+137,-82.5,142.5,3185487,Phanerozoic ice,,,,,154
+138,-82.5,147.5,3185487,Phanerozoic ice,,,,,154
+149,-77.5,-157.5,3185487,Phanerozoic ice,,,,,154
+151,-77.5,-147.5,3185487,Phanerozoic ice,,,,,154
+153,-77.5,-137.5,3185487,Phanerozoic ice,,,,,154
+154,-77.5,-132.5,3185487,Phanerozoic ice,,,,,154
+155,-77.5,-127.5,3185487,Phanerozoic ice,,,,,154
+156,-77.5,-122.5,3185487,Phanerozoic ice,,,,,154
+158,-77.5,-112.5,3185487,Phanerozoic ice,,,,,154
+159,-77.5,-107.5,3185487,Phanerozoic ice,,,,,154
+160,-77.5,-102.5,3185487,Phanerozoic ice,,,,,154
+161,-77.5,-97.5,3185487,Phanerozoic ice,,,,,154
+162,-77.5,-92.5,3185487,Phanerozoic ice,,,,,154
+163,-77.5,-87.5,3185487,Phanerozoic ice,,,,,154
+164,-77.5,-82.5,3185487,Phanerozoic ice,,,,,154
+165,-77.5,-77.5,3185487,Phanerozoic ice,,,,,154
+174,-77.5,-32.5,3185487,Phanerozoic ice,,,,,154
+175,-77.5,-27.5,3185487,Phanerozoic ice,,,,,154
+176,-77.5,-22.5,3185487,Phanerozoic ice,,,,,154
+177,-77.5,-17.5,3185487,Phanerozoic ice,,,,,154
+178,-77.5,-12.5,3185487,Phanerozoic ice,,,,,154
+179,-77.5,-7.5,3185487,Phanerozoic ice,,,,,154
+180,-77.5,-2.5,3185487,Phanerozoic ice,,,,,154
+181,-77.5,2.5,3185487,Phanerozoic ice,,,,,154
+182,-77.5,7.5,3185487,Phanerozoic ice,,,,,154
+183,-77.5,12.5,3185487,Phanerozoic ice,,,,,154
+184,-77.5,17.5,3185487,Phanerozoic ice,,,,,154
+185,-77.5,22.5,3185487,Phanerozoic ice,,,,,154
+186,-77.5,27.5,3185487,Phanerozoic ice,,,,,154
+187,-77.5,32.5,3185487,Phanerozoic ice,,,,,154
+188,-77.5,37.5,3185487,Phanerozoic ice,,,,,154
+189,-77.5,42.5,3185487,Phanerozoic ice,,,,,154
+190,-77.5,47.5,3185487,Phanerozoic ice,,,,,154
+191,-77.5,52.5,3185487,Phanerozoic ice,,,,,154
+192,-77.5,57.5,3185487,Phanerozoic ice,,,,,154
+193,-77.5,62.5,3185487,Phanerozoic ice,,,,,154
+194,-77.5,67.5,3185487,Phanerozoic ice,,,,,154
+195,-77.5,72.5,3185487,Phanerozoic ice,,,,,154
+196,-77.5,77.5,3185487,Phanerozoic ice,,,,,154
+197,-77.5,82.5,3185487,Phanerozoic ice,,,,,154
+198,-77.5,87.5,3185487,Phanerozoic ice,,,,,154
+199,-77.5,92.5,3185487,Phanerozoic ice,,,,,154
+200,-77.5,97.5,3185487,Phanerozoic ice,,,,,154
+201,-77.5,102.5,3185487,Phanerozoic ice,,,,,154
+202,-77.5,107.5,3185487,Phanerozoic ice,,,,,154
+203,-77.5,112.5,3185487,Phanerozoic ice,,,,,154
+204,-77.5,117.5,3185487,Phanerozoic ice,,,,,154
+205,-77.5,122.5,3185487,Phanerozoic ice,,,,,154
+206,-77.5,127.5,3185487,Phanerozoic ice,,,,,154
+207,-77.5,132.5,3185487,Phanerozoic ice,,,,,154
+208,-77.5,137.5,3185487,Phanerozoic ice,,,,,154
+209,-77.5,142.5,3185487,Phanerozoic ice,,,,,154
+210,-77.5,147.5,3185487,Phanerozoic ice,,,,,154
+211,-77.5,152.5,3185487,Phanerozoic ice,,,,,154
+212,-77.5,157.5,3185487,Phanerozoic ice,,,,,154
+240,-72.5,-62.5,3185487,Phanerozoic ice,,,,,154
+260,-72.5,37.5,3185487,Phanerozoic ice,,,,,154
+261,-72.5,42.5,3185487,Phanerozoic ice,,,,,154
+262,-72.5,47.5,3185487,Phanerozoic ice,,,,,154
+263,-72.5,52.5,3185487,Phanerozoic ice,,,,,154
+264,-72.5,57.5,3185487,Phanerozoic ice,,,,,154
+265,-72.5,62.5,3185487,Phanerozoic ice,,,,,154
+267,-72.5,72.5,3185487,Phanerozoic ice,,,,,154
+268,-72.5,77.5,3185487,Phanerozoic ice,,,,,154
+269,-72.5,82.5,3185487,Phanerozoic ice,,,,,154
+270,-72.5,87.5,3185487,Phanerozoic ice,,,,,154
+271,-72.5,92.5,3185487,Phanerozoic ice,,,,,154
+272,-72.5,97.5,3185487,Phanerozoic ice,,,,,154
+273,-72.5,102.5,3185487,Phanerozoic ice,,,,,154
+274,-72.5,107.5,3185487,Phanerozoic ice,,,,,154
+275,-72.5,112.5,3185487,Phanerozoic ice,,,,,154
+276,-72.5,117.5,3185487,Phanerozoic ice,,,,,154
+277,-72.5,122.5,3185487,Phanerozoic ice,,,,,154
+278,-72.5,127.5,3185487,Phanerozoic ice,,,,,154
+279,-72.5,132.5,3185487,Phanerozoic ice,,,,,154
+280,-72.5,137.5,3185487,Phanerozoic ice,,,,,154
+281,-72.5,142.5,3185487,Phanerozoic ice,,,,,154
+282,-72.5,147.5,3185487,Phanerozoic ice,,,,,154
+283,-72.5,152.5,3185487,Phanerozoic ice,,,,,154
+284,-72.5,157.5,3185487,Phanerozoic ice,,,,,154
+285,-72.5,162.5,3185487,Phanerozoic ice,,,,,154
+311,-67.5,-67.5,3185487,Phanerozoic ice,,,,,154
+342,-67.5,87.5,3185487,Phanerozoic ice,,,,,154
+343,-67.5,92.5,3185487,Phanerozoic ice,,,,,154
+344,-67.5,97.5,3185487,Phanerozoic ice,,,,,154
+345,-67.5,102.5,3185487,Phanerozoic ice,,,,,154
+346,-67.5,107.5,3185487,Phanerozoic ice,,,,,154
+347,-67.5,112.5,3185487,Phanerozoic ice,,,,,154
+348,-67.5,117.5,3185487,Phanerozoic ice,,,,,154
+349,-67.5,122.5,3185487,Phanerozoic ice,,,,,154
+350,-67.5,127.5,3185487,Phanerozoic ice,,,,,154
+351,-67.5,132.5,3185487,Phanerozoic ice,,,,,154
+352,-67.5,137.5,3185487,Phanerozoic ice,,,,,154
+714,-42.5,147.5,705394,Tasmanian Dolerite,,145.0,201.3,Jurassic,5
+785,-37.5,142.5,922347,alluvium 38485,,0.0,0.0117,Holocene,5
+786,-37.5,147.5,699610,Adaminaby Group,,443.8,485.4,Ordovician,5
+833,-32.5,22.5,2228160,Adelaide Subgroup of Beaufort Group of Karoo Supergroup,,251.902,298.9,Permian,41
+833,-32.5,22.5,3309804,,sedimentary (karoo),145.0,298.9,Phanerozoic,190
+834,-32.5,27.5,2228160,Adelaide Subgroup of Beaufort Group of Karoo Supergroup,,251.902,298.9,Permian,41
+834,-32.5,27.5,3309804,,sedimentary (karoo),145.0,298.9,Phanerozoic,190
+852,-32.5,117.5,927348,colluvium 38491,,0.0,2.588,Cenozoic,5
+853,-32.5,122.5,929443,colluvium 38491,,0.0,2.588,Cenozoic,5
+856,-32.5,137.5,916226,colluvium 38491,,0.0,2.588,Cenozoic,5
+857,-32.5,142.5,704876,Woorinen Formation,,0.0,0.781,Quaternary,5
+858,-32.5,147.5,696775,Girilambone Group,,443.8,485.4,Ordovician,5
+904,-27.5,17.5,3306490,,sedimentary,443.8,635.0,,190
+905,-27.5,22.5,2228936,Kalahari Group,,0.0,66.0,Cenozoic,41
+905,-27.5,22.5,3306253,,volcanic-sedimentary,1600.0,2050.0,Paleoproterozoic,190
+906,-27.5,27.5,2234951,Volksrust Formation of Ecca Group of Karoo Supergroup,,251.902,298.9,Permian,41
+906,-27.5,27.5,3309804,,sedimentary (karoo),145.0,298.9,Phanerozoic,190
+907,-27.5,32.5,2232409,Alluvium,,0.0,2.588,Cenozoic,41
+907,-27.5,32.5,3306528,,sedimentary,0.0,2.588,Cenozoic,190
+924,-27.5,117.5,922443,colluvium 38491,,0.0,2.588,Cenozoic,5
+925,-27.5,122.5,925667,dunes 38496,,0.0,66.0,Cenozoic,5
+926,-27.5,127.5,823946,lake deposits 38492,,0.0,2.588,Cenozoic,5
+927,-27.5,132.5,931410,dunes 38496,,0.0,66.0,Cenozoic,5
+928,-27.5,137.5,695891,alluvium 38485,,0.0,0.0117,Holocene,5
+929,-27.5,142.5,692708,sand plain 38499,,0.0,66.0,Cenozoic,5
+930,-27.5,147.5,693081,sand plain 38499,,0.0,66.0,Cenozoic,5
+931,-27.5,152.5,834178,Marburg Subgroup,,166.1,190.8,Jurassic,5
+976,-22.5,17.5,3306663,,sedimentary and volcaniclastic,541.0,720.0,Neoproterozoic,190
+977,-22.5,22.5,3306660,,sedimentary,0.0117,66.0,Cenozoic,190
+978,-22.5,27.5,3308106,,plutonic and metamorphic,2500.0,2800.0,Neoarchean,190
+979,-22.5,32.5,3306528,,sedimentary,0.0,2.588,Cenozoic,190
+982,-22.5,47.5,3306662,,plutonic and metamorphic,2500.0,2800.0,Neoarchean,190
+996,-22.5,117.5,709741,colluvium 38491,,0.0,2.588,Cenozoic,5
+997,-22.5,122.5,778031,dunes 38496,,0.0,66.0,Cenozoic,5
+998,-22.5,127.5,695610,dunes 38496,,0.0,66.0,Cenozoic,5
+999,-22.5,132.5,693304,sand plain 38499,,0.0,66.0,Cenozoic,5
+1000,-22.5,137.5,915216,Kelly Creek Formation,,470.0,485.4,Ordovician,5
+1001,-22.5,142.5,770936,Winton Formation,,93.9,113.0,Cretaceous,5
+1002,-22.5,147.5,700797,mafic volcanic rocks 38495,,0.0,66.0,Cenozoic,5
+1047,-17.5,12.5,3306237,,volcanic-sedimentary,1600.0,2050.0,Paleoproterozoic,190
+1048,-17.5,17.5,3306468,,sedimentary,0.0117,66.0,Cenozoic,190
+1049,-17.5,22.5,3306468,,sedimentary,0.0117,66.0,Cenozoic,190
+1050,-17.5,27.5,3308644,,lake,,,,190
+1050,-17.5,27.5,3184364,,,,,,154
+1051,-17.5,32.5,3308673,,plutonic and metamorphic,2800.0,3600.0,Archean,190
+1052,-17.5,37.5,3306528,,sedimentary,0.0,2.588,Cenozoic,190
+1054,-17.5,47.5,3306527,,metamorphic,2800.0,3200.0,Mesoarchean,190
+1069,-17.5,122.5,922389,sand plain 38499,,0.0,66.0,Cenozoic,5
+1070,-17.5,127.5,750288,Whitewater Volcanics,,1800.0,2050.0,Orosirian,5
+1071,-17.5,132.5,925377,sand plain 38499,,0.0,66.0,Cenozoic,5
+1072,-17.5,137.5,786848,colluvium 38491,,0.0,2.588,Cenozoic,5
+1073,-17.5,142.5,746141,sand plain 38499,,0.0,66.0,Cenozoic,5
+1120,-12.5,17.5,3308505,,metamorphic,2500.0,3200.0,Archean,190
+1121,-12.5,22.5,3306520,,sedimentary,0.0,2.588,Cenozoic,190
+1122,-12.5,27.5,3308923,,sedimentary and volcaniclastic,541.0,720.0,Neoproterozoic,190
+1123,-12.5,32.5,3311648,,plutonic and metamorphic,1000.0,1600.0,Mesoproterozoic,190
+1124,-12.5,37.5,3306480,,plutonic and metamorphic,541.0,1600.0,Proterozoic,190
+1143,-12.5,132.5,741100,sediments 38493,,0.0,66.0,Cenozoic,5
+1145,-12.5,142.5,696030,Bulimba Formation,,0.0,66.0,Cenozoic,5
+1192,-7.5,17.5,3308010,,sedimentary,0.0117,66.0,Cenozoic,190
+1193,-7.5,22.5,3311530,,plutonic and metamorphic,1600.0,2500.0,Paleoproterozoic,190
+1194,-7.5,27.5,3308219,,plutonic and metamorphic,1000.0,1600.0,Mesoproterozoic,190
+1195,-7.5,32.5,3310043,,plutonic and metamorphic,2050.0,2300.0,Rhyacian,190
+1196,-7.5,37.5,3311509,,plutonic and metamorphic,2500.0,2800.0,Neoarchean,190
+1263,-2.5,12.5,3309398,,volcanic-sedimentary,2500.0,3200.0,Archean,190
+1264,-2.5,17.5,3310411,,sedimentary,0.0117,66.0,Cenozoic,190
+1265,-2.5,22.5,3310411,,sedimentary,0.0117,66.0,Cenozoic,190
+1266,-2.5,27.5,3306263,,plutonic and metamorphic,1600.0,2050.0,Paleoproterozoic,190
+1267,-2.5,32.5,3308074,,plutonic and metamorphic,2500.0,2800.0,Neoarchean,190
+1268,-2.5,37.5,3307970,,metamorphic,541.0,1000.0,Neoproterozoic,190
+1317,2.5,-77.5,2689769,"Paleocene-Eocene volcanics, volcaniclastics, and sedimentary deposits",,33.9,66.0,Paleogene,125
+1318,2.5,-72.5,2689756,Miocene sedimentary rocks,,5.333,23.03,Miocene,125
+1319,2.5,-67.5,2694555,Complejo Migmatítico de Mitú,,1600.0,2500.0,Paleoproterozoic,125
+1335,2.5,12.5,3306568,,plutonic and metamorphic,2500.0,2800.0,Neoarchean,190
+1336,2.5,17.5,3306517,,sedimentary,0.0,2.588,Cenozoic,190
+1337,2.5,22.5,3306522,,sedimentary,0.0117,66.0,Cenozoic,190
+1338,2.5,27.5,3306461,,plutonic and metamorphic,2800.0,3600.0,Archean,190
+1339,2.5,32.5,3306466,,metamorphic,2500.0,3200.0,Archean,190
+1340,2.5,37.5,3307970,,metamorphic,541.0,1000.0,Neoproterozoic,190
+1341,2.5,42.5,3307770,,sedimentary,145.0,251.902,Mesozoic,190
+1389,7.5,-77.5,2691574,,,33.9,41.3,Eocene,125
+1390,7.5,-72.5,2689740,Cretaceous sedimentary rocks,,66.0,113.0,Cretaceous,125
+1403,7.5,-7.5,3311310,,plutonic,2800.0,3200.0,Mesoarchean,190
+1404,7.5,-2.5,3306446,,sedimentary and volcaniclastic,2050.0,2300.0,Rhyacian,190
+1405,7.5,2.5,3311317,,metamorphic,541.0,1000.0,Neoproterozoic,190
+1406,7.5,7.5,3309103,,sedimentary,66.0,100.5,Late Cretaceous,190
+1407,7.5,12.5,3311306,,metamorphic,541.0,1000.0,Neoproterozoic,190
+1408,7.5,17.5,3306690,,metamorphic,541.0,1000.0,Neoproterozoic,190
+1409,7.5,22.5,3306570,,sedimentary,100.5,145.0,Mesozoic,190
+1410,7.5,27.5,3307742,,plutonic and metamorphic,2500.0,2800.0,Neoarchean,190
+1411,7.5,32.5,3306715,,sedimentary,0.0,66.0,Cenozoic,190
+1412,7.5,37.5,3306629,,volcanic,2.588,23.03,Neogene,190
+1413,7.5,42.5,3307770,,sedimentary,145.0,251.902,Mesozoic,190
+1414,7.5,47.5,3306867,,sedimentary,0.0117,66.0,Cenozoic,190
+1474,12.5,-12.5,3308027,,sedimentary,443.8,635.0,,190
+1475,12.5,-7.5,3306442,,sedimentary,541.0,1000.0,Neoproterozoic,190
+1476,12.5,-2.5,3306446,,sedimentary and volcaniclastic,2050.0,2300.0,Rhyacian,190
+1477,12.5,2.5,3310296,,sedimentary,1000.0,1600.0,Mesoproterozoic,190
+1478,12.5,7.5,3306443,,plutonic,485.4,1000.0,,190
+1479,12.5,12.5,3308965,,sedimentary,0.0,2.588,Cenozoic,190
+1480,12.5,17.5,3308965,,sedimentary,0.0,2.588,Cenozoic,190
+1481,12.5,22.5,3309347,,metamorphic,541.0,1000.0,Neoproterozoic,190
+1482,12.5,27.5,3308965,,sedimentary,0.0,2.588,Cenozoic,190
+1483,12.5,32.5,3308965,,sedimentary,0.0,2.588,Cenozoic,190
+1484,12.5,37.5,3306444,,volcanic,23.03,66.0,Cenozoic,190
+1485,12.5,42.5,3306696,,volcanic,0.0,2.588,Cenozoic,190
+1529,17.5,-97.5,2435510,,limestone,100.5,145.0,Mesozoic,63
+1530,17.5,-92.5,2436396,,limestone,23.03,33.9,Cenozoic,63
+1546,17.5,-12.5,3308004,,sedimentary,443.8,541.0,,190
+1547,17.5,-7.5,3307596,,sedimentary,443.8,541.0,,190
+1548,17.5,-2.5,3307343,,sedimentary,0.0,2.588,Cenozoic,190
+1549,17.5,2.5,3308965,,sedimentary,0.0,2.588,Cenozoic,190
+1550,17.5,7.5,3309813,,sedimentary,100.5,145.0,Mesozoic,190
+1551,17.5,12.5,3308965,,sedimentary,0.0,2.588,Cenozoic,190
+1552,17.5,17.5,3307964,,sedimentary,0.0117,66.0,Cenozoic,190
+1553,17.5,22.5,3307462,,sedimentary,358.9,443.8,Paleozoic,190
+1554,17.5,27.5,3310319,,metamorphic,541.0,1000.0,Neoproterozoic,190
+1555,17.5,32.5,3308965,,sedimentary,0.0,2.588,Cenozoic,190
+1556,17.5,37.5,3308532,,sedimentary and volcaniclastic,541.0,720.0,Neoproterozoic,190
+1557,17.5,42.5,3307534,,sedimentary,0.0,2.588,Cenozoic,190
+1600,22.5,-102.5,2430274,,acidic igneous extrusive,2.588,23.03,Neogene,63
+1618,22.5,-12.5,3307864,,plutonic and metamorphic,1600.0,2800.0,,190
+1619,22.5,-7.5,3306430,,sedimentary,443.8,541.0,,190
+1620,22.5,-2.5,3306430,,sedimentary,443.8,541.0,,190
+1621,22.5,2.5,3306601,,"metamorphic rocks, with orosirian metamorphism (tuareg shield)",2800.0,3200.0,Mesoarchean,190
+1622,22.5,7.5,3310954,,volcanic-sedimentary,635.0,720.0,Cryogenian,190
+1623,22.5,12.5,3306423,,continental sedimentary,66.0,358.9,Phanerozoic,190
+1624,22.5,17.5,3310999,,volcanic-sedimentary,541.0,4000.0,,190
+1625,22.5,22.5,3306689,,continental sedimentary,66.0,358.9,Phanerozoic,190
+1626,22.5,27.5,3308965,,sedimentary,0.0,2.588,Cenozoic,190
+1627,22.5,32.5,3307026,,continental sedimentary,66.0,358.9,Phanerozoic,190
+1629,22.5,42.5,3306996,,sedimentary and volcaniclastic,541.0,720.0,Neoproterozoic,190
+1670,27.5,-112.5,2439222,,acidic igneous extrusive,0.0,2.588,Cenozoic,63
+1671,27.5,-107.5,2430274,,acidic igneous extrusive,2.588,23.03,Neogene,63
+1672,27.5,-102.5,2431021,,sedimentary,0.0,2.588,Cenozoic,63
+1673,27.5,-97.5,4162797,Water,,,,,535
+1690,27.5,-12.5,3148782,Pliocene undifferentiated,,2.588,5.333,Pliocene,147
+1690,27.5,-12.5,3306496,,sedimentary,66.0,100.5,Late Cretaceous,190
+1691,27.5,-7.5,3307139,,sedimentary,0.0117,66.0,Cenozoic,190
+1691,27.5,-7.5,3137569,Pliocene undifferentiated,,2.588,5.333,Pliocene,147
+1692,27.5,-2.5,3307139,,sedimentary,0.0117,66.0,Cenozoic,190
+1692,27.5,-2.5,3135513,Pliocene undifferentiated,,2.588,5.333,Pliocene,147
+1693,27.5,2.5,3309750,,sedimentary,100.5,145.0,Mesozoic,190
+1694,27.5,7.5,3306554,,sedimentary,0.0,2.588,Cenozoic,190
+1695,27.5,12.5,3306495,,sedimentary,0.0,2.588,Cenozoic,190
+1696,27.5,17.5,3309015,,volcanic,0.0,66.0,Cenozoic,190
+1697,27.5,22.5,3308965,,sedimentary,0.0,2.588,Cenozoic,190
+1698,27.5,27.5,3306828,,sedimentary,0.0117,66.0,Cenozoic,190
+1699,27.5,32.5,3307752,,sedimentary,0.0117,66.0,Cenozoic,190
+1700,27.5,37.5,3307735,,sedimentary,358.9,443.8,Paleozoic,190
+1701,27.5,42.5,3137704,Cambrian undifferentiated,,443.8,541.0,,147
+1701,27.5,42.5,3307797,,sedimentary,443.8,541.0,,190
+1702,27.5,47.5,3131354,Pliocene undifferentiated,,2.588,5.333,Pliocene,147
+1704,27.5,57.5,3323470,,,251.902,541.0,,191
+1705,27.5,62.5,3318286,,,33.9,56.0,Eocene,191
+1742,32.5,-112.5,3901759,Early Pleistocene to latest Pliocene surficial deposits,,0.774,3.6,Cenozoic,490
+1743,32.5,-107.5,3799794,Piedmont alluvial deposits,,0.0,2.58,Quaternary,467
+1744,32.5,-102.5,4002540,Blackwater Draw Formation,,0.0117,2.58,Pleistocene,501
+1745,32.5,-97.5,4009837,Undivided part of Washita Group,,95.55,103.675,Cretaceous,501
+1763,32.5,-7.5,3309013,,sedimentary,66.0,100.5,Late Cretaceous,190
+1763,32.5,-7.5,3133380,Early Cretaceous undifferentiated,,100.5,145.0,Mesozoic,147
+1764,32.5,-2.5,3145090,Quaternary undifferentiated,,0.0,2.588,Cenozoic,147
+1764,32.5,-2.5,3309486,,sedimentary,443.8,635.0,,190
+1765,32.5,2.5,3137625,Pliocene undifferentiated,,2.588,5.333,Pliocene,147
+1765,32.5,2.5,3309241,,sedimentary,0.0117,66.0,Cenozoic,190
+1766,32.5,7.5,3309911,,sedimentary,0.0,2.588,Cenozoic,190
+1767,32.5,12.5,3308965,,sedimentary,0.0,2.588,Cenozoic,190
+1769,32.5,22.5,3306828,,sedimentary,0.0117,66.0,Cenozoic,190
+1769,32.5,22.5,3141213,Miocene undifferentiated,,5.333,23.03,Miocene,147
+1772,32.5,37.5,3310768,,volcanic,0.0,2.588,Cenozoic,190
+1773,32.5,42.5,3143968,Miocene undifferentiated,,5.333,23.03,Miocene,147
+1774,32.5,47.5,3331389,,,0.0,2.588,Cenozoic,191
+1774,32.5,47.5,3135836,Pliocene undifferentiated,,0.0,5.333,Cenozoic,147
+1775,32.5,52.5,3318411,,,0.0,2.588,Cenozoic,191
+1776,32.5,57.5,3321676,,,201.3,237.0,Mesozoic,191
+1812,37.5,-122.5,4550815,Water,,,,,548
+1813,37.5,-117.5,2762151,"Nolan Belt - Phyllite, schist, shale, thin-bedded limestone, chert, and siltstone",,485.4,516.0001,Paleozoic,133
+1814,37.5,-112.5,3855722,Claron Formation,,33.9,54.0175,Eocene,475
+1819,37.5,-87.5,3940222,Sturgis Formation,,298.9,307.5,Pennsylvanian,496
+1836,37.5,-2.5,2510311,,"gravel, conglomerate, sand and silt",0.0117,2.588,Cenozoic,77
+1843,37.5,32.5,3144288,Flysch and Wildflysch,,66.0,100.5,Late Cretaceous,147
+1845,37.5,42.5,3150195,Late Cretaceous undifferentiated,,23.03,100.5,Phanerozoic,147
+1846,37.5,47.5,3327157,,,5.333,23.03,Miocene,191
+1846,37.5,47.5,3131929,Jurassic undifferentiated,,145.0,201.3,Jurassic,147
+1848,37.5,57.5,3313663,,,100.5,145.0,Mesozoic,191
+1887,42.5,-107.5,3194969,Granite and light-colored igneous intrusives,,2500.0,4000.0,Archean,155
+1890,42.5,-92.5,2159933,Cedar Valley Group,,363.475,387.7,Devonian,26
+1891,42.5,-87.5,4568701,water,,0.0,0.0117,Holocene,550
+1891,42.5,-87.5,3900481,water,,,,,488
+1891,42.5,-87.5,3769246,Water,,,,,459
+1891,42.5,-87.5,3185648,,,,,,154
+1892,42.5,-82.5,3294586,Hamilton Group,,383.95,389.5666,Middle Devonian,180
+1907,42.5,-7.5,2512591,,"gravel, conglomerate, sand and silt",0.0117,2.588,Cenozoic,77
+1909,42.5,2.5,3477961,,orthogneiss [95.0%..100.0%],458.4,541.0,,249
+1913,42.5,22.5,3140206,Triassic undifferentiated,,201.3,251.902,Mesozoic,147
+1958,47.5,-112.5,3775789,Medicine Hat block,,2500.0,4031.0,Archean,465
+1959,47.5,-107.5,3775972,Tectonically shortened rocks on margins of Wyoming province,,2500.0,4031.0,Archean,465
+1962,47.5,-92.5,4060104,Ground Moraine,,0.0117,0.129,Late Pleistocene,514
+1963,47.5,-87.5,4136754,water,,,,,529
+1963,47.5,-87.5,3893286,water,,,,,483
+1963,47.5,-87.5,3900482,water,,,,,488
+1963,47.5,-87.5,3185648,,,,,,154
+1965,47.5,-77.5,4014454,Water,,,,,504
+1967,47.5,-67.5,4145306,Ground Moraine,,0.0117,0.129,Late Pleistocene,531
+1981,47.5,2.5,3471222,,clay [95.0%..100.0%],66.0,100.5,Late Cretaceous,249
+1982,47.5,7.5,3488126,,conglomerate [5.0%..50.0%]; impure Carbonate [50.0%..95.0%]; sandstone [5.0%..50.0%],23.03,33.9,Cenozoic,249
+1982,47.5,7.5,2619293,,"Sand, clay, marl",23.03,33.9,Cenozoic,94
+1983,47.5,12.5,2602562,,"Diabase, spilite, greenschist, amphibolite, gabbro, serpentinite",251.902,541.0,,94
+2027,52.5,-127.5,5227080,intrusive rocks,quartz dioritic intrusive rocks,,,,1092
+2028,52.5,-122.5,5218955,Chilcotin Group,basaltic volcanic rocks,,,,1092
+2033,52.5,-97.5,3184938,,,,,,154
+2054,52.5,7.5,2600213,,"Silt; clayey, sandy, gravelly, pebbly, partially calcareous",0.0117,2.588,Cenozoic,94
+2055,52.5,12.5,2607642,,Peat,0.0,0.0117,Holocene,94
+2056,52.5,17.5,3146245,Neogene undifferentiated,,2.588,23.03,Neogene,147
+2057,52.5,22.5,3137643,Oligocene undifferentiated,,23.03,33.9,Cenozoic,147
+2098,57.5,-132.5,5230550,Sloko-Hyder Plutonic Suite,"granite, alkali feldspar granite intrusive rocks",,,,1092
+2098,57.5,-132.5,1615066,"Canadian areas within quadrangles, southeast Alaska",,,,,21
+2099,57.5,-127.5,5228730,Toodoggone Volcanics - Adoogacho Member,dacitic volcanic rocks,,,,1092
+2100,57.5,-122.5,5224422,Dunvegan Formation,coarse clastic sedimentary rocks,,,,1092
+2127,57.5,12.5,2635337,,Granitoid to syenitoid migmatitic gneiss,1600.0,1800.0,Statherian,95
+2129,57.5,22.5,3134419,Late Devonian undifferentiated,,358.9,382.7,Devonian,147
+2183,62.5,-67.5,3495804,Lake Harbour Group,,1600.0,2500.0,Paleoproterozoic,252
+2187,62.5,-47.5,648142,ice,,,,,2
+2187,62.5,-47.5,3152561,Quaternary ,,0.0,2.588,Cenozoic,147
+2187,62.5,-47.5,3184929,Phanerozoic ice,,,,,154
+2199,62.5,12.5,2634515,,"Granitoid, syenitoid and metamorphic equivalents",720.0,1800.0,Proterozoic,95
+2200,62.5,17.5,2635832,,"Nepheline syenite, pyroxenite, carbonatite, foidolite",485.4,635.0,,95
+2202,62.5,27.5,4262696,,,,,,1056
+2249,67.5,-97.5,3468870,Queen Maud Granitoid Belt,,541.0,4000.0,,248
+2250,67.5,-92.5,3466710,Snow Island Suite,,2500.0,2800.0,Neoarchean,248
+2252,67.5,-82.5,3467167,"Amer, Chantrey, Penrhyn, and Ketyet River Groups",,1600.0,2500.0,Paleoproterozoic,248
+2255,67.5,-67.5,3185398,Phanerozoic ice,,,,,154
+2259,67.5,-47.5,648142,ice,,,,,2
+2259,67.5,-47.5,3152561,Quaternary ,,0.0,2.588,Cenozoic,147
+2259,67.5,-47.5,3184929,Phanerozoic ice,,,,,154
+2260,67.5,-42.5,648142,ice,,,,,2
+2260,67.5,-42.5,3152561,Quaternary ,,0.0,2.588,Cenozoic,147
+2260,67.5,-42.5,3184929,Phanerozoic ice,,,,,154
+2261,67.5,-37.5,3152561,Quaternary ,,0.0,2.588,Cenozoic,147
+2261,67.5,-37.5,648142,ice,,,,,2
+2261,67.5,-37.5,3184929,Phanerozoic ice,,,,,154
+2272,67.5,17.5,2636151,,"Granitoid, syenitoid and metamorphic equivalents",720.0,1800.0,Proterozoic,95
+2273,67.5,22.5,2633275,,"Granite, granodiorite, syenitoid, quartz monzodiorite and metamorphic equivalents",1600.0,2050.0,Paleoproterozoic,95
+2330,72.5,-52.5,648142,ice,,,,,2
+2330,72.5,-52.5,3184929,Phanerozoic ice,,,,,154
+2331,72.5,-47.5,3152561,Quaternary ,,0.0,2.588,Cenozoic,147
+2331,72.5,-47.5,648142,ice,,,,,2
+2331,72.5,-47.5,3184929,Phanerozoic ice,,,,,154
+2332,72.5,-42.5,3152561,Quaternary ,,0.0,2.588,Cenozoic,147
+2332,72.5,-42.5,648142,ice,,,,,2
+2332,72.5,-42.5,3184929,Phanerozoic ice,,,,,154
+2333,72.5,-37.5,3152561,Quaternary ,,0.0,2.588,Cenozoic,147
+2333,72.5,-37.5,648142,ice,,,,,2
+2333,72.5,-37.5,3184929,Phanerozoic ice,,,,,154
+2334,72.5,-32.5,3152561,Quaternary ,,0.0,2.588,Cenozoic,147
+2334,72.5,-32.5,648142,ice,,,,,2
+2334,72.5,-32.5,3184929,Phanerozoic ice,,,,,154
+2335,72.5,-27.5,648142,ice,,,,,2
+2336,72.5,-22.5,3156758,Cretaceous undifferentiated,,66.0,145.0,Mesozoic,147
+2400,77.5,-62.5,648142,ice,,,,,2
+2400,77.5,-62.5,3184929,Phanerozoic ice,,,,,154
+2401,77.5,-57.5,648142,ice,,,,,2
+2401,77.5,-57.5,3184929,Phanerozoic ice,,,,,154
+2402,77.5,-52.5,648142,ice,,,,,2
+2402,77.5,-52.5,3184929,Phanerozoic ice,,,,,154
+2403,77.5,-47.5,648142,ice,,,,,2
+2403,77.5,-47.5,3184929,Phanerozoic ice,,,,,154
+2404,77.5,-42.5,648142,ice,,,,,2
+2404,77.5,-42.5,3184929,Phanerozoic ice,,,,,154
+2405,77.5,-37.5,648142,ice,,,,,2
+2405,77.5,-37.5,3184929,Phanerozoic ice,,,,,154
+2406,77.5,-32.5,648142,ice,,,,,2
+2406,77.5,-32.5,3184929,Phanerozoic ice,,,,,154
+2407,77.5,-27.5,3152561,Quaternary ,,0.0,2.588,Cenozoic,147
+2407,77.5,-27.5,648142,ice,,,,,2
+2407,77.5,-27.5,3184929,Phanerozoic ice,,,,,154
+2408,77.5,-22.5,3152561,Quaternary ,,0.0,2.588,Cenozoic,147
+2408,77.5,-22.5,648142,ice,,,,,2
+2408,77.5,-22.5,3184929,Phanerozoic ice,,,,,154
+2469,82.5,-77.5,646457,ice,,,,,2
+2469,82.5,-77.5,3184881,undivided rocks,,,,,154
+2471,82.5,-67.5,635199,ice,,,,,2
+2471,82.5,-67.5,3185650,Phanerozoic ice,,,,,154
+2477,82.5,-37.5,638784,ice,,,,,2

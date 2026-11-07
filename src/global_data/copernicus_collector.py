@@ -1,37 +1,44 @@
+
 from pathlib import Path
 import math
 import requests
 import pandas as pd
 
+# Project root
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
+# Correct input: six priority geology candidates
 INPUT_FILE = (
     PROJECT_ROOT
     / "data"
     / "processed"
-    / "global_sample_locations.csv"
+    / "global_geology_land_pilot"
+    / "priority_candidate_locations.csv"
 )
 
+# DEM download folder
 OUTPUT_FOLDER = (
     PROJECT_ROOT
     / "data"
     / "copernicus_glo90"
 )
 
+# Copernicus GLO-90 download server
 BASE_URL = (
     "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com"
 )
 
+# Separate summary file to preserve the earlier summary
 SUMMARY_FILE = (
     PROJECT_ROOT
     / "data"
     / "processed"
-    / "copernicus_download_summary.csv"
+    / "priority_candidate_dem_download_summary.csv"
 )
 
 
 def create_tile_name(latitude, longitude):
-    """Create a Copernicus GLO-90 tile name."""
+    """Create a Copernicus DEM tile name."""
 
     if not -90 <= latitude <= 90:
         raise ValueError(f"Invalid latitude: {latitude}")
@@ -59,10 +66,7 @@ def download_tile(latitude, longitude):
 
     url = f"{BASE_URL}/{tile_name}/{tile_name}.tif"
 
-    OUTPUT_FOLDER.mkdir(
-        parents=True,
-        exist_ok=True
-    )
+    OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
 
     output_file = OUTPUT_FOLDER / f"{tile_name}.tif"
     temporary_file = OUTPUT_FOLDER / f"{tile_name}.tif.part"
@@ -91,7 +95,10 @@ def download_tile(latitude, longitude):
                     if chunk:
                         file.write(chunk)
 
-        if not temporary_file.exists() or temporary_file.stat().st_size == 0:
+        if (
+            not temporary_file.exists()
+            or temporary_file.stat().st_size == 0
+        ):
             raise IOError("Downloaded file is empty.")
 
         temporary_file.replace(output_file)
@@ -110,8 +117,8 @@ def download_tile(latitude, longitude):
 
 def main():
 
-    print("\nTERRATIME 4D - COPERNICUS DEM COLLECTOR")
-    print("---------------------------------------")
+    print("\nTERRATIME 4D - PRIORITY CANDIDATE DEM COLLECTOR")
+    print("------------------------------------------------")
 
     if not INPUT_FILE.exists():
         print("Location CSV not found:", INPUT_FILE)
@@ -131,6 +138,7 @@ def main():
             "location, target_latitude, target_longitude"
         )
 
+    print("Input file:", INPUT_FILE)
     print("Locations to process:", len(locations))
 
     results = []
@@ -142,13 +150,11 @@ def main():
         longitude = float(location["target_longitude"])
 
         print(f"\nProcessing: {name}")
+        print(f"Coordinates: {latitude}, {longitude}")
 
         tile_name = create_tile_name(latitude, longitude)
 
-        status = download_tile(
-            latitude,
-            longitude
-        )
+        status = download_tile(latitude, longitude)
 
         results.append({
             "location": name,
@@ -165,15 +171,19 @@ def main():
         exist_ok=True
     )
 
-    summary.to_csv(
-        SUMMARY_FILE,
-        index=False
-    )
+    summary.to_csv(SUMMARY_FILE, index=False)
 
-    print("\nDownload summary saved to:")
+    print("\nDOWNLOAD SUMMARY")
+    print("----------------")
+    print(summary.to_string(index=False))
+
+    print("\nStatus counts:")
+    print(summary["status"].value_counts().to_string())
+
+    print("\nSummary saved to:")
     print(SUMMARY_FILE)
 
-    print("\n", summary.to_string(index=False))
+    print("\nCOLLECTION COMPLETE")
 
 
 if __name__ == "__main__":

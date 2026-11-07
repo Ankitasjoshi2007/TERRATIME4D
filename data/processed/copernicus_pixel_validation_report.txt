@@ -1,0 +1,194 @@
+Tile: Copernicus_DSM_COG_30_N13_00_E077_00_DEM.tif
+Status: PASS
+Dimensions: 1200 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=76.99958333333333, bottom=13.000416666666666, right=77.99958333333333, top=14.000416666666666)
+Resolution: (0.0008333333333333334, 0.0008333333333333334)
+NoData: None
+Valid pixels: 1440000
+Total pixels: 1440000
+Minimum elevation: 579.4764404296875
+Maximum elevation: 1474.374267578125
+Mean elevation: 803.054931640625
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_N19_00_W155_00_DEM.tif
+Status: PASS
+Dimensions: 1200 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=-155.00041666666667, bottom=19.000416666666666, right=-154.00041666666667, top=20.000416666666666)
+Resolution: (0.0008333333333333334, 0.0008333333333333334)
+NoData: None
+Valid pixels: 1440000
+Total pixels: 1440000
+Minimum elevation: -0.10577874630689621
+Maximum elevation: 510.8063659667969
+Mean elevation: 4.709585189819336
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_N27_00_W113_00_DEM.tif
+Status: PASS
+Dimensions: 1200 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=-113.00041666666667, bottom=27.000416666666666, right=-112.00041666666667, top=28.000416666666666)
+Resolution: (0.0008333333333333334, 0.0008333333333333334)
+NoData: None
+Valid pixels: 1440000
+Total pixels: 1440000
+Minimum elevation: -0.5
+Maximum elevation: 1937.5594482421875
+Mean elevation: 232.22048950195312
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_N47_00_W083_00_DEM.tif
+Status: PASS
+Dimensions: 1200 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=-83.00041666666667, bottom=47.000416666666666, right=-82.00041666666667, top=48.000416666666666)
+Resolution: (0.0008333333333333334, 0.0008333333333333334)
+NoData: None
+Valid pixels: 1440000
+Total pixels: 1440000
+Minimum elevation: 333.0
+Maximum elevation: 609.1405639648438
+Mean elevation: 434.36761474609375
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_N64_00_W019_00_DEM.tif
+Status: PASS
+Dimensions: 600 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=-19.000833333333333, bottom=64.00041666666667, right=-18.000833333333333, top=65.00041666666667)
+Resolution: (0.0016666666666666668, 0.0008333333333333334)
+NoData: None
+Valid pixels: 720000
+Total pixels: 720000
+Minimum elevation: 463.0
+Maximum elevation: 1785.7666015625
+Mean elevation: 773.3820190429688
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_N67_00_E017_00_DEM.tif
+Status: PASS
+Dimensions: 600 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=16.999166666666667, bottom=67.00041666666667, right=17.999166666666667, top=68.00041666666667)
+Resolution: (0.0016666666666666668, 0.0008333333333333334)
+NoData: None
+Valid pixels: 720000
+Total pixels: 720000
+Minimum elevation: 385.0
+Maximum elevation: 2037.64990234375
+Mean elevation: 928.9887084960938
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_N67_00_W148_00_DEM.tif
+Status: PASS
+Dimensions: 600 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=-148.00083333333333, bottom=67.00041666666667, right=-147.00083333333333, top=68.00041666666667)
+Resolution: (0.0016666666666666668, 0.0008333333333333334)
+NoData: None
+Valid pixels: 720000
+Total pixels: 720000
+Minimum elevation: 212.2904510498047
+Maximum elevation: 1855.20751953125
+Mean elevation: 738.1553955078125
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_S23_00_E147_00_DEM.tif
+Status: PASS
+Dimensions: 1200 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=146.99958333333333, bottom=-22.999583333333334, right=147.99958333333333, top=-21.999583333333334)
+Resolution: (0.0008333333333333334, 0.0008333333333333334)
+NoData: None
+Valid pixels: 1440000
+Total pixels: 1440000
+Minimum elevation: 133.51544189453125
+Maximum elevation: 743.2994384765625
+Mean elevation: 299.4644775390625
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_S23_00_W069_00_DEM.tif
+Status: PASS
+Dimensions: 1200 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=-69.00041666666667, bottom=-22.999583333333334, right=-68.00041666666667, top=-21.999583333333334)
+Resolution: (0.0008333333333333334, 0.0008333333333333334)
+NoData: None
+Valid pixels: 1440000
+Total pixels: 1440000
+Minimum elevation: 2070.52490234375
+Maximum elevation: 5948.154296875
+Mean elevation: 3106.134033203125
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_S25_00_E135_00_DEM.tif
+Status: PASS
+Dimensions: 1200 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=134.99958333333333, bottom=-24.999583333333334, right=135.99958333333333, top=-23.999583333333334)
+Resolution: (0.0008333333333333334, 0.0008333333333333334)
+NoData: None
+Valid pixels: 1440000
+Total pixels: 1440000
+Minimum elevation: 163.15017700195312
+Maximum elevation: 502.4403991699219
+Mean elevation: 242.38519287109375
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_S33_00_E117_00_DEM.tif
+Status: PASS
+Dimensions: 1200 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=116.99958333333333, bottom=-32.999583333333334, right=117.99958333333333, top=-31.999583333333334)
+Resolution: (0.0008333333333333334, 0.0008333333333333334)
+NoData: None
+Valid pixels: 1440000
+Total pixels: 1440000
+Minimum elevation: 202.9676971435547
+Maximum elevation: 448.34747314453125
+Mean elevation: 304.910400390625
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_S77_00_E000_00_DEM.tif
+Status: PASS
+Dimensions: 400 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=-0.00125, bottom=-76.99958333333333, right=0.99875, top=-75.99958333333333)
+Resolution: (0.0025, 0.0008333333333333334)
+NoData: None
+Valid pixels: 480000
+Total pixels: 480000
+Minimum elevation: 2611.377197265625
+Maximum elevation: 2825.139892578125
+Mean elevation: 2719.7861328125
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------
+
+Tile: Copernicus_DSM_COG_30_S89_00_E016_00_DEM.tif
+Status: PASS
+Dimensions: 120 x 1200
+CRS: EPSG:4326
+Bounds: BoundingBox(left=15.995833333333334, bottom=-88.99958333333333, right=16.995833333333334, top=-87.99958333333333)
+Resolution: (0.008333333333333333, 0.0008333333333333334)
+NoData: None
+Valid pixels: 144000
+Total pixels: 144000
+Minimum elevation: 2678.3642578125
+Maximum elevation: 2741.93701171875
+Mean elevation: 2717.556396484375
+Mask flags: ([<MaskFlags.all_valid: 1>],)
+------------------------------------------

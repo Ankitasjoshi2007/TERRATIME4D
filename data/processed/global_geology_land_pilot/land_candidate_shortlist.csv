@@ -1,0 +1,23 @@
+latitude,longitude,record_count,geology_categories,geological_names,lithologies
+-82.5,-127.5,1,ice,Phanerozoic ice,
+-82.5,-47.5,1,ice,Phanerozoic ice,
+-77.5,7.5,1,ice,Phanerozoic ice,
+-77.5,117.5,1,ice,Phanerozoic ice,
+-37.5,-67.5,2,sedimentary,Cenozoic sedimentary rocks; Quaternary Siliciclastic,Siliciclastic; sedimentary rocks
+-32.5,27.5,3,sedimentary,Adelaide Subgroup of Beaufort Group of Karoo Supergroup; Paleozoic sedimentary rocks,sedimentary (karoo); sedimentary rocks
+-32.5,117.5,3,igneous; metamorphic,Archean crystalline metamorphic rocks; Archean granites; colluvium 38491,amphibolite/granulite grade orthogneiss; igneous felsic intrusive
+-22.5,147.5,3,volcanic; sedimentary,Cambrian to Ordovician sedimentary rocks; Cenozoic volcanic rocks; mafic volcanic rocks 38495,mafic volcanic rocks; basalt; sedimentary
+-12.5,-57.5,3,sedimentary,Cretaceous Siliciclastic; Mesozoic sedimentary rocks; Salto das Nuvens Formação,"Siliciclastic; conglomerate polymictic, conglomeratic mudstone; sedimentary rocks"
+-12.5,17.5,2,metamorphic; sedimentary,Cenozoic sedimentary rocks,metamorphic; sedimentary rocks
+12.5,-12.5,2,sedimentary,Precambrian-Phanerozoic sedimentary rocks,sedimentary; sedimentary rocks
+17.5,47.5,1,sedimentary,Cenozoic sedimentary rocks,sandstone-siltstone
+22.5,102.5,1,sedimentary,Paleozoic sedimentary rocks,sedimentary rocks
+27.5,-112.5,3,volcanic; igneous; sedimentary,Cenozoic sedimentary and volcanic rocks; Miocene volcanic: felsic rocks,acidic igneous extrusive; mafic-felsic mixed volcanic rocks; volcanic: felsic rocks
+47.5,-107.5,6,sedimentary,"Fort Union Formation, Tullock Member; Mesozoic sedimentary rocks; Paleocene sedimentary; Tectonically shortened rocks on margins of Wyoming province; Tullock Member of Fort Union Formation","Major:{sandstone}, Minor:{black shale,coal}; coal, sandstone, shale; sedimentary; siltstone,shale,sandstone"
+47.5,-82.5,4,volcanic; igneous; metamorphic; sedimentary,"Archean sedimentary and volcanic rocks; Gneissic tonalite suite; Lake Clay, Silt, Sand, And Gravel; Neoarchean metamorphic and undivided crystalline: mainly tonalite gneiss","clay, gravel, sand, silt; intermediate volcanic rocks; metamorphic and undivided crystalline: mainly tonalite gneiss; tonalite to granodiorite-foliated to gneissic-with minor supracrustal inclusions"
+47.5,27.5,2,sedimentary,"Carpatian, Crimea, Caucasus; Paleozoic sedimentary rocks","Major:{clay}, Minor{sand,sandstone,limestone}; sedimentary rocks"
+47.5,122.5,1,volcanic,Mesozoic volcanic rocks,intermediate-felsic volcanic rocks; dacite
+67.5,-147.5,5,metamorphic; sedimentary,Neoproterozoic-Devonian sedimentary; Precambrian-Phanerozoic sedimentary rocks; Quartz-mica schist of the Brooks Range; Sedimentary; Sedimentary: undivided,"Metamorphic; sandstone, siltstone, shale, limestone or metamorphosed equivalent; schist, granitic, marble, orthogneiss, minor metamorphic; sedimentary; sedimentary rocks"
+67.5,17.5,5,igneous; metamorphic,"Caledonian Orogenic Belt; Granitoid, Statherian 3; Igneous: intrusive; Intrusive: granitic; Precambrian crystalline metamorphic rocks","Granitoid, syenitoid and metamorphic equivalents; Major:{granite}, Minor{meta-granite,monzonite,meta-monzonite}; crystalline metamorphic rocks; gneiss, migmatite, granite, augen gneiss, mica gneiss; granite"
+67.5,117.5,2,sedimentary,Paleozoic sedimentary rocks; Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs;; sedimentary rocks"
+72.5,-22.5,4,sedimentary,Cretaceous undifferentiated; Late Jurassic sedimentary; Mesozoic sedimentary rocks; Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils; sedimentary; shale,sandstone,conglomerate"
