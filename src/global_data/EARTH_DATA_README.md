@@ -87,3 +87,23 @@ The dataset provides location coordinates, elevation statistics, slope statistic
 - Add temperature, dust and ice information where suitable data exists.
 - Compare Earth features with lunar and Martian datasets.
 - Develop mission-specific similarity scores with uncertainty reporting.
+## 8. Environmental Data — NASA POWER Temperature
+
+- Source: NASA POWER monthly point API
+- Year: 2020
+- Locations: Six candidate regions
+- Records: 72 monthly records
+- T2M: Monthly mean air temperature at 2 metres (°C)
+- T2M_MAX_AVG: Average daily maximum temperature (°C)
+- T2M_MIN_AVG: Average daily minimum temperature (°C)
+
+Output file:
+data/processed/environmental/nasa_power_monthly_temperature_2020.csv
+
+Validation:
+- 72 records across 6 locations
+- No missing values
+- No duplicate rows
+- No invalid temperature ordering
+
+This is an initial one-year environmental comparison, not a long-term climate assessment. Values represent selected grid-point coordinates rather than entire regions.

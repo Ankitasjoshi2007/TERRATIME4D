@@ -206,3 +206,20 @@ The datasets are intended as inputs to the team's subsequent analysis, not as fi
 
 \*\*Project:\*\* TERRATIME 4D
 
+
+## Environmental Data — NASA POWER
+
+Collected monthly temperature data for six candidate locations for 2020.
+
+- 72 monthly records
+- Mean, average daily maximum and average daily minimum temperatures
+- No missing values or duplicate rows
+- Temperature ordering validation passed
+
+Dataset:
+data/processed/environmental/nasa_power_monthly_temperature_2020.csv
+
+Collection script:
+src/global_data/collect_nasa_power_temperature.py
+
+Limitation: This is a one-year, six-point comparison dataset, not a long-term climate assessment or full regional climate map.
