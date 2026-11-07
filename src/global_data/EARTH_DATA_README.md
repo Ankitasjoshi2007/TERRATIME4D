@@ -87,15 +87,15 @@ The dataset provides location coordinates, elevation statistics, slope statistic
 - Add temperature, dust and ice information where suitable data exists.
 - Compare Earth features with lunar and Martian datasets.
 - Develop mission-specific similarity scores with uncertainty reporting.
-## 8. Environmental Data — NASA POWER Temperature
+## 8. Environmental Data ï¿½ NASA POWER Temperature
 
 - Source: NASA POWER monthly point API
 - Year: 2020
 - Locations: Six candidate regions
 - Records: 72 monthly records
-- T2M: Monthly mean air temperature at 2 metres (°C)
-- T2M_MAX_AVG: Average daily maximum temperature (°C)
-- T2M_MIN_AVG: Average daily minimum temperature (°C)
+- T2M: Monthly mean air temperature at 2 metres (ï¿½C)
+- T2M_MAX_AVG: Average daily maximum temperature (ï¿½C)
+- T2M_MIN_AVG: Average daily minimum temperature (ï¿½C)
 
 Output file:
 data/processed/environmental/nasa_power_monthly_temperature_2020.csv
@@ -107,3 +107,18 @@ Validation:
 - No invalid temperature ordering
 
 This is an initial one-year environmental comparison, not a long-term climate assessment. Values represent selected grid-point coordinates rather than entire regions.
+## 9. NASA POWER Solar Irradiance Data
+
+Collected monthly all-sky surface shortwave downward irradiance data for six candidate locations for 2020.
+
+- 72 monthly records (12 per location)
+- NASA POWER parameter: `ALLSKY_SFC_SW_DWN`
+- Parameter description: All Sky Surface Shortwave Downward Irradiance
+- Unit reported by NASA POWER: W/mÂ²
+- No missing values or duplicate rows
+
+**Dataset:** `data/processed/environmental/nasa_power_monthly_solar_2020.csv`
+
+**Collection script:** `src/global_data/collect_nasa_power_solar_radiation.py`
+
+**Limitation:** One year of data at six candidate points; this is not a long-term solar climate assessment or a full regional solar map.
