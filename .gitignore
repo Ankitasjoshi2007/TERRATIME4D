@@ -218,7 +218,6 @@ terrain_analysis/terrain_metrics.json
 # Python cache files
 __pycache__/
 *.py[cod]
-=======
 # Raw Earth and planetary datasets
 data/raw/
 *.hgt
