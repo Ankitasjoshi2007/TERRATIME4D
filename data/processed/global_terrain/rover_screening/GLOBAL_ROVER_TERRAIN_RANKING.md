@@ -1,0 +1,31 @@
+# Global Rover-Terrain Screening Ranking
+
+Tiles ranked: **645**
+
+Weights: slope 35%, 630 m roughness 25%, 630 m local relief 20%, lower-relief share 20%.
+
+Scores are relative screening scores, not probabilities or certified landing-safety ratings. Copernicus GLO-90 is a digital surface model; vegetation, buildings and data quality can affect results. Mission-specific engineering assessment and higher-resolution data are still required.
+
+## Top 20 tiles
+
+ rank                                                      tile  rover_screening_score_100  p90_slope_degrees  p90_roughness_630m_m  local_relief_630m_p90_m  lower_relief_screen_percent  mean_slope_degrees  mean_roughness_630m_m  challenging_terrain_percent  longitude   latitude
+    1 copernicus_dsm_cog_30_n72_00_w038_00_dem_advanced_terrain                  99.527132           0.222051              0.361745                 1.587402                   100.000000            0.129098               0.281483                     0.000000 -37.501250  72.500417
+    2 copernicus_dsm_cog_30_s78_00_e122_00_dem_advanced_terrain                  98.992248           0.352790              0.450426                 2.118164                   100.000000            0.198208               0.343887                     0.000000 122.498750 -77.499583
+    3 copernicus_dsm_cog_30_s78_00_e147_00_dem_advanced_terrain                  98.852713           0.336438              0.521562                 2.416504                   100.000000            0.189002               0.354867                     0.000000 147.498750 -77.499583
+    4 copernicus_dsm_cog_30_n07_00_e032_00_dem_advanced_terrain                  98.806202           0.216858              0.452150                 2.058899                    99.783819            0.094478               0.199304                     0.000000  32.499583   7.500417
+    5 copernicus_dsm_cog_30_s83_00_e047_00_dem_advanced_terrain                  98.434109           0.344573              0.619102                 2.726318                   100.000000            0.195489               0.400146                     0.000000  47.497917 -82.499583
+    6 copernicus_dsm_cog_30_s73_00_e052_00_dem_advanced_terrain                  98.403101           0.361442              0.574708                 2.488037                   100.000000            0.208085               0.422817                     0.000000  52.498750 -72.499583
+    7 copernicus_dsm_cog_30_s78_00_e112_00_dem_advanced_terrain                  98.286822           0.375330              0.490205                 2.296143                   100.000000            0.211760               0.388699                     0.000000 112.498750 -77.499583
+    8 copernicus_dsm_cog_30_s78_00_e117_00_dem_advanced_terrain                  98.240310           0.362838              0.480205                 2.234619                    99.990000            0.203836               0.371108                     0.000000 117.498750 -77.499583
+    9 copernicus_dsm_cog_30_s73_00_e157_00_dem_advanced_terrain                  98.155039           0.339813              0.656453                 2.779053                   100.000000            0.194393               0.442752                     0.000000 157.498750 -72.499583
+   10 copernicus_dsm_cog_30_s73_00_e112_00_dem_advanced_terrain                  97.930233           0.373351              0.620515                 2.699707                   100.000000            0.216007               0.455406                     0.000000 112.498750 -72.499583
+   11 copernicus_dsm_cog_30_s78_00_e087_00_dem_advanced_terrain                  97.596899           0.356172              0.671181                 2.865234                   100.000000            0.203582               0.466722                     0.000000  87.498750 -77.499583
+   12 copernicus_dsm_cog_30_s73_00_e107_00_dem_advanced_terrain                  97.395349           0.383596              0.649800                 2.821777                   100.000000            0.219874               0.467888                     0.000000 107.498750 -72.499583
+   13 copernicus_dsm_cog_30_n57_00_w093_00_dem_advanced_terrain                  97.356589           0.315427              0.651616                 2.699840                    99.508125            0.102354               0.245106                     0.064687 -92.500625  57.500417
+   14 copernicus_dsm_cog_30_s73_00_e142_00_dem_advanced_terrain                  97.124031           0.376003              0.636537                 2.808838                    99.958542            0.217229               0.481024                     0.000000 142.498750 -72.499583
+   15 copernicus_dsm_cog_30_s83_00_e062_00_dem_advanced_terrain                  97.116279           0.359576              0.658925                 2.878418                    99.927778            0.204594               0.440456                     0.000000  62.497917 -82.499583
+   16 copernicus_dsm_cog_30_s73_00_e102_00_dem_advanced_terrain                  96.395349           0.409562              0.677954                 2.987305                   100.000000            0.238384               0.519557                     0.000000 102.498750 -72.499583
+   17 copernicus_dsm_cog_30_s73_00_e132_00_dem_advanced_terrain                  96.317829           0.348985              0.702124                 2.845947                    99.312708            0.203595               0.461426                     0.072292 132.498750 -72.499583
+   18 copernicus_dsm_cog_30_s73_00_e152_00_dem_advanced_terrain                  95.868217           0.374224              0.766587                 3.128662                    99.847083            0.216071               0.505145                     0.000000 152.498750 -72.499583
+   19 copernicus_dsm_cog_30_s78_00_e142_00_dem_advanced_terrain                  95.565891           0.371736              0.724601                 3.122095                    99.485208            0.208565               0.462886                     0.000000 142.498750 -77.499583
+   20 copernicus_dsm_cog_30_s78_00_e137_00_dem_advanced_terrain                  95.449612           0.376192              0.782266                 3.329102                    99.903958            0.212160               0.470660                     0.000000 137.498750 -77.499583
