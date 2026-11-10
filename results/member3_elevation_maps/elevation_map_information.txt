@@ -1,0 +1,14 @@
+MEMBER 3 - ELEVATION MAP INFORMATION
+=============================================
+
+MOON
+Source: ldem_16.tif
+Grid shape: (2880, 5760)
+Elevation unit: kilometres (source data)
+
+MARS
+Source: megt90n000eb.img
+Grid shape: (2880, 5760)
+Elevation unit: kilometres (converted from metres)
+
+Maps use a global cylindrical display with longitude from -180 to 180 degrees and latitude from -90 to 90 degrees.
