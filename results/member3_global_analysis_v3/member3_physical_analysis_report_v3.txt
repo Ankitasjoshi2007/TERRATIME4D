@@ -1,0 +1,96 @@
+﻿TERRATIME4D
+MEMBER 3 - VERSION 3 PHYSICAL TERRAIN ANALYSIS
+=================================================================
+
+OBJECTIVE
+Analyse global Moon and Mars elevation grids using
+slope and approximately 11 km physical roughness.
+Use the existing processed Earth terrain summary as
+a separate reference.
+
+METHOD
+Moon source: NASA Lunar Digital Elevation Model.
+Moon grid: aggregated from 16 to 8 pixels per degree.
+Mars source: NASA MOLA MEGDR elevation model.
+Mars grid: 16 pixels per degree.
+Slope: spherical-grid finite-difference approximation.
+Roughness: local elevation standard deviation.
+Roughness target: approximately 11 km by 11 km.
+Latitude bands: 10-degree intervals.
+Area weighting: cosine of latitude.
+Latitude coordinates assume source grid rows run north to south.
+
+IMPORTANT DATA LIMITATIONS
+1. The Moon TIFF has no per-pixel direct-observation mask.
+2. Mars MEGDR includes interpolated values where direct
+   MOLA observations are unavailable.
+3. The roughness neighbourhood is a local rectangular
+   spherical-grid approximation, not an exact geodesic
+   or circular neighbourhood.
+4. Polar rows at absolute latitudes of 89 degrees or more
+   are excluded from slope and roughness calculations.
+5. Earth statistics represent 645 processed tiles only.
+   They are not a complete global Earth dataset.
+6. Earth roughness measurements use different spatial
+   scales and cannot be directly equated with the
+   approximately 11 km Moon and Mars measurements.
+7. Earth summary statistics are based on tile-level
+   values and are not pooled pixel-level global statistics.
+
+MOON RESULTS
+planet: Moon
+rows: 1440
+columns: 2880
+total_cells: 4147200
+elevation_min_km: -8.728876113891602
+elevation_max_km: 10.552375793457031
+elevation_grid_mean_km: -0.5192021727561951
+elevation_area_weighted_mean_km: -0.24838920835140677
+slope_mean_degrees: 4.539112811098031
+slope_area_weighted_mean_degrees: 4.178982685866049
+slope_median_degrees: 3.181451174489232
+slope_p90_degrees: 10.86634962621009
+slope_valid_cells: 4101120
+roughness_mean_km: 0.2502714991569519
+roughness_area_weighted_mean_km: 0.23706460681538535
+roughness_median_km: 0.19524329900741577
+roughness_p90_km: 0.5585817098617554
+roughness_valid_cells: 4101120
+equatorial_pixel_size_km: 3.7904188030186856
+roughness_target_km: 11.0
+
+MARS RESULTS
+planet: Mars
+rows: 2880
+columns: 5760
+total_cells: 16588800
+elevation_min_km: -8.177000045776367
+elevation_max_km: 21.17099952697754
+elevation_grid_mean_km: -0.721107006072998
+elevation_area_weighted_mean_km: -0.5506923498602962
+slope_mean_degrees: 1.1871336867497286
+slope_area_weighted_mean_degrees: 1.2326987290105005
+slope_median_degrees: 0.4909967418558769
+slope_p90_degrees: 2.910959646649242
+slope_valid_cells: 16404480
+roughness_mean_km: 0.06469525396823883
+roughness_area_weighted_mean_km: 0.07062676500531913
+roughness_median_km: 0.02898704633116722
+roughness_p90_km: 0.16271857917308807
+roughness_valid_cells: 16404480
+equatorial_pixel_size_km: 3.7044613373579645
+roughness_target_km: 11.0
+
+EARTH REFERENCE
+Earth processed tiles: 645 (existing Member 1 and Member 2 summary).
+
+CONCLUSION
+The analysis provides a physical terrain comparison
+between the available Moon and Mars elevation grids.
+The existing Earth results provide a partial reference.
+Differences in source resolution, coverage, observation
+methods and roughness scales must be considered when
+interpreting comparisons.
+
+
+
