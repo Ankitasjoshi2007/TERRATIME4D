@@ -1,0 +1,73 @@
+location,latitude,longitude,year,month,aod_55,aod_55_adjusted,high_aerosol_loading_month
+Western Australia,-32.5,117.5,2020,1,0.07,0.07,False
+Western Australia,-32.5,117.5,2020,2,0.1,0.1,False
+Western Australia,-32.5,117.5,2020,3,0.08,0.08,False
+Western Australia,-32.5,117.5,2020,4,0.05,0.05,False
+Western Australia,-32.5,117.5,2020,5,0.03,0.03,False
+Western Australia,-32.5,117.5,2020,6,0.03,0.03,False
+Western Australia,-32.5,117.5,2020,7,0.02,0.02,False
+Western Australia,-32.5,117.5,2020,8,0.04,0.04,False
+Western Australia,-32.5,117.5,2020,9,0.06,0.06,False
+Western Australia,-32.5,117.5,2020,10,0.06,0.06,False
+Western Australia,-32.5,117.5,2020,11,0.08,0.08,False
+Western Australia,-32.5,117.5,2020,12,0.06,0.06,False
+Queensland Australia,-22.5,147.5,2020,1,0.23,0.23,True
+Queensland Australia,-22.5,147.5,2020,2,0.11,0.11,False
+Queensland Australia,-22.5,147.5,2020,3,0.09,0.09,False
+Queensland Australia,-22.5,147.5,2020,4,0.06,0.06,False
+Queensland Australia,-22.5,147.5,2020,5,0.06,0.06,False
+Queensland Australia,-22.5,147.5,2020,6,0.06,0.06,False
+Queensland Australia,-22.5,147.5,2020,7,0.05,0.05,False
+Queensland Australia,-22.5,147.5,2020,8,0.06,0.06,False
+Queensland Australia,-22.5,147.5,2020,9,0.07,0.07,False
+Queensland Australia,-22.5,147.5,2020,10,0.08,0.08,False
+Queensland Australia,-22.5,147.5,2020,11,0.08,0.08,False
+Queensland Australia,-22.5,147.5,2020,12,0.15,0.15,True
+Baja California Mexico,27.5,-112.5,2020,1,0.05,0.05,False
+Baja California Mexico,27.5,-112.5,2020,2,0.06,0.06,False
+Baja California Mexico,27.5,-112.5,2020,3,0.09,0.09,False
+Baja California Mexico,27.5,-112.5,2020,4,0.08,0.08,False
+Baja California Mexico,27.5,-112.5,2020,5,0.09,0.09,False
+Baja California Mexico,27.5,-112.5,2020,6,0.11,0.11,False
+Baja California Mexico,27.5,-112.5,2020,7,0.13,0.13,True
+Baja California Mexico,27.5,-112.5,2020,8,0.15,0.16,True
+Baja California Mexico,27.5,-112.5,2020,9,0.2,0.2,True
+Baja California Mexico,27.5,-112.5,2020,10,0.1,0.1,False
+Baja California Mexico,27.5,-112.5,2020,11,0.06,0.06,False
+Baja California Mexico,27.5,-112.5,2020,12,0.04,0.04,False
+Ontario Canada,47.5,-82.5,2020,1,0.08,0.08,False
+Ontario Canada,47.5,-82.5,2020,2,0.05,0.05,False
+Ontario Canada,47.5,-82.5,2020,3,0.17,0.17,True
+Ontario Canada,47.5,-82.5,2020,4,0.16,0.16,True
+Ontario Canada,47.5,-82.5,2020,5,0.16,0.16,True
+Ontario Canada,47.5,-82.5,2020,6,0.18,0.18,True
+Ontario Canada,47.5,-82.5,2020,7,0.19,0.19,True
+Ontario Canada,47.5,-82.5,2020,8,0.26,0.26,True
+Ontario Canada,47.5,-82.5,2020,9,0.42,0.42,True
+Ontario Canada,47.5,-82.5,2020,10,0.16,0.16,True
+Ontario Canada,47.5,-82.5,2020,11,0.1,0.1,False
+Ontario Canada,47.5,-82.5,2020,12,0.06,0.06,False
+Brooks Range Alaska,67.5,-147.5,2020,1,0.0,0.0,False
+Brooks Range Alaska,67.5,-147.5,2020,2,0.0,0.0,False
+Brooks Range Alaska,67.5,-147.5,2020,3,0.02,0.02,False
+Brooks Range Alaska,67.5,-147.5,2020,4,0.04,0.04,False
+Brooks Range Alaska,67.5,-147.5,2020,5,0.12,0.12,False
+Brooks Range Alaska,67.5,-147.5,2020,6,0.15,0.15,True
+Brooks Range Alaska,67.5,-147.5,2020,7,0.24,0.24,True
+Brooks Range Alaska,67.5,-147.5,2020,8,0.21,0.21,True
+Brooks Range Alaska,67.5,-147.5,2020,9,0.09,0.09,False
+Brooks Range Alaska,67.5,-147.5,2020,10,0.03,0.03,False
+Brooks Range Alaska,67.5,-147.5,2020,11,0.02,0.02,False
+Brooks Range Alaska,67.5,-147.5,2020,12,0.0,0.0,False
+Scandinavia,67.5,17.5,2020,1,0.03,0.03,False
+Scandinavia,67.5,17.5,2020,2,0.03,0.03,False
+Scandinavia,67.5,17.5,2020,3,0.04,0.04,False
+Scandinavia,67.5,17.5,2020,4,0.07,0.07,False
+Scandinavia,67.5,17.5,2020,5,0.1,0.1,False
+Scandinavia,67.5,17.5,2020,6,0.14,0.14,True
+Scandinavia,67.5,17.5,2020,7,0.17,0.17,True
+Scandinavia,67.5,17.5,2020,8,0.11,0.11,False
+Scandinavia,67.5,17.5,2020,9,0.13,0.13,True
+Scandinavia,67.5,17.5,2020,10,0.09,0.09,False
+Scandinavia,67.5,17.5,2020,11,0.07,0.07,False
+Scandinavia,67.5,17.5,2020,12,0.09,0.09,False

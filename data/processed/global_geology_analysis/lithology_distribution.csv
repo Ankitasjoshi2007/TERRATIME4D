@@ -1,0 +1,396 @@
+﻿lithology,record_count
+sedimentary rocks,349
+sedimentary,150
+crystalline metamorphic rocks,56
+intrusive igneous rocks,47
+Siliciclastic,40
+sandstone-siltstone,18
+"sandstone, siltstone, shale, limestone;",16
+plutonic and metamorphic,15
+"redbeds, quartz arenite, arkose, conglomerate, evaporites;",13
+mafic volcanic rocks,12
+metamorphic,12
+"siltstone,shale,sandstone",10
+"sandstone, siltstone, shale; marine fossils;",10
+regolith,9
+gneiss,9
+Granite,8
+flood basalt(s); mafic-intermediate volcanic rocks,8
+"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs;",8
+intermediate volcanic rocks,7
+volcanic,7
+metamorphic and undivided crystalline: undivided gneissic rocks,7
+"limestone, dolostone, shale, evaporites, chalk; carbonate reefs",7
+volcanic rocks,6
+mudstone-carbonate-sandstone-conglomerate,6
+sedimentary and volcaniclastic,6
+Sedimentary,6
+"volcanic rocks; lava flows, pyroclastic debris;",6
+"sandstone, siltstone, shale, coal; plant fossils;",6
+igneous felsic intrusive,5
+volcanic-sedimentary,5
+intermediate-felsic volcanic rocks,5
+flood basalt(s); mafic volcanic rocks; basalt,5
+sand,5
+metamorphic and undivided crystalline: mainly tonalite gneiss,5
+"Volcaniclastic, volcanic",4
+low-medium grade unclassified metamorphic rock,4
+medium-high grade orthogneiss/paragneiss/metavolcanic gneiss,4
+orthogneiss/paragneiss,4
+limestone,4
+volcanic: felsic rocks,4
+"sand, chalk, mud",4
+volcanic: interlayered sedimentary and volcanic rocks,4
+diamicton,4
+"Major:{carbonates}, Minor{sandstone,claystone}",4
+"Major:{sand}, Minor{clay,sandstone,marl}",4
+"Major:{sandstone}, Minor{claystone,limestone}",4
+"Major:{claystone}, Minor{sandstone,marl,conglomerate}",4
+"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate",4
+"siltstone,shale,carbonate",4
+plutonic: undivided granitic rocks,4
+granite,4
+"redbeds, quartz arenite, arkose, conglomerate, evaporites",4
+Low to medium grade metamorphic,3
+sedimentary (karoo),3
+"sandstone,shale,limestone,siltstone",3
+sandstone,3
+low grade unclassified metamorphic rock,3
+mudstone-carbonate-sandstone,3
+"sand, clay, peat, gravel, lignite",3
+carbonate-sandstone-conglomerate,3
+plutonic: intermediate rocks,3
+acidic igneous extrusive,3
+continental sedimentary,3
+mafic-felsic mixed volcanic rocks,3
+volcanic: mafic rocks,3
+"Major:{clay}, Minor{rock salt,sandstone,limestone}",3
+metamorphic and undivided crystalline: orthogneiss,3
+clay,3
+"Major:{sand}, Minor{sandstone,clay}",3
+peat,3
+Unconsolidated,3
+"unconsolidated, volcanic",3
+sedimentary and/or volcanic rock: undivided,3
+"diorite, monzodiorite, tonalite, granodiorite, monzogranite, syenogranite, quartz-monzonite, tonalite; gabbro, ultramafics: serpentinized peridotite ; charnockite and orthogneiss",3
+"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate;",3
+"siliciclastic, consolidated",3
+"basalt, olivine basalt, tholeiite, alkali basalt, basanite, pillow basalt, flood basalt;",3
+"conglomerate,breccia,shale,limestone,siltstone,greywacke",3
+Volcanic,2
+"laterite,clay,gravel,sand,silt",2
+basalt,2
+"glacial deposits,sandstone,siltstone,limestone",2
+Medium to high grade metamorphic,2
+"unconsolidated sand, gravel and mud",2
+"shale, sandstone, siltstone",2
+"clay, gravel, sand",2
+migmatite; orthogneiss/paragneiss,2
+"sand, clay, gravel, silt; alluvium",2
+quartz arenite,2
+plutonic,2
+migmatite; paragneiss,2
+ignimbrite(s); felsic volcanic rocks,2
+"carbonate,shale",2
+"clay, sand, gravel",2
+"gravel, conglomerate, sand and silt",2
+siliciclastic,2
+sedimentary and volcanic rocks,2
+"gneiss, sedimentary",2
+"clay, silt",2
+"clay, gravel, sand, silt",2
+felsic volcanic rocks,2
+"sand, silt",2
+"coal, sandstone, shale",2
+"clay, sand, sandstone, silt, minor lignite",2
+"graywacke, mudstone",2
+syenite,2
+quartz dioritic intrusive rocks,2
+basaltic volcanic rocks,2
+metamorphic and undivided crystalline: paragneiss,2
+mudstone,2
+"Major:{sand}, Minor{silt,clay}",2
+"Major:{clay}, Minor{sandstone,marl,limestone}",2
+"granite, alkali feldspar granite intrusive rocks",2
+dacitic volcanic rocks,2
+volcanic: undivided volcanic rocks,2
+coarse clastic sedimentary rocks,2
+"sandstone, siltstone, shale, coal; plant fossils",2
+"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate or metamorphosed equivalent",2
+undivided crystalline rocks,2
+orthogneiss/paragneiss/metavolcanic gneiss,2
+"Granitoid, syenitoid and metamorphic equivalents",2
+"gneiss, migmatite, granite, augen gneiss, mica gneiss",2
+"Major:{granite}, Minor{meta-granite,monzonite,meta-monzonite}",2
+"greywacke, phyllite, mica schist, meta-arkose, graphitic schist, paragneiss, conglomerate, amphibolite",2
+"Major:{meta-sandstone}, Minor{mica schist,gneiss,amphibolite}",2
+"granite, monzonite, quartz monzonite, quartz monzodiorite",2
+"tonalite, granodiorite, granite gneiss, enderbite, migmatite",2
+"gabbro, olivine gabbro, diabase, norite, quartz norite, diorite, tonalite;",2
+"rhyolite, felsic tuff, felsic pyroclastic rocks, felsic agglomerate;",2
+Metamorphic,2
+"sandstone, siltstone, shale; marine fossils",2
+"granite, granodiorite, tonalite, quartz diorite, diorite, gabbro",2
+"metamorphosed siliciclastic rocks: pelitic gneiss/schist, marble,  metabasalt, gabbro, quartzite; peridotite; psammite, pelite, marble, dolomite, calc-silicate, arkose, wacke, iron-formation; pyroclastic rocks",2
+carbonates,2
+unclassified metamorphic rock,1
+"marl,shale,sandstone",1
+igneous mafic intrusive,1
+"sandstone,siltstone,mudstone",1
+Major:: {gravel},1
+"mud, sand, gravel, peat",1
+"mafic volcanic rocks; basalt; chert,greywacke,argillite,limestone",1
+amphibolite/granulite grade orthogneiss,1
+"sandstone,shale,limestone,siltstone,tillite,dolomite",1
+"andesite, basalt",1
+flood basalt(s); mafic volcanic rocks,1
+"sandstone, siltstone",1
+granodiorite gneiss; orthogneiss/paragneiss,1
+igneous mafic volcanic,1
+"mafic volcanic rocks; conglomerate,carbonate,sandstone,shale",1
+"shale,sandstone,limestone,siltstone",1
+"sandstone,shale,siltstone,limestone",1
+mafic volcanic rocks; basalt,1
+"fine sandstone, quartz arenite",1
+lake,1
+"conglomerate,siltstone,shale,sandstone",1
+"sandstone,conglomerate,siltstone,mudstone",1
+"conglomerate polymictic, conglomeratic mudstone",1
+medium-high grade orthogneiss,1
+"migmatite, granite gneiss, orthogneiss",1
+granulite grade unclassified metamorphic rock,1
+"andesite, tuff rhyolitic, tuff riodacite, dacite, tuff dacite, tuff, rhyolite, rhyodacite",1
+Rhyolite,1
+mafic-intermediate volcanic rocks,1
+"sand, clay, gravel",1
+"sandstone, mudstone, siltstone",1
+intermediate volcanic rocks; trachyte,1
+medium-high grade unclassified metamorphic rock,1
+"sand, gravel, and silt",1
+"silicic intrusive igneous rocks, paragneiss, and migmatite",1
+low-medium grade metasedimentary/metavolcanic schist,1
+"sandstone,argillite,conglomerate",1
+strataform assemblage(s); felsic volcanic rocks,1
+granitic gneiss; orthogneiss/paragneiss,1
+"metamorphic rocks, with orosirian metamorphism (tuareg shield)",1
+"Major:{sand}, Minor:{fine alluvium}",1
+"clay, sand",1
+"Major:{limestone,dolostone}, Minor:{sand,clay}, Incidental:{phosphatic shale}",1
+"carbonate, clay, claystone, sand",1
+"Major:{gravel,sand}",1
+Major:{unconsolidated alluvium},1
+"Major:{sand}, Minor:{fine alluvium}, Incidental:{silt}",1
+"clay, chalk, limestone, shale, minor carbonate, minor marl",1
+"Major:{clay}, Minor:{marl,limestone}",1
+"chalk,limestone,mud,sandstone",1
+"Major:{clay}, Minor:{sand,gravel}",1
+"clay, gravel, sand, silt, minor chert, minor sandstone",1
+"sand,mud,clay,chalk",1
+"chalk, clay, marl, sand",1
+"clay, carbonate, limestone",1
+"Major:{chalk}, Minor:{marl,clay,sand}",1
+"claystone, sandstone",1
+"Major:{sandstone,claystone}",1
+basalt group,1
+sandstone and siltstone,1
+Basaltic lava,1
+"chert, limestone, shale",1
+"calcareous mudstone, siltstone, FG sandstone, micritic limestone",1
+"Major:{limestone,mudstone}, Minor:{mixed clastic,conglomerate}",1
+sandstone-conglomerate,1
+"Major:{arkose,conglomerate,shale}, Minor:{limestone,siltstone}",1
+"conglomerate, quartzite",1
+"conglomerate, limestone, sandstone, shale, minor quartzite, minor siltstone",1
+"granitic, granodiorite",1
+"Major:{sandstone,conglomerate}",1
+"gravel, sand",1
+"Major:{sand,silt,clay}, Minor:{gravel}",1
+"dacite, granite, rhyolite",1
+"granitic, gravel, sand, silt, minor clay",1
+"clay, gravel, sand, silt, minor unconsolidated",1
+"chert, sand, sandstone",1
+"clay, chert, quartzite, sandstone, minor boulders, minor shale",1
+"metagabbro, granulite",1
+"Major:{sandstone,chert}, Minor:{dolostone}",1
+sandstone | shale,1
+"sand, sandstone, silt, siltstone, minor coal, minor shale",1
+"Major:{siltstone}, Minor:{sandstone,shale}, Incidental:{coal, limestone}",1
+"sandstone,shale, coal",1
+sandstone | siltstone | claystone  | coal,1
+"sandstone, shale, clay",1
+conglomerate,1
+"Major:{shale,siltstone}, Minor:{sandstone}, Incidental:{coal, conglomerate}",1
+"sandstone,shale,coal",1
+"Major:{gravel,sand}, Minor:{clay,silt}",1
+"gravel, sand, clay, silt",1
+"Major:{meta-sandstone}, Minor{shale/slate,meta-limestone}",1
+gravel,1
+"Major:{marble}, Minor{phyllite,mica schist,migmatite/anatexite}",1
+"Major:{meta-granite}, Minor{meta-gabbro,meta-sediment group,gneiss}",1
+Major: {basaltic andesite flows}; Major: {basalt flows}; Major: {andesite flows} Minor: {volcanic breccia}; Minor: {pyroclastic rocks},1
+"Major:{basalt,basaltic andesite}",1
+andesite,1
+"Major: {basalt flows, olivine phenocrysts; mineralogy: highly feldapthic}",1
+"basalt, andesite, sedimentary",1
+"Major:{basalt}, Minor:{andesite,mixed clastic,rhyolite}",1
+"Incidental:{argillite, siltstone}",1
+"gneiss, granite",1
+"sedimentary, carbonate, limestone, mudstone, sandstone, minor argillite, minor conglomerate, minor siltstone",1
+"limestone,dolomite,siltstone,sandstone,shale",1
+"claystone, conglomerate, marl, sandstone, minor granite",1
+"Major:{sandstone}, Minor:{claystone,conglomerate,marl,volcanic}, Incidental:{marlstone}",1
+"igneous, granite, granodiorite",1
+"carbonate, gravel, sandstone, shale",1
+"Major:{siltstone mudstone,conglomerate sandstone}, Incidental:{volcanic}",1
+"chalk, sandstone, shale",1
+"clay, carbonate, chert, limestone, minor granite, minor igneous, minor metamorphic, minor quartzite, minor sand, minor sandstone, minor shale",1
+"Major:{shale}, Incidental:{gypsum}",1
+"boulders, carbonate, granite, gravel, minor basalt, minor chert, minor diorite, minor gabbro, minor greenstone, minor igneous, minor limestone, minor metamorphic, minor pegmatite, minor quartzite, minor rhyolite, minor slate, minor volcanic",1
+"Major:{limestone,dolostone}, Minor:{sedimentary breccia,shale}, Incidental:{anhydrite, chert}",1
+"mudstone, sandstone, siltstone",1
+"anhydrite, evaporite, limestone, shale, minor chert, minor gypsum, minor sandstone",1
+clastic,1
+"limestone, dolostone, shale",1
+"gravel, sand, ice",1
+"shale, siltstone",1
+"Major:{shale,siltstone}",1
+"clay, gravel, sand, silt, minor ice, minor peat",1
+"gneiss, quartzite",1
+"gravel, ice, sand, silt, clay, minor boulders, minor carbonate, minor peat",1
+"Major:{gneiss}, Minor:{quartzite}",1
+"Major:{quartzite}, Minor{shale/slate,greenschist,conglomerate}",1
+"Major:{marl}, Minor{conglomerate,limestone,gypsum}",1
+orthogneiss,1
+orthogneiss [95.0%..100.0%],1
+carbonate sedimentary rock,1
+"Major:{limestone}, Minor{siliceous ooze,carbonates, consolidated,marl}",1
+"Major:{limestone}, Minor{marl,sandstone,tuff group}",1
+mixed rock Cretaceous accretionary complex,1
+Major:: {basalt},1
+"basalt flows (Priest Rapids Member [CRB, WB])",1
+"Major:{basalt}, Incidental:{sandstone, siltstone, andesite, dacite, rhyolite, conglomerate}",1
+"basalt, volcanic, conglomerate, sandstone, siltstone",1
+"sand, gravel",1
+Major:{unconsolidated drift},1
+"Major:{sandstone}, Minor:{black shale,coal}",1
+"Major:{siltstone,claystone,sandstone}, Incidental:{lignite}",1
+Major:{shale},1
+"clay, sand, silt",1
+shale,1
+"clay, silt, gravel, sand, minor boulders, minor diatomite, minor ice, minor marl",1
+"granite, greenstone, tonalite",1
+"sand, mud, chalk, carbonate",1
+ice,1
+"Major:{graywacke,mudstone}",1
+tonalite to granodiorite-foliated to gneissic-with minor supracrustal inclusions,1
+"clay, gravel, ice, sand, minor peat, minor silt",1
+clay [95.0%..100.0%],1
+"Major:{limestone}, Minor{sandstone,siltstone,marl}",1
+conglomerate [5.0%..50.0%]; impure Carbonate [50.0%..95.0%]; sandstone [5.0%..50.0%],1
+"silty sand, clay, often calcareous",1
+impure carbonate sedimentary rock,1
+"Sand, clay, marl",1
+"Major:{clay}, Minor{sand,carbonates, consolidated,marl}",1
+phyllite,1
+"Diabase, spilite, greenschist, amphibolite, gabbro, serpentinite",1
+"Major:{phyllite}, Minor{shale/slate,sandstone,undifferentiated}",1
+"Major:{sandstone}, Minor{marl,gravel,limestone}",1
+"Major:{marl}, Minor{clay,sand,sandstone}",1
+"Major:{clay}, Minor{sand,sandstone,limestone}",1
+intermediate-felsic volcanic rocks; dacite,1
+sandstone and limestone,1
+"sandstone, siltstone, and mudstone",1
+marine shale/muddy sandstone,1
+silty marine claystone and shale,1
+"limestone, dolomite",1
+tonalite to granodiorite-foliated to massive,1
+"basaltic and andesitic flows, tuffs and breccias, chert, iron formation, minor metasedimentary and intrusive rocks, related migmatites",1
+"limestone, dolostone, shale, sandstone, gypsum, salt",1
+paragneiss,1
+"plutonic: syenite, monzogranite",1
+crinoidal wackestone/packstone limestone,1
+"Major:{limestone}, Minor{claystone,sandstone}",1
+"mudstone, siltstone and sandstone",1
+"Silt; clayey, sandy, gravelly, pebbly, partially calcareous",1
+Peat,1
+"Major:{sand}, Minor{silt,clay,sandstone}",1
+"Major:{sandstone}, Minor{conglomerate,clay,claystone}",1
+"Major:{sandstone}, Minor{schist group,tuffite group,basalt group}",1
+Tectonite,1
+"limestone, mudstone, sandstone, volcanic, minor andesite, minor argillite, minor basalt, minor basaltic-andesite, minor chert, minor clastic, minor conglomerate, minor greenstone",1
+"major:{shale: sideritic, dark; and siltstone}",1
+"sandstone, siltstone, and shale",1
+"major:{shale: dark grey, thin-bedded; and shale: silty}, minor:{ironstone: nodules and partings}",1
+clay-intraclast-rich quartz arenite,1
+wathaman granite,1
+psammitic greywacke,1
+plutonic: mafic rocks,1
+"limestone, calcarenite",1
+psammite and pelite,1
+quartzite,1
+Granitoid to syenitoid migmatitic gneiss,1
+"Major:{granodiorite-diorite group}, Minor{gneiss,meta-granodiorite-diorite group,meta-granite}",1
+"deformed sedimentary, metamorphic, and igneous rocks",1
+"Major:{sandstone}, Minor{limestone,dolomite/dolostone}",1
+"Major:{sandstone}, Minor{clay,marl,limestone}",1
+"Major:{gypsum}, Minor{rock salt,limestone,clay}",1
+"conglomerate, sandstone, shale, siltstone, minor argillite, minor arkose, minor bituminous, minor chert, minor coal, minor granitic, minor metamorphic, minor schist, minor sedimentary, minor volcanic",1
+"argillite, conglomerate, graywacke, shale, minor chert, minor plutonic, minor sandstone, minor siltstone, minor volcanic",1
+"argillite, graywacke, shale, siltstone, minor chert, minor conglomerate, minor coquina, minor igneous, minor limestone, minor sedimentary",1
+"conglomerate, graywacke, mudstone, volcanic, minor amphibolite, minor diorite, minor gabbro, minor gneiss, minor limestone, minor metamorphic, minor phyllite, minor schist",1
+"Major: {basalt,breccia,andesite,porphyry,dacite,trachyte},Minor: {conglomerate,agglomerate}",1
+"basalt, olivine basalt, tholeiite, alkali basalt, basanite, pillow basalt, flood basalt",1
+bimodal volcanic rocks,1
+"Major: {slate},Minor: {chert,siltstone,sandstone,conglomerate}",1
+"major:{marlstone: bituminous, dark, fossiliferous; interbedded with limestone: dark brown, nodular and thin-bedded, fossiliferous; overlain by limestone: very fine-grained, dark brown and grey, thin-bedded, petroliferous, fossiliferous}, minor:{shale: bituminous, black}",1
+"greywacke, pelite; quartzite, conglomerate, iron-formation, marble, volcanics; includes pre-yellowknife supergroup metasedimentary rocks",1
+turbiditic sandstone,1
+"semipelite, psammite",1
+"pelite, quartzite; amphibolite, ironstone, marble, calc-silicate rock",1
+"charnockite, monzogranite to syenogranite, granodiorite; quartz diorite, diorite, metaperidotite",1
+"gneiss, migmatite, amphibolite, foliated granite, mica gneiss",1
+"Major:{granite}, Minor{granodiorite-diorite group,meta-granite,meta-granodiorite-diorite group}",1
+mudstone-sandstone-conglomerate,1
+"Nepheline syenite, pyroxenite, carbonatite, foidolite",1
+wacke,1
+"Major:{granite}, Minor{monzonite,syenite}",1
+mica schist; metasedimentary schist,1
+"granodiorite, tonalite, quartz diorite, granite, syenite",1
+"Major:{carbonates}, Minor{clay,sandstone}",1
+"Major:{clay}, Minor{sandstone,limestone,coal}",1
+"granite, monzogranite, quartz monzonite, leucogranite, alkalic granite, alaskite;",1
+"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs or metamorphosed equivalent",1
+"metasedimentary, metavolcanic, argillite, marble, phyllite, quartzite, minor amphibolite, minor dolostone, minor gabbro, minor gneiss, minor greenstone, minor hornfels, minor metaconglomerate, minor schist, minor sedimentary, minor volcanic",1
+"shale, limestone, mudstone, sandstone, minor arenite, minor chert, minor graywacke, minor metasandstone, minor metasiltstone, minor phyllite, minor siltstone",1
+"schist, granitic, marble, orthogneiss, minor metamorphic",1
+"sandstone, siltstone, shale, limestone or metamorphosed equivalent",1
+"Major: {shale,siltstone,sandstone},Minor: {conglo}",1
+"sandstone, shale, dolomite",1
+"granulite paragneiss, migmatite, diatexite, subordinate calc-silicate gneiss and amphibolite",1
+"granulite paragneiss, mafic gneiss, calc-silicate gneiss, granite",1
+"gneiss, migmatite; reworked amphibolite and granulite facies rocks",1
+granitoid gneiss; granulite grade orthogneiss,1
+"Granite, granodiorite, syenitoid, quartz monzodiorite and metamorphic equivalents",1
+"Major:{granodiorite}, Minor{granite,gabbro}",1
+"Major:{mica schist}, Minor{conglomerate,sandstone,tuffite group}",1
+"quartzite, conglomerate, grit, tillite; minor arkose, mica schist, diabase, metabasalt, tuffite, gneiss, marble",1
+"feldspathic sandstone,quartzite,conglomerate",1
+"Major:{andesite group}, Minor{undifferentiated,amphibolite,mica schist}",1
+felsic and intermediate volcanic rocks,1
+"Major:{sandstone}, Minor{claystone,limestone,conglomerate}",1
+"Major:{sandstone}, Minor{shale/slate,limestone}",1
+sedimentary and/or volcanic rock: undivided;,1
+"dacite, latite, andesite, rhyolite and related pyroclastic rocks;",1
+"sandstone, siltstone, shale, limestone",1
+"stromatolitic limestone and dolostone, dolostone conglomerate and breccia; siltstone, shale; olistostromes",1
+"granitic migmatite, orthogneiss, megacrystic monzogranite, amphibolite, pyroxenite, meta-anorthositic gabbro, mylonite",1
+granitoid gneiss; amphibolite grade orthogneiss,1
+"shale,sandstone,conglomerate",1
+"Major:{limestone}, Minor{sandstone,clay}",1
+metasedimentary rocks; undivided,1
+"limestone, dolostone, shale, evaporites, chalk, shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate; carbonate reefs",1
+"major:{quartz sandstone, siltstone, shale}, minor:{conglomerate, ironstone, coal}, rare:{basalt}",1
+"major:{siltstone, sandstone}, minor:{conglomerate, limestone}",1
+"Major:{claystone}, Minor{siltstone,sandstone,limestone}",1
+"quartzite, schist, phyllite, diamictite, conglomeratic greywacke, marble, limestone, dolostone, minor gabbro",1
+"shale, chert, iron-formation, greywacke, turbidites, argillaceous limestone, matrix supported conglomerate; metamorphosed equivalent",1

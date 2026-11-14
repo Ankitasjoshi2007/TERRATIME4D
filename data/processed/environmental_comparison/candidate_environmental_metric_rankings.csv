@@ -1,0 +1,61 @@
+metric,candidate,value,rank_highest
+Mean annual temperature (2020),Western Australia,16.769166666666667,3.0
+Mean annual temperature (2020),Queensland Australia,23.354166666666668,2.0
+Mean annual temperature (2020),Baja California Mexico,23.631666666666664,1.0
+Mean annual temperature (2020),Ontario Canada,2.686666666666667,4.0
+Mean annual temperature (2020),Brooks Range Alaska,-8.393333333333333,6.0
+Mean annual temperature (2020),Scandinavia,-2.5108333333333333,5.0
+Mean solar irradiance,Western Australia,231.785,3.0
+Mean solar irradiance,Queensland Australia,248.6916666666667,2.0
+Mean solar irradiance,Baja California Mexico,254.79083333333327,1.0
+Mean solar irradiance,Ontario Canada,142.1,4.0
+Mean solar irradiance,Brooks Range Alaska,108.025,5.0
+Mean solar irradiance,Scandinavia,85.60083333333334,6.0
+Mean aerosol optical depth,Western Australia,0.0566666666666666,6.0
+Mean aerosol optical depth,Queensland Australia,0.0916666666666666,3.0
+Mean aerosol optical depth,Baja California Mexico,0.0966666666666666,2.0
+Mean aerosol optical depth,Ontario Canada,0.1658333333333333,1.0
+Mean aerosol optical depth,Brooks Range Alaska,0.0766666666666666,5.0
+Mean aerosol optical depth,Scandinavia,0.0891666666666666,4.0
+Mean surface-water occurrence,Western Australia,0.0992875,4.0
+Mean surface-water occurrence,Queensland Australia,0.0856625,5.0
+Mean surface-water occurrence,Baja California Mexico,0.00105,6.0
+Mean surface-water occurrence,Ontario Canada,1.68804375,3.0
+Mean surface-water occurrence,Brooks Range Alaska,8.5783125,1.0
+Mean surface-water occurrence,Scandinavia,2.6847375,2.0
+Pixels with detected water,Western Australia,0.348125,5.0
+Pixels with detected water,Queensland Australia,0.640625,4.0
+Pixels with detected water,Baja California Mexico,0.011875,6.0
+Pixels with detected water,Ontario Canada,2.31375,3.0
+Pixels with detected water,Brooks Range Alaska,9.7525,1.0
+Pixels with detected water,Scandinavia,3.845,2.0
+Persistent water pixels,Western Australia,0.0,4.0
+Persistent water pixels,Queensland Australia,0.0,4.0
+Persistent water pixels,Baja California Mexico,0.0,4.0
+Persistent water pixels,Ontario Canada,0.8375,3.0
+Persistent water pixels,Brooks Range Alaska,6.464375,1.0
+Persistent water pixels,Scandinavia,1.18625,2.0
+Geological record count,Western Australia,3.0,4.0
+Geological record count,Queensland Australia,3.0,4.0
+Geological record count,Baja California Mexico,3.0,4.0
+Geological record count,Ontario Canada,4.0,3.0
+Geological record count,Brooks Range Alaska,5.0,1.0
+Geological record count,Scandinavia,5.0,1.0
+Mean terrain slope,Western Australia,1.4548394680023191,5.0
+Mean terrain slope,Queensland Australia,1.1471855640411377,6.0
+Mean terrain slope,Baja California Mexico,6.340234756469727,3.0
+Mean terrain slope,Ontario Canada,3.634918689727783,4.0
+Mean terrain slope,Brooks Range Alaska,9.678308486938477,2.0
+Mean terrain slope,Scandinavia,10.871079444885254,1.0
+Mean terrain roughness at 630m,Western Australia,4.307965278625488,5.0
+Mean terrain roughness at 630m,Queensland Australia,2.962100028991699,6.0
+Mean terrain roughness at 630m,Baja California Mexico,17.24042510986328,3.0
+Mean terrain roughness at 630m,Ontario Canada,8.329710960388184,4.0
+Mean terrain roughness at 630m,Brooks Range Alaska,29.44953346252441,2.0
+Mean terrain roughness at 630m,Scandinavia,35.468833923339844,1.0
+Hidden ruggedness,Western Australia,0.2930555555555555,3.0
+Hidden ruggedness,Queensland Australia,0.3447916666666666,2.0
+Hidden ruggedness,Baja California Mexico,0.02875,6.0
+Hidden ruggedness,Ontario Canada,3.3584722222222223,1.0
+Hidden ruggedness,Brooks Range Alaska,0.1147222222222222,5.0
+Hidden ruggedness,Scandinavia,0.1320833333333333,4.0
