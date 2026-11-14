@@ -1,0 +1,1497 @@
+﻿cell_id,name,lithology,geological_period,younger_age_ma,older_age_ma,interval_duration_million_years
+139,Mesozoic volcanic rocks,mafic volcanic rocks,Jurassic,145.0,201.3,56.30000000000001
+140,Mesozoic volcanic rocks,mafic volcanic rocks,Jurassic,145.0,201.3,56.30000000000001
+141,Mesoproterozoic-Neoproterozoic sedimentary rocks,sedimentary rocks,Proterozoic,541.0,1200.0,659.0
+150,Mesozoic intrusive rocks,intrusive igneous rocks,Mesozoic,66.0,251.902,185.902
+152,Mesozoic intrusive rocks,intrusive igneous rocks,Mesozoic,66.0,251.902,185.902
+157,Cenozoic volcanic rocks,mafic volcanic rocks,Cenozoic,0.0,23.03,23.03
+213,Paleozoic intrusive rocks,intrusive igneous rocks,,251.902,541.0,289.098
+214,Cenozoic volcanic rocks,intermediate volcanic rocks,Cenozoic,0.0,66.0,66.0
+233,Mesozoic intrusive rocks,intrusive igneous rocks,Jurassic,145.0,201.3,56.30000000000001
+238,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,100.5,201.3,100.80000000000001
+251,Archean-Paleoproterozoic crystalline metamorphic rocks,unclassified metamorphic rock,,1600.0,4000.0,2400.0
+252,Paleoproterozoic-Mesoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Proterozoic,1200.0,2500.0,1300.0
+253,Archean-Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,2300.0,4000.0,1700.0
+254,Archean-Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,2300.0,4000.0,1700.0
+255,Archean-Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,2300.0,4000.0,1700.0
+256,Archean-Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,2300.0,4000.0,1700.0
+257,Precambrian-Phanerozoic sedimentary rocks,sedimentary rocks,,511.0,1000.0,489.0
+258,Archean-Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,2300.0,4000.0,1700.0
+259,Archean-Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,2300.0,4000.0,1700.0
+286,Paleozoic sedimentary rocks,sedimentary rocks,,485.4,541.0,55.60000000000002
+335,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+336,Mesoproterozoic-Neoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Proterozoic,541.0,1600.0,1059.0
+353,Paleoproterozoic-Mesoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Proterozoic,1200.0,2500.0,1300.0
+526,Cretaceous Volcano-sedimentary,"Volcaniclastic, volcanic",Cretaceous,66.0,143.1,77.1
+526,Mesozoic-Cenozoic sedimentary rocks,"marl,shale,sandstone",Phanerozoic,2.588,145.0,142.412
+598,Devonian - Carboniferous Low to medium grade,Low to medium grade metamorphic,Paleozoic,298.9,419.62,120.72000000000003
+598,Paleozoic crystalline metamorphic rocks,low-medium grade unclassified metamorphic rock,,298.9,541.0,242.10000000000002
+599,Jurassic Undifferentiated,Volcanic,Jurassic,143.1,201.4,58.30000000000001
+599,Mesozoic volcanic rocks,volcanic rocks,Mesozoic,66.0,201.3,135.3
+670,Neogene Granitic,Granite,Neogene,2.58,23.04,20.46
+670,Mesozoic-Cenozoic intrusive rocks,intrusive igneous rocks,Phanerozoic,2.588,201.3,198.71200000000002
+671,Neogene Undifferentiated,Volcanic,Neogene,2.58,23.04,20.46
+671,Mesozoic-Cenozoic volcanic rocks,volcanic rocks,Phanerozoic,2.588,145.0,142.412
+714,Tasmanian Dolerite,,Jurassic,145.0,201.3,56.30000000000001
+714,Jurassic mafic intrusives ,igneous mafic intrusive,Middle Jurassic,163.5,174.1,10.599999999999994
+714,Mesozoic sedimentary rocks,"sandstone,siltstone,mudstone",Mesozoic,201.3,251.902,50.601999999999975
+719,OIS1 (Holocene) fan deposits,Major:: {gravel},Quaternary,0.0,0.126,0.126
+719,Late Quaternary alluvium and colluvium,"mud, sand, gravel, peat",Cenozoic,0.34,12.7,12.36
+719,Mesozoic sedimentary and volcanic rocks,"mafic volcanic rocks; basalt; chert,greywacke,argillite,limestone",Mesozoic,145.0,251.902,106.90199999999999
+742,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+742,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+743,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+743,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+744,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+744,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+745,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+745,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+785,alluvium 38485,,Holocene,0.0,0.0117,0.0117
+785,Silurian to Devonian sedimentary rocks ,sedimentary,Paleozoic,393.3,427.4,34.099999999999966
+785,Paleozoic sedimentary rocks,sedimentary rocks,,427.4,541.0,113.60000000000002
+786,Adaminaby Group,,Ordovician,443.8,485.4,41.599999999999966
+786,Ordovician sedimentary rocks ,sedimentary,Ordovician,443.8,485.4,41.599999999999966
+786,Paleozoic sedimentary rocks,sedimentary rocks,,427.4,541.0,113.60000000000002
+815,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+815,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+816,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+816,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+817,Cretaceous Siliciclastic,Siliciclastic,Cretaceous,66.0,143.1,77.1
+817,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+818,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+818,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+833,Adelaide Subgroup of Beaufort Group of Karoo Supergroup,,Permian,251.902,298.9,46.99799999999999
+833,,sedimentary (karoo),Phanerozoic,145.0,298.9,153.89999999999998
+833,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+834,Adelaide Subgroup of Beaufort Group of Karoo Supergroup,,Permian,251.902,298.9,46.99799999999999
+834,,sedimentary (karoo),Phanerozoic,145.0,298.9,153.89999999999998
+834,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+852,colluvium 38491,,Cenozoic,0.0,2.588,2.588
+852,Archean granites ,igneous felsic intrusive,Archean,2500.0,3200.0,700.0
+852,Archean crystalline metamorphic rocks,amphibolite/granulite grade orthogneiss,Archean,2500.0,3200.0,700.0
+853,colluvium 38491,,Cenozoic,0.0,2.588,2.588
+853,Archean granites ,igneous felsic intrusive,Archean,2500.0,3200.0,700.0
+853,Archean intrusive rocks,intrusive igneous rocks,Archean,2500.0,3200.0,700.0
+856,colluvium 38491,,Cenozoic,0.0,2.588,2.588
+856,Neoproterozoic sedimentary rocks ,sedimentary,Neoproterozoic,541.0,720.0,179.0
+856,Neoproterozoic sedimentary rocks,"sandstone,shale,limestone,siltstone,tillite,dolomite",Neoproterozoic,541.0,1000.0,459.0
+857,Woorinen Formation,,Quaternary,0.0,0.781,0.781
+857,Cenozoic regolith ,regolith,Cenozoic,0.0,66.0,66.0
+857,Cenozoic sedimentary rocks,"laterite,clay,gravel,sand,silt",Cenozoic,2.588,66.0,63.412
+858,Girilambone Group,,Ordovician,443.8,485.4,41.599999999999966
+858,Ordovician sedimentary rocks ,sedimentary,Ordovician,443.8,485.4,41.599999999999966
+858,Paleozoic sedimentary rocks,sedimentary rocks,,427.4,541.0,113.60000000000002
+887,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+887,Precambrian-Phanerozoic sedimentary rocks,sedimentary rocks,,251.902,1000.0,748.098
+888,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+888,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+889,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+889,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+890,Paranapanema Fácies,"andesite, basalt",Mesozoic,100.5,145.0,44.5
+890,Cretaceous Basaltic,basalt,Cretaceous,66.0,143.1,77.1
+890,Mesozoic volcanic rocks,flood basalt(s); mafic volcanic rocks,Mesozoic,66.0,201.3,135.3
+904,,sedimentary,,443.8,635.0,191.2
+904,Precambrian-Phanerozoic sedimentary rocks,mudstone-carbonate-sandstone-conglomerate,,485.4,1000.0,514.6
+905,Kalahari Group,,Cenozoic,0.0,66.0,66.0
+905,,volcanic-sedimentary,Paleoproterozoic,1600.0,2050.0,450.0
+905,Paleoproterozoic sedimentary rocks,sedimentary rocks,Paleoproterozoic,1600.0,2500.0,900.0
+906,Volksrust Formation of Ecca Group of Karoo Supergroup,,Permian,251.902,298.9,46.99799999999999
+906,,sedimentary (karoo),Phanerozoic,145.0,298.9,153.89999999999998
+906,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+907,Alluvium,,Cenozoic,0.0,2.588,2.588
+907,,sedimentary,Cenozoic,0.0,2.588,2.588
+907,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+924,colluvium 38491,,Cenozoic,0.0,2.588,2.588
+924,Archean granites ,igneous felsic intrusive,Archean,2500.0,3200.0,700.0
+924,Archean intrusive rocks,intrusive igneous rocks,Archean,2500.0,3200.0,700.0
+925,dunes 38496,,Cenozoic,0.0,66.0,66.0
+925,Archean granites ,igneous felsic intrusive,Archean,2500.0,3200.0,700.0
+925,Archean intrusive rocks,intrusive igneous rocks,Archean,2500.0,3200.0,700.0
+926,lake deposits 38492,,Cenozoic,0.0,2.588,2.588
+926,Cenozoic alluvium ,regolith,Cenozoic,0.0,66.0,66.0
+926,Paleozoic sedimentary rocks,"glacial deposits,sandstone,siltstone,limestone",Paleozoic,251.902,358.9,106.99799999999999
+927,dunes 38496,,Cenozoic,0.0,66.0,66.0
+927,Cenozoic regolith ,regolith,Cenozoic,0.0,66.0,66.0
+927,Paleozoic sedimentary rocks,"glacial deposits,sandstone,siltstone,limestone",Paleozoic,251.902,358.9,106.99799999999999
+928,alluvium 38485,,Holocene,0.0,0.0117,0.0117
+928,Cenozoic regolith ,regolith,Cenozoic,0.0,66.0,66.0
+928,Cenozoic sedimentary rocks,"laterite,clay,gravel,sand,silt",Cenozoic,2.588,66.0,63.412
+929,sand plain 38499,,Cenozoic,0.0,66.0,66.0
+929,Cretaceous sedimentary rocks ,sedimentary,Mesozoic,66.0,145.0,79.0
+929,Mesozoic sedimentary rocks,"sandstone,shale,limestone,siltstone",Mesozoic,66.0,145.0,79.0
+930,sand plain 38499,,Cenozoic,0.0,66.0,66.0
+930,Cretaceous sedimentary rocks ,sedimentary,Mesozoic,66.0,145.0,79.0
+930,Mesozoic sedimentary rocks,"sandstone,shale,limestone,siltstone",Mesozoic,66.0,145.0,79.0
+931,Marburg Subgroup,,Jurassic,166.1,190.8,24.700000000000017
+931,Jurassic sedimentary rocks ,sedimentary,Jurassic,145.0,201.3,56.30000000000001
+931,Mesozoic sedimentary rocks,"sandstone,shale,limestone,siltstone",Mesozoic,66.0,145.0,79.0
+959,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+959,Cenozoic volcanic rocks,intermediate-felsic volcanic rocks,Cenozoic,0.0,66.0,66.0
+960,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+960,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+961,Orosirian Granitic,Granite,Orosirian,1800.0,2050.0,250.0
+961,Paleoproterozoic crystalline metamorphic rocks,medium-high grade orthogneiss/paragneiss/metavolcanic gneiss,Paleoproterozoic,1600.0,2500.0,900.0
+962,Rio Paraná Formação,sandstone,Late Cretaceous,66.0,100.5,34.5
+962,Cretaceous Siliciclastic,Siliciclastic,Cretaceous,66.0,143.1,77.1
+962,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+963,Corumbataí Formação,"sandstone, siltstone",Phanerozoic,247.2,259.1,11.900000000000034
+963,Permian Siliciclastic,Siliciclastic,Permian,251.902,298.9,46.99799999999999
+963,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+964,Neoproterozoic Medium to high grade,Medium to high grade metamorphic,Neoproterozoic,538.8,1000.0,461.20000000000005
+964,Neoproterozoic crystalline metamorphic rocks,low grade unclassified metamorphic rock,Neoproterozoic,541.0,1000.0,459.0
+976,,sedimentary and volcaniclastic,Neoproterozoic,541.0,720.0,179.0
+976,Paleoproterozoic-Mesoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Proterozoic,1000.0,2500.0,1500.0
+977,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+977,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+978,,plutonic and metamorphic,Neoarchean,2500.0,2800.0,300.0
+978,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+979,,sedimentary,Cenozoic,0.0,2.588,2.588
+979,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+982,,plutonic and metamorphic,Neoarchean,2500.0,2800.0,300.0
+982,Archean crystalline metamorphic rocks,granodiorite gneiss; orthogneiss/paragneiss,Archean,2500.0,4000.0,1500.0
+996,colluvium 38491,,Cenozoic,0.0,2.588,2.588
+996,Archean mafic volcanics ,igneous mafic volcanic,Neoarchean,2500.0,2800.0,300.0
+996,Archean sedimentary and volcanic rocks,"mafic volcanic rocks; conglomerate,carbonate,sandstone,shale",Neoarchean,2500.0,2800.0,300.0
+997,dunes 38496,,Cenozoic,0.0,66.0,66.0
+997,Cenozoic alluvium ,regolith,Cenozoic,0.0,66.0,66.0
+997,Paleoproterozoic crystalline metamorphic rocks,orthogneiss/paragneiss,Paleoproterozoic,1600.0,2500.0,900.0
+998,dunes 38496,,Cenozoic,0.0,66.0,66.0
+998,Cenozoic regolith ,regolith,Cenozoic,0.0,66.0,66.0
+998,Paleozoic sedimentary rocks,"shale,sandstone,limestone,siltstone",Permian,251.902,298.9,46.99799999999999
+999,sand plain 38499,,Cenozoic,0.0,66.0,66.0
+999,Paleoproterozoic granites ,igneous felsic intrusive,Statherian,1600.0,1800.0,200.0
+999,Neoproterozoic sedimentary rocks,sedimentary rocks,Neoproterozoic,541.0,1000.0,459.0
+1000,Kelly Creek Formation,,Ordovician,470.0,485.4,15.399999999999977
+1000,Cambrian to Ordovician sedimentary rocks ,sedimentary,,443.8,541.0,97.19999999999999
+1000,Paleozoic sedimentary rocks,mudstone-carbonate-sandstone,,443.8,541.0,97.19999999999999
+1001,Winton Formation,,Cretaceous,93.9,113.0,19.099999999999994
+1001,Cretaceous sedimentary rocks ,sedimentary,Mesozoic,66.0,145.0,79.0
+1001,Mesozoic sedimentary rocks,"sandstone,shale,siltstone,limestone",Mesozoic,66.0,145.0,79.0
+1002,mafic volcanic rocks 38495,,Cenozoic,0.0,66.0,66.0
+1002,Cambrian to Ordovician sedimentary rocks ,sedimentary,,443.8,541.0,97.19999999999999
+1002,Cenozoic volcanic rocks,mafic volcanic rocks; basalt,Cenozoic,2.588,66.0,63.412
+1031,Devonian Siliciclastic,Siliciclastic,Devonian,358.86,419.62,60.75999999999999
+1031,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1032,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+1032,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1033,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+1033,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1034,Botucatu Formação,"fine sandstone, quartz arenite",Mesozoic,134.05,157.3,23.25
+1034,Jurassic - Cretaceous Siliciclastic,Siliciclastic,Mesozoic,66.0,201.4,135.4
+1034,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1035,Tonian Low to medium grade,Low to medium grade metamorphic,Tonian,720.0,1000.0,280.0
+1035,Mesoproterozoic crystalline metamorphic rocks,low grade unclassified metamorphic rock,Mesoproterozoic,1000.0,1600.0,600.0
+1036,Cryogenian Siliciclastic,Siliciclastic,Cryogenian,635.0,720.0,85.0
+1036,Neoproterozoic crystalline metamorphic rocks,low grade unclassified metamorphic rock,Neoproterozoic,541.0,1000.0,459.0
+1047,,volcanic-sedimentary,Paleoproterozoic,1600.0,2050.0,450.0
+1047,Paleoproterozoic crystalline metamorphic rocks,orthogneiss/paragneiss,Paleoproterozoic,1600.0,2500.0,900.0
+1048,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1048,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1049,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1049,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1051,,plutonic and metamorphic,Archean,2800.0,3600.0,800.0
+1051,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+1052,,sedimentary,Cenozoic,0.0,2.588,2.588
+1052,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1054,,metamorphic,Mesoarchean,2800.0,3200.0,400.0
+1054,Archean intrusive rocks,intrusive igneous rocks,Neoarchean,2500.0,2800.0,300.0
+1069,sand plain 38499,,Cenozoic,0.0,66.0,66.0
+1069,Cenozoic regolith ,regolith,Cenozoic,0.0,66.0,66.0
+1069,Mesozoic sedimentary rocks,"conglomerate,siltstone,shale,sandstone",Mesozoic,66.0,145.0,79.0
+1070,Whitewater Volcanics,,Orosirian,1800.0,2050.0,250.0
+1070,Paleoproterozoic sedimentary rocks ,sedimentary,Orosirian,1800.0,2050.0,250.0
+1070,Paleoproterozoic intrusive rocks,intrusive igneous rocks,Statherian,1600.0,1800.0,200.0
+1071,sand plain 38499,,Cenozoic,0.0,66.0,66.0
+1071,Cenozoic regolith ,regolith,Cenozoic,0.0,66.0,66.0
+1071,Mesozoic sedimentary rocks,"sandstone,conglomerate,siltstone,mudstone",Mesozoic,66.0,145.0,79.0
+1072,colluvium 38491,,Cenozoic,0.0,2.588,2.588
+1072,Cambrian sedimentary rocks ,sedimentary,,485.4,541.0,55.60000000000002
+1072,Paleozoic sedimentary rocks,mudstone-carbonate-sandstone,,485.4,541.0,55.60000000000002
+1073,sand plain 38499,,Cenozoic,0.0,66.0,66.0
+1073,Cenozoic regolith ,regolith,Cenozoic,0.0,66.0,66.0
+1073,Cenozoic sedimentary rocks,"unconsolidated sand, gravel and mud",Cenozoic,2.588,66.0,63.412
+1102,Ordovician Siliciclastic,Siliciclastic,Ordovician,443.1,486.85,43.75
+1102,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,358.9,443.8,84.90000000000003
+1103,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+1103,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1104,Arenito-folhelho,"shale, sandstone, siltstone",Paleozoic,358.9,443.8,84.90000000000003
+1104,Silurian - Devonian Siliciclastic,Siliciclastic,Paleozoic,358.86,443.1,84.24000000000001
+1104,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,298.9,443.8,144.90000000000003
+1105,Salto das Nuvens Formação,"conglomerate polymictic, conglomeratic mudstone",Late Cretaceous,66.0,100.5,34.5
+1105,Cretaceous Siliciclastic,Siliciclastic,Cretaceous,66.0,143.1,77.1
+1105,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1106,Ronuro Formação,"clay, gravel, sand",Miocene,5.333,23.03,17.697000000000003
+1106,Neogene Siliciclastic,Siliciclastic,Neogene,2.58,23.04,20.46
+1106,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1107,Rhyacian Granitic,Granite,Rhyacian,2050.0,2300.0,250.0
+1107,Archean crystalline metamorphic rocks,medium-high grade orthogneiss,Archean,2500.0,4000.0,1500.0
+1108,Paramirim - migmatitos,"migmatite, granite gneiss, orthogneiss",Mesoarchean,2800.0,3200.0,400.0
+1108,Mesoarchean Medium to high grade,Medium to high grade metamorphic,Mesoarchean,2800.0,3200.0,400.0
+1108,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1120,,metamorphic,Archean,2500.0,3200.0,700.0
+1120,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1121,,sedimentary,Cenozoic,0.0,2.588,2.588
+1121,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1122,,sedimentary and volcaniclastic,Neoproterozoic,541.0,720.0,179.0
+1122,Mesoproterozoic-Neoproterozoic sedimentary rocks,sedimentary rocks,Proterozoic,541.0,1400.0,859.0
+1123,,plutonic and metamorphic,Mesoproterozoic,1000.0,1600.0,600.0
+1123,Mesoproterozoic crystalline metamorphic rocks,orthogneiss/paragneiss,Mesoproterozoic,1200.0,1600.0,400.0
+1124,,plutonic and metamorphic,Proterozoic,541.0,1600.0,1059.0
+1124,Mesoproterozoic crystalline metamorphic rocks,migmatite; orthogneiss/paragneiss,Mesoproterozoic,1000.0,1400.0,400.0
+1143,sediments 38493,,Cenozoic,0.0,66.0,66.0
+1143,Paleoproterozoic sedimentary rocks ,sedimentary,Orosirian,1800.0,2050.0,250.0
+1143,Archean crystalline metamorphic rocks,granulite grade unclassified metamorphic rock,Archean,2500.0,4000.0,1500.0
+1145,Bulimba Formation,,Cenozoic,0.0,66.0,66.0
+1145,Cretaceous sedimentary rocks ,sedimentary,Mesozoic,66.0,145.0,79.0
+1145,Cenozoic sedimentary rocks,"unconsolidated sand, gravel and mud",Cenozoic,2.588,66.0,63.412
+1173,Carboniferous Volcano-sedimentary,"Volcaniclastic, volcanic",Carboniferous,298.9,358.86,59.960000000000036
+1173,Cenozoic intrusive rocks,intrusive igneous rocks,Cenozoic,23.03,66.0,42.97
+1174,Depósitos aluvionares,"sand, clay, gravel, silt; alluvium",Holocene,0.0,0.0117,0.0117
+1174,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+1174,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1175,Içá Formação,"sand, clay, peat, gravel, lignite",Cenozoic,0.0117,2.588,2.5763000000000003
+1175,Neogene - Quaternary Siliciclastic,Siliciclastic,Cenozoic,0.0,23.04,23.04
+1175,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1176,Içá Formação,"sand, clay, peat, gravel, lignite",Cenozoic,0.0117,2.588,2.5763000000000003
+1176,Neogene - Quaternary Siliciclastic,Siliciclastic,Cenozoic,0.0,23.04,23.04
+1176,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1177,Igarapé Ipixuna Formação,quartz arenite,Paleozoic,251.902,358.9,106.99799999999999
+1177,Carboniferous - Permian Siliciclastic,Siliciclastic,Paleozoic,251.902,358.86,106.95800000000003
+1177,Paleoproterozoic crystalline metamorphic rocks,low-medium grade unclassified metamorphic rock,Paleoproterozoic,1600.0,2500.0,900.0
+1178,Iriri Grupo,"andesite, tuff rhyolitic, tuff riodacite, dacite, tuff dacite, tuff, rhyolite, rhyodacite",Orosirian,1800.0,2050.0,250.0
+1178,Orosirian Rhyolitic,Rhyolite,Orosirian,1800.0,2050.0,250.0
+1178,Paleoproterozoic crystalline metamorphic rocks,low-medium grade unclassified metamorphic rock,Paleoproterozoic,1600.0,2500.0,900.0
+1179,Permian Undifferentiated,Sedimentary,Permian,251.902,298.9,46.99799999999999
+1179,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,298.9,358.9,60.0
+1180,"Longá, Grupo Canindé Formação","shale, sandstone, siltstone",Paleozoic,323.2,382.7,59.5
+1180,Devonian Siliciclastic,Siliciclastic,Devonian,358.86,419.62,60.75999999999999
+1180,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,298.9,358.9,60.0
+1181,Tonian Low to medium grade,Low to medium grade metamorphic,Tonian,720.0,1000.0,280.0
+1181,Mesoproterozoic crystalline metamorphic rocks,low-medium grade unclassified metamorphic rock,Mesoproterozoic,1000.0,1600.0,600.0
+1192,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1192,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1193,,plutonic and metamorphic,Paleoproterozoic,1600.0,2500.0,900.0
+1193,Archean intrusive rocks,intrusive igneous rocks,Archean,2500.0,4000.0,1500.0
+1194,,plutonic and metamorphic,Mesoproterozoic,1000.0,1600.0,600.0
+1194,Paleoproterozoic-Mesoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Proterozoic,1200.0,2500.0,1300.0
+1195,,plutonic and metamorphic,Rhyacian,2050.0,2300.0,250.0
+1195,Paleoproterozoic crystalline metamorphic rocks,migmatite; orthogneiss/paragneiss,Siderian,2300.0,2500.0,200.0
+1196,,plutonic and metamorphic,Neoarchean,2500.0,2800.0,300.0
+1196,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+1210,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1211,Cenozoic volcanic rocks,mafic-intermediate volcanic rocks,Neogene,2.588,23.03,20.442
+1217,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,23.03,23.03
+1245,Neogene Siliciclastic,Siliciclastic,Neogene,2.58,23.04,20.46
+1245,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1246,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+1246,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1247,Terraços fluviais Unidade,"sand, clay, gravel",Cenozoic,0.0117,2.588,2.5763000000000003
+1247,Neogene - Quaternary Siliciclastic,Siliciclastic,Cenozoic,0.0,23.04,23.04
+1247,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1248,Içá Formação,"sand, clay, peat, gravel, lignite",Cenozoic,0.0117,2.588,2.5763000000000003
+1248,Neogene - Quaternary Siliciclastic,Siliciclastic,Cenozoic,0.0,23.04,23.04
+1248,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1249,Depósitos aluvionares,"sand, clay, gravel, silt; alluvium",Holocene,0.0,0.0117,0.0117
+1249,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+1249,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1250,Alter do Chão Formação,quartz arenite,Phanerozoic,56.0,100.5,44.5
+1250,Paleogene Siliciclastic,Siliciclastic,Paleogene,23.04,66.0,42.96
+1250,Mesozoic-Cenozoic sedimentary rocks,sedimentary rocks,Phanerozoic,2.588,145.0,142.412
+1251,Ipixuna Formação,"sandstone, mudstone, siltstone",Late Cretaceous,66.0,100.5,34.5
+1251,Cretaceous Siliciclastic,Siliciclastic,Cretaceous,66.0,143.1,77.1
+1251,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1263,,volcanic-sedimentary,Archean,2500.0,3200.0,700.0
+1263,Archean crystalline metamorphic rocks,orthogneiss/paragneiss,Archean,2800.0,3600.0,800.0
+1264,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1264,Cenozoic sedimentary rocks,sedimentary rocks,Holocene,0.0,0.0117,0.0117
+1265,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1265,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1266,,plutonic and metamorphic,Paleoproterozoic,1600.0,2050.0,450.0
+1266,Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Siderian,2300.0,2500.0,200.0
+1267,,plutonic and metamorphic,Neoarchean,2500.0,2800.0,300.0
+1267,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+1268,,metamorphic,Neoproterozoic,541.0,1000.0,459.0
+1268,Cenozoic sedimentary and volcanic rocks,intermediate volcanic rocks; trachyte,Cenozoic,0.0117,2.588,2.5763000000000003
+1281,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,251.902,185.902
+1283,Cenozoic sedimentary rocks,carbonate-sandstone-conglomerate,Cenozoic,0.0,66.0,66.0
+1288,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1317,"Paleocene-Eocene volcanics, volcaniclastics, and sedimentary deposits",,Paleogene,33.9,66.0,32.1
+1317,Paleogene Volcano-sedimentary,"Volcaniclastic, volcanic",Paleogene,23.04,66.0,42.96
+1317,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,201.3,135.3
+1318,Miocene sedimentary rocks,,Miocene,5.333,23.03,17.697000000000003
+1318,Neogene Siliciclastic,Siliciclastic,Neogene,2.58,23.04,20.46
+1318,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1319,Complejo Migmatítico de Mitú,,Paleoproterozoic,1600.0,2500.0,900.0
+1319,Statherian - Calymmian Granitic,Granite,Proterozoic,1400.0,1800.0,400.0
+1319,Paleoproterozoic-Mesoproterozoic crystalline metamorphic rocks,medium-high grade unclassified metamorphic rock,Proterozoic,1400.0,1800.0,400.0
+1320,Rhyacian - Orosirian Granitic,Granite,Paleoproterozoic,1800.0,2300.0,500.0
+1320,Paleoproterozoic crystalline metamorphic rocks,medium-high grade orthogneiss/paragneiss/metavolcanic gneiss,Paleoproterozoic,1600.0,2500.0,900.0
+1321,Rhyacian - Orosirian Granitic,Granite,Paleoproterozoic,1800.0,2300.0,500.0
+1321,Paleoproterozoic crystalline metamorphic rocks,medium-high grade orthogneiss/paragneiss/metavolcanic gneiss,Paleoproterozoic,1600.0,2500.0,900.0
+1322,Rhyacian Granitic,Granite,Rhyacian,2050.0,2300.0,250.0
+1322,Paleoproterozoic crystalline metamorphic rocks,medium-high grade orthogneiss/paragneiss/metavolcanic gneiss,Paleoproterozoic,1600.0,2500.0,900.0
+1335,,plutonic and metamorphic,Neoarchean,2500.0,2800.0,300.0
+1335,Archean intrusive rocks,intrusive igneous rocks,Archean,2800.0,3600.0,800.0
+1336,,sedimentary,Cenozoic,0.0,2.588,2.588
+1336,Cenozoic sedimentary rocks,sedimentary rocks,Holocene,0.0,0.0117,0.0117
+1337,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1337,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1338,,plutonic and metamorphic,Archean,2800.0,3600.0,800.0
+1338,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2800.0,3600.0,800.0
+1339,,metamorphic,Archean,2500.0,3200.0,700.0
+1339,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2800.0,3600.0,800.0
+1340,,metamorphic,Neoproterozoic,541.0,1000.0,459.0
+1340,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+1341,,sedimentary,Mesozoic,145.0,251.902,106.90199999999999
+1341,Mesozoic sedimentary rocks,sedimentary rocks,Jurassic,145.0,163.5,18.5
+1353,Mesozoic intrusive rocks,intrusive igneous rocks,Mesozoic,201.3,251.902,50.601999999999975
+1355,Cenozoic sedimentary rocks,carbonate-sandstone-conglomerate,Cenozoic,0.0,66.0,66.0
+1356,Cenozoic sedimentary rocks,carbonate-sandstone-conglomerate,Cenozoic,0.0,66.0,66.0
+1389,,,Eocene,33.9,41.3,7.399999999999999
+1389,Paleogene Volcano-sedimentary,"Volcaniclastic, volcanic",Paleogene,23.04,66.0,42.96
+1389,Miocene sedimentary,sedimentary,Miocene,5.333,23.03,17.697000000000003
+1389,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1390,Cretaceous sedimentary rocks,,Cretaceous,66.0,113.0,47.0
+1390,Neogene sedimentary,sedimentary,Neogene,2.588,23.03,20.442
+1390,Cretaceous Siliciclastic,Siliciclastic,Cretaceous,66.0,143.1,77.1
+1390,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1391,Alluvium,"sand, gravel, and silt",Cenozoic,0.0,2.588,2.588
+1391,Quaternary sedimentary,sedimentary,Cenozoic,0.0,2.588,2.588
+1391,Quaternary Siliciclastic,Siliciclastic,Quaternary,0.0,2.58,2.58
+1391,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1392,Supamo Complex,"silicic intrusive igneous rocks, paragneiss, and migmatite",Paleoproterozoic,1600.0,2500.0,900.0
+1392,Rhyacian Granitic,Granite,Rhyacian,2050.0,2300.0,250.0
+1392,Paleoproterozoic plutonic: intermediate rocks,plutonic: intermediate rocks,Paleoproterozoic,1600.0,2500.0,900.0
+1392,Paleoproterozoic crystalline metamorphic rocks,low-medium grade metasedimentary/metavolcanic schist,Paleoproterozoic,1600.0,2500.0,900.0
+1403,,plutonic,Mesoarchean,2800.0,3200.0,400.0
+1403,Archean intrusive rocks,intrusive igneous rocks,Neoarchean,2500.0,2800.0,300.0
+1404,,sedimentary and volcaniclastic,Rhyacian,2050.0,2300.0,250.0
+1404,Paleoproterozoic volcanic and intrusive rocks,"sandstone,argillite,conglomerate",Siderian,2300.0,2500.0,200.0
+1405,,metamorphic,Neoproterozoic,541.0,1000.0,459.0
+1405,Archean-Paleoproterozoic crystalline metamorphic rocks,migmatite; paragneiss,,1600.0,4000.0,2400.0
+1406,,sedimentary,Late Cretaceous,66.0,100.5,34.5
+1406,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1407,,metamorphic,Neoproterozoic,541.0,1000.0,459.0
+1407,Precambrian crystalline metamorphic rocks,crystalline metamorphic rocks,,541.0,4000.0,3459.0
+1408,,metamorphic,Neoproterozoic,541.0,1000.0,459.0
+1408,Precambrian crystalline metamorphic rocks,crystalline metamorphic rocks,,541.0,4000.0,3459.0
+1409,,sedimentary,Mesozoic,100.5,145.0,44.5
+1409,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1410,,plutonic and metamorphic,Neoarchean,2500.0,2800.0,300.0
+1410,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2800.0,3600.0,800.0
+1411,,sedimentary,Cenozoic,0.0,66.0,66.0
+1411,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1412,,volcanic,Neogene,2.588,23.03,20.442
+1412,Cenozoic volcanic rocks,flood basalt(s); mafic-intermediate volcanic rocks,Cenozoic,0.0,66.0,66.0
+1413,,sedimentary,Mesozoic,145.0,251.902,106.90199999999999
+1413,Mesozoic sedimentary rocks,sedimentary rocks,Jurassic,145.0,163.5,18.5
+1414,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1414,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,23.03,66.0,42.97
+1474,,sedimentary,,443.8,635.0,191.2
+1474,Precambrian-Phanerozoic sedimentary rocks,sedimentary rocks,,485.4,1000.0,514.6
+1475,,sedimentary,Neoproterozoic,541.0,1000.0,459.0
+1475,Neoproterozoic sedimentary rocks,sedimentary rocks,Neoproterozoic,541.0,1000.0,459.0
+1476,,sedimentary and volcaniclastic,Rhyacian,2050.0,2300.0,250.0
+1476,Paleoproterozoic sedimentary and volcanic rocks,strataform assemblage(s); felsic volcanic rocks,Paleoproterozoic,1600.0,2500.0,900.0
+1477,,sedimentary,Mesoproterozoic,1000.0,1600.0,600.0
+1477,Precambrian-Phanerozoic sedimentary rocks,sedimentary rocks,,485.4,1000.0,514.6
+1478,,plutonic,,485.4,1000.0,514.6
+1478,Precambrian crystalline metamorphic rocks,granitic gneiss; orthogneiss/paragneiss,,541.0,4000.0,3459.0
+1479,,sedimentary,Cenozoic,0.0,2.588,2.588
+1479,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1480,,sedimentary,Cenozoic,0.0,2.588,2.588
+1480,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1481,,metamorphic,Neoproterozoic,541.0,1000.0,459.0
+1481,Precambrian sedimentary rocks,sedimentary rocks,,541.0,4000.0,3459.0
+1482,,sedimentary,Cenozoic,0.0,2.588,2.588
+1482,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1483,,sedimentary,Cenozoic,0.0,2.588,2.588
+1483,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1484,,volcanic,Cenozoic,23.03,66.0,42.97
+1484,Cenozoic volcanic rocks,flood basalt(s); mafic-intermediate volcanic rocks,Cenozoic,0.0,66.0,66.0
+1485,,volcanic,Cenozoic,0.0,2.588,2.588
+1485,Cenozoic volcanic rocks,flood basalt(s); mafic-intermediate volcanic rocks,Cenozoic,0.0,66.0,66.0
+1492,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+1497,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+1498,Cenozoic volcanic rocks,mafic volcanic rocks,Cenozoic,0.0,23.03,23.03
+1529,,limestone,Mesozoic,100.5,145.0,44.5
+1529,Early Cretaceous sedimentary,sedimentary,Mesozoic,100.5,145.0,44.5
+1529,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,251.902,185.902
+1530,,limestone,Cenozoic,23.03,33.9,10.869999999999997
+1530,Eocene sedimentary,sedimentary,Eocene,33.9,56.0,22.1
+1530,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,251.902,185.902
+1546,,sedimentary,,443.8,541.0,97.19999999999999
+1546,Precambrian-Phanerozoic sedimentary rocks,sedimentary rocks,,485.4,1000.0,514.6
+1547,,sedimentary,,443.8,541.0,97.19999999999999
+1547,Precambrian-Phanerozoic sedimentary rocks,sedimentary rocks,,485.4,1000.0,514.6
+1548,,sedimentary,Cenozoic,0.0,2.588,2.588
+1548,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1549,,sedimentary,Cenozoic,0.0,2.588,2.588
+1549,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1550,,sedimentary,Mesozoic,100.5,145.0,44.5
+1550,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1551,,sedimentary,Cenozoic,0.0,2.588,2.588
+1551,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1552,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1552,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1553,,sedimentary,Paleozoic,358.9,443.8,84.90000000000003
+1553,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,298.9,358.9,60.0
+1554,,metamorphic,Neoproterozoic,541.0,1000.0,459.0
+1554,Cenozoic sedimentary rocks,sandstone-siltstone,Holocene,0.0,0.0117,0.0117
+1555,,sedimentary,Cenozoic,0.0,2.588,2.588
+1555,Paleozoic-Mesozoic sedimentary rocks,mudstone-carbonate-sandstone-conglomerate,Phanerozoic,66.0,358.9,292.9
+1556,,sedimentary and volcaniclastic,Neoproterozoic,541.0,720.0,179.0
+1556,Archean-Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,1600.0,4000.0,2400.0
+1557,,sedimentary,Cenozoic,0.0,2.588,2.588
+1557,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+1558,Cenozoic sedimentary rocks,sandstone-siltstone,Holocene,0.0,0.0117,0.0117
+1559,Cenozoic sedimentary rocks,sandstone-siltstone,Holocene,0.0,0.0117,0.0117
+1564,Mesozoic-Cenozoic volcanic rocks,flood basalt(s); mafic volcanic rocks; basalt,Phanerozoic,23.03,145.0,121.97
+1565,Archean intrusive rocks,intrusive igneous rocks,Archean,2500.0,4000.0,1500.0
+1568,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+1569,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1600,,acidic igneous extrusive,Neogene,2.588,23.03,20.442
+1600,Oligocene volcanic: felsic rocks,volcanic: felsic rocks,Cenozoic,23.03,33.9,10.869999999999997
+1600,Cenozoic volcanic rocks,ignimbrite(s); felsic volcanic rocks,Cenozoic,5.333,33.9,28.567
+1618,,plutonic and metamorphic,,1600.0,2800.0,1200.0
+1618,Archean crystalline metamorphic rocks,migmatite; paragneiss,Neoarchean,2500.0,2800.0,300.0
+1619,,sedimentary,,443.8,541.0,97.19999999999999
+1619,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+1620,,sedimentary,,443.8,541.0,97.19999999999999
+1620,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+1621,,"metamorphic rocks, with orosirian metamorphism (tuareg shield)",Mesoarchean,2800.0,3200.0,400.0
+1621,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+1622,,volcanic-sedimentary,Cryogenian,635.0,720.0,85.0
+1622,Mesoproterozoic sedimentary rocks,sedimentary rocks,Mesoproterozoic,1000.0,1600.0,600.0
+1623,,continental sedimentary,Phanerozoic,66.0,358.9,292.9
+1623,Paleozoic-Mesozoic sedimentary rocks,sedimentary rocks,Phanerozoic,66.0,358.9,292.9
+1624,,volcanic-sedimentary,,541.0,4000.0,3459.0
+1624,Mesoproterozoic-Neoproterozoic sedimentary rocks,sedimentary rocks,Proterozoic,541.0,1400.0,859.0
+1625,,continental sedimentary,Phanerozoic,66.0,358.9,292.9
+1625,Paleozoic-Mesozoic sedimentary rocks,sedimentary rocks,Phanerozoic,66.0,358.9,292.9
+1626,,sedimentary,Cenozoic,0.0,2.588,2.588
+1626,Cenozoic sedimentary rocks,sandstone-siltstone,Cenozoic,0.0,2.588,2.588
+1627,,continental sedimentary,Phanerozoic,66.0,358.9,292.9
+1627,Paleozoic-Mesozoic sedimentary rocks,mudstone-carbonate-sandstone-conglomerate,Phanerozoic,66.0,358.9,292.9
+1629,,sedimentary and volcaniclastic,Neoproterozoic,541.0,720.0,179.0
+1629,Archean-Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,1600.0,4000.0,2400.0
+1630,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1631,Cenozoic sedimentary rocks,sandstone-siltstone,Holocene,0.0,0.0117,0.0117
+1632,Mesozoic sedimentary rocks,sedimentary rocks,Late Cretaceous,66.0,100.5,34.5
+1635,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1636,Neoproterozoic sedimentary rocks,sedimentary rocks,Neoproterozoic,541.0,1000.0,459.0
+1637,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+1638,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1639,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1640,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+1641,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+1642,Paleozoic sedimentary rocks,sedimentary rocks,,251.902,541.0,289.098
+1643,Paleozoic sedimentary rocks,sedimentary rocks,,251.902,541.0,289.098
+1670,,acidic igneous extrusive,Cenozoic,0.0,2.588,2.588
+1670,Miocene volcanic: felsic rocks,volcanic: felsic rocks,Miocene,5.333,23.03,17.697000000000003
+1670,Cenozoic sedimentary and volcanic rocks,mafic-felsic mixed volcanic rocks,Miocene,5.333,23.03,17.697000000000003
+1671,,acidic igneous extrusive,Neogene,2.588,23.03,20.442
+1671,Oligocene volcanic: felsic rocks,volcanic: felsic rocks,Cenozoic,23.03,33.9,10.869999999999997
+1671,Cenozoic volcanic rocks,ignimbrite(s); felsic volcanic rocks,Cenozoic,5.333,33.9,28.567
+1672,,sedimentary,Cenozoic,0.0,2.588,2.588
+1672,Quaternary sedimentary,sedimentary,Cenozoic,0.0,2.588,2.588
+1672,Mesozoic sedimentary rocks,"carbonate,shale",Mesozoic,100.5,145.0,44.5
+1673,"Beaumont Formation, areas predominantly sand",sand,Pleistocene,0.0117,0.6538,0.6421
+1673,"Beaumont Formation, areas predominantly sand","Major:{sand}, Minor:{fine alluvium}",Pleistocene,0.0117,0.6558,0.6441
+1673,Pleistocene sedimentary,sedimentary,Cenozoic,0.0117,2.588,2.5763000000000003
+1673,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1676,Sand And Clay Decomposition Residuum,"clay, sand",Cenozoic,0.0,66.0,66.0
+1676,"Hawthorn Group, Arcadia Formation","Major:{limestone,dolostone}, Minor:{sand,clay}, Incidental:{phosphatic shale}",Cenozoic,17.0875,23.6638,6.5763
+1676,Arcadia Formation,"carbonate, clay, claystone, sand",Cenozoic,17.0975,23.5725,6.475000000000001
+1676,Quaternary sedimentary,sedimentary,Cenozoic,0.0,2.588,2.588
+1676,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1690,Pliocene undifferentiated,,Pliocene,2.588,5.333,2.745
+1690,,sedimentary,Late Cretaceous,66.0,100.5,34.5
+1690,Mesozoic sedimentary rocks,sedimentary rocks,Late Cretaceous,66.0,100.5,34.5
+1691,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1691,Pliocene undifferentiated,,Pliocene,2.588,5.333,2.745
+1691,Cenozoic sedimentary rocks,sandstone-siltstone,Cenozoic,0.0,2.588,2.588
+1692,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1692,Pliocene undifferentiated,,Pliocene,2.588,5.333,2.745
+1692,Cenozoic sedimentary rocks,sandstone-siltstone,Cenozoic,0.0,2.588,2.588
+1693,,sedimentary,Mesozoic,100.5,145.0,44.5
+1693,Mesozoic sedimentary rocks,sedimentary rocks,Late Cretaceous,66.0,100.5,34.5
+1694,,sedimentary,Cenozoic,0.0,2.588,2.588
+1694,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,298.9,358.9,60.0
+1695,,sedimentary,Cenozoic,0.0,2.588,2.588
+1695,Cenozoic sedimentary rocks,sandstone-siltstone,Cenozoic,0.0,2.588,2.588
+1696,,volcanic,Cenozoic,0.0,66.0,66.0
+1696,Cenozoic volcanic rocks,mafic volcanic rocks,Neogene,2.588,23.03,20.442
+1697,,sedimentary,Cenozoic,0.0,2.588,2.588
+1697,Cenozoic sedimentary rocks,sandstone-siltstone,Cenozoic,0.0,2.588,2.588
+1698,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1698,Cenozoic sedimentary rocks,sandstone-siltstone,Cenozoic,0.0,2.588,2.588
+1699,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1699,Cenozoic sedimentary rocks,sandstone-siltstone,Cenozoic,0.0,2.588,2.588
+1700,,sedimentary,Paleozoic,358.9,443.8,84.90000000000003
+1700,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,358.9,443.8,84.90000000000003
+1701,Cambrian undifferentiated,,,443.8,541.0,97.19999999999999
+1701,,sedimentary,,443.8,541.0,97.19999999999999
+1701,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+1702,Pliocene undifferentiated,,Pliocene,2.588,5.333,2.745
+1702,Cenozoic sedimentary rocks,sandstone-siltstone,Holocene,0.0,0.0117,0.0117
+1704,,,,251.902,541.0,289.098
+1704,Mesozoic-Cenozoic intrusive rocks,intrusive igneous rocks,Phanerozoic,23.03,145.0,121.97
+1705,,,Eocene,33.9,56.0,22.1
+1705,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1706,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1707,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1708,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1709,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1710,Precambrian-Phanerozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,443.8,1000.0,556.2
+1711,Precambrian-Phanerozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,443.8,1000.0,556.2
+1712,Precambrian crystalline metamorphic rocks,crystalline metamorphic rocks,,541.0,4000.0,3459.0
+1713,Mesozoic sedimentary rocks,sedimentary rocks,Jurassic,145.0,201.3,56.30000000000001
+1714,Paleozoic sedimentary rocks,sedimentary rocks,,251.902,541.0,289.098
+1715,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1716,Mesozoic intrusive rocks,intrusive igneous rocks,Mesozoic,66.0,201.3,135.3
+1742,Early Pleistocene to latest Pliocene surficial deposits,"Major:{gravel,sand}",Cenozoic,0.126,3.6,3.474
+1742,Early Pleistocene to latest Pliocene surficial deposits,,Cenozoic,0.774,3.6,2.826
+1742,Neogene sedimentary,sedimentary,Neogene,2.588,23.03,20.442
+1742,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,23.03,23.03
+1743,Piedmont alluvial deposits,Major:{unconsolidated alluvium},Cenozoic,0.0,2.588,2.588
+1743,Piedmont alluvial deposits,,Quaternary,0.0,2.58,2.58
+1743,Quaternary sedimentary,sedimentary,Cenozoic,0.0,2.588,2.588
+1743,Cenozoic volcanic rocks,volcanic rocks,Pliocene,2.588,5.333,2.745
+1744,Blackwater Draw Formation,"Major:{sand}, Minor:{fine alluvium}, Incidental:{silt}",Cenozoic,2.1586,2.7567,0.5981000000000001
+1744,Blackwater Draw Formation,,Pleistocene,0.0117,2.58,2.5683000000000002
+1744,Neogene sedimentary,sedimentary,Neogene,2.588,23.03,20.442
+1744,Cenozoic sedimentary rocks,sedimentary rocks,Paleocene,56.0,66.0,10.0
+1745,Undivided part of Washita Group,,Cretaceous,95.55,103.675,8.125
+1745,Stony Calcareous Clay Solution Residuum,"clay, chalk, limestone, shale, minor carbonate, minor marl",Cenozoic,0.0,66.0,66.0
+1745,Undivided part of Washita Group,"Major:{clay}, Minor:{marl,limestone}",Cretaceous,95.55,103.625,8.075000000000003
+1745,Early Cretaceous sedimentary,"chalk,limestone,mud,sandstone",Cretaceous,95.55,113.0,17.450000000000003
+1745,Mesozoic sedimentary rocks,"carbonate,shale",Mesozoic,100.5,145.0,44.5
+1746,Alluvium,"Major:{clay}, Minor:{sand,gravel}",Holocene,0.0,0.0117,0.0117
+1746,Alluvium,"clay, gravel, sand",Holocene,0.0,0.0117,0.0117
+1746,"Alluvial Sand, Silt, Clay, And Gravel","clay, gravel, sand, silt, minor chert, minor sandstone",Holocene,0.0,0.0117,0.0117
+1746,Middle Eocene sedimentary,"sand,mud,clay,chalk",Eocene,37.8,49.85,12.050000000000004
+1746,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1747,Demopolis Chalk,"chalk, clay, marl, sand",Late Cretaceous,67.55,75.05,7.5
+1747,Dark-Gray Clay Solution Residuum,"clay, carbonate, limestone",Cenozoic,0.0,66.0,66.0
+1747,Selma Group; Demopolis Chalk,"Major:{chalk}, Minor:{marl,clay,sand}",Late Cretaceous,67.525,74.975,7.449999999999989
+1747,Late Cretaceous sedimentary,"sand, chalk, mud",Late Cretaceous,71.0833,74.975,3.8917
+1747,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1748,Neogene undifferentiated,"claystone, sandstone",Neogene,2.58,23.04,20.46
+1748,Sand And Clay Decomposition Residuum,"clay, sand, gravel",Cenozoic,0.0,66.0,66.0
+1748,Neogene undifferentiated,"Major:{sandstone,claystone}",Burdigalian,17.0875,17.6463,0.5588000000000015
+1748,Miocene sedimentary,sedimentary,Miocene,5.333,23.03,17.697000000000003
+1748,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1763,,sedimentary,Late Cretaceous,66.0,100.5,34.5
+1763,Early Cretaceous undifferentiated,,Mesozoic,100.5,145.0,44.5
+1763,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,251.902,185.902
+1764,Quaternary undifferentiated,,Cenozoic,0.0,2.588,2.588
+1764,,sedimentary,,443.8,635.0,191.2
+1764,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,251.902,185.902
+1765,Pliocene undifferentiated,,Pliocene,2.588,5.333,2.745
+1765,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1765,Cenozoic sedimentary rocks,sandstone-siltstone,Cenozoic,0.0,2.588,2.588
+1766,eolian sediments,sand,Holocene,0.0,0.0117,0.0117
+1766,,sedimentary,Cenozoic,0.0,2.588,2.588
+1766,Cenozoic sedimentary rocks,sandstone-siltstone,Cenozoic,0.0,2.588,2.588
+1767,eolian sediments,sand,Holocene,0.0,0.0117,0.0117
+1767,,sedimentary,Cenozoic,0.0,2.588,2.588
+1767,Cenozoic sedimentary rocks,sandstone-siltstone,Cenozoic,0.0,2.588,2.588
+1769,,sedimentary,Cenozoic,0.0117,66.0,65.9883
+1769,Miocene undifferentiated,,Miocene,5.333,23.03,17.697000000000003
+1769,Cenozoic sedimentary rocks,sandstone-siltstone,Cenozoic,0.0,2.588,2.588
+1772,Jordan,basalt group,Neogene,2.588,23.03,20.442
+1772,,volcanic,Cenozoic,0.0,2.588,2.588
+1772,Cenozoic volcanic rocks,mafic volcanic rocks,Neogene,2.588,23.03,20.442
+1773,Miocene undifferentiated,,Miocene,5.333,23.03,17.697000000000003
+1773,Cenozoic sedimentary rocks,sandstone-siltstone,Holocene,0.0,0.0117,0.0117
+1774,,,Cenozoic,0.0,2.588,2.588
+1774,Pliocene undifferentiated,,Cenozoic,0.0,5.333,5.333
+1774,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1775,,,Cenozoic,0.0,2.588,2.588
+1775,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1776,,,Mesozoic,201.3,237.0,35.69999999999999
+1776,Mesozoic sedimentary rocks,sedimentary rocks,Jurassic,145.0,201.3,56.30000000000001
+1777,Early Cretaceous-Valanginian/Hauterivian sandstone and siltstone,sandstone and siltstone,Mesozoic,129.4,145.0,15.599999999999994
+1777,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1778,Cretaceous Basaltic lava,Basaltic lava,Mesozoic,66.0,145.0,79.0
+1778,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1779,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1780,Precambrian-Phanerozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,443.8,1000.0,556.2
+1781,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,201.3,251.902,50.601999999999975
+1782,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+1783,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,201.3,251.902,50.601999999999975
+1784,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,201.3,251.902,50.601999999999975
+1785,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,201.3,251.902,50.601999999999975
+1786,Mesozoic sedimentary rocks,sedimentary rocks,Jurassic,145.0,201.3,56.30000000000001
+1787,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1788,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1813,"Nolan Belt - Phyllite, schist, shale, thin-bedded limestone, chert, and siltstone",,Paleozoic,485.4,516.0001,30.600099999999998
+1813,Shale and thin-bedded or laminated limestone; also thinly interbedded limestone and chert,"chert, limestone, shale",Cambrian,486.85,506.5,19.649999999999977
+1813,Neoproterozoic-Cambrian sedimentary,sedimentary,,485.4,1000.0,514.6
+1813,Cenozoic volcanic rocks,flood basalt(s); mafic volcanic rocks; basalt,Neogene,2.588,23.03,20.442
+1814,"Claron Formation, middle mudstone, siltstone, and sandstone unit of white member","calcareous mudstone, siltstone, FG sandstone, micritic limestone",Eocene,33.9,53.95,20.050000000000004
+1814,Claron Formation,"Major:{limestone,mudstone}, Minor:{mixed clastic,conglomerate}",Paleogene,28.1,53.95,25.85
+1814,Claron Formation,,Eocene,33.9,54.0175,20.1175
+1814,Paleocene sedimentary,sedimentary,Paleocene,56.0,66.0,10.0
+1814,Mesozoic sedimentary rocks,sandstone-conglomerate,Mesozoic,174.1,237.0,62.900000000000006
+1815,Rico and Hermosa Fms,"Major:{arkose,conglomerate,shale}, Minor:{limestone,siltstone}",Pennsylvanian,298.9,313.75,14.850000000000023
+1815,Vallecito Conglomerate,"conglomerate, quartzite",Mesoproterozoic,1000.0,1600.0,600.0
+1815,Rico and Hermosa Formations,"conglomerate, limestone, sandstone, shale, minor quartzite, minor siltstone",Gzhelian,298.9,303.7,4.800000000000011
+1815,Pennsylvanian-Permian sedimentary,sedimentary,Paleozoic,251.902,323.2,71.298
+1815,Mesoproterozoic intrusive rocks,intrusive igneous rocks,Calymmian,1400.0,1600.0,200.0
+1816,Granitic rocks,"granitic, granodiorite",Paleoproterozoic,1600.0,2500.0,900.0
+1816,Ogallala Fm,"Major:{sandstone,conglomerate}",Neogene,2.588,8.3395,5.751499999999999
+1816,Ogallala Formation,"gravel, sand",Neogene,2.835,8.342,5.507000000000001
+1816,Neogene sedimentary,sedimentary,Neogene,2.588,23.03,20.442
+1816,Cenozoic sedimentary rocks,sedimentary rocks,Paleocene,56.0,66.0,10.0
+1817,Alluvium,"Major:{sand,silt,clay}, Minor:{gravel}",Cenozoic,0.0,2.588,2.588
+1817,"Rhyolite, dacite, and epizonal granite, undivided","dacite, granite, rhyolite",Mesoproterozoic,1000.0,1600.0,600.0
+1817,Alluvium,"granitic, gravel, sand, silt, minor clay",Late Pleistocene,0.0117,0.129,0.1173
+1817,Alluvium,"clay, gravel, sand, silt, minor unconsolidated",Quaternary,0.0,0.129,0.129
+1817,Early Permian sedimentary,sedimentary,Permian,272.95,282.0,9.050000000000011
+1817,Cenozoic sedimentary rocks,sedimentary rocks,Paleocene,56.0,66.0,10.0
+1818,Roubidoux Formation,"chert, sand, sandstone",Tremadocian,479.5375,484.4125,4.875
+1818,Thick Cherty Sandy Clay Decomposition And Solution Residuum,"clay, chert, quartzite, sandstone, minor boulders, minor shale",Cenozoic,0.0,66.0,66.0
+1818,Metagabbro,"metagabbro, granulite",Paleoproterozoic,1600.0,2500.0,900.0
+1818,Roubidoux Formation,"Major:{sandstone,chert}, Minor:{dolostone}",Tremadocian,478.9834,483.475,4.491600000000005
+1818,Early Ordovician sedimentary,sedimentary,Ordovician,470.0,485.4,15.399999999999977
+1818,Paleozoic sedimentary rocks,sedimentary rocks,,251.902,541.0,289.098
+1819,Bond Formation,sandstone | shale,Kasimovian,304.275,305.1375,0.8625000000000114
+1819,Sturgis Formation,,Pennsylvanian,298.9,307.5,8.600000000000023
+1819,Sandy Silty Colluvium,"sand, sandstone, silt, siltstone, minor coal, minor shale",Quaternary,0.0,0.129,0.129
+1819,Sturgis Formation,"Major:{siltstone}, Minor:{sandstone,shale}, Incidental:{coal, limestone}",Pennsylvanian,298.9,307.5,8.600000000000023
+1819,Gzhelian sedimentary,"sandstone,shale, coal",Kasimovian,303.7,306.0,2.3000000000000114
+1819,Paleozoic sedimentary rocks,sedimentary rocks,,251.902,541.0,289.098
+1820,Pikeville Formation,sandstone | siltstone | claystone  | coal,Moscovian,307.0,315.2,8.199999999999989
+1820,Sandstone- And Shale-Clast Loamy Colluvium,"sandstone, shale, clay",Quaternary,0.0,0.129,0.129
+1820,"Breathitt Formation, lower part",conglomerate,Pennsylvanian,306.0,323.4,17.399999999999977
+1820,"Breathitt Formation, lower part","Major:{shale,siltstone}, Minor:{sandstone}, Incidental:{coal, conglomerate}",Pennsylvanian,306.0,323.2,17.19999999999999
+1820,Bashkirian sedimentary,"sandstone,shale,coal",Pennsylvanian,306.0,322.15,16.149999999999977
+1820,Paleozoic sedimentary rocks,sedimentary rocks,,251.902,541.0,289.098
+1821,Sand And Clay Decomposition Residuum,"clay, sand, gravel",Cenozoic,0.0,66.0,66.0
+1821,Pliocene Sand and Gravel,"Major:{gravel,sand}, Minor:{clay,silt}",Pliocene,2.588,5.333,2.745
+1821,Pliocene sand and gravel,"gravel, sand, clay, silt",Neogene,3.6,8.342,4.742000000000001
+1821,Neoproterozoic-Cambrian volcanic: interlayered sedimentary and volcanic rocks,volcanic: interlayered sedimentary and volcanic rocks,,485.4,1000.0,514.6
+1821,Paleozoic sedimentary and volcanic rocks,mudstone-carbonate-sandstone-conglomerate,,485.4,541.0,55.60000000000002
+1835,"Fine grained igneous rock, Upper Devonian",volcanic,Late Devonian,358.86,382.31,23.44999999999999
+1835,Kulm,"Major:{meta-sandstone}, Minor{shale/slate,meta-limestone}",Paleozoic,298.9,358.9,60.0
+1835,Paleozoic sedimentary rocks,sedimentary rocks,,485.4,541.0,55.60000000000002
+1836,"Gravel, Pleistocene",gravel,Pleistocene,0.0117,2.58,2.5683000000000002
+1836,,"gravel, conglomerate, sand and silt",Cenozoic,0.0117,2.588,2.5763000000000003
+1836,Alpujarride Complex,"Major:{marble}, Minor{phyllite,mica schist,migmatite/anatexite}",,66.0,541.0,475.0
+1836,Mesozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Mesozoic,66.0,251.902,185.902
+1841,"Clastic sediment, Holocene",siliciclastic,Holocene,0.0,0.0117,0.0117
+1841,Triassic limestone,limestone,Phanerozoic,33.9,251.902,218.00199999999998
+1841,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,23.03,66.0,42.97
+1842,Palaeozoic meta-granite,"Major:{meta-granite}, Minor{meta-gabbro,meta-sediment group,gneiss}",,251.902,541.0,289.098
+1842,Precambrian-Phanerozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,251.902,4000.0,3748.098
+1843,Flysch and Wildflysch,,Late Cretaceous,66.0,100.5,34.5
+1843,Mesozoic intrusive rocks,intrusive igneous rocks,Mesozoic,66.0,251.902,185.902
+1844,ophiolite complex,basalt,Mesozoic,66.0,251.902,185.902
+1844,Mesozoic tectonic rocks,sedimentary and volcanic rocks,Mesozoic,66.0,145.0,79.0
+1845,Late Cretaceous undifferentiated,,Phanerozoic,23.03,100.5,77.47
+1845,Cenozoic sedimentary rocks,sandstone-siltstone,Holocene,0.0,0.0117,0.0117
+1846,,,Miocene,5.333,23.03,17.697000000000003
+1846,Jurassic undifferentiated,,Jurassic,145.0,201.3,56.30000000000001
+1846,Cenozoic volcanic rocks,mafic-felsic mixed volcanic rocks,Eocene,33.9,56.0,22.1
+1848,,,Mesozoic,100.5,145.0,44.5
+1848,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1849,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1850,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1851,Mesozoic intrusive rocks,intrusive igneous rocks,Mesozoic,66.0,251.902,185.902
+1852,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1853,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1854,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+1855,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1856,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,419.2,167.298
+1857,Paleozoic sedimentary rocks,sedimentary rocks,,419.2,541.0,121.80000000000001
+1858,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1859,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1860,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1862,Precambrian crystalline metamorphic rocks,crystalline metamorphic rocks,,541.0,4000.0,3459.0
+1884,Little Butte Volcanics; Heppsie Formation,Major: {basaltic andesite flows}; Major: {basalt flows}; Major: {andesite flows} Minor: {volcanic breccia}; Minor: {pyroclastic rocks},Miocene,5.333,23.03,17.697000000000003
+1884,Basaltic lava flows,"Major:{basalt,basaltic andesite}",Cenozoic,5.333,33.9,28.567
+1884,Basaltic lava flows,andesite,Cenozoic,5.333,33.9,28.567
+1884,Tertiary-Quaternary volcanic: mafic rocks,volcanic: mafic rocks,Cenozoic,0.0,66.0,66.0
+1884,Cenozoic volcanic rocks,flood basalt(s); mafic volcanic rocks; basalt,Neogene,2.588,23.03,20.442
+1885,High Lava Plains Volcanic Province,"Major: {basalt flows, olivine phenocrysts; mineralogy: highly feldapthic}",Neogene,2.588,23.03,20.442
+1885,Basalt,"basalt, andesite, sedimentary",Serravallian,12.1775,13.2725,1.0950000000000006
+1885,Basalt,"Major:{basalt}, Minor:{andesite,mixed clastic,rhyolite}",Miocene,5.333,16.715,11.382
+1885,Miocene volcanic: felsic rocks,volcanic: felsic rocks,Miocene,5.333,23.03,17.697000000000003
+1885,Cenozoic volcanic rocks,flood basalt(s); mafic volcanic rocks; basalt,Neogene,2.588,23.03,20.442
+1886,Sedimentary rocks (Mississippian),"Incidental:{argillite, siltstone}",Tournaisian,351.5,357.05,5.550000000000011
+1886,"Granite and gneiss, undivided","gneiss, granite",Archean,2500.0,4031.0,1531.0
+1886,Sedimentary rocks,"sedimentary, carbonate, limestone, mudstone, sandstone, minor argillite, minor conglomerate, minor siltstone",Mississippian,326.3,349.3,23.0
+1886,Mississippian-Permian sedimentary,sedimentary,Paleozoic,251.902,358.9,106.99799999999999
+1886,Paleozoic sedimentary rocks,"limestone,dolomite,siltstone,sandstone,shale",,419.2,541.0,121.80000000000001
+1887,Granite and light-colored igneous intrusives,,Archean,2500.0,4000.0,1500.0
+1887,Miocene Rocks,"claystone, conglomerate, marl, sandstone, minor granite",Miocene,5.333,23.04,17.707
+1887,Miocene Rocks,"Major:{sandstone}, Minor:{claystone,conglomerate,marl,volcanic}, Incidental:{marlstone}",Miocene,5.333,23.03,17.697000000000003
+1887,Intrusive igneous rocks,"igneous, granite, granodiorite",Archean,2500.0,3200.0,700.0
+1887,Eocene sedimentary,sedimentary,Eocene,33.9,56.0,22.1
+1887,Cenozoic sedimentary rocks,sedimentary rocks,Eocene,33.9,56.0,22.1
+1888,Ogallala Group,"carbonate, gravel, sandstone, shale",Neogene,3.6,13.2725,9.672500000000001
+1888,Metamorphic rocks of Central Plains orogen,metamorphic,Paleoproterozoic,1600.0,2500.0,900.0
+1888,Ogallala Group or Formation,"Major:{siltstone mudstone,conglomerate sandstone}, Incidental:{volcanic}",Neogene,3.6,13.27,9.67
+1888,Neogene sedimentary,sedimentary,Neogene,2.588,23.03,20.442
+1888,Cenozoic sedimentary rocks,sedimentary rocks,Paleocene,56.0,66.0,10.0
+1889,Gneiss and epicratonic sedimentary rocks of Superior craton,"gneiss, sedimentary",,1600.0,2800.0,1200.0
+1889,Pierre,"chalk, sandstone, shale",Campanian,80.75,83.6,2.8499999999999943
+1889,Gneiss and epicratonic sedimentary rocks,"gneiss, sedimentary",,1600.0,4031.0,2431.0
+1889,Clay Loam Till,"clay, carbonate, chert, limestone, minor granite, minor igneous, minor metamorphic, minor quartzite, minor sand, minor sandstone, minor shale",Pleistocene,0.129,2.58,2.451
+1889,Pierre Shale,"Major:{shale}, Incidental:{gypsum}",Late Cretaceous,66.0,83.6,17.599999999999994
+1889,Late Cretaceous sedimentary,"sand, chalk, mud",Late Cretaceous,67.0167,90.825,23.808300000000003
+1889,Mesozoic sedimentary rocks,"siltstone,shale,sandstone",Late Cretaceous,66.0,100.5,34.5
+1890,Loamy Till,"boulders, carbonate, granite, gravel, minor basalt, minor chert, minor diorite, minor gabbro, minor greenstone, minor igneous, minor limestone, minor metamorphic, minor pegmatite, minor quartzite, minor rhyolite, minor slate, minor volcanic",Pleistocene,0.8678,1.8095,0.9417000000000001
+1890,Cedar Valley Group,,Devonian,363.475,387.7,24.224999999999966
+1890,Cedar Valley Group,"Major:{limestone,dolostone}, Minor:{sedimentary breccia,shale}, Incidental:{anhydrite, chert}",Devonian,365.0,387.7,22.69999999999999
+1890,"Red to buff feldspathic to quartzose sandstone, siltstone, and mudstone","mudstone, sandstone, siltstone",Stenian,1000.0,1140.0,140.0
+1890,Cedar Valley Group,"anhydrite, evaporite, limestone, shale, minor chert, minor gypsum, minor sandstone",Frasnian,379.9103,382.31,2.3996999999999957
+1890,Keweenawan lower red clastic group,clastic,Mesoproterozoic,1000.0,1600.0,600.0
+1890,Late Devonian sedimentary,sedimentary,Devonian,358.9,382.7,23.80000000000001
+1890,Paleozoic sedimentary rocks,sedimentary rocks,,251.902,541.0,289.098
+1891,water,,Holocene,0.0,0.0117,0.0117
+1891,Lake Clay And Silt Under Lake Michigan,"clay, silt",Holocene,0.0,0.0117,0.0117
+1891,Silurian sedimentary,sedimentary,Paleozoic,419.2,443.8,24.600000000000023
+1892,Hamilton Group,,Middle Devonian,383.95,389.5666,5.616600000000005
+1892,Hamilton Group,"limestone, dolostone, shale",Middle Devonian,383.5334,389.5666,6.033200000000022
+1892,"Lake Clay, Silt, Sand, And Gravel","clay, gravel, sand, silt",Chibanian,0.4398,0.6538,0.21400000000000002
+1892,Middle Devonian sedimentary,sedimentary,Middle Devonian,382.7,393.3,10.600000000000023
+1892,Paleozoic sedimentary rocks,sedimentary rocks,,251.902,541.0,289.098
+1893,Outwash sand and gravel,"gravel, sand, ice",Quaternary,0.0,2.58,2.58
+1893,"West Hill and Gardeau Formations, Roricks Glen Shale, upper Beers Hill Shale and Grimes Siltstone","shale, siltstone",Frasnian,372.15,377.2875,5.1375000000000455
+1893,West Hill and Gardeau Formations,"Major:{shale,siltstone}",Frasnian,372.2,377.3,5.100000000000023
+1893,Alluvium,"clay, gravel, sand, silt, minor ice, minor peat",Quaternary,0.0,0.129,0.129
+1893,Late Devonian sedimentary,sedimentary,Devonian,358.9,382.7,23.80000000000001
+1893,Paleozoic sedimentary rocks,sedimentary rocks,,251.902,541.0,289.098
+1894,Hornblende Gneiss,"gneiss, quartzite",Ediacaran,546.8163,550.825,4.00870000000009
+1894,"Ice-Contact Gravel, Sand, And Silt","gravel, ice, sand, silt, clay, minor boulders, minor carbonate, minor peat",Late Pleistocene,0.0117,0.129,0.1173
+1894,Dry Hill Gneiss,"Major:{gneiss}, Minor:{quartzite}",Ediacaran,548.833,552.75,3.91700000000003
+1894,Jurassic sedimentary,sedimentary,Jurassic,145.0,201.3,56.30000000000001
+1894,Paleozoic sedimentary and volcanic rocks,mudstone-carbonate-sandstone-conglomerate,Paleozoic,358.9,443.8,84.90000000000003
+1907,,"gravel, conglomerate, sand and silt",Cenozoic,0.0117,2.588,2.5763000000000003
+1907,"Limestone, Priabonian",limestone,Priabonian,33.9,37.71,3.8100000000000023
+1907,Ordovician quartzite,"Major:{quartzite}, Minor{shale/slate,greenschist,conglomerate}",Ordovician,443.8,485.4,41.599999999999966
+1907,Precambrian crystalline metamorphic rocks,crystalline metamorphic rocks,,541.0,4000.0,3459.0
+1908,continental molasse,"Major:{marl}, Minor{conglomerate,limestone,gypsum}",Miocene,5.333,23.03,17.697000000000003
+1908,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,5.333,33.9,28.567
+1909,"Orthogneiss, Cambrian",orthogneiss,Cambrian,486.85,538.8,51.94999999999993
+1909,,orthogneiss [95.0%..100.0%],,458.4,541.0,82.60000000000002
+1909,Granitic Orthogneissic Unit,gneiss,,251.902,541.0,289.098
+1909,Mesoproterozoic-Neoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Proterozoic,541.0,1400.0,859.0
+1911,"Carbonate sedimentary rock, Langhian",carbonate sedimentary rock,Langhian,13.82,15.98,2.16
+1911,Jurassic limestone,"Major:{limestone}, Minor{siliceous ooze,carbonates, consolidated,marl}",Jurassic,145.0,201.3,56.30000000000001
+1911,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1913,Triassic undifferentiated,,Mesozoic,201.3,251.902,50.601999999999975
+1913,Precambrian crystalline metamorphic rocks,crystalline metamorphic rocks,,541.0,4000.0,3459.0
+1917,Cretaceous undifferentiated,metamorphic,Mesozoic,66.0,145.0,79.0
+1917,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1918,Caucasus,"Major:{limestone}, Minor{marl,sandstone,tuff group}",Phanerozoic,56.0,100.5,44.5
+1918,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1920,"East European, Scythian, West Siberian, Turanian plates","Major:{clay}, Minor{rock salt,sandstone,limestone}",Miocene,5.333,23.03,17.697000000000003
+1920,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1921,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1922,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1923,Mesoproterozoic-Neoproterozoic sedimentary rocks,sedimentary rocks,Proterozoic,541.0,1600.0,1059.0
+1924,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1925,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+1926,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+1927,Paleozoic sedimentary rocks,sedimentary rocks,,358.9,541.0,182.10000000000002
+1928,Paleozoic intrusive rocks,intrusive igneous rocks,Paleozoic,251.902,419.2,167.298
+1929,Paleozoic sedimentary and volcanic rocks,felsic volcanic rocks,Paleozoic,251.902,358.9,106.99799999999999
+1930,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1931,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1932,Cenozoic volcanic rocks,mafic volcanic rocks,Cenozoic,2.588,66.0,63.412
+1933,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1934,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+1937,mixed rock Cretaceous accretionary complex,mixed rock Cretaceous accretionary complex,Cretaceous,66.0,143.1,77.1
+1937,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+1957,"Wanapum Basalt, Priest Rapids Member",Major:: {basalt},Serravallian,13.0867,13.4533,0.36660000000000004
+1957,"Priest Rapids Member, Wanapum Basalt","basalt flows (Priest Rapids Member [CRB, WB])",Serravallian,13.0867,13.4533,0.36660000000000004
+1957,Miocene volcanic rocks,"Major:{basalt}, Incidental:{sandstone, siltstone, andesite, dacite, rhyolite, conglomerate}",Miocene,5.8113,17.0875,11.2762
+1957,"Tertiary volcanic rocks, Columbia River Basalt Group","basalt, volcanic, conglomerate, sandstone, siltstone",Miocene,5.8113,17.0975,11.286200000000001
+1957,Miocene volcanic: mafic rocks,volcanic: mafic rocks,Miocene,5.333,23.03,17.697000000000003
+1957,Cenozoic volcanic rocks,flood basalt(s); mafic volcanic rocks; basalt,Neogene,2.588,23.03,20.442
+1958,Glacial deposits,"sand, gravel",Cenozoic,0.0,2.588,2.588
+1958,Glacial till,"sand, silt",Pleistocene,0.0117,2.58,2.5683000000000002
+1958,Glacial till,"sand, silt",Pleistocene,0.0117,2.58,2.5683000000000002
+1958,Glacial deposit,Major:{unconsolidated drift},Quaternary,0.0,1.806,1.806
+1958,Medicine Hat block,,Archean,2500.0,4031.0,1531.0
+1958,Cretaceous sedimentary,sedimentary,Mesozoic,66.0,145.0,79.0
+1958,Mesozoic sedimentary rocks,"siltstone,shale,sandstone",Late Cretaceous,66.0,100.5,34.5
+1959,Tectonically shortened rocks on margins of Wyoming province,,Archean,2500.0,4031.0,1531.0
+1959,Tullock Member of Fort Union Formation,"Major:{sandstone}, Minor:{black shale,coal}",Danian,62.7,66.0,3.299999999999997
+1959,"Fort Union Formation, Tullock Member","coal, sandstone, shale",Danian,62.745,66.0,3.2550000000000026
+1959,"Fort Union Formation, Tullock Member","coal, sandstone, shale",Danian,62.745,66.0,3.2550000000000026
+1959,Paleocene sedimentary,sedimentary,Paleocene,56.0,66.0,10.0
+1959,Mesozoic sedimentary rocks,"siltstone,shale,sandstone",Late Cretaceous,66.0,100.5,34.5
+1960,Sentinel Butte Formation,"clay, sand, sandstone, silt, minor lignite",Thanetian,56.0,57.08,1.0799999999999983
+1960,Relatively dense rocks in central magnetic region,volcanic,Paleoproterozoic,1600.0,2500.0,900.0
+1960,Sentinel Butte Formation,"Major:{siltstone,claystone,sandstone}, Incidental:{lignite}",Thanetian,56.0,57.0667,1.0666999999999973
+1960,Sentinel Butte Formation,"clay, sand, sandstone, silt, minor lignite",Thanetian,56.0,57.08,1.0799999999999983
+1960,Paleocene sedimentary,sedimentary,Paleocene,56.0,66.0,10.0
+1960,Cenozoic sedimentary rocks,sedimentary rocks,Paleocene,56.0,66.0,10.0
+1961,Greenhorn Formation,Major:{shale},Late Cretaceous,90.825,95.55,4.724999999999994
+1961,River sediment,"clay, sand, silt",Holocene,0.0,0.0117,0.0117
+1961,Greenhorn Formation,shale,Late Cretaceous,90.825,95.55,4.724999999999994
+1961,Lake Silt And Clay,"clay, silt, gravel, sand, minor boulders, minor diatomite, minor ice, minor marl",Quaternary,0.0,0.129,0.129
+1961,Granitoid rocks,"granite, greenstone, tonalite",Neoarchean,2500.0,2800.0,300.0
+1961,Late Cretaceous sedimentary,"sand, mud, chalk, carbonate",Late Cretaceous,72.1,100.5,28.400000000000006
+1961,Mesozoic sedimentary rocks,"siltstone,shale,sandstone",Late Cretaceous,66.0,100.5,34.5
+1962,Boundary Waters Formation,ice,Late Pleistocene,0.0117,0.129,0.1173
+1962,Volcanogenic graywacke and mudstone,"Major:{graywacke,mudstone}",Neoarchean,2560.0,2665.0,105.0
+1962,Volcanogenic graywacke and mudstone,"graywacke, mudstone",Neoarchean,2500.0,2800.0,300.0
+1962,Ground Moraine,,Late Pleistocene,0.0117,0.129,0.1173
+1962,Volcanogenic graywacke and mudstone,"graywacke, mudstone",Neoarchean,2500.0,2800.0,300.0
+1962,Neoarchean metamorphic and undivided crystalline: mainly tonalite gneiss,metamorphic and undivided crystalline: mainly tonalite gneiss,Neoarchean,2500.0,2800.0,300.0
+1962,Archean volcanic rocks,felsic volcanic rocks,Neoarchean,2500.0,2800.0,300.0
+1963,"Lake Silt And Clay Under Lakes Michigan, Huron, And Superior","clay, silt",Holocene,0.0,0.0117,0.0117
+1963,Mesoproterozoic sedimentary,sedimentary,Mesoproterozoic,1000.0,1600.0,600.0
+1964,"Lake Clay, Silt, Sand, And Gravel","clay, gravel, sand, silt",Quaternary,0.0,0.129,0.129
+1964,Gneissic tonalite suite,tonalite to granodiorite-foliated to gneissic-with minor supracrustal inclusions,Archean,2500.0,3200.0,700.0
+1964,Neoarchean metamorphic and undivided crystalline: mainly tonalite gneiss,metamorphic and undivided crystalline: mainly tonalite gneiss,Neoarchean,2500.0,2800.0,300.0
+1964,Archean sedimentary and volcanic rocks,intermediate volcanic rocks,Neoarchean,2500.0,2800.0,300.0
+1965,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Neoarchean,2500.0,2800.0,300.0
+1966,Discontinuous Sandy Till,"clay, gravel, ice, sand, minor peat, minor silt",Quaternary,0.0,0.129,0.129
+1966,Mesoproterozoic metamorphic and undivided crystalline: orthogneiss,metamorphic and undivided crystalline: orthogneiss,Mesoproterozoic,1000.0,1600.0,600.0
+1966,Mesoproterozoic crystalline metamorphic rocks,gneiss,Calymmian,1400.0,1600.0,200.0
+1967,Ground Moraine,,Late Pleistocene,0.0117,0.129,0.1173
+1967,Ordovician-Silurian sedimentary,sedimentary,Paleozoic,419.2,485.4,66.19999999999999
+1967,Paleozoic sedimentary rocks,sedimentary rocks,,251.902,541.0,289.098
+1981,,clay [95.0%..100.0%],Late Cretaceous,66.0,100.5,34.5
+1981,"Clay, Upper Cretaceous",clay,Late Cretaceous,66.0,100.5,34.5
+1981,detrital and biogenic deposit,"Major:{limestone}, Minor{sandstone,siltstone,marl}",Late Cretaceous,66.0,100.5,34.5
+1981,Mesozoic sedimentary rocks,sedimentary rocks,Jurassic,145.0,201.3,56.30000000000001
+1982,,conglomerate [5.0%..50.0%]; impure Carbonate [50.0%..95.0%]; sandstone [5.0%..50.0%],Cenozoic,23.03,33.9,10.869999999999997
+1982,Quartre Lockergesteine,"silty sand, clay, often calcareous",Cenozoic,0.0117,2.588,2.5763000000000003
+1982,"Impure carbonate sedimentary rock, Oligocene",impure carbonate sedimentary rock,Oligocene,23.04,33.9,10.86
+1982,,"Sand, clay, marl",Cenozoic,23.03,33.9,10.869999999999997
+1982,marine deposit,"Major:{clay}, Minor{sand,carbonates, consolidated,marl}",Cenozoic,23.03,33.9,10.869999999999997
+1982,Mesozoic sedimentary rocks,sedimentary rocks,Jurassic,145.0,201.3,56.30000000000001
+1983,"Phyllite, Paleozoic",phyllite,Paleozoic,251.902,538.8,286.89799999999997
+1983,,"Diabase, spilite, greenschist, amphibolite, gabbro, serpentinite",,251.902,541.0,289.098
+1983,"Grauwackenzone, Ostalpine Palaeozoic","Major:{phyllite}, Minor{shale/slate,sandstone,undifferentiated}",,419.2,541.0,121.80000000000001
+1983,Mesozoic sedimentary rocks,sedimentary rocks,Jurassic,145.0,201.3,56.30000000000001
+1984,"Diamicton, Pleistocene",diamicton,Pleistocene,0.0117,2.58,2.5683000000000002
+1984,"Nagyalföld Variegated Clay Fm, Tihany Fm, Zagyva Fm, Újfalu Sandstone Fm, Algyõ Fm, Szolnok Sandstone Fm, Endrõd Marl Fm, Tihany","Major:{sandstone}, Minor{marl,gravel,limestone}",Neogene,2.588,23.03,20.442
+1984,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1985,molasse,"Major:{marl}, Minor{clay,sand,sandstone}",Neogene,2.588,23.03,20.442
+1985,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+1986,"Carpatian, Crimea, Caucasus","Major:{clay}, Minor{sand,sandstone,limestone}",Miocene,5.333,23.03,17.697000000000003
+1986,Paleozoic sedimentary rocks,sedimentary rocks,,358.9,541.0,182.10000000000002
+1987,"East European, West Siberian, Turanian plates","Major:{sand}, Minor{sandstone,clay}",Pliocene,2.588,5.333,2.745
+1987,Paleoproterozoic sedimentary rocks,sedimentary rocks,Paleoproterozoic,1600.0,2500.0,900.0
+1988,Baltic Shield; Ukrainian Shield,syenite,Paleoproterozoic,1600.0,2500.0,900.0
+1988,Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Paleoproterozoic,1600.0,2500.0,900.0
+1989,"East European, West Siberian, Turanian plates","Major:{sand}, Minor{sandstone,clay}",Pliocene,2.588,5.333,2.745
+1989,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1990,"East European, Turanian plates",sandstone,Paleocene,56.0,66.0,10.0
+1990,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1991,"East European, Scythian, West Siberian, Turanian plates","Major:{carbonates}, Minor{sandstone,claystone}",Late Cretaceous,66.0,100.5,34.5
+1991,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1992,"East European, Scythian, West Siberian, Turanian plates","Major:{sand}, Minor{clay,sandstone,marl}",Eocene,33.9,56.0,22.1
+1992,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1993,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1994,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+1995,Mesoproterozoic-Neoproterozoic sedimentary rocks,sedimentary rocks,Proterozoic,541.0,1600.0,1059.0
+1996,Paleozoic sedimentary and volcanic rocks,intermediate-felsic volcanic rocks,Paleozoic,358.9,443.8,84.90000000000003
+1997,Paleozoic sedimentary rocks,sedimentary rocks,,358.9,541.0,182.10000000000002
+1998,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+1999,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2000,Paleozoic intrusive rocks,intrusive igneous rocks,,485.4,541.0,55.60000000000002
+2001,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,419.2,167.298
+2002,Precambrian-Phanerozoic sedimentary rocks,sedimentary rocks,,485.4,1000.0,514.6
+2003,Paleozoic volcanic and intrusive rocks,intermediate-felsic volcanic rocks,Permian,251.902,298.9,46.99799999999999
+2004,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2005,Mesozoic volcanic rocks,intermediate-felsic volcanic rocks; dacite,Jurassic,145.0,201.3,56.30000000000001
+2006,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2007,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2008,Mesozoic sedimentary rocks,sedimentary rocks,Jurassic,145.0,201.3,56.30000000000001
+2009,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+2027,intrusive rocks,quartz dioritic intrusive rocks,Mesozoic,100.5,163.5,63.0
+2027,Cretaceous plutonic: intermediate rocks,plutonic: intermediate rocks,Mesozoic,66.0,145.0,79.0
+2027,Mesozoic intrusive rocks,intrusive igneous rocks,Late Cretaceous,66.0,100.5,34.5
+2028,Chilcotin Group,basaltic volcanic rocks,Neogene,3.2743,9.7573,6.4830000000000005
+2028,Neogene sedimentary,sedimentary,Neogene,2.588,23.03,20.442
+2028,Cenozoic volcanic rocks,mafic volcanic rocks,Neogene,2.588,23.03,20.442
+2029,Gog Group,sandstone and limestone,Cambrian,514.0,529.0,15.0
+2029,Neoproterozoic-Cambrian sedimentary,sedimentary,,485.4,1000.0,514.6
+2029,Precambrian-Phanerozoic sedimentary rocks,sedimentary rocks,,485.4,1000.0,514.6
+2030,Horseshoe Canyon Formation,"sandstone, siltstone, and mudstone",Maastrichtian,68.0333,70.575,2.541700000000006
+2030,Late Cretaceous sedimentary,"sand, chalk, mud",Late Cretaceous,67.0167,90.825,23.808300000000003
+2030,Mesozoic sedimentary rocks,"siltstone,shale,sandstone",Late Cretaceous,66.0,100.5,34.5
+2031,Lea Park Fm; Milk River Fm of Montana Gp,marine shale/muddy sandstone,Campanian,74.975,83.6,8.625
+2031,Late Cretaceous sedimentary,sedimentary,Late Cretaceous,66.0,100.5,34.5
+2031,Mesozoic sedimentary rocks,"siltstone,shale,sandstone",Late Cretaceous,66.0,100.5,34.5
+2032,Riding Mountain Fm of Montana Gp,silty marine claystone and shale,Mesozoic,66.0,145.0,79.0
+2032,Late Cretaceous sedimentary,"sand, chalk, mud",Late Cretaceous,67.0167,90.825,23.808300000000003
+2032,Mesozoic sedimentary rocks,"siltstone,shale,sandstone",Late Cretaceous,66.0,100.5,34.5
+2033,Red River Formation,"limestone, dolomite",Ordovician,446.15,458.4,12.25
+2034,Foliated tonalite suite,tonalite to granodiorite-foliated to massive,Archean,2500.0,3200.0,700.0
+2034,Neoarchean metamorphic and undivided crystalline: mainly tonalite gneiss,metamorphic and undivided crystalline: mainly tonalite gneiss,Neoarchean,2500.0,2800.0,300.0
+2034,Archean intrusive rocks,intrusive igneous rocks,Neoarchean,2500.0,2800.0,300.0
+2035,Mafic to intermediate metavolcanic rocks,"basaltic and andesitic flows, tuffs and breccias, chert, iron formation, minor metasedimentary and intrusive rocks, related migmatites",Archean,2500.0,3200.0,700.0
+2035,Neoarchean volcanic: mafic rocks,volcanic: mafic rocks,Neoarchean,2500.0,2800.0,300.0
+2035,Archean intrusive rocks,intrusive igneous rocks,Neoarchean,2500.0,2800.0,300.0
+2036,Kenogami River Formation (Upper Silurian to Lower Devonian),"limestone, dolostone, shale, sandstone, gypsum, salt",Paleozoic,410.8,443.8,33.0
+2036,Silurian-Devonian sedimentary,sedimentary,Paleozoic,358.9,443.8,84.90000000000003
+2036,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2037,Neoarchean metamorphic and undivided crystalline: mainly tonalite gneiss,metamorphic and undivided crystalline: mainly tonalite gneiss,Neoarchean,2500.0,2800.0,300.0
+2037,Archean intrusive rocks,intrusive igneous rocks,Neoarchean,2500.0,2800.0,300.0
+2038,Neoarchean metamorphic and undivided crystalline: mainly tonalite gneiss,metamorphic and undivided crystalline: mainly tonalite gneiss,Neoarchean,2500.0,2800.0,300.0
+2038,Archean sedimentary rocks,paragneiss,Neoarchean,2500.0,2800.0,300.0
+2039,Paleoproterozoic metamorphic and undivided crystalline: paragneiss,metamorphic and undivided crystalline: paragneiss,Paleoproterozoic,1600.0,2500.0,900.0
+2039,Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Statherian,1600.0,1800.0,200.0
+2040,Paleoproterozoic-Mesoproterozoic metamorphic and undivided crystalline: undivided gneissic rocks,metamorphic and undivided crystalline: undivided gneissic rocks,Proterozoic,1000.0,2500.0,1500.0
+2040,Paleoproterozoic-Mesoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Proterozoic,1400.0,1800.0,400.0
+2041,"Mesoproterozoic plutonic: syenite, monzogranite","plutonic: syenite, monzogranite",Mesoproterozoic,1000.0,1600.0,600.0
+2041,Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Statherian,1600.0,1800.0,200.0
+2051,Ballyadams Formation,crinoidal wackestone/packstone limestone,Visean,330.3,346.7,16.399999999999977
+2051,"Diamicton, Quaternary",diamicton,Quaternary,0.0,2.58,2.58
+2051,Dinantian,"Major:{limestone}, Minor{claystone,sandstone}",Paleozoic,323.2,358.9,35.69999999999999
+2051,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,323.2,358.9,35.69999999999999
+2052,"Mudstone, Lower Devonian",mudstone,Early Devonian,393.47,419.62,26.149999999999977
+2052,Lower Devonian Rocks (Undifferentiated),"mudstone, siltstone and sandstone",Devonian,393.3,419.2,25.899999999999977
+2052,Early Devonian sandstone,sandstone,Devonian,393.3,419.2,25.899999999999977
+2052,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,419.2,443.8,24.600000000000023
+2054,"Diamicton, Pleistocene",diamicton,Pleistocene,0.0117,2.58,2.5683000000000002
+2054,,"Silt; clayey, sandy, gravelly, pebbly, partially calcareous",Cenozoic,0.0117,2.588,2.5763000000000003
+2054,Miocene sand,"Major:{sand}, Minor{silt,clay}",Miocene,5.333,23.03,17.697000000000003
+2054,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+2055,,Peat,Holocene,0.0,0.0117,0.0117
+2055,"Peat, Holocene",peat,Holocene,0.0,0.0117,0.0117
+2055,Miocene sand,"Major:{sand}, Minor{silt,clay}",Miocene,5.333,23.03,17.697000000000003
+2055,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+2056,"Sand, Pleistocene",sand,Pleistocene,0.0117,2.58,2.5683000000000002
+2056,Neogene undifferentiated,,Neogene,2.588,23.03,20.442
+2056,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+2057,"Sand, Holocene",sand,Holocene,0.0,0.0117,0.0117
+2057,Oligocene undifferentiated,,Cenozoic,23.03,33.9,10.869999999999997
+2057,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+2058,Eocene sand,"Major:{sand}, Minor{silt,clay,sandstone}",Eocene,33.9,56.0,22.1
+2058,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+2059,"East European, Scythian, West Siberian, Turanian plates","Major:{carbonates}, Minor{sandstone,claystone}",Late Cretaceous,66.0,100.5,34.5
+2059,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2060,East European Plate,"Major:{clay}, Minor{sandstone,marl,limestone}",Devonian,358.9,382.7,23.80000000000001
+2060,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+2061,"East European, Scythian, West Siberian, Turanian plates","Major:{carbonates}, Minor{sandstone,claystone}",Late Cretaceous,66.0,100.5,34.5
+2061,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+2062,"East European, Pechora, Turanian plates","Major:{sandstone}, Minor{claystone,limestone}",Mesozoic,100.5,145.0,44.5
+2062,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2063,"East European, Pechora plates","Major:{sandstone}, Minor{conglomerate,clay,claystone}",Early Triassic,247.2,251.902,4.701999999999998
+2063,Mesozoic sedimentary rocks,sedimentary rocks,Jurassic,145.0,201.3,56.30000000000001
+2064,Urals,"Major:{sandstone}, Minor{schist group,tuffite group,basalt group}",Paleozoic,470.0,501.0,31.0
+2064,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+2065,"East European, Scythian, West Siberian, Turanian plates","Major:{sand}, Minor{clay,sandstone,marl}",Eocene,33.9,56.0,22.1
+2065,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2066,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+2067,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+2068,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2069,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2070,Paleozoic volcanic rocks,volcanic rocks,,485.4,541.0,55.60000000000002
+2071,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2072,Paleozoic intrusive rocks,intrusive igneous rocks,,251.902,541.0,289.098
+2073,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+2074,Paleoproterozoic intrusive rocks,intrusive igneous rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2075,Paleozoic intrusive rocks,intrusive igneous rocks,,443.8,541.0,97.19999999999999
+2076,Paleozoic intrusive rocks,intrusive igneous rocks,,443.8,541.0,97.19999999999999
+2077,Paleozoic intrusive rocks,intrusive igneous rocks,Paleozoic,251.902,419.2,167.298
+2078,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0117,5.333,5.3213
+2079,Mesozoic intrusive rocks,intrusive igneous rocks,Early Triassic,247.2,251.902,4.701999999999998
+2080,Mesozoic volcanic rocks,intermediate volcanic rocks,Cretaceous,93.9,113.0,19.099999999999994
+2081,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,66.0,66.0
+2084,Cenozoic volcanic rocks,mafic volcanic rocks,Cenozoic,0.0,2.588,2.588
+2094,Ghost Rocks Formation,Tectonite,Danian,62.7,66.0,3.299999999999997
+2094,Ghost Rocks Formation,"limestone, mudstone, sandstone, volcanic, minor andesite, minor argillite, minor basalt, minor basaltic-andesite, minor chert, minor clastic, minor conglomerate, minor greenstone",Danian,62.745,66.0,3.2550000000000026
+2094,Paleocene volcanic: interlayered sedimentary and volcanic rocks,volcanic: interlayered sedimentary and volcanic rocks,Paleocene,56.0,66.0,10.0
+2094,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,23.03,66.0,42.97
+2098,Sloko-Hyder Plutonic Suite,"granite, alkali feldspar granite intrusive rocks",Paleogene,33.9,66.0,32.1
+2098,Paleogene plutonic: intermediate rocks,plutonic: intermediate rocks,Cenozoic,23.03,66.0,42.97
+2098,Cenozoic intrusive rocks,intrusive igneous rocks,Cenozoic,23.03,66.0,42.97
+2099,Toodoggone Volcanics - Adoogacho Member,dacitic volcanic rocks,Early Jurassic,182.7,199.3,16.600000000000023
+2099,Early Jurassic-Middle Jurassic volcanic: undivided volcanic rocks,volcanic: undivided volcanic rocks,Jurassic,163.5,201.3,37.80000000000001
+2099,Mesozoic volcanic rocks,volcanic rocks,Mesozoic,145.0,251.902,106.90199999999999
+2100,Dunvegan Formation,coarse clastic sedimentary rocks,Cenomanian,93.9,98.85,4.949999999999989
+2100,Late Cretaceous sedimentary,sedimentary,Late Cretaceous,66.0,100.5,34.5
+2100,Mesozoic sedimentary rocks,"siltstone,shale,sandstone",Late Cretaceous,66.0,100.5,34.5
+2101,Shaftesbury Formation of Fort St. John Group,"major:{shale: sideritic, dark; and siltstone}",Cretaceous,96.1,103.625,7.525000000000006
+2101,Dunvegan Formation,"sandstone, siltstone, and shale",Late Cretaceous,90.825,100.5,9.674999999999997
+2101,Early Cretaceous sedimentary,sedimentary,Mesozoic,100.5,145.0,44.5
+2101,Mesozoic sedimentary rocks,"siltstone,shale,sandstone",Late Cretaceous,66.0,100.5,34.5
+2102,Smoky Group,"major:{shale: dark grey, thin-bedded; and shale: silty}, minor:{ironstone: nodules and partings}",Late Cretaceous,84.275,86.3,2.0249999999999915
+2102,Lea Park Formation,mudstone,Campanian,74.975,83.6,8.625
+2102,Late Cretaceous sedimentary,sedimentary,Late Cretaceous,66.0,100.5,34.5
+2102,Mesozoic sedimentary rocks,"siltstone,shale,sandstone",Late Cretaceous,66.0,100.5,34.5
+2103,Dunlop Mbr of Manitou Falls Fm,clay-intraclast-rich quartz arenite,Proterozoic,1000.0,2500.0,1500.0
+2103,Paleoproterozoic-Mesoproterozoic sedimentary,sedimentary,Proterozoic,1000.0,2500.0,1500.0
+2103,Paleoproterozoic-Mesoproterozoic sedimentary rocks,sedimentary rocks,Proterozoic,1400.0,1800.0,400.0
+2104,Wathaman granite,wathaman granite,Proterozoic,541.0,2500.0,1959.0
+2104,Paleoproterozoic intrusive rocks,intrusive igneous rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2105,Metamorphic and Metasedimentary Rocks,psammitic greywacke,Proterozoic,541.0,2500.0,1959.0
+2105,Paleoproterozoic plutonic: mafic rocks,plutonic: mafic rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2105,Paleoproterozoic intrusive rocks,intrusive igneous rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2106,Ekwan River Formation,"limestone, calcarenite",Telychian,434.675,438.5,3.8249999999999886
+2106,Early Silurian sedimentary,sedimentary,Paleozoic,427.4,443.8,16.400000000000034
+2106,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2110,Archean metamorphic and undivided crystalline: orthogneiss,metamorphic and undivided crystalline: orthogneiss,Archean,2500.0,4000.0,1500.0
+2110,Archean intrusive rocks,intrusive igneous rocks,Neoarchean,2500.0,2800.0,300.0
+2111,Mesoarchean-Neoarchean metamorphic and undivided crystalline: undivided gneissic rocks,metamorphic and undivided crystalline: undivided gneissic rocks,Archean,2500.0,3200.0,700.0
+2111,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,3200.0,700.0
+2124,"Clastic sediment, Quaternary",siliciclastic,Quaternary,0.0,2.58,2.58
+2124,Southern Highland Group,psammite and pelite,,501.0,1000.0,499.0
+2124,Proterozoic III quartzite,quartzite,Neoproterozoic,541.0,1000.0,459.0
+2124,Paleozoic sedimentary rocks,sedimentary rocks,Devonian,358.9,419.2,60.30000000000001
+2127,,Granitoid to syenitoid migmatitic gneiss,Statherian,1600.0,1800.0,200.0
+2127,"Gneiss, Statherian 3",gneiss,Statherian,1600.0,1800.0,200.0
+2127,Proterozoic I granodiorite-diorite,"Major:{granodiorite-diorite group}, Minor{gneiss,meta-granodiorite-diorite group,meta-granite}",Proterozoic,1000.0,2500.0,1500.0
+2127,Paleoproterozoic-Mesoproterozoic tectonic rocks,"deformed sedimentary, metamorphic, and igneous rocks",Proterozoic,1400.0,1800.0,400.0
+2129,Late Devonian undifferentiated,,Devonian,358.9,382.7,23.80000000000001
+2129,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+2130,Late Devonian sandstone,"Major:{sandstone}, Minor{limestone,dolomite/dolostone}",Devonian,358.9,382.7,23.80000000000001
+2130,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+2131,East European Plate,"Major:{clay}, Minor{sandstone,marl,limestone}",Devonian,358.9,382.7,23.80000000000001
+2131,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+2132,"East European, Pechora, Turanian plates","Major:{sandstone}, Minor{clay,marl,limestone}",Jurassic,145.0,174.1,29.099999999999994
+2132,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2133,"East European, Pechora, Turanian plates","Major:{sandstone}, Minor{claystone,limestone}",Mesozoic,100.5,145.0,44.5
+2133,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2134,"East European, Pechora Plates","Major:{claystone}, Minor{sandstone,marl,conglomerate}",Permian,251.902,272.95,21.048000000000002
+2134,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+2135,"East European, Pechora Plates","Major:{claystone}, Minor{sandstone,marl,conglomerate}",Permian,251.902,272.95,21.048000000000002
+2135,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+2136,Urals,"Major:{gypsum}, Minor{rock salt,limestone,clay}",Permian,251.902,298.9,46.99799999999999
+2136,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+2137,"East European, Scythian, West Siberian, Turanian plates","Major:{sand}, Minor{clay,sandstone,marl}",Eocene,33.9,56.0,22.1
+2137,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2138,"South part of East European plate, West Siberian, Turanien plates",clay,Cenozoic,23.03,33.9,10.869999999999997
+2138,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2139,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2140,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2141,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2142,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2143,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2144,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2145,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2146,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2147,Paleoproterozoic intrusive rocks,intrusive igneous rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2148,Paleoproterozoic intrusive rocks,intrusive igneous rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2149,Archean intrusive rocks,intrusive igneous rocks,Archean,2800.0,3600.0,800.0
+2150,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2800.0,3600.0,800.0
+2151,Paleozoic sedimentary rocks,sedimentary rocks,,485.4,541.0,55.60000000000002
+2152,Mesoproterozoic sedimentary rocks,sedimentary rocks,Stenian,1000.0,1200.0,200.0
+2156,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,5.333,56.0,50.667
+2157,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,23.03,23.03
+2164,"Sandstone, shale, and conglomerate deltaic deposits",Sedimentary,Late Cretaceous,66.0,100.5,34.5
+2164,Cretaceous sedimentary,sedimentary,Mesozoic,66.0,145.0,79.0
+2164,"Sandstone, shale, and conglomerate deltaic deposits","conglomerate, sandstone, shale, siltstone, minor argillite, minor arkose, minor bituminous, minor chert, minor coal, minor granitic, minor metamorphic, minor schist, minor sedimentary, minor volcanic",Cretaceous,66.0,143.1,77.1
+2164,Sedimentary; Clastic: deltaic and nearshore,"sandstone, siltstone, shale, coal; plant fossils",Late Cretaceous,66.0,100.5,34.5
+2164,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2165,"Kuskokwim Group, undivided",Sedimentary,Cretaceous,90.825,113.0,22.174999999999997
+2165,Sedimentary; Slope and deep water,"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate or metamorphosed equivalent",Late Cretaceous,66.0,100.5,34.5
+2165,Cretaceous sedimentary,sedimentary,Mesozoic,66.0,145.0,79.0
+2165,"Kuskokwim Group, undivided","argillite, conglomerate, graywacke, shale, minor chert, minor plutonic, minor sandstone, minor siltstone, minor volcanic",Cretaceous,90.825,113.2,22.375
+2165,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2166,Flysch,Sedimentary,Mesozoic,66.0,145.0,79.0
+2166,Sedimentary; Slope and deep water,"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate",Mesozoic,66.0,201.3,135.3
+2166,Jurassic-Cretaceous sedimentary,sedimentary,Mesozoic,66.0,201.3,135.3
+2166,Flysch,"argillite, graywacke, shale, siltstone, minor chert, minor conglomerate, minor coquina, minor igneous, minor limestone, minor sedimentary",Cretaceous,66.0,143.1,77.1
+2166,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2167,"Unconsolidated surficial deposits, undivided",Unconsolidated,Cenozoic,0.0,2.588,2.588
+2167,"Unconsolidated surficial deposits, undivided","unconsolidated, volcanic",Quaternary,0.0,2.58,2.58
+2167,Supracrustal; Sedimentary and/or volcanic: undivided,sedimentary and/or volcanic rock: undivided,Neogene,2.588,23.03,20.442
+2167,Quaternary sedimentary,sedimentary,Cenozoic,0.0,2.588,2.588
+2167,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0117,2.588,2.5763000000000003
+2168,Gravina-Nuzotin unit,Sedimentary,Tithonian,145.0,145.0,0.0
+2168,Gravina-Nuzotin unit,"conglomerate, graywacke, mudstone, volcanic, minor amphibolite, minor diorite, minor gabbro, minor gneiss, minor limestone, minor metamorphic, minor phyllite, minor schist",Mesozoic,100.5,161.5,61.0
+2168,Jurassic-Cretaceous sedimentary,sedimentary,Mesozoic,66.0,201.3,135.3
+2168,Sedimentary; Slope and deep water,"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate",Mesozoic,66.0,201.3,135.3
+2168,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,201.3,135.3
+2169,Little Ridge/Casino Fm,"Major: {basalt,breccia,andesite,porphyry,dacite,trachyte},Minor: {conglomerate,agglomerate}",Mesozoic,66.0,145.0,79.0
+2169,Igneous: extrusive; Extrusive: mafic,"basalt, olivine basalt, tholeiite, alkali basalt, basanite, pillow basalt, flood basalt",Mesozoic,66.0,145.0,79.0
+2169,Mesozoic volcanic rocks,bimodal volcanic rocks,Late Cretaceous,66.0,83.6,17.599999999999994
+2170,Narchilla Fm,"Major: {slate},Minor: {chert,siltstone,sandstone,conglomerate}",,533.5,564.5,31.0
+2170,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs; ",,443.8,541.0,97.19999999999999
+2170,Ordovician-Silurian sedimentary,sedimentary,Paleozoic,419.2,485.4,66.19999999999999
+2170,Paleozoic sedimentary rocks,"siltstone,shale,carbonate",,358.9,541.0,182.10000000000002
+2171,Silurian-Devonian sedimentary,sedimentary,Paleozoic,358.9,443.8,84.90000000000003
+2171,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs; ",,358.9,541.0,182.10000000000002
+2171,Paleozoic sedimentary rocks,"siltstone,shale,carbonate",,358.9,541.0,182.10000000000002
+2172,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Mesozoic,66.0,145.0,79.0
+2172,Early Cretaceous sedimentary,sedimentary,Mesozoic,100.5,145.0,44.5
+2172,Paleozoic sedimentary rocks,"siltstone,shale,carbonate",,358.9,541.0,182.10000000000002
+2173,Elk Point Group,"major:{marlstone: bituminous, dark, fossiliferous; interbedded with limestone: dark brown, nodular and thin-bedded, fossiliferous; overlain by limestone: very fine-grained, dark brown and grey, thin-bedded, petroliferous, fossiliferous}, minor:{shale: bituminous, black}",Givetian,384.575,387.7,3.125
+2173,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate reefs",Middle Devonian,382.7,393.3,10.600000000000023
+2173,Late Devonian sedimentary,sedimentary,Devonian,358.9,382.7,23.80000000000001
+2173,Paleozoic sedimentary rocks,"siltstone,shale,carbonate",,358.9,541.0,182.10000000000002
+2174,Sedimentary; Sedimentary: undivided,"greywacke, pelite; quartzite, conglomerate, iron-formation, marble, volcanics; includes pre-yellowknife supergroup metasedimentary rocks",Neoarchean,2500.0,2800.0,300.0
+2174,Neoarchean sedimentary,sedimentary,Neoarchean,2500.0,2800.0,300.0
+2174,Archean sedimentary rocks,turbiditic sandstone,Neoarchean,2500.0,2800.0,300.0
+2175,Mesoarchean-Neoarchean metamorphic and undivided crystalline: undivided gneissic rocks,metamorphic and undivided crystalline: undivided gneissic rocks,Archean,2500.0,3200.0,700.0
+2175,Igneous: intrusive; Intrusive: undivided,"diorite, monzodiorite, tonalite, granodiorite, monzogranite, syenogranite, quartz-monzonite, tonalite; gabbro, ultramafics: serpentinized peridotite ; charnockite and orthogneiss",Neoarchean,2500.0,2800.0,300.0
+2175,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,3200.0,700.0
+2176,Mesoarchean-Neoarchean metamorphic and undivided crystalline: undivided gneissic rocks,metamorphic and undivided crystalline: undivided gneissic rocks,Archean,2500.0,3200.0,700.0
+2176,Igneous: intrusive; Intrusive: undivided,"diorite, monzodiorite, tonalite, granodiorite, monzogranite, syenogranite, quartz-monzonite, tonalite; gabbro, ultramafics: serpentinized peridotite ; charnockite and orthogneiss",Neoarchean,2500.0,2800.0,300.0
+2176,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,3200.0,700.0
+2177,Sedimentary; Clastic: continental,"semipelite, psammite",Neoarchean,2500.0,2800.0,300.0
+2177,Archean sedimentary rocks,sedimentary rocks,Neoarchean,2500.0,2800.0,300.0
+2180,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate reefs",Paleozoic,419.2,443.8,24.600000000000023
+2180,Early Silurian sedimentary,sedimentary,Paleozoic,427.4,443.8,16.400000000000034
+2180,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,427.4,443.8,16.400000000000034
+2181,Paleoproterozoic plutonic: undivided granitic rocks,plutonic: undivided granitic rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2181,Sedimentary; Sedimentary: undivided,"pelite, quartzite; amphibolite, ironstone, marble, calc-silicate rock",Orosirian,1800.0,2050.0,250.0
+2181,Paleoproterozoic intrusive rocks,intrusive igneous rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2183,Lake Harbour Group,,Paleoproterozoic,1600.0,2500.0,900.0
+2183,Neoarchean-Paleoproterozoic metamorphic and undivided crystalline: orthogneiss,metamorphic and undivided crystalline: orthogneiss,,1600.0,2800.0,1200.0
+2183,Igneous: intrusive; Intrusive: granitic,"charnockite, monzogranite to syenogranite, granodiorite; quartz diorite, diorite, metaperidotite",Orosirian,1800.0,2050.0,250.0
+2183,Granulite Fazies,gneiss,,1600.0,4000.0,2400.0
+2183,Archean-Paleoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,,1600.0,2800.0,1200.0
+2187,Quaternary ,,Cenozoic,0.0,2.588,2.588
+2188,unclassified; Metamorphic: undivided,undivided crystalline rocks,,1600.0,4000.0,2400.0
+2188,Archean gneiss,gneiss,Archean,2500.0,4000.0,1500.0
+2198,"Diamicton, Upper Pleistocene",diamicton,Late Pleistocene,0.0117,0.129,0.1173
+2198,Igneous: intrusive; Intrusive: undivided,"gneiss, migmatite, amphibolite, foliated granite, mica gneiss",Statherian,1600.0,1800.0,200.0
+2198,Proterozoic I granite,"Major:{granite}, Minor{granodiorite-diorite group,meta-granite,meta-granodiorite-diorite group}",Proterozoic,1000.0,2500.0,1500.0
+2198,Proterozoic crystalline metamorphic rocks,orthogneiss/paragneiss/metavolcanic gneiss,Proterozoic,541.0,2500.0,1959.0
+2199,"Granitoid, Statherian 3",granite,Statherian,1600.0,1800.0,200.0
+2199,,"Granitoid, syenitoid and metamorphic equivalents",Proterozoic,720.0,1800.0,1080.0
+2199,Igneous: intrusive; Intrusive: granitic,"gneiss, migmatite, granite, augen gneiss, mica gneiss",Mesoproterozoic,1000.0,1600.0,600.0
+2199,Caledonian Orogenic Belt,"Major:{granite}, Minor{meta-granite,monzonite,meta-monzonite}",Proterozoic,541.0,2500.0,1959.0
+2199,Neoproterozoic sedimentary rocks,mudstone-sandstone-conglomerate,Neoproterozoic,541.0,1000.0,459.0
+2200,,"Nepheline syenite, pyroxenite, carbonatite, foidolite",,485.4,635.0,149.60000000000002
+2200,"Wacke, Orosirian 2",wacke,Orosirian,1800.0,2050.0,250.0
+2200,"Foid syenitoid, Ediacaran",syenite,Ediacaran,538.8,635.0,96.20000000000005
+2200,Sedimentary; Slope and deep water,"greywacke, phyllite, mica schist, meta-arkose, graphitic schist, paragneiss, conglomerate, amphibolite",Paleoproterozoic,1800.0,2500.0,700.0
+2200,Proterozoic I meta-sandstone,"Major:{meta-sandstone}, Minor{mica schist,gneiss,amphibolite}",Paleoproterozoic,1600.0,2500.0,900.0
+2200,Paleoproterozoic sedimentary rocks,sedimentary rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2201,"Peat, Holocene",peat,Holocene,0.0,0.0117,0.0117
+2201,Proterozoic I granite,"Major:{granite}, Minor{monzonite,syenite}",Paleoproterozoic,1600.0,2500.0,900.0
+2201,Igneous: intrusive; Intrusive: undivided,"granite, monzonite, quartz monzonite, quartz monzodiorite",Paleoproterozoic,1600.0,2050.0,450.0
+2201,Paleoproterozoic intrusive rocks,intrusive igneous rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2202,Sedimentary; Slope and deep water,"greywacke, phyllite, mica schist, meta-arkose, graphitic schist, paragneiss, conglomerate, amphibolite",Paleoproterozoic,1800.0,2500.0,700.0
+2202,Proterozoic I meta-sandstone,"Major:{meta-sandstone}, Minor{mica schist,gneiss,amphibolite}",Paleoproterozoic,1600.0,2500.0,900.0
+2202,Paleoproterozoic sedimentary rocks,mica schist; metasedimentary schist,Paleoproterozoic,1600.0,2500.0,900.0
+2203,Igneous: intrusive; Intrusive: tonalitic-granodioritic,"granodiorite, tonalite, quartz diorite, granite, syenite",Neoarchean,2500.0,2800.0,300.0
+2203,Archean granite,granite,Archean,2500.0,4000.0,1500.0
+2203,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+2204,Archean gneiss,gneiss,Archean,2500.0,4000.0,1500.0
+2204,Igneous: intrusive; Intrusive: tonalitic-granodioritic,"tonalite, granodiorite, granite gneiss, enderbite, migmatite",Archean,2500.0,3200.0,700.0
+2204,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,4000.0,1500.0
+2205,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs; ",Permian,259.1,272.95,13.849999999999966
+2205,East European plate,"Major:{carbonates}, Minor{clay,sandstone}",Permian,251.902,272.95,21.048000000000002
+2205,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+2206,"East European, Pechor, West Siberian, Turanian plates","Major:{clay}, Minor{sandstone,limestone,coal}",Middle Jurassic,163.5,174.1,10.599999999999994
+2206,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Jurassic,145.0,163.5,18.5
+2206,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2207,"East European, Pechora Plates","Major:{claystone}, Minor{sandstone,marl,conglomerate}",Permian,251.902,272.95,21.048000000000002
+2207,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils; ",Permian,251.902,272.95,21.048000000000002
+2207,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+2208,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils; ",Permian,251.902,272.95,21.048000000000002
+2208,"East European, Pechora Plates","Major:{claystone}, Minor{sandstone,marl,conglomerate}",Permian,251.902,272.95,21.048000000000002
+2208,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+2209,"East European, Scythian, West Siberian, Turanian plates","Major:{sand}, Minor{clay,sandstone,marl}",Eocene,33.9,56.0,22.1
+2209,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils; ",Eocene,33.9,47.8,13.899999999999999
+2209,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2210,"East European, Scythian, West Siberian, Turanian plates","Major:{clay}, Minor{rock salt,sandstone,limestone}",Miocene,5.333,23.03,17.697000000000003
+2210,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Miocene,5.333,23.03,17.697000000000003
+2210,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2211,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Miocene,5.333,23.03,17.697000000000003
+2211,"East European, Scythian, West Siberian, Turanian plates","Major:{clay}, Minor{rock salt,sandstone,limestone}",Miocene,5.333,23.03,17.697000000000003
+2211,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2212,"South part of East European plate, West Siberian, Turanien plates",clay,Cenozoic,23.03,33.9,10.869999999999997
+2212,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Cenozoic,23.03,28.1,5.07
+2212,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2213,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Cenozoic,5.333,33.9,28.567
+2213,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2214,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Miocene,5.333,23.03,17.697000000000003
+2214,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2215,Igneous: intrusive; Intrusive: gabbroic,"gabbro, olivine gabbro, diabase, norite, quartz norite, diorite, tonalite; ",Early Triassic,247.2,251.902,4.701999999999998
+2215,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2216,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Permian,272.95,298.9,25.94999999999999
+2216,Mesozoic volcanic rocks,flood basalt(s); mafic-intermediate volcanic rocks,Mesozoic,201.3,251.902,50.601999999999975
+2217,Igneous: intrusive; Intrusive: gabbroic,"gabbro, olivine gabbro, diabase, norite, quartz norite, diorite, tonalite; ",Early Triassic,247.2,251.902,4.701999999999998
+2217,Mesozoic volcanic rocks,flood basalt(s); mafic-intermediate volcanic rocks,Mesozoic,201.3,251.902,50.601999999999975
+2218,Igneous: extrusive; Extrusive: undivided,"volcanic rocks; lava flows, pyroclastic debris; ",Induan,251.2,251.902,0.7019999999999982
+2218,Mesozoic volcanic rocks,flood basalt(s); mafic-intermediate volcanic rocks,Mesozoic,201.3,251.902,50.601999999999975
+2219,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Permian,251.902,298.9,46.99799999999999
+2219,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2220,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Jurassic,174.1,201.3,27.200000000000017
+2220,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2221,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Mesozoic,100.5,145.0,44.5
+2221,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2222,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Mesozoic,100.5,145.0,44.5
+2222,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2223,Sedimentary; Clastic: deltaic and nearshore,"sandstone, siltstone, shale, coal; plant fossils; ",Cenozoic,23.03,33.9,10.869999999999997
+2223,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2224,Sedimentary; Slope and deep water,"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate; ",Ordovician,458.4,485.4,27.0
+2224,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+2225,Igneous: extrusive; Extrusive: felsic,"rhyolite, felsic tuff, felsic pyroclastic rocks, felsic agglomerate; ",Late Cretaceous,66.0,100.5,34.5
+2225,Mesozoic volcanic rocks,intermediate-felsic volcanic rocks,Mesozoic,66.0,145.0,79.0
+2226,Sedimentary; Slope and deep water,"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate; ",Permian,251.902,272.95,21.048000000000002
+2226,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+2227,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils; ",Middle Jurassic,163.5,174.1,10.599999999999994
+2227,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,201.3,251.902,50.601999999999975
+2228,Igneous: intrusive; Intrusive: granitic,"granite, monzogranite, quartz monzonite, leucogranite, alkalic granite, alaskite; ",Late Cretaceous,66.0,100.5,34.5
+2228,Mesozoic volcanic rocks,intermediate volcanic rocks,Mesozoic,66.0,145.0,79.0
+2229,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Neogene,2.588,23.03,20.442
+2229,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,145.0,237.0,92.0
+2230,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Eocene,33.9,56.0,22.1
+2230,Cenozoic sedimentary rocks,sedimentary rocks,Holocene,0.0,0.0117,0.0117
+2231,Late Cretaceous sedimentary,sedimentary,Late Cretaceous,66.0,100.5,34.5
+2231,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Late Cretaceous,66.0,100.5,34.5
+2231,Mesozoic sedimentary rocks,sedimentary rocks,Late Cretaceous,66.0,100.5,34.5
+2233,Triassic sedimentary,sedimentary,Mesozoic,201.3,251.902,50.601999999999975
+2233,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils; ",Triassic,237.0,251.902,14.901999999999987
+2233,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,201.3,251.902,50.601999999999975
+2236,"Unconsolidated surficial deposits, undivided",Unconsolidated,Cenozoic,0.0,2.588,2.588
+2236,Supracrustal; Sedimentary and/or volcanic: undivided,sedimentary and/or volcanic rock: undivided,Neogene,2.588,23.03,20.442
+2236,Quaternary sedimentary,sedimentary,Cenozoic,0.0,2.588,2.588
+2236,"Unconsolidated surficial deposits, undivided","unconsolidated, volcanic",Quaternary,0.0,2.58,2.58
+2236,Paleozoic-Mesozoic volcanic rocks,mafic volcanic rocks,Phanerozoic,145.0,298.9,153.89999999999998
+2237,Mixed assemblage of metasedimentary and metavolcanic rocks in the Brooks Range,Metamorphic,Gorstian,419.2,541.0,121.80000000000001
+2237,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs or metamorphosed equivalent",,0.0,2500.0,2500.0
+2237,Devonian sedimentary,sedimentary,Devonian,358.9,419.2,60.30000000000001
+2237,Mixed assemblage of metasedimentary and metavolcanic rocks in the Brooks Range,"metasedimentary, metavolcanic, argillite, marble, phyllite, quartzite, minor amphibolite, minor dolostone, minor gabbro, minor gneiss, minor greenstone, minor hornfels, minor metaconglomerate, minor schist, minor sedimentary, minor volcanic",,358.86,2500.0,2141.14
+2237,Paleozoic sedimentary rocks,sedimentary rocks,Devonian,358.9,382.7,23.80000000000001
+2238,Hunt Fork Shale,Sedimentary,Famennian,360.425,370.4,9.974999999999966
+2238,Late Devonian sedimentary,sedimentary,Devonian,358.9,382.7,23.80000000000001
+2238,Sedimentary; Slope and deep water,"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate or metamorphosed equivalent",Devonian,358.9,382.7,23.80000000000001
+2238,Hunt Fork Shale,"shale, limestone, mudstone, sandstone, minor arenite, minor chert, minor graywacke, minor metasandstone, minor metasiltstone, minor phyllite, minor siltstone",Famennian,360.395,370.3625,9.96750000000003
+2238,Paleozoic sedimentary rocks,sedimentary rocks,Devonian,358.9,382.7,23.80000000000001
+2239,Quartz-mica schist of the Brooks Range,Metamorphic,Gorstian,419.2,541.0,121.80000000000001
+2239,Neoproterozoic-Devonian sedimentary,sedimentary,,358.9,1000.0,641.1
+2239,Quartz-mica schist of the Brooks Range,"schist, granitic, marble, orthogneiss, minor metamorphic",,358.86,2500.0,2141.14
+2239,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone or metamorphosed equivalent",,0.0,2500.0,2500.0
+2239,Precambrian-Phanerozoic sedimentary rocks,sedimentary rocks,,443.8,4000.0,3556.2
+2240,"Unconsolidated surficial deposits, undivided",Unconsolidated,Cenozoic,0.0,2.588,2.588
+2240,Supracrustal; Sedimentary and/or volcanic: undivided,sedimentary and/or volcanic rock: undivided,Neogene,2.588,23.03,20.442
+2240,Quaternary sedimentary,sedimentary,Cenozoic,0.0,2.588,2.588
+2240,"Unconsolidated surficial deposits, undivided","unconsolidated, volcanic",Quaternary,0.0,2.58,2.58
+2240,Paleozoic sedimentary rocks,sedimentary rocks,,358.9,541.0,182.10000000000002
+2241,Mount Goodenough Fm,"Major: {shale,siltstone,sandstone},Minor: {conglo}",Early Cretaceous,122.0,129.4,7.400000000000006
+2241,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils",Mesozoic,100.5,145.0,44.5
+2241,Early Cretaceous sedimentary,sedimentary,Mesozoic,100.5,145.0,44.5
+2241,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,100.5,145.0,44.5
+2242,Sedimentary; Slope and deep water,"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate; ",Paleozoic,298.9,419.2,120.30000000000001
+2242,Late Devonian sedimentary,sedimentary,Devonian,358.9,382.7,23.80000000000001
+2242,Paleozoic sedimentary rocks,sedimentary rocks,Devonian,382.7,419.2,36.5
+2243,Sedimentary; Clastic: deltaic and nearshore,"sandstone, siltstone, shale, coal; plant fossils; ",Mesozoic,100.5,163.5,63.0
+2243,Early Cretaceous sedimentary,sedimentary,Mesozoic,100.5,145.0,44.5
+2243,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,100.5,145.0,44.5
+2244,Sedimentary; Clastic: deltaic and nearshore,"sandstone, siltstone, shale, coal; plant fossils; ",Mesozoic,100.5,163.5,63.0
+2244,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,100.5,145.0,44.5
+2245,Sedimentary; Clastic: shallow marine,"sandstone, shale, dolomite",Statherian,1600.0,1800.0,200.0
+2245,Mesoproterozoic volcanic rocks,mafic volcanic rocks,Ectasian,1200.0,1400.0,200.0
+2246,Neoarchean plutonic: undivided granitic rocks,plutonic: undivided granitic rocks,Neoarchean,2500.0,2800.0,300.0
+2246,Igneous: intrusive; Intrusive: granitic,"granite, granodiorite, tonalite, quartz diorite, diorite, gabbro",Neoarchean,2500.0,2800.0,300.0
+2246,Archean intrusive rocks,intrusive igneous rocks,Neoarchean,2500.0,2800.0,300.0
+2247,Igneous: intrusive; Intrusive: granitic,"granite, granodiorite, tonalite, quartz diorite, diorite, gabbro",Neoarchean,2500.0,2800.0,300.0
+2247,Neoarchean metamorphic and undivided crystalline: paragneiss,metamorphic and undivided crystalline: paragneiss,Neoarchean,2500.0,2800.0,300.0
+2247,Archean intrusive rocks,intrusive igneous rocks,Neoarchean,2500.0,2800.0,300.0
+2248,unclassified; Metamorphic: undivided,"granulite paragneiss, migmatite, diatexite, subordinate calc-silicate gneiss and amphibolite",,1600.0,4000.0,2400.0
+2248,Neoarchean-Paleoproterozoic plutonic: undivided granitic rocks,plutonic: undivided granitic rocks,,1600.0,2800.0,1200.0
+2248,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,3200.0,700.0
+2249,Queen Maud Granitoid Belt,,,541.0,4000.0,3459.0
+2249,unclassified; Metamorphic: undivided,"granulite paragneiss, mafic gneiss, calc-silicate gneiss, granite",,1600.0,4000.0,2400.0
+2249,Neoarchean-Paleoproterozoic volcanic: interlayered sedimentary and volcanic rocks,volcanic: interlayered sedimentary and volcanic rocks,,1600.0,2800.0,1200.0
+2249,Archean-Paleoproterozoic sedimentary and volcanic rocks,sedimentary and volcanic rocks,,1600.0,2800.0,1200.0
+2250,Snow Island Suite,,Neoarchean,2500.0,2800.0,300.0
+2250,Mesoarchean-Neoarchean metamorphic and undivided crystalline: undivided gneissic rocks,metamorphic and undivided crystalline: undivided gneissic rocks,Archean,2500.0,3200.0,700.0
+2250,Igneous: intrusive; Intrusive: undivided,"diorite, monzodiorite, tonalite, granodiorite, monzogranite, syenogranite, quartz-monzonite, tonalite; gabbro, ultramafics: serpentinized peridotite ; charnockite and orthogneiss",Neoarchean,2500.0,2800.0,300.0
+2250,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,3200.0,700.0
+2252,"Amer, Chantrey, Penrhyn, and Ketyet River Groups",,Paleoproterozoic,1600.0,2500.0,900.0
+2252,Supracrustal; Sedimentary and/or volcanic: undivided,"metamorphosed siliciclastic rocks: pelitic gneiss/schist, marble,  metabasalt, gabbro, quartzite; peridotite; psammite, pelite, marble, dolomite, calc-silicate, arkose, wacke, iron-formation; pyroclastic rocks",Paleoproterozoic,1800.0,2500.0,700.0
+2252,Paleoproterozoic sedimentary,sedimentary,Paleoproterozoic,1600.0,2500.0,900.0
+2252,Paleoproterozoic sedimentary rocks,sedimentary rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2254,unclassified; Metamorphic: undivided,undivided crystalline rocks,,1600.0,4000.0,2400.0
+2254,Paleoproterozoic plutonic: undivided granitic rocks,plutonic: undivided granitic rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2254,Paleoproterozoic intrusive rocks,intrusive igneous rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2255,Supracrustal; Sedimentary and/or volcanic: undivided,"metamorphosed siliciclastic rocks: pelitic gneiss/schist, marble,  metabasalt, gabbro, quartzite; peridotite; psammite, pelite, marble, dolomite, calc-silicate, arkose, wacke, iron-formation; pyroclastic rocks",Paleoproterozoic,1800.0,2500.0,700.0
+2258,unclassified; Metamorphic: undivided,"gneiss, migmatite; reworked amphibolite and granulite facies rocks",Archean,2500.0,3200.0,700.0
+2258,Archean gneiss,gneiss,Archean,2500.0,4000.0,1500.0
+2258,Neoarchean metamorphic and undivided crystalline: undivided gneissic rocks,metamorphic and undivided crystalline: undivided gneissic rocks,Neoarchean,2500.0,2800.0,300.0
+2258,Archean crystalline metamorphic rocks,granitoid gneiss; granulite grade orthogneiss,Archean,2500.0,3200.0,700.0
+2259,Quaternary ,,Cenozoic,0.0,2.588,2.588
+2260,Quaternary ,,Cenozoic,0.0,2.588,2.588
+2261,Quaternary ,,Cenozoic,0.0,2.588,2.588
+2272,"Granitoid, Statherian 3",granite,Statherian,1600.0,1800.0,200.0
+2272,,"Granitoid, syenitoid and metamorphic equivalents",Proterozoic,720.0,1800.0,1080.0
+2272,Caledonian Orogenic Belt,"Major:{granite}, Minor{meta-granite,monzonite,meta-monzonite}",Proterozoic,541.0,2500.0,1959.0
+2272,Igneous: intrusive; Intrusive: granitic,"gneiss, migmatite, granite, augen gneiss, mica gneiss",Mesoproterozoic,1000.0,1600.0,600.0
+2272,Precambrian crystalline metamorphic rocks,crystalline metamorphic rocks,,541.0,4000.0,3459.0
+2273,"Granite, Orosirian 7",granite,Orosirian,1800.0,2050.0,250.0
+2273,,"Granite, granodiorite, syenitoid, quartz monzodiorite and metamorphic equivalents",Paleoproterozoic,1600.0,2050.0,450.0
+2273,Proterozoic I granodiorite,"Major:{granodiorite}, Minor{granite,gabbro}",Paleoproterozoic,1600.0,2500.0,900.0
+2273,Igneous: intrusive; Intrusive: undivided,"granite, monzonite, quartz monzonite, quartz monzodiorite",Paleoproterozoic,1600.0,2050.0,450.0
+2273,Paleoproterozoic intrusive rocks,intrusive igneous rocks,Paleoproterozoic,1600.0,2500.0,900.0
+2274,"Peat, Holocene",peat,Holocene,0.0,0.0117,0.0117
+2274,Proterozoic I mica,"Major:{mica schist}, Minor{conglomerate,sandstone,tuffite group}",Paleoproterozoic,1600.0,2500.0,900.0
+2274,Sedimentary; Clastic: continental,"quartzite, conglomerate, grit, tillite; minor arkose, mica schist, diabase, metabasalt, tuffite, gneiss, marble",Rhyacian,2050.0,2300.0,250.0
+2274,Paleoproterozoic sedimentary rocks,"feldspathic sandstone,quartzite,conglomerate",Siderian,2300.0,2500.0,200.0
+2275,Archean gneiss,gneiss,Archean,2500.0,4000.0,1500.0
+2275,Igneous: intrusive; Intrusive: tonalitic-granodioritic,"tonalite, granodiorite, granite gneiss, enderbite, migmatite",Archean,2500.0,3200.0,700.0
+2275,Archean crystalline metamorphic rocks,orthogneiss/paragneiss/metavolcanic gneiss,Mesoarchean,2800.0,3200.0,400.0
+2276,Archean andesite,"Major:{andesite group}, Minor{undifferentiated,amphibolite,mica schist}",Archean,2500.0,4000.0,1500.0
+2276,Igneous: extrusive; Extrusive: intermediate,felsic and intermediate volcanic rocks,Archean,2500.0,3200.0,700.0
+2276,Archean volcanic rocks,volcanic rocks,Archean,2500.0,4000.0,1500.0
+2279,"East European, Pechora, Turanian plates","Major:{sandstone}, Minor{claystone,limestone}",Mesozoic,100.5,145.0,44.5
+2279,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils; ",Early Cretaceous,100.5,125.0,24.5
+2279,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2280,"East European, Pechora, Turanian plates","Major:{sandstone}, Minor{claystone,limestone}",Mesozoic,100.5,145.0,44.5
+2280,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils; ",Early Cretaceous,100.5,125.0,24.5
+2280,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2281,Sedimentary; Clastic: deltaic and nearshore,"sandstone, siltstone, shale, coal; plant fossils; ",Permian,251.902,272.95,21.048000000000002
+2281,"Urals, Timanian ridge","Major:{sandstone}, Minor{claystone,limestone,conglomerate}",Permian,251.902,272.95,21.048000000000002
+2281,Paleozoic sedimentary rocks,sedimentary rocks,Permian,251.902,298.9,46.99799999999999
+2282,"Urals, Caucasus, Carpatian, Taimyr",carbonates,Mesozoic,201.3,251.902,50.601999999999975
+2282,Sedimentary; Clastic: deltaic and nearshore,"sandstone, siltstone, shale, coal; plant fossils; ",Mesozoic,201.3,237.0,35.69999999999999
+2282,Paleozoic intrusive rocks,intrusive igneous rocks,,443.8,541.0,97.19999999999999
+2284,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Paleocene,61.6,66.0,4.399999999999999
+2284,West Sibirian plate,"siliciclastic, consolidated",Paleocene,56.0,66.0,10.0
+2284,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2285,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Paleocene,61.6,66.0,4.399999999999999
+2285,West Sibirian plate,"siliciclastic, consolidated",Paleocene,56.0,66.0,10.0
+2285,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2286,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs; ",,497.0,541.0,44.0
+2286,Siberian plate,"Major:{sandstone}, Minor{shale/slate,limestone}",,485.4,541.0,55.60000000000002
+2286,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2287,Igneous: extrusive; Extrusive: undivided,"volcanic rocks; lava flows, pyroclastic debris; ",Early Triassic,247.2,251.2,4.0
+2287,"Urals, Caucasus, Carpatian, Taimyr",carbonates,Mesozoic,201.3,251.902,50.601999999999975
+2287,Mesozoic volcanic rocks,flood basalt(s); mafic-intermediate volcanic rocks,Mesozoic,201.3,251.902,50.601999999999975
+2288,Igneous: extrusive; Extrusive: undivided,"volcanic rocks; lava flows, pyroclastic debris; ",Early Triassic,247.2,251.2,4.0
+2288,Mesozoic volcanic rocks,flood basalt(s); mafic-intermediate volcanic rocks,Mesozoic,201.3,251.902,50.601999999999975
+2289,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs; ",Paleozoic,358.9,443.8,84.90000000000003
+2289,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2290,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs; ",Ordovician,470.0,485.4,15.399999999999977
+2290,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2291,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs; ",Paleozoic,485.4,497.0,11.600000000000023
+2291,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2292,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate  reefs; ",Cambrian,497.0,509.0,12.0
+2292,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2293,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Jurassic,174.1,201.3,27.200000000000017
+2293,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2294,Sedimentary; Clastic: deltaic and nearshore,"sandstone, siltstone, shale, coal; plant fossils; ",Pennsylvanian,298.9,323.2,24.30000000000001
+2294,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,251.902,358.9,106.99799999999999
+2295,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils; ",Mesozoic,201.3,237.0,35.69999999999999
+2295,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,201.3,251.902,50.601999999999975
+2296,Igneous: extrusive; Extrusive: undivided,"volcanic rocks; lava flows, pyroclastic debris; ",Mesozoic,201.3,237.0,35.69999999999999
+2296,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,201.3,251.902,50.601999999999975
+2297,Supracrustal; Sedimentary and/or volcanic: undivided,sedimentary and/or volcanic rock: undivided; ,Jurassic,145.0,163.5,18.5
+2297,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,201.3,251.902,50.601999999999975
+2298,Igneous: extrusive; Extrusive: intermediate,"dacite, latite, andesite, rhyolite and related pyroclastic rocks; ",Mesozoic,100.5,145.0,44.5
+2298,Mesozoic volcanic rocks,intermediate-felsic volcanic rocks,Mesozoic,100.5,145.0,44.5
+2299,Igneous: extrusive; Extrusive: mafic,"basalt, olivine basalt, tholeiite, alkali basalt, basanite, pillow basalt, flood basalt; ",Mesozoic,100.5,145.0,44.5
+2299,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+2300,Igneous: extrusive; Extrusive: mafic,"basalt, olivine basalt, tholeiite, alkali basalt, basanite, pillow basalt, flood basalt; ",Mesozoic,100.5,145.0,44.5
+2300,Mesozoic volcanic rocks,mafic-felsic mixed volcanic rocks,Mesozoic,100.5,145.0,44.5
+2301,Igneous: extrusive; Extrusive: mafic,"basalt, olivine basalt, tholeiite, alkali basalt, basanite, pillow basalt, flood basalt; ",Mesozoic,100.5,145.0,44.5
+2301,Mesozoic volcanic rocks,intermediate volcanic rocks,Mesozoic,100.5,145.0,44.5
+2302,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils; ",Mesozoic,201.3,237.0,35.69999999999999
+2302,Mesozoic sedimentary rocks,sedimentary rocks,Jurassic,145.0,163.5,18.5
+2303,Igneous: extrusive; Extrusive: felsic,"rhyolite, felsic tuff, felsic pyroclastic rocks, felsic agglomerate; ",Late Cretaceous,66.0,100.5,34.5
+2303,Late Cretaceous volcanic: undivided volcanic rocks,volcanic: undivided volcanic rocks,Late Cretaceous,66.0,100.5,34.5
+2303,Mesozoic volcanic rocks,intermediate volcanic rocks,Mesozoic,66.0,145.0,79.0
+2304,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Mesozoic,201.3,237.0,35.69999999999999
+2304,Triassic sedimentary,sedimentary,Mesozoic,201.3,251.902,50.601999999999975
+2304,Mesozoic volcanic rocks,intermediate volcanic rocks,Mesozoic,66.0,145.0,79.0
+2316,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites",Neogene,2.588,23.03,20.442
+2316,Cretaceous-Tertiary sedimentary,sedimentary,Phanerozoic,2.588,145.0,142.412
+2316,Mesozoic-Cenozoic sedimentary rocks,sedimentary rocks,Phanerozoic,2.588,145.0,142.412
+2317,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone",Paleozoic,358.9,443.8,84.90000000000003
+2317,Silurian-Devonian sedimentary,sedimentary,Paleozoic,358.9,443.8,84.90000000000003
+2317,Paleozoic sedimentary rocks,sedimentary rocks,,419.2,541.0,121.80000000000001
+2318,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate reefs",,358.9,541.0,182.10000000000002
+2318,Cambrian-Silurian sedimentary,sedimentary,,419.2,541.0,121.80000000000001
+2318,Paleozoic sedimentary rocks,sedimentary rocks,,419.2,541.0,121.80000000000001
+2319,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate reefs",,358.9,541.0,182.10000000000002
+2319,Cambrian-Silurian sedimentary,sedimentary,,419.2,541.0,121.80000000000001
+2319,Paleozoic sedimentary rocks,sedimentary rocks,,419.2,541.0,121.80000000000001
+2321,Silurian-Devonian sedimentary,sedimentary,Paleozoic,358.9,443.8,84.90000000000003
+2321,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites",Paleozoic,358.9,443.8,84.90000000000003
+2321,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,358.9,443.8,84.90000000000003
+2323,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate reefs",Paleozoic,419.2,485.4,66.19999999999999
+2323,Early Silurian sedimentary,sedimentary,Paleozoic,427.4,443.8,16.400000000000034
+2323,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,419.2,443.8,24.600000000000023
+2324,Sedimentary; Carbonate,"stromatolitic limestone and dolostone, dolostone conglomerate and breccia; siltstone, shale; olistostromes",Stenian,1000.0,1200.0,200.0
+2324,Mesoproterozoic sedimentary,sedimentary,Mesoproterozoic,1000.0,1600.0,600.0
+2324,Mesoproterozoic sedimentary rocks,sedimentary rocks,Mesoproterozoic,1000.0,1400.0,400.0
+2325,Igneous: intrusive; Intrusive: granitic,"granitic migmatite, orthogneiss, megacrystic monzogranite, amphibolite, pyroxenite, meta-anorthositic gabbro, mylonite",Orosirian,1800.0,2050.0,250.0
+2325,Mesoarchean-Neoarchean metamorphic and undivided crystalline: undivided gneissic rocks,metamorphic and undivided crystalline: undivided gneissic rocks,Archean,2500.0,3200.0,700.0
+2325,Archean crystalline metamorphic rocks,crystalline metamorphic rocks,Archean,2500.0,3200.0,700.0
+2331,Quaternary ,,Cenozoic,0.0,2.588,2.588
+2332,Quaternary ,,Cenozoic,0.0,2.588,2.588
+2333,Quaternary ,,Cenozoic,0.0,2.588,2.588
+2334,Quaternary ,,Cenozoic,0.0,2.588,2.588
+2335,Archean gneiss,gneiss,Archean,2500.0,4000.0,1500.0
+2335,Archean crystalline metamorphic rocks,granitoid gneiss; amphibolite grade orthogneiss,Archean,2500.0,3200.0,700.0
+2336,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils",Mesozoic,66.0,201.3,135.3
+2336,Cretaceous undifferentiated,,Mesozoic,66.0,145.0,79.0
+2336,Late Jurassic sedimentary,sedimentary,Jurassic,145.0,163.5,18.5
+2336,Mesozoic sedimentary rocks,"shale,sandstone,conglomerate",Mesozoic,66.0,163.5,97.5
+2355,West Sibirian plate,"siliciclastic, consolidated",Paleocene,56.0,66.0,10.0
+2355,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Paleocene,61.6,66.0,4.399999999999999
+2355,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,23.03,66.0,42.97
+2356,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Late Cretaceous,66.0,100.5,34.5
+2356,Kara and Black sea,"Major:{sand}, Minor{sandstone,clay}",Late Cretaceous,66.0,100.5,34.5
+2356,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2357,"East European, Turanian plates","Major:{limestone}, Minor{sandstone,clay}",Mesozoic,66.0,145.0,79.0
+2357,Igneous: extrusive; Extrusive: undivided,"volcanic rocks; lava flows, pyroclastic debris; ",Early Triassic,247.2,251.902,4.701999999999998
+2357,Mesozoic volcanic rocks,mafic volcanic rocks,Mesozoic,201.3,251.902,50.601999999999975
+2358,"East European, Scythian, West Siberian, Turanian plates","Major:{carbonates}, Minor{sandstone,claystone}",Late Cretaceous,66.0,100.5,34.5
+2358,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Late Cretaceous,66.0,100.5,34.5
+2358,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2359,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Late Cretaceous,66.0,100.5,34.5
+2359,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2360,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Late Cretaceous,66.0,100.5,34.5
+2360,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2361,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Late Cretaceous,66.0,100.5,34.5
+2361,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2362,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Permian,251.902,272.95,21.048000000000002
+2362,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2363,Sedimentary; Clastic: shallow marine,"sandstone, siltstone, shale; marine fossils; ",Jurassic,174.1,201.3,27.200000000000017
+2363,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2364,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Late Cretaceous,66.0,100.5,34.5
+2364,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2365,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites; ",Late Cretaceous,66.0,100.5,34.5
+2365,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,145.0,79.0
+2366,Sedimentary; Sedimentary: undivided,metasedimentary rocks; undivided,Archean,2500.0,4000.0,1500.0
+2366,Cenozoic sedimentary rocks,sedimentary rocks,Neogene,2.588,23.03,20.442
+2369,Sedimentary; Sedimentary: undivided,"sandstone, siltstone, shale, limestone; ",Neogene,2.588,23.03,20.442
+2369,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588
+2390,Sedimentary; Marine sedimentary: undivided,"limestone, dolostone, shale, evaporites, chalk, shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate; carbonate reefs",Mesozoic,66.0,201.3,135.3
+2390,Early Cretaceous sedimentary,sedimentary,Mesozoic,100.5,145.0,44.5
+2390,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,66.0,201.3,135.3
+2395,ISACHSEN assemblage,"major:{quartz sandstone, siltstone, shale}, minor:{conglomerate, ironstone, coal}, rare:{basalt}",Early Cretaceous,115.25,122.4925,7.242500000000007
+2395,Early Cretaceous sedimentary,sedimentary,Mesozoic,100.5,145.0,44.5
+2395,Sedimentary; Clastic: deltaic and nearshore,"sandstone, siltstone, shale, coal; plant fossils",Early Cretaceous,100.5,125.0,24.5
+2395,Mesozoic sedimentary rocks,sedimentary rocks,Mesozoic,145.0,251.902,106.90199999999999
+2396,STRATHCONA FIORD assemblage,"major:{siltstone, sandstone}, minor:{conglomerate, limestone}",Devonian,389.33,397.7575,8.427500000000009
+2396,Middle Devonian-Late Devonian sedimentary,sedimentary,Devonian,358.9,393.3,34.400000000000034
+2396,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites",Middle Devonian,382.7,393.3,10.600000000000023
+2396,Paleozoic sedimentary rocks,sedimentary rocks,Ordovician,443.8,485.4,41.599999999999966
+2407,Quaternary ,,Cenozoic,0.0,2.588,2.588
+2408,Quaternary ,,Cenozoic,0.0,2.588,2.588
+2416,Early Cretaceous claystone,"Major:{claystone}, Minor{siltstone,sandstone,limestone}",Mesozoic,100.5,145.0,44.5
+2416,Sedimentary; Slope and deep water,"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate",Mesozoic,100.5,145.0,44.5
+2416,Mesozoic sedimentary rocks,mudstone-carbonate-sandstone,Mesozoic,100.5,145.0,44.5
+2468,Igneous: extrusive; Extrusive: undivided,"volcanic rocks; lava flows, pyroclastic debris; ",Mesozoic,66.0,145.0,79.0
+2468,Mesoproterozoic crystalline metamorphic rocks,crystalline metamorphic rocks,Mesoproterozoic,1000.0,1600.0,600.0
+2470,Sedimentary; Sedimentary: undivided,"quartzite, schist, phyllite, diamictite, conglomeratic greywacke, marble, limestone, dolostone, minor gabbro",Neoproterozoic,541.0,1000.0,459.0
+2470,Neoproterozoic-Cambrian volcanic: interlayered sedimentary and volcanic rocks,volcanic: interlayered sedimentary and volcanic rocks,,485.4,1000.0,514.6
+2470,Paleozoic sedimentary rocks,sedimentary rocks,Paleozoic,419.2,443.8,24.600000000000023
+2472,Silurian sedimentary,sedimentary,Paleozoic,419.2,443.8,24.600000000000023
+2472,Sedimentary; Slope and deep water,"shale, chert, iron-formation, greywacke, turbidites, argillaceous limestone, matrix supported conglomerate; metamorphosed equivalent",Paleozoic,419.2,443.8,24.600000000000023
+2472,Paleozoic sedimentary rocks,sedimentary rocks,,443.8,541.0,97.19999999999999
+2476,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate reefs",,358.9,541.0,182.10000000000002
+2476,Silurian sedimentary,sedimentary,Paleozoic,419.2,443.8,24.600000000000023
+2476,Paleozoic sedimentary rocks,mudstone-carbonate-sandstone-conglomerate,,358.9,541.0,182.10000000000002
+2477,Paleozoic sedimentary rocks,"conglomerate,breccia,shale,limestone,siltstone,greywacke",,358.9,541.0,182.10000000000002
+2478,Sedimentary; Carbonate,"limestone, dolostone, shale, evaporites, chalk; carbonate reefs",Paleozoic,419.2,443.8,24.600000000000023
+2478,Silurian sedimentary,sedimentary,Paleozoic,419.2,443.8,24.600000000000023
+2478,Paleozoic sedimentary rocks,"conglomerate,breccia,shale,limestone,siltstone,greywacke",,358.9,541.0,182.10000000000002
+2479,Sedimentary; Slope and deep water,"shale, chert, iron-formation, greywacke, turbidite, argillaceous limestone, matrix-supported conglomerate",Paleozoic,358.9,443.8,84.90000000000003
+2479,Silurian sedimentary,sedimentary,Paleozoic,419.2,443.8,24.600000000000023
+2479,Paleozoic sedimentary rocks,"conglomerate,breccia,shale,limestone,siltstone,greywacke",,358.9,541.0,182.10000000000002
+2480,Sedimentary; Clastic: continental,"redbeds, quartz arenite, arkose, conglomerate, evaporites",Cenozoic,0.0,2.588,2.588
+2480,Quaternary sedimentary,sedimentary,Cenozoic,0.0,2.588,2.588
+2480,Cenozoic sedimentary rocks,sedimentary rocks,Cenozoic,0.0,2.588,2.588

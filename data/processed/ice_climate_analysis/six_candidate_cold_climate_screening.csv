@@ -1,0 +1,7 @@
+candidate,months_with_mean_temp_at_or_below_0C,months_with_mean_daily_min_at_or_below_0C,months_with_mean_daily_max_at_or_below_0C,annual_mean_temperature_c,coldest_month,coldest_month_mean_temperature_c,lowest_monthly_mean_daily_min_c,months_analysed
+Brooks Range,7,9,7,-8.393333333333333,1,-27.78,-30.95,12
+Scandinavia,8,8,8,-2.510833333333333,2,-10.26,-13.33,12
+Ontario,6,7,4,2.686666666666666,2,-12.99,-18.98,12
+Baja California,0,0,0,23.63166666666667,1,15.76,12.12,12
+Queensland,0,0,0,23.354166666666668,7,15.73,9.39,12
+Western Australia,0,0,0,16.76916666666667,7,9.7,5.19,12

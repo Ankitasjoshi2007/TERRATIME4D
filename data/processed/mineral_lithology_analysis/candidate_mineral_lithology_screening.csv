@@ -1,0 +1,7 @@
+latitude,longitude,geological_records,igneous_mentions,volcanic_mentions,metamorphic_mentions,sedimentary_mentions,quartz_mentions,feldspar_mentions,mica_mentions,carbonate_mentions,sulfide_mentions,iron_oxide_mentions
+-32.5,117.5,3,1,0,1,0,0,0,0,0,0,0
+-22.5,147.5,3,0,2,0,1,0,0,0,0,0,0
+27.5,-112.5,3,1,3,0,1,0,0,0,0,0,0
+47.5,-82.5,4,2,1,2,2,0,0,0,0,0,0
+67.5,-147.5,5,0,0,2,3,2,0,2,1,0,0
+67.5,17.5,5,4,0,3,0,0,0,1,0,0,0
