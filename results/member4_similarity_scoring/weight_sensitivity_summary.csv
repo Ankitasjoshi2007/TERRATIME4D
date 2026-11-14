@@ -1,0 +1,8 @@
+mission_profile,scenarios_tested,top_candidate_changes,mean_rank_shift,maximum_rank_shift
+Cold-region operations analogue,4,0,0.0,0
+Lunar polar operations,8,0,0.24999999999999997,2
+Lunar resource prospecting,6,0,0.0,0
+Lunar rover mobility,4,0,0.25,1
+Mars dust-process analogue,6,0,0.1111111111111111,1
+Mars rover mobility,8,0,0.041666666666666664,1
+Volcanic and cave analogue reconnaissance,4,2,0.16666666666666666,1
