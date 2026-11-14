@@ -1,4 +1,3 @@
-
 from pathlib import Path
 
 import numpy as np
@@ -6,7 +5,7 @@ import rasterio
 
 
 def analyze_terrain(file_path):
-    """Calculate basic terrain metrics from an elevation raster."""
+    """Calculate terrain metrics from an elevation raster."""
 
     file_path = Path(file_path)
 
@@ -27,41 +26,90 @@ def analyze_terrain(file_path):
     pixel_y = abs(transform.e)
 
     if crs and crs.is_geographic:
-        # Convert degrees to approximate metres at the dataset's latitude.
+        # Convert degrees to approximate metres at the dataset latitude.
         latitude = (bounds.bottom + bounds.top) / 2
         pixel_x *= 111320 * np.cos(np.radians(latitude))
         pixel_y *= 111320
 
     # Calculate elevation gradients and slope.
-    safe_values = np.where(valid, values, np.nan)
-    filled_values = np.where(valid, values, np.nanmean(values))
+    filled_values = np.where(
+        valid,
+        values,
+        np.nanmean(values)
+    )
 
     gradient_y, gradient_x = np.gradient(
-        filled_values, pixel_y, pixel_x
+        filled_values,
+        pixel_y,
+        pixel_x
     )
 
     slope = np.degrees(
-        np.arctan(np.sqrt(gradient_x**2 + gradient_y**2))
+        np.arctan(
+            np.sqrt(
+                gradient_x**2 + gradient_y**2
+            )
+        )
     )
 
-    # Basic roughness: local elevation range in a 3x3 neighbourhood.
-    padded = np.pad(filled_values, 1, mode="edge")
+    # Basic roughness:
+    # local elevation range in a 3x3 neighbourhood.
+    padded = np.pad(
+        filled_values,
+        1,
+        mode="edge"
+    )
+
     neighbourhoods = [
-        padded[i:i + values.shape[0], j:j + values.shape[1]]
+        padded[
+            i:i + values.shape[0],
+            j:j + values.shape[1]
+        ]
         for i in range(3)
         for j in range(3)
     ]
+
     roughness = (
         np.maximum.reduce(neighbourhoods)
         - np.minimum.reduce(neighbourhoods)
     )
 
+    # Basic terrain metrics.
+    elevation_min = float(np.nanmin(values))
+    elevation_max = float(np.nanmax(values))
+    elevation_mean = float(np.nanmean(values))
+
+    mean_slope = float(np.nanmean(slope[valid]))
+    mean_roughness = float(np.nanmean(roughness[valid]))
+
+    # Relief = difference between highest and lowest elevation.
+    relief_m = elevation_max - elevation_min
+
+    # Simple terrain morphology classification.
+    # These are transparent heuristic thresholds for TERRATIME 4D.
+    if mean_slope < 2 and mean_roughness < 5:
+        terrain_class = "Flat"
+
+    elif mean_slope < 5 and mean_roughness < 10:
+        terrain_class = "Rolling"
+
+    elif mean_slope < 15 and mean_roughness < 25:
+        terrain_class = "Hilly"
+
+    elif mean_slope < 30 and mean_roughness < 50:
+        terrain_class = "Steep"
+
+    else:
+        terrain_class = "Rugged"
+
     return {
-        "elevation_min_m": float(np.nanmin(safe_values)),
-        "elevation_max_m": float(np.nanmax(safe_values)),
-        "elevation_mean_m": float(np.nanmean(safe_values)),
-        "slope_mean_degrees": float(np.nanmean(slope[valid])),
-        "roughness_mean_m": float(np.nanmean(roughness[valid])),
+        "elevation_min_m": elevation_min,
+        "elevation_max_m": elevation_max,
+        "elevation_mean_m": elevation_mean,
+        "slope_mean_degrees": mean_slope,
+        "roughness_mean_m": mean_roughness,
+        "relief_m": float(relief_m),
+        "terrain_class": terrain_class,
         "valid_pixels": int(valid.sum()),
         "crs": str(crs),
     }
@@ -69,5 +117,5 @@ def analyze_terrain(file_path):
 
 if __name__ == "__main__":
     print("TerraTime 4D | Terrain Analysis")
-    print("Place an extracted NASA .hgt or supported elevation raster")
-    print("in data/raw/earth, then update the input path before running.")
+    print("Place an elevation raster in data/raw/earth")
+    print("and update the input path before running.")

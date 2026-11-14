@@ -16,9 +16,35 @@ OUTPUT_FILE = (
     / "global_terrain_features.csv"
 )
 
+ROUGHNESS_FILE = (
+    PROJECT_ROOT
+    / "data"
+    / "processed"
+    / "global_roughness_summary.csv"
+)
+
+
+def classify_terrain(mean_slope, mean_roughness):
+    """Classify terrain morphology using transparent heuristic thresholds."""
+
+    if mean_slope < 2 and mean_roughness < 5:
+        return "Flat"
+
+    elif mean_slope < 5 and mean_roughness < 10:
+        return "Rolling"
+
+    elif mean_slope < 15 and mean_roughness < 25:
+        return "Hilly"
+
+    elif mean_slope < 30 and mean_roughness < 50:
+        return "Steep"
+
+    else:
+        return "Rugged"
+
 
 def analyze_tile(file_path):
-    """Calculate elevation and slope statistics for one DEM tile."""
+    """Calculate elevation, slope, and relief statistics for one DEM tile."""
 
     with rasterio.open(file_path) as dataset:
 
@@ -102,15 +128,18 @@ def analyze_tile(file_path):
         if land_elevation.size == 0 or valid_slope.size == 0:
             return None
 
+        minimum_elevation = float(land_elevation.min())
+        maximum_elevation = float(land_elevation.max())
+
         return {
             "location_tile": file_path.stem,
             "valid_elevation_pixels": int(land_elevation.size),
             "valid_slope_pixels": int(valid_slope.size),
             "minimum_elevation_m": round(
-                float(land_elevation.min()), 2
+                minimum_elevation, 2
             ),
             "maximum_elevation_m": round(
-                float(land_elevation.max()), 2
+                maximum_elevation, 2
             ),
             "average_elevation_m": round(
                 float(land_elevation.mean()), 2
@@ -120,6 +149,10 @@ def analyze_tile(file_path):
             ),
             "maximum_slope_degrees": round(
                 float(valid_slope.max()), 2
+            ),
+            "relief_m": round(
+                maximum_elevation - minimum_elevation,
+                2
             ),
             "pixel_width_m_approx": round(
                 float(pixel_width), 2
@@ -141,6 +174,23 @@ def main():
         print("No DEM files found:", DATA_FOLDER)
         return
 
+    # Load existing global roughness results.
+    roughness_data = {}
+
+    if ROUGHNESS_FILE.exists():
+        roughness_df = pd.read_csv(ROUGHNESS_FILE)
+
+        for _, row in roughness_df.iterrows():
+            roughness_data[row["tile"]] = float(
+                row["average_roughness_m"]
+            )
+
+        print(
+            "Loaded roughness data for",
+            len(roughness_data),
+            "tile(s)."
+        )
+
     for file_path in files:
         try:
             result = analyze_tile(file_path)
@@ -148,6 +198,29 @@ def main():
             if result is None:
                 print("Skipped:", file_path.name)
                 continue
+
+            tile_name = result["location_tile"]
+
+            # Add existing roughness value.
+            mean_roughness = roughness_data.get(
+                tile_name,
+                np.nan
+            )
+
+            result["average_roughness_m"] = (
+                round(mean_roughness, 2)
+                if np.isfinite(mean_roughness)
+                else np.nan
+            )
+
+            # Classify terrain only when roughness is available.
+            if np.isfinite(mean_roughness):
+                result["terrain_class"] = classify_terrain(
+                    result["average_slope_degrees"],
+                    mean_roughness
+                )
+            else:
+                result["terrain_class"] = "Unknown"
 
             results.append(result)
 
@@ -161,6 +234,15 @@ def main():
                 "Average slope:",
                 result["average_slope_degrees"],
                 "degrees"
+            )
+            print(
+                "Relief:",
+                result["relief_m"],
+                "m"
+            )
+            print(
+                "Terrain class:",
+                result["terrain_class"]
             )
 
         except Exception as error:

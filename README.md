@@ -1,31 +1,72 @@
 # TERRATIME4D
+
 Scientific Earth Analog Discovery and Mission Simulation Platform for the Moon and Mars.
+
 ## NASA Data & Resources
 
 ### Earth
 
-- **NASA Earthdata Search** — NASA's primary portal for discovering and accessing Earth science observations.
-- **NASA Worldview** — An interactive environment for visually exploring NASA satellite imagery and environmental observations.
+**NASA Earthdata Search:**  
+NASA's primary portal for discovering and accessing Earth science observations.
+
+https://search.earthdata.nasa.gov/
+
+**NASA Worldview:**  
+An interactive environment for visually exploring NASA satellite imagery and Earth science observations.
+
+https://worldview.earthdata.nasa.gov/
 
 ### Moon and Mars
 
-- **NASA Planetary Data System (PDS)** — NASA's long-term archive for planetary science data from orbital, lander, and rover missions.
-- **NASA Lunar Reconnaissance Orbiter (LRO)** — Provides extensive observations of the lunar surface through instruments including LROC, LOLA, Diviner, LEND, Mini-RF, and others.
-- **NASA LRO Diviner Lunar Data** — Provides lunar surface temperature observations, with useful products for studying lunar polar environments and extreme-temperature analogs.
+**NASA Planetary Data System (PDS):**  
+NASA's long-term archive for planetary science data from NASA orbital, lander, and rover missions.
+
+https://pds.nasa.gov/
+
+**NASA Lunar Reconnaissance Orbiter (LRO):**  
+Provides extensive observations of the lunar surface through instruments including LROC, LOLA, Diviner, LEND, and Mini-RF.
+
+https://pds-geosciences.wustl.edu/missions/lro/
+
+**NASA LRO Diviner Lunar Data:**  
+Provides lunar surface temperature observations and products useful for studying extreme thermal environments and lunar polar regions.
+
+https://pds-geosciences.wustl.edu/missions/lro/diviner.htm
 
 ### Space Agency Partner Resources
 
 #### Canadian Space Agency (CSA)
 
-- **RADARSAT Constellation Mission (RCM) Data** — Earth-observation data useful for monitoring ice, surface conditions, maritime environments, disasters, and ecosystems.
-- **RADARSAT-1 Data** — Synthetic Aperture Radar observations acquired day and night and through cloud cover, smoke, and haze.
-- **Synthetic Aperture Radar (SAR) Python Tutorial** — Tutorial for accessing and visualizing SAR imagery using Python and QGIS.
+**RADARSAT Constellation Mission (RCM) Data:**  
+Earth observation radar data useful for surface, ice, environmental, and terrain-related studies.
+
+https://donnees-data.asc-csa.gc.ca/en/dataset/rcm
+
+**RADARSAT-1 Data:**  
+Open RADARSAT-1 archive providing Earth observation SAR data.
+
+https://donnees-data.asc-csa.gc.ca/en/dataset/radarsat1
+
+**CSA Synthetic Aperture Radar Python Tutorial:**  
+Practical Python and QGIS resources for working with SAR imagery.
+
+https://github.com/asc-csa/Synthetic_Aperture_Radar_Tutorial
 
 #### European Space Agency (ESA)
 
-- **Copernicus Data Space Ecosystem** — Free and open access to Sentinel Earth-observation data and tools for visualization and processing.
-- **ESA Open Science Catalog** — Catalog of publicly available geoscience datasets, products, experiments, and workflows.
+**Copernicus Data Space Ecosystem:**  
+Provides access to Sentinel Earth-observation data and processing tools.
+
+https://dataspace.copernicus.eu/
+
+**ESA Open Science Catalog:**  
+Catalog of publicly available ESA geoscience datasets, products, experiments, and workflows.
+
+https://opensciencedata.esa.int/
 
 #### Japan Aerospace Exploration Agency (JAXA)
 
-- **JAXA G-Portal** — Earth-observation products from JAXA missions, searchable by variables such as precipitation, snow, vegetation, and others.
+**JAXA G-Portal:**  
+Provides access to JAXA Earth-observation products and datasets.
+
+https://gportal.jaxa.jp/gpr/index/index
