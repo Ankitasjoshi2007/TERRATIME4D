@@ -1,0 +1,43 @@
+mission_profile,target_planet,profile_type,candidate,screening_index_0_100,terrain_index,solar_index,terrain_contribution,solar_contribution,evidence_sources_present,evidence_sources_expected,cold_months_index,water_index,cold_months_contribution,water_contribution,dry_site_index,aerosol_mean_index,dry_site_contribution,aerosol_mean_contribution,persistent_water_index,persistent_water_contribution,aerosol_variability_index,high_loading_months_index,aerosol_variability_contribution,high_loading_months_contribution,volcanic_evidence_rate_index,karst_evidence_rate_index,volcanic_evidence_rate_contribution,karst_evidence_rate_contribution,coldest_month_index,coldest_month_contribution,mission_rank
+Cold-region operations analogue,Not planet-specific,Earth cold-environment analogue screening,Brooks Range Alaska,93.75,,,,,6,6,87.5,,43.75,,,,,,,,,,,,,,,,100.0,50.0,1
+Cold-region operations analogue,Not planet-specific,Earth cold-environment analogue screening,Scandinavia,79.88056959118052,,,,,6,6,100.0,,50.0,,,,,,,,,,,,,,,,59.76113918236104,29.88056959118052,2
+Cold-region operations analogue,Not planet-specific,Earth cold-environment analogue screening,Ontario Canada,70.51561782269178,,,,,6,6,75.0,,37.5,,,,,,,,,,,,,,,,66.03123564538356,33.01561782269178,3
+Cold-region operations analogue,Not planet-specific,Earth cold-environment analogue screening,Western Australia,6.959118052365639,,,,,6,6,0.0,,0.0,,,,,,,,,,,,,,,,13.918236104731278,6.959118052365639,4
+Cold-region operations analogue,Not planet-specific,Earth cold-environment analogue screening,Queensland Australia,0.034451079467153534,,,,,6,6,0.0,,0.0,,,,,,,,,,,,,,,,0.06890215893430707,0.034451079467153534,5
+Cold-region operations analogue,Not planet-specific,Earth cold-environment analogue screening,Baja California Mexico,0.0,,,,,6,6,0.0,,0.0,,,,,,,,,,,,,,,,0.0,0.0,6
+Lunar polar operations,Moon,Terrestrial polar-environment analogue,Brooks Range Alaska,70.1884592272987,80.0,13.253836909194794,20.0,3.3134592272986985,6,6,87.5,100.0,21.875,25.0,,,,,,,,,,,,,,,,,1
+Lunar polar operations,Moon,Terrestrial polar-environment analogue,Ontario Canada,57.01553079666293,100.0,33.393916110093194,25.0,8.348479027523299,6,6,75.0,19.66820707655852,18.75,4.91705176913963,,,,,,,,,,,,,,,,,2
+Lunar polar operations,Moon,Terrestrial polar-environment analogue,Baja California Mexico,40.0,60.0,100.0,15.0,25.0,6,6,0.0,0.0,0.0,0.0,,,,,,,,,,,,,,,,,3
+Lunar polar operations,Moon,Terrestrial polar-environment analogue,Scandinavia,32.82209795957626,0.0,0.0,0.0,0.0,6,6,100.0,31.288391838305053,25.0,7.822097959576263,,,,,,,,,,,,,,,,,4
+Lunar polar operations,Moon,Terrestrial polar-environment analogue,Western Australia,31.886923194088972,40.0,86.40236814626557,10.0,21.600592036566393,6,6,0.0,1.1453246300903115,0.0,0.2863311575225779,,,,,,,,,,,,,,,,,5
+Lunar polar operations,Moon,Terrestrial polar-environment analogue,Queensland Australia,29.345388231380895,19.999999999999996,96.3950785113384,4.999999999999999,24.0987696278346,6,6,0.0,0.9864744141851787,0.0,0.24661860354629467,,,,,,,,,,,,,,,,,6
+Lunar resource prospecting,Moon,Terrestrial water-indicator screening,Brooks Range Alaska,96.0,80.0,,16.0,,6,6,,100.0,,60.0,,,,,100.0,20.0,,,,,,,,,,,1
+Lunar resource prospecting,Moon,Terrestrial water-indicator screening,Ontario Canada,34.3920486779181,100.0,,20.0,,6,6,,19.66820707655852,,11.800924245935112,,,,,12.955622159914917,2.5911244319829834,,,,,,,,,,,2
+Lunar resource prospecting,Moon,Terrestrial water-indicator screening,Scandinavia,22.44315015664251,0.0,,0.0,,6,6,,31.288391838305053,,18.77303510298303,,,,,18.350575268297398,3.6701150536594795,,,,,,,,,,,3
+Lunar resource prospecting,Moon,Terrestrial water-indicator screening,Baja California Mexico,12.0,60.0,,12.0,,6,6,,0.0,,0.0,,,,,0.0,0.0,,,,,,,,,,,4
+Lunar resource prospecting,Moon,Terrestrial water-indicator screening,Western Australia,8.687194778054186,40.0,,8.0,,6,6,,1.1453246300903115,,0.6871947780541868,,,,,0.0,0.0,,,,,,,,,,,5
+Lunar resource prospecting,Moon,Terrestrial water-indicator screening,Queensland Australia,4.5918846485111064,19.999999999999996,,3.9999999999999996,,6,6,,0.9864744141851787,,0.5918846485111072,,,,,0.0,0.0,,,,,,,,,,,6
+Lunar rover mobility,Moon,Planetary terrain screening,Ontario Canada,86.67878322201864,100.0,33.393916110093194,80.0,6.678783222018639,6,6,,,,,,,,,,,,,,,,,,,,,1
+Lunar rover mobility,Moon,Planetary terrain screening,Baja California Mexico,68.0,60.0,100.0,48.0,20.0,6,6,,,,,,,,,,,,,,,,,,,,,2
+Lunar rover mobility,Moon,Planetary terrain screening,Brooks Range Alaska,66.65076738183896,80.0,13.253836909194794,64.0,2.6507673818389588,6,6,,,,,,,,,,,,,,,,,,,,,3
+Lunar rover mobility,Moon,Planetary terrain screening,Western Australia,49.280473629253116,40.0,86.40236814626557,32.0,17.280473629253116,6,6,,,,,,,,,,,,,,,,,,,,,4
+Lunar rover mobility,Moon,Planetary terrain screening,Queensland Australia,35.27901570226768,19.999999999999996,96.3950785113384,15.999999999999998,19.27901570226768,6,6,,,,,,,,,,,,,,,,,,,,,5
+Lunar rover mobility,Moon,Planetary terrain screening,Scandinavia,0.0,0.0,0.0,0.0,0.0,6,6,,,,,,,,,,,,,,,,,,,,,6
+Mars dust-process analogue,Mars,Earth aerosol-process analogue,Ontario Canada,100.0,,,,,6,6,,,,,,100.0,,40.0,,,100.0,100.0,35.0,25.0,,,,,,,1
+Mars dust-process analogue,Mars,Earth aerosol-process analogue,Brooks Range Alaska,36.013589102395365,,,,,6,6,,,,,,18.3206106870229,,7.32824427480916,,,55.172413793103445,37.5,19.310344827586203,9.375,,,,,,,2
+Mars dust-process analogue,Mars,Earth aerosol-process analogue,Baja California Mexico,33.68666096341142,,,,,6,6,,,,,,36.641221374045784,,14.656488549618315,,,27.58620689655173,37.5,9.655172413793105,9.375,,,,,,,3
+Mars dust-process analogue,Mars,Earth aerosol-process analogue,Queensland Australia,31.143392998157406,,,,,6,6,,,,,,32.06106870229007,,12.824427480916029,,,34.48275862068965,25.0,12.068965517241377,6.25,,,,,,,4
+Mars dust-process analogue,Mars,Earth aerosol-process analogue,Scandinavia,28.52477625690971,,,,,6,6,,,,,,29.7709923664122,,11.908396946564881,,,20.689655172413797,37.5,7.241379310344828,9.375,,,,,,,5
+Mars dust-process analogue,Mars,Earth aerosol-process analogue,Western Australia,0.0,,,,,6,6,,,,,,0.0,,0.0,,,0.0,0.0,0.0,0.0,,,,,,,6
+Mars rover mobility,Mars,Planetary terrain and dry-site screening,Queensland Australia,92.69764355923508,100.0,96.3950785113384,65.0,9.63950785113384,6,6,,,,,99.01352558581482,32.06106870229007,14.852028837872222,3.206106870229007,,,,,,,,,,,,,1
+Mars rover mobility,Mars,Planetary terrain and dry-site screening,Western Australia,75.468438120113,80.0,86.40236814626557,52.0,8.640236814626558,6,6,,,,,98.85467536990969,0.0,14.828201305486452,0.0,,,,,,,,,,,,,2
+Mars rover mobility,Mars,Planetary terrain and dry-site screening,Ontario Canada,64.38916054952554,60.0,33.393916110093194,39.0,3.3393916110093196,6,6,,,,,80.33179292344148,100.0,12.049768938516221,10.0,,,,,,,,,,,,,3
+Mars rover mobility,Mars,Planetary terrain and dry-site screening,Baja California Mexico,54.664122137404576,40.0,100.0,26.0,10.0,6,6,,,,,100.0,36.641221374045784,15.0,3.6641221374045787,,,,,,,,,,,,,4
+Mars rover mobility,Mars,Planetary terrain and dry-site screening,Brooks Range Alaska,16.157444759621768,19.999999999999996,13.253836909194794,12.999999999999998,1.3253836909194794,6,6,,,,,0.0,18.3206106870229,0.0,1.83206106870229,,,,,,,,,,,,,5
+Mars rover mobility,Mars,Planetary terrain and dry-site screening,Scandinavia,13.283840460895462,0.0,0.0,0.0,0.0,6,6,,,,,68.71160816169495,29.7709923664122,10.306741224254242,2.9770992366412203,,,,,,,,,,,,,6
+Volcanic and cave analogue reconnaissance,Not planet-specific,Earth geological analogue screening,Baja California Mexico,50.0,,,,,6,6,,,,,,,,,,,,,,,100.0,0.0,50.0,0.0,,,1
+Volcanic and cave analogue reconnaissance,Not planet-specific,Earth geological analogue screening,Brooks Range Alaska,50.0,,,,,6,6,,,,,,,,,,,,,,,0.0,100.0,0.0,50.0,,,1
+Volcanic and cave analogue reconnaissance,Not planet-specific,Earth geological analogue screening,Queensland Australia,33.33333333333333,,,,,6,6,,,,,,,,,,,,,,,66.66666666666666,0.0,33.33333333333333,0.0,,,3
+Volcanic and cave analogue reconnaissance,Not planet-specific,Earth geological analogue screening,Ontario Canada,12.5,,,,,6,6,,,,,,,,,,,,,,,25.0,0.0,12.5,0.0,,,4
+Volcanic and cave analogue reconnaissance,Not planet-specific,Earth geological analogue screening,Scandinavia,0.0,,,,,6,6,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,,,5
+Volcanic and cave analogue reconnaissance,Not planet-specific,Earth geological analogue screening,Western Australia,0.0,,,,,6,6,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,,,5

@@ -1,0 +1,41 @@
+mission_profile,perturbed_component,direction,baseline_weight,adjusted_weight,top_candidate,top_candidate_changed,mean_absolute_rank_shift,maximum_absolute_rank_shift
+Lunar rover mobility,terrain,decrease,0.8,0.6400000000000001,Ontario Canada,False,0.3333333333333333,1
+Lunar rover mobility,terrain,increase,0.8,0.96,Ontario Canada,False,0.3333333333333333,1
+Lunar rover mobility,solar,decrease,0.2,0.16000000000000003,Ontario Canada,False,0.3333333333333333,1
+Lunar rover mobility,solar,increase,0.2,0.24,Ontario Canada,False,0.0,0
+Lunar polar operations,terrain,decrease,0.25,0.2,Brooks Range Alaska,False,0.0,0
+Lunar polar operations,terrain,increase,0.25,0.3,Brooks Range Alaska,False,0.3333333333333333,1
+Lunar polar operations,solar,decrease,0.25,0.2,Brooks Range Alaska,False,0.0,0
+Lunar polar operations,solar,increase,0.25,0.3,Brooks Range Alaska,False,0.6666666666666666,2
+Lunar polar operations,cold_months,decrease,0.25,0.2,Brooks Range Alaska,False,0.6666666666666666,2
+Lunar polar operations,cold_months,increase,0.25,0.3,Brooks Range Alaska,False,0.0,0
+Lunar polar operations,water,decrease,0.25,0.2,Brooks Range Alaska,False,0.3333333333333333,1
+Lunar polar operations,water,increase,0.25,0.3,Brooks Range Alaska,False,0.0,0
+Mars rover mobility,terrain,decrease,0.65,0.52,Queensland Australia,False,0.3333333333333333,1
+Mars rover mobility,terrain,increase,0.65,0.78,Queensland Australia,False,0.0,0
+Mars rover mobility,dry_site,decrease,0.15,0.12,Queensland Australia,False,0.0,0
+Mars rover mobility,dry_site,increase,0.15,0.18,Queensland Australia,False,0.0,0
+Mars rover mobility,solar,decrease,0.1,0.08000000000000002,Queensland Australia,False,0.0,0
+Mars rover mobility,solar,increase,0.1,0.12,Queensland Australia,False,0.0,0
+Mars rover mobility,aerosol_mean,decrease,0.1,0.08000000000000002,Queensland Australia,False,0.0,0
+Mars rover mobility,aerosol_mean,increase,0.1,0.12,Queensland Australia,False,0.0,0
+Lunar resource prospecting,terrain,decrease,0.2,0.16000000000000003,Brooks Range Alaska,False,0.0,0
+Lunar resource prospecting,terrain,increase,0.2,0.24,Brooks Range Alaska,False,0.0,0
+Lunar resource prospecting,water,decrease,0.6,0.48,Brooks Range Alaska,False,0.0,0
+Lunar resource prospecting,water,increase,0.6,0.72,Brooks Range Alaska,False,0.0,0
+Lunar resource prospecting,persistent_water,decrease,0.2,0.16000000000000003,Brooks Range Alaska,False,0.0,0
+Lunar resource prospecting,persistent_water,increase,0.2,0.24,Brooks Range Alaska,False,0.0,0
+Mars dust-process analogue,aerosol_mean,decrease,0.4,0.32000000000000006,Ontario Canada,False,0.0,0
+Mars dust-process analogue,aerosol_mean,increase,0.4,0.48,Ontario Canada,False,0.3333333333333333,1
+Mars dust-process analogue,aerosol_variability,decrease,0.35,0.27999999999999997,Ontario Canada,False,0.3333333333333333,1
+Mars dust-process analogue,aerosol_variability,increase,0.35,0.42,Ontario Canada,False,0.0,0
+Mars dust-process analogue,high_loading_months,decrease,0.25,0.2,Ontario Canada,False,0.0,0
+Mars dust-process analogue,high_loading_months,increase,0.25,0.3,Ontario Canada,False,0.0,0
+Volcanic and cave analogue reconnaissance,volcanic_evidence_rate,decrease,0.5,0.4,Brooks Range Alaska,True,0.16666666666666666,1
+Volcanic and cave analogue reconnaissance,volcanic_evidence_rate,increase,0.5,0.6,Baja California Mexico,False,0.16666666666666666,1
+Volcanic and cave analogue reconnaissance,karst_evidence_rate,decrease,0.5,0.4,Baja California Mexico,False,0.16666666666666666,1
+Volcanic and cave analogue reconnaissance,karst_evidence_rate,increase,0.5,0.6,Brooks Range Alaska,True,0.16666666666666666,1
+Cold-region operations analogue,cold_months,decrease,0.5,0.4,Brooks Range Alaska,False,0.0,0
+Cold-region operations analogue,cold_months,increase,0.5,0.6,Brooks Range Alaska,False,0.0,0
+Cold-region operations analogue,coldest_month,decrease,0.5,0.4,Brooks Range Alaska,False,0.0,0
+Cold-region operations analogue,coldest_month,increase,0.5,0.6,Brooks Range Alaska,False,0.0,0
