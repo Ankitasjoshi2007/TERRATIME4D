@@ -6,13 +6,18 @@ OBJECTIVE
 Compare available physical terrain measurements
 for Earth, Moon and Mars.
 
-EARTH
-Reference: 645 processed terrain tiles.
-Mean tile slope: 3.5644 degrees.
-Mean tile elevation: 1102.4566 metres.
-Mean roughness at 270 m: 4.8359 m.
-Mean roughness at 630 m: 10.1605 m.
-Mean roughness at 1350 m: 17.2522 m.
+EARTH REFERENCE DATA
+Advanced terrain summary records: 648.
+Unique Earth locations: 648.
+Processing log records: 645.
+Classification summary records: 645.
+Summary-only additional records: 3.
+
+Mean tile slope: 3.5687 degrees.
+Mean tile elevation: 1099.7189 metres.
+Mean roughness at 270 m: 4.8402 m.
+Mean roughness at 630 m: 10.1794 m.
+Mean roughness at 1350 m: 17.2959 m.
 
 MOON
 Area-weighted mean slope: 4.1790 degrees.
@@ -25,14 +30,24 @@ Area-weighted mean elevation: -0.5507 km.
 Area-weighted mean roughness: 0.0706 km.
 
 SCIENTIFIC LIMITATIONS
-1. Earth represents 645 processed tiles, not complete global coverage.
-2. Earth statistics are unweighted averages of tile-level statistics.
-3. Moon and Mars are global elevation grids.
-4. Earth roughness scales are 270 m, 630 m and 1350 m.
-5. Moon and Mars roughness target is approximately 11 km.
-6. Roughness values at different scales must not be treated as directly equivalent.
-7. Moon and Mars latitude-band rows assume north-to-south grid orientation.
-8. The comparison is exploratory and does not establish geological similarity.
+1. Earth reference contains 648 unique tile summaries, not complete global coverage.
+2. Earth statistics are unweighted arithmetic averages of tile-level statistics.
+3. Earth processing and classification summaries each contain 645 and 645 records respectively.
+4. There are 3 additional records in the advanced summary that are absent from the processing log.
+5. Moon and Mars statistics are derived from global elevation grids.
+6. Earth roughness scales are 270 m, 630 m and 1350 m.
+7. Moon and Mars roughness target is approximately 11 km.
+8. Roughness values at different spatial scales must not be treated as directly equivalent.
+9. Earth tile averages and Moon/Mars area-weighted global averages use different sampling methods.
+10. Moon and Mars latitude-band rows assume north-to-south grid orientation.
+11. MOLA MEGDR contains interpolated values where direct observations are unavailable.
+12. The comparison is exploratory and does not establish geological similarity.
 
 OUTPUT
-Seven comparison graphs and one comparison CSV were generated.
+Seven comparison graphs, one comparison CSV and one report were generated.
+
+CSV ROUGHNESS COLUMNS
+Earth roughness at 270 m: 4.8402 m.
+Earth roughness at 630 m: 10.1794 m.
+Earth roughness at 1350 m: 17.2959 m.
+Moon and Mars roughness values are recorded separately at approximately 11 km scale.

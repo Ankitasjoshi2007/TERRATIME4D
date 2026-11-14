@@ -1,4 +1,4 @@
-Planet,Mean_Slope_Degrees,Mean_Elevation_km,Mean_Roughness_m,Roughness_Scale
-Earth,3.5644439081581987,1.1024566081057523,,"270m, 630m and 1350m"
-Moon,4.178982685866049,-0.2483892083514067,237.0646068153853,Approximately 11 km
-Mars,1.2326987290105005,-0.5506923498602962,70.6267650053191,Approximately 11 km
+Planet,Mean_Slope_Degrees,Mean_Elevation_km,Mean_Roughness_m,Earth_Roughness_270m_m,Earth_Roughness_630m_m,Earth_Roughness_1350m_m,Roughness_Scale,Reference_Coverage
+Earth,3.5687336809243315,1.0997189441203066,,4.84021848672426,10.1793988911596,17.295886751218344,"270 m, 630 m and 1350 m",648 unique tile summaries
+Moon,4.178982685866049,-0.2483892083514067,237.0646068153853,,,,Approximately 11 km,Global elevation grid
+Mars,1.2326987290105005,-0.5506923498602962,70.6267650053191,,,,Approximately 11 km,Global elevation grid

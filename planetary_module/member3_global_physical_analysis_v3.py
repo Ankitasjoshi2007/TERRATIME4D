@@ -10,18 +10,27 @@ from scipy.ndimage import uniform_filter1d
 # ============================================================
 # TERRATIME4D
 # MEMBER 3 - GLOBAL PHYSICAL TERRAIN ANALYSIS - VERSION 3
+# UPDATED EARTH REFERENCE: 648 UNIQUE SUMMARY RECORDS
 # ============================================================
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 MOON_FILE = BASE_DIR / "data" / "raw" / "moon" / "ldem_16.tif"
 MARS_FILE = BASE_DIR / "data" / "raw" / "mars" / "megt90n000eb.img"
+
 EARTH_FILE = (
-    BASE_DIR
-    / "data"
-    / "processed"
-    / "global_terrain"
+    BASE_DIR / "data" / "processed" / "global_terrain"
     / "global_advanced_terrain_summary.csv"
+)
+
+EARTH_LOG_FILE = (
+    BASE_DIR / "data" / "processed" / "global_terrain"
+    / "global_processing_log.csv"
+)
+
+EARTH_CLASS_FILE = (
+    BASE_DIR / "data" / "processed" / "global_terrain"
+    / "global_terrain_classification_summary.csv"
 )
 
 OUTPUT_DIR = BASE_DIR / "results" / "member3_global_analysis_v3"
@@ -50,11 +59,9 @@ def weighted_statistics(values, latitudes):
     weights = np.cos(np.deg2rad(lat_grid))
     weights = np.maximum(weights, 0)
 
-    weighted_mean = np.average(data, weights=weights)
-
     return {
         "mean": float(np.mean(data)),
-        "area_weighted_mean": float(weighted_mean),
+        "area_weighted_mean": float(np.average(data, weights=weights)),
         "median": float(np.median(data)),
         "p90": float(np.percentile(data, 90)),
         "minimum": float(np.min(data)),
@@ -67,7 +74,6 @@ def calculate_slope(elevation, radius_km, pixels_per_degree, latitudes):
     """Calculate approximate terrain slope on a spherical grid."""
 
     dy = radius_km * np.deg2rad(1.0 / pixels_per_degree)
-
     gradient_y = np.gradient(elevation, dy, axis=0)
 
     longitude_spacing = (
@@ -103,8 +109,8 @@ def calculate_physical_roughness(
     Estimate local elevation standard deviation using an
     approximately 11 km by 11 km neighbourhood.
 
-    The neighbourhood is a local spherical-grid approximation,
-    not an exact geodesic or circular window.
+    This is a local spherical-grid approximation, not an exact
+    geodesic or circular neighbourhood.
     """
 
     rows, columns = elevation.shape
@@ -167,15 +173,11 @@ def calculate_physical_roughness(
         local_mean_squared = np.mean(local_rows**2, axis=0)
 
         mean_filtered = uniform_filter1d(
-            local_mean,
-            size=longitude_window,
-            mode="wrap"
+            local_mean, size=longitude_window, mode="wrap"
         )
 
         square_filtered = uniform_filter1d(
-            local_mean_squared,
-            size=longitude_window,
-            mode="wrap"
+            local_mean_squared, size=longitude_window, mode="wrap"
         )
 
         variance = np.maximum(
@@ -198,8 +200,7 @@ def calculate_latitude_bands(
         upper = lower + 10
 
         row_mask = (
-            (latitudes >= lower)
-            & (latitudes < upper)
+            (latitudes >= lower) & (latitudes < upper)
         )
 
         if not np.any(row_mask):
@@ -212,24 +213,14 @@ def calculate_latitude_bands(
         records.append({
             "planet": planet_name,
             "latitude_band": f"{lower} to {upper}",
-            "elevation_mean_km": float(
-                np.nanmean(band_elevation)
-            ),
-            "elevation_min_km": float(
-                np.nanmin(band_elevation)
-            ),
-            "elevation_max_km": float(
-                np.nanmax(band_elevation)
-            ),
-            "slope_mean_degrees": float(
-                np.nanmean(band_slope)
-            ),
+            "elevation_mean_km": float(np.nanmean(band_elevation)),
+            "elevation_min_km": float(np.nanmin(band_elevation)),
+            "elevation_max_km": float(np.nanmax(band_elevation)),
+            "slope_mean_degrees": float(np.nanmean(band_slope)),
             "slope_p90_degrees": float(
                 np.nanpercentile(band_slope, 90)
             ),
-            "roughness_mean_km": float(
-                np.nanmean(band_roughness)
-            ),
+            "roughness_mean_km": float(np.nanmean(band_roughness)),
             "roughness_p90_km": float(
                 np.nanpercentile(band_roughness, 90)
             ),
@@ -319,11 +310,7 @@ def load_moon():
             f"Unexpected Moon raster shape: {moon.shape}"
         )
 
-    # Aggregate the original 16 pixels/degree grid to
-    # 8 pixels/degree using 2 by 2 averaging.
-    moon = moon.reshape(
-        1440, 2, 2880, 2
-    ).mean(axis=(1, 3))
+    moon = moon.reshape(1440, 2, 2880, 2).mean(axis=(1, 3))
 
     print("Moon data loaded and aggregated.")
 
@@ -345,8 +332,6 @@ def load_mars():
         )
 
     mars = mars.reshape(2880, 5760)
-
-    # Convert elevation from metres to kilometres.
     mars = mars.astype(np.float32) / 1000.0
 
     print("Mars data loaded.")
@@ -355,27 +340,148 @@ def load_mars():
 
 
 def load_earth_reference():
-    """Read existing Member 1 and Member 2 Earth statistics."""
+    """
+    Load all Earth tile-level records and calculate descriptive
+    statistics. Keep the original 648 rows separate from the
+    descriptive-statistics output.
+    """
 
     if not EARTH_FILE.exists():
-        print("\nEarth reference CSV was not found.")
-        return pd.DataFrame()
+        raise FileNotFoundError(
+            f"Earth reference CSV not found: {EARTH_FILE}"
+        )
 
-    print("\nLoading existing Earth reference statistics...")
+    print("\nLoading updated Earth reference statistics...")
 
     earth = pd.read_csv(EARTH_FILE)
 
-    return earth.describe(include="all").transpose().reset_index(
+    if "location" not in earth.columns:
+        raise ValueError("Earth summary is missing the location column.")
+
+    if earth["location"].duplicated().any():
+        raise ValueError("Duplicate Earth locations were detected.")
+
+    expected_columns = [
+        "elevation_mean_m",
+        "slope_mean_degrees",
+        "roughness_270m_mean",
+        "roughness_630m_mean",
+        "roughness_1350m_mean",
+    ]
+
+    for column in expected_columns:
+        if column not in earth.columns:
+            raise ValueError(f"Missing Earth metric: {column}")
+
+    earth_count = len(earth)
+    unique_count = earth["location"].nunique()
+
+    if earth_count != 648 or unique_count != 648:
+        raise ValueError(
+            f"Expected 648 unique Earth records; found "
+            f"{earth_count} rows and {unique_count} unique locations."
+        )
+
+    # Export the complete original Earth reference records.
+    earth.to_csv(
+        OUTPUT_DIR / "earth_reference_tile_records_v3.csv",
+        index=False
+    )
+
+    # Calculate descriptive statistics across the 648 tile-level
+    # values. These are not pooled pixel-level global statistics.
+    selected = earth[expected_columns].apply(
+        pd.to_numeric, errors="coerce"
+    )
+
+    earth_statistics = selected.describe().transpose().reset_index(
         names="metric"
     )
 
+    earth_statistics.to_csv(
+        OUTPUT_DIR / "earth_existing_reference_statistics_v3.csv",
+        index=False
+    )
 
-def write_report(moon_summary, mars_summary, earth):
+    # Count processing and classification records independently.
+    log_count = (
+        len(pd.read_csv(EARTH_LOG_FILE))
+        if EARTH_LOG_FILE.exists() else None
+    )
+
+    classification_count = (
+        len(pd.read_csv(EARTH_CLASS_FILE))
+        if EARTH_CLASS_FILE.exists() else None
+    )
+
+    # Identify records present in the advanced summary but absent
+    # from successful processing-log filenames.
+    extra_records = []
+
+    if EARTH_LOG_FILE.exists():
+        log = pd.read_csv(EARTH_LOG_FILE)
+
+        if {"filename", "status"}.issubset(log.columns):
+            successful_files = set(
+                log.loc[
+                    log["status"].astype(str).str.lower() == "success",
+                    "filename"
+                ].astype(str)
+            )
+
+            extra_records = earth.loc[
+                ~earth["raster_file"].astype(str).isin(successful_files),
+                "raster_file"
+            ].astype(str).tolist()
+
+    pd.DataFrame({
+        "summary_only_raster_file": extra_records
+    }).to_csv(
+        OUTPUT_DIR / "earth_summary_only_records_v3.csv",
+        index=False
+    )
+
+    audit = pd.DataFrame([{
+        "advanced_summary_records": earth_count,
+        "unique_locations": unique_count,
+        "processing_log_records": log_count,
+        "classification_summary_records": classification_count,
+        "summary_only_records": len(extra_records),
+        "earth_tile_mean_elevation_m":
+            selected["elevation_mean_m"].mean(),
+        "earth_tile_mean_slope_degrees":
+            selected["slope_mean_degrees"].mean(),
+        "earth_tile_mean_roughness_270m_m":
+            selected["roughness_270m_mean"].mean(),
+        "earth_tile_mean_roughness_630m_m":
+            selected["roughness_630m_mean"].mean(),
+        "earth_tile_mean_roughness_1350m_m":
+            selected["roughness_1350m_mean"].mean(),
+    }])
+
+    audit.to_csv(
+        OUTPUT_DIR / "earth_reference_audit_v3.csv",
+        index=False
+    )
+
+    print(f"Earth advanced summary records: {earth_count}")
+    print(f"Unique Earth locations: {unique_count}")
+    print(f"Processing log records: {log_count}")
+    print(f"Classification summary records: {classification_count}")
+    print(f"Summary-only additional records: {len(extra_records)}")
+
+    return earth_statistics, audit, extra_records
+
+
+def write_report(moon_summary, mars_summary, earth_statistics, audit,
+                 extra_records):
     """Write the Version 3 methodology and limitations report."""
 
     report_path = (
         OUTPUT_DIR / "member3_physical_analysis_report_v3.txt"
     )
+
+    earth_row = audit.iloc[0]
 
     lines = [
         "TERRATIME4D",
@@ -385,8 +491,8 @@ def write_report(moon_summary, mars_summary, earth):
         "OBJECTIVE",
         "Analyse global Moon and Mars elevation grids using",
         "slope and approximately 11 km physical roughness.",
-        "Use the existing processed Earth terrain summary as",
-        "a separate reference.",
+        "Use the latest processed Earth terrain summary as a",
+        "separate reference dataset.",
         "",
         "METHOD",
         "Moon source: NASA Lunar Digital Elevation Model.",
@@ -399,6 +505,25 @@ def write_report(moon_summary, mars_summary, earth):
         "Latitude bands: 10-degree intervals.",
         "Area weighting: cosine of latitude.",
         "",
+        "EARTH REFERENCE DATA AUDIT",
+        f"Advanced terrain summary records: {int(earth_row['advanced_summary_records'])}",
+        f"Unique Earth locations: {int(earth_row['unique_locations'])}",
+        f"Processing log records: {int(earth_row['processing_log_records'])}",
+        f"Classification summary records: {int(earth_row['classification_summary_records'])}",
+        f"Additional summary-only records: {int(earth_row['summary_only_records'])}",
+        "",
+        "Earth reference values are arithmetic averages of tile-level",
+        "summary values. They are not pooled pixel-level global averages.",
+        "The three additional summary records have valid terrain metrics",
+        "but are absent from the processing log and classification summary.",
+        "",
+        "EARTH TILE-LEVEL REFERENCE AVERAGES",
+        f"Mean tile elevation: {earth_row['earth_tile_mean_elevation_m']:.4f} m",
+        f"Mean tile slope: {earth_row['earth_tile_mean_slope_degrees']:.6f} degrees",
+        f"Mean roughness at 270 m: {earth_row['earth_tile_mean_roughness_270m_m']:.6f} m",
+        f"Mean roughness at 630 m: {earth_row['earth_tile_mean_roughness_630m_m']:.6f} m",
+        f"Mean roughness at 1350 m: {earth_row['earth_tile_mean_roughness_1350m_m']:.6f} m",
+        "",
         "IMPORTANT DATA LIMITATIONS",
         "1. The Moon TIFF has no per-pixel direct-observation mask.",
         "2. Mars MEGDR includes interpolated values where direct",
@@ -408,13 +533,13 @@ def write_report(moon_summary, mars_summary, earth):
         "   or circular neighbourhood.",
         "4. Polar rows at absolute latitudes of 89 degrees or more",
         "   are excluded from slope and roughness calculations.",
-        "5. Earth statistics represent 645 processed tiles only.",
-        "   They are not a complete global Earth dataset.",
-        "6. Earth roughness measurements use different spatial",
-        "   scales and cannot be directly equated with the",
-        "   approximately 11 km Moon and Mars measurements.",
-        "7. Earth summary statistics are based on tile-level",
-        "   values and are not pooled pixel-level global statistics.",
+        "5. Earth reference data contain 648 unique tile summaries;",
+        "   this is not a complete global Earth dataset.",
+        "6. Earth roughness measurements use 270 m, 630 m and 1350 m",
+        "   scales, whereas Moon and Mars use approximately 11 km.",
+        "   These roughness measurements are not directly equivalent.",
+        "7. Earth summary statistics are based on tile-level values,",
+        "   not pooled pixel-level global statistics.",
         "",
         "MOON RESULTS",
     ]
@@ -429,16 +554,16 @@ def write_report(moon_summary, mars_summary, earth):
 
     lines.extend([
         "",
-        "EARTH REFERENCE",
-        f"Earth reference rows: {len(earth)}",
+        "SUMMARY-ONLY EARTH RECORDS",
+        *[f"- {name}" for name in extra_records],
         "",
         "CONCLUSION",
         "The analysis provides a physical terrain comparison",
         "between the available Moon and Mars elevation grids.",
-        "The existing Earth results provide a partial reference.",
-        "Differences in source resolution, coverage, observation",
-        "methods and roughness scales must be considered when",
-        "interpreting comparisons.",
+        "The updated 648-record Earth reference provides a partial",
+        "tile-level comparison. Differences in source resolution,",
+        "coverage, observation methods and roughness scales must",
+        "be considered when interpreting planetary analogies.",
         "",
     ])
 
@@ -482,20 +607,22 @@ def main():
         index=False
     )
 
-    earth_reference = load_earth_reference()
-
-    earth_reference.to_csv(
-        OUTPUT_DIR / "earth_existing_reference_statistics_v3.csv",
-        index=False
+    earth_statistics, earth_audit, extra_records = (
+        load_earth_reference()
     )
 
     write_report(
-        moon_summary, mars_summary, earth_reference
+        moon_summary,
+        mars_summary,
+        earth_statistics,
+        earth_audit,
+        extra_records
     )
 
     print("\nVersion 3 analysis completed.")
     print(f"Output folder: {OUTPUT_DIR}")
     print("\nGenerated files:")
+
     for file in sorted(OUTPUT_DIR.iterdir()):
         print(file.name)
 

@@ -1,188 +1,351 @@
 
 from pathlib import Path
+import csv
 
-BASE = Path(__file__).resolve().parent.parent
-OUT = BASE / "results" / "MEMBER3_FINAL"
-OUT.mkdir(parents=True, exist_ok=True)
 
-report = """# TERRATIME4D
-# MEMBER 3 – MOON AND MARS COMPARISON
+ROOT = Path(__file__).resolve().parent.parent
+
+ANALYSIS_DIR = ROOT / "results" / "member3_global_analysis_v3"
+COMPARISON_DIR = ROOT / "results" / "member3_global_comparison_v3"
+OUTPUT_DIR = ROOT / "results" / "MEMBER3_FINAL"
+
+EARTH_AUDIT_FILE = ANALYSIS_DIR / "earth_reference_audit_v3.csv"
+PLANETARY_SUMMARY_FILE = ANALYSIS_DIR / "moon_mars_physical_summary_v3.csv"
+COMPARISON_REPORT_FILE = (
+    COMPARISON_DIR / "member3_planetary_comparison_report_v3.txt"
+)
+ANALOGY_REPORT_FILE = (
+    ROOT / "results" / "member3_final_analysis"
+    / "member3_analogy_assessment.md"
+)
+
+OUTPUT_FILE = OUTPUT_DIR / "MEMBER3_FINAL_REPORT.md"
+
+
+def read_csv_rows(path):
+    if not path.exists():
+        raise FileNotFoundError(f"Required file not found: {path}")
+
+    with path.open("r", newline="", encoding="utf-8-sig") as file:
+        return list(csv.DictReader(file))
+
+
+def number(row, column):
+    value = row.get(column, "")
+    if value is None or str(value).strip() == "":
+        raise ValueError(f"Missing value for required column: {column}")
+    return float(value)
+
+
+def format_number(value, decimals=4):
+    return f"{value:,.{decimals}f}"
+
+
+def main():
+    print("=" * 65)
+    print("TERRATIME4D - MEMBER 3 FINAL REPORT")
+    print("=" * 65)
+
+    # Read the latest Earth audit.
+    earth_rows = read_csv_rows(EARTH_AUDIT_FILE)
+    if not earth_rows:
+        raise ValueError("Earth audit CSV contains no records.")
+
+    earth = earth_rows[0]
+
+    summary_count = int(number(earth, "advanced_summary_records"))
+    unique_count = int(number(earth, "unique_locations"))
+    processing_count = int(number(earth, "processing_log_records"))
+    classification_count = int(
+        number(earth, "classification_summary_records")
+    )
+    summary_only_count = int(number(earth, "summary_only_records"))
+
+    earth_elevation = number(earth, "earth_tile_mean_elevation_m")
+    earth_slope = number(earth, "earth_tile_mean_slope_degrees")
+    earth_roughness_270 = number(
+        earth, "earth_tile_mean_roughness_270m_m"
+    )
+    earth_roughness_630 = number(
+        earth, "earth_tile_mean_roughness_630m_m"
+    )
+    earth_roughness_1350 = number(
+        earth, "earth_tile_mean_roughness_1350m_m"
+    )
+
+    # Read the actual Moon/Mars summary CSV schema.
+    planetary_rows = read_csv_rows(PLANETARY_SUMMARY_FILE)
+
+    planets = {
+        row["planet"].strip().lower(): row
+        for row in planetary_rows
+    }
+
+    if "moon" not in planets or "mars" not in planets:
+        raise ValueError(
+            "The planetary summary must contain Moon and Mars records."
+        )
+
+    moon = planets["moon"]
+    mars = planets["mars"]
+
+    def planetary_metrics(row):
+        return {
+            "elevation": number(
+                row, "elevation_area_weighted_mean_km"
+            ),
+            "slope": number(
+                row, "slope_area_weighted_mean_degrees"
+            ),
+            "roughness": number(
+                row, "roughness_area_weighted_mean_km"
+            ),
+            "roughness_target": number(row, "roughness_target_km"),
+            "rows": int(number(row, "rows")),
+            "columns": int(number(row, "columns")),
+            "valid_slope_cells": int(number(row, "slope_valid_cells")),
+            "valid_roughness_cells": int(
+                number(row, "roughness_valid_cells")
+            ),
+        }
+
+    moon_data = planetary_metrics(moon)
+    mars_data = planetary_metrics(mars)
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    report = f"""# TERRATIME4D
+# Member 3 - Final Planetary Reference and Comparison Report
 
 ## 1. Objective
 
-To study Moon and Mars terrain using planetary elevation datasets,
-identify comparable terrain characteristics, compare them with
-available Earth terrain statistics, and document where Earth
-terrain analogies work and where they have limitations.
+Member 3 prepared Moon and Mars planetary terrain reference data and
+compared their physical terrain measurements with the available Earth
+terrain reference data produced by Members 1 and 2.
 
-## 2. Dataset Research
+The work provides planetary reference measurements, comparison outputs,
+scientific limitations, and supporting documentation for the next
+project stages.
 
-### Earth
-Existing processed reference statistics from 645 terrain tiles.
-The available data is partial and does not represent complete
-global Earth coverage.
+Member 3 focuses on planetary data and analogy assessment. The mission
+suitability scoring engine belongs to Member 4, while the final
+application and global visualization belong to Member 5.
 
-### Moon
-Dataset: Lunar Digital Elevation Model (LOLA).
-Source file: ldem_16.tif.
-Resolution: 16 pixels per degree.
-Elevation unit: kilometres.
-Source: NASA Lunar Reconnaissance Orbiter / LOLA data.
+## 2. Earth Reference Data
 
-### Mars
-Dataset: Mars Orbiter Laser Altimeter (MOLA) MEGDR.
-Source file: megt90n000eb.img.
-Grid: 2880 x 5760.
-Resolution: 16 pixels per degree.
-Elevation values converted from metres to kilometres.
-Source: NASA Planetary Data System.
+Earth reference data was obtained from the Member 2 advanced terrain
+summary:
 
-## 3. Terrain Characteristics
+`data/processed/global_terrain/global_advanced_terrain_summary.csv`
 
-The analysis considers:
-- Elevation
-- Slope
-- Surface roughness
-- Latitude-based terrain variation
+The latest audit reports:
 
-Moon and Mars were analysed using global elevation grids.
-Slope and approximate 11 km roughness were calculated.
+- Advanced terrain summary records: {summary_count}
+- Unique Earth locations: {unique_count}
+- Processing log records: {processing_count}
+- Classification summary records: {classification_count}
+- Summary records absent from the processing log: {summary_only_count}
 
-## 4. Quantitative Results
+The three additional summary-only records are retained because they
+contain terrain measurements in the advanced summary. Their presence
+does not establish why they are absent from the processing log.
 
-| Characteristic | Earth | Moon | Mars |
+### Earth terrain reference statistics
+
+| Measurement | Mean |
+|---|---:|
+| Tile mean elevation | {format_number(earth_elevation)} m |
+| Tile mean slope | {format_number(earth_slope)} degrees |
+| Roughness at 270 m scale | {format_number(earth_roughness_270)} m |
+| Roughness at 630 m scale | {format_number(earth_roughness_630)} m |
+| Roughness at 1350 m scale | {format_number(earth_roughness_1350)} m |
+
+These Earth values are arithmetic averages of tile-level summary
+measurements. They are not a pixel-pooled or area-weighted global
+Earth average, and the 648 locations do not represent complete global
+Earth coverage.
+
+## 3. Moon Reference Data
+
+The lunar elevation reference is based on the LRO LOLA global elevation
+dataset used in the Member 3 analysis.
+
+The processed grid contains {moon_data["rows"]:,} rows and
+{moon_data["columns"]:,} columns.
+
+### Area-weighted lunar measurements
+
+| Measurement | Value |
+|---|---:|
+| Mean elevation | {format_number(moon_data["elevation"])} km |
+| Mean slope | {format_number(moon_data["slope"])} degrees |
+| Mean roughness | {format_number(moon_data["roughness"])} km |
+| Approximate roughness target scale | {format_number(moon_data["roughness_target"], 1)} km |
+
+The lunar elevation raster used in the analysis required aggregation
+for practical global processing. Its source raster does not provide
+ordinary georeferencing metadata in the form expected by standard
+raster workflows, so the analysis uses the documented grid convention.
+
+## 4. Mars Reference Data
+
+The Martian elevation reference is based on the MOLA MEGDR global
+elevation dataset.
+
+The processed grid contains {mars_data["rows"]:,} rows and
+{mars_data["columns"]:,} columns.
+
+### Area-weighted Martian measurements
+
+| Measurement | Value |
+|---|---:|
+| Mean elevation | {format_number(mars_data["elevation"])} km |
+| Mean slope | {format_number(mars_data["slope"])} degrees |
+| Mean roughness | {format_number(mars_data["roughness"])} km |
+| Approximate roughness target scale | {format_number(mars_data["roughness_target"], 1)} km |
+
+MOLA MEGDR includes interpolated values in locations where direct
+altimeter observations are unavailable. Therefore, the global grid
+should not be interpreted as entirely direct measurements.
+
+## 5. Earth, Moon and Mars Comparison
+
+The comparison uses the available Earth tile-level terrain summaries
+and the area-weighted Moon and Mars global measurements.
+
+The principal measurements are:
+
+| Measurement | Earth reference | Moon | Mars |
 |---|---:|---:|---:|
-| Mean elevation | 1.102 km | -0.248 km | -0.551 km |
-| Mean slope | 3.564° | 4.179° | 1.233° |
-| Mean roughness | 4.836 m at 270 m scale | 0.237 km at approx. 11 km scale | 0.071 km at approx. 11 km scale |
+| Mean elevation | {format_number(earth_elevation / 1000)} km | {format_number(moon_data["elevation"])} km | {format_number(mars_data["elevation"])} km |
+| Mean slope | {format_number(earth_slope)} degrees | {format_number(moon_data["slope"])} degrees | {format_number(mars_data["slope"])} degrees |
+| Roughness | {format_number(earth_roughness_1350 / 1000)} km at 1350 m scale | {format_number(moon_data["roughness"])} km at approximately 11 km scale | {format_number(mars_data["roughness"])} km at approximately 11 km scale |
 
-Earth values are based on 645 processed tiles. Its mean elevation
-and slope are unweighted averages of tile statistics. Moon and Mars
-values are area-weighted global statistics.
+The roughness measurements are calculated at different spatial
+scales. They must not be treated as directly equivalent measurements.
 
-Earth roughness and planetary roughness were measured at different
-spatial scales. Therefore, their numerical values are not directly
-comparable.
+Earth statistics are unweighted averages of tile-level measurements,
+whereas the Moon and Mars values are area-weighted global estimates.
+These different sampling and weighting methods must be considered
+when interpreting the comparison.
 
-## 5. Earth Terrain Analogies
+## 6. Scientific Analogy Assessment
 
-### Impact craters
-Earth impact craters help explain crater geometry, rims and
-impact-related structures. The Moon and Mars also contain impact
-craters, but preservation conditions differ.
+Earth locations can provide useful partial analogues for selected
+planetary surface conditions and terrain processes.
 
-### Volcanic terrain
-Earth volcanic regions help explain lava flows and volcanic landforms.
-The Moon has basaltic maria, while Mars contains large volcanic
-structures. Differences in gravity and geological history limit
-direct comparisons.
+Examples of useful comparison categories include:
 
-### Valleys and channels
-Earth river valleys help explain branching channels and erosion.
-Some Martian valley networks resemble these landforms, but their
-formation history must be assessed independently. This analogy is
-limited for the Moon.
+- Impact craters and cratered landscapes.
+- Volcanic and basaltic terrain.
+- Dry channels, valleys and erosion features.
+- Dune fields and dust-related surface processes.
+- Polar and cold-region environments.
+- Rugged terrain relevant to rover movement and surface operations.
 
-### Dunes
-Earth deserts are useful analogues for wind-shaped Martian dunes.
-The Moon does not have a substantial atmosphere to support
-Earth-like wind-driven dunes.
+A similar terrain shape does not prove that two locations have the
+same geological history or environmental conditions.
 
-### Polar and ice terrain
-Earth glaciers and permafrost environments help interpret selected
-Martian ice-related landforms. Environmental conditions differ.
+Earth cannot fully reproduce lunar vacuum, lunar gravity, the Martian
+atmosphere, or planetary radiation conditions. Analogy assessments
+must therefore distinguish between physical terrain similarity and
+environmental similarity.
 
-## 6. Where Analogies Fail
+The separate analogy assessment is available at:
 
-- Gravity differs between Earth, Moon and Mars.
-- The Moon lacks substantial atmosphere and Earth-like weathering.
-- Mars has a thin atmosphere and a different geological history.
-- Earth has active plate tectonics and a hydrological cycle.
-- Similar shapes do not prove identical geological origins.
-- Earth data coverage is limited to 645 processed tiles.
-- Roughness analysis uses different spatial scales.
+`results/member3_final_analysis/member3_analogy_assessment.md`
 
-## 7. Generated Results
+## 7. Generated Outputs
 
-### Elevation maps
-- 01_moon_global_elevation.png
-- 02_mars_global_elevation.png
+### Global physical analysis
 
-### Planetary comparison graphs
-- 01_mean_slope_comparison.png
-- 02_earth_roughness_scales.png
-- 03_moon_mars_roughness_comparison.png
-- 04_mean_elevation_comparison.png
-- 05_latitude_slope_comparison.png
-- 06_latitude_roughness_comparison.png
-- 07_planetary_comparison_dashboard.png
+`results/member3_global_analysis_v3/`
 
-### Analysis files
-- moon_mars_physical_summary_v3.csv
-- moon_mars_latitude_band_analysis_v3.csv
-- planetary_comparison_values_v3.csv
-- member3_analogy_assessment.md
+- `earth_existing_reference_statistics_v3.csv`
+- `earth_reference_audit_v3.csv`
+- `earth_reference_tile_records_v3.csv`
+- `earth_summary_only_records_v3.csv`
+- `moon_mars_physical_summary_v3.csv`
+- `moon_mars_latitude_band_analysis_v3.csv`
+- `member3_physical_analysis_report_v3.txt`
 
-## 8. Interpretation
+### Planetary comparison
 
-The Moon has a higher area-weighted mean slope than Mars in
-the analysed grids. Mars has a lower mean slope, although local
-volcanic, crater and canyon regions can still be steep.
+`results/member3_global_comparison_v3/`
 
-Earth's mean tile slope lies between the Moon and Mars values.
-However, this is not a fully matched global comparison because
-the coverage and statistical weighting differ.
+- `planetary_comparison_values_v3.csv`
+- `member3_planetary_comparison_report_v3.txt`
+- `01_mean_slope_comparison.png`
+- `02_earth_roughness_scales.png`
+- `03_moon_mars_roughness_comparison.png`
+- `04_mean_elevation_comparison.png`
+- `05_latitude_slope_comparison.png`
+- `06_latitude_roughness_comparison.png`
+- `07_planetary_comparison_dashboard.png`
 
-The roughness results describe surface variability at the
-selected analysis scales and should not be interpreted as
-a direct comparison across all three bodies.
+### Elevation maps and analogy assessment
 
-## 9. Conclusion
+- `results/member3_elevation_maps/`
+- `results/member3_final_analysis/member3_analogy_assessment.md`
 
-Earth provides useful analogues for selected lunar and Martian
-landforms, including impact craters, volcanic terrain, valleys,
-dunes and ice-related features.
+## 8. Limitations
 
-These analogies help interpret planetary surface morphology
-and support exploration planning. However, differences in
-gravity, atmosphere, geological history and surface processes
-limit direct equivalence.
+1. Earth reference coverage is partial and consists of 648 unique
+   terrain summary locations.
+2. The Earth processing log and classification summary each contain
+   645 records, while the advanced summary contains 648 records.
+3. Earth averages are tile-level arithmetic averages, not
+   area-weighted global statistics.
+4. Moon and Mars measurements are area-weighted global estimates.
+5. Earth roughness scales differ from the approximately 11 km
+   planetary roughness scale used for Moon and Mars.
+6. MOLA data includes interpolated values where direct observations
+   are unavailable.
+7. Similar physical terrain measurements alone cannot establish
+   geological or environmental equivalence.
+8. The analysis is a reference comparison and does not replace
+   mission-specific engineering or environmental validation.
 
-The elevation maps, terrain statistics and comparison graphs
-provide a quantitative and visual basis for this study.
-The results are exploratory and do not prove identical
-geological origins.
+## 9. Handoff to Other Project Members
 
-## 10. Limitations
+**Member 4 - Similarity and Mission Scoring Engine**
 
-1. Earth coverage includes only 645 processed terrain tiles.
-2. Earth and planetary statistics use different coverage and weighting.
-3. Earth roughness scales differ from the approximately 11 km
-   Moon and Mars analysis scale.
-4. The Moon TIFF has no embedded georeferencing; the map uses
-   an assumed global cylindrical grid orientation.
-5. Latitude-band orientation is assumed north-to-south.
-6. The analysis does not establish geological equivalence.
+Use the documented Earth and planetary reference measurements as
+inputs for the separate similarity and mission suitability scoring
+workflow. Member 4 is responsible for the scoring logic and mission
+suitability results.
 
-## 11. References
+**Member 5 - 4D Time, Rover Movement and Global Visualization**
 
-1. NASA CGI Moon Kit – Lunar elevation data:
-   https://astrogeology.usgs.gov/search/map/Moon/Geology/Unified_Geologic_Map_of_the_Moon_GIS
+Use the documented planetary comparison outputs and generated
+figures as supporting inputs for the final application and
+visualization workflow.
 
-2. NASA Planetary Data System – MOLA:
-   https://pds-geosciences.wustl.edu/missions/mgs/
+Member 3 does not claim to have completed Member 4's scoring engine
+or Member 5's application.
 
-3. NASA Lunar Reconnaissance Orbiter:
-   https://science.nasa.gov/mission/lunar-reconnaissance-orbiter/
+## 10. Conclusion
 
-4. NASA Mars Global Surveyor:
-   https://science.nasa.gov/mission/mars-global-surveyor/
+Member 3 has prepared global Moon and Mars physical terrain
+measurements, updated the Earth reference comparison using the
+648-record advanced terrain summary, generated planetary comparison
+figures and reports, and documented the scientific limitations of
+the analogy assessment.
 
+The results provide a documented reference foundation for the
+remaining TERRATIME4D project modules.
 """
 
-path = OUT / "MEMBER3_FINAL_REPORT.md"
-path.write_text(report, encoding="utf-8")
+    OUTPUT_FILE.write_text(report, encoding="utf-8")
 
-print("MEMBER 3 FINAL REPORT CREATED")
-print(path)
-print("Output folder:", OUT)
+    print("Final report generated successfully.")
+    print(f"Earth summary records: {summary_count}")
+    print(f"Unique Earth locations: {unique_count}")
+    print(f"Processing log records: {processing_count}")
+    print(f"Classification records: {classification_count}")
+    print(f"Summary-only records: {summary_only_count}")
+    print(f"Output: {OUTPUT_FILE}")
+
+
+if __name__ == "__main__":
+    main()

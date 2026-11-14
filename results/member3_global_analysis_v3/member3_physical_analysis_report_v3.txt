@@ -1,12 +1,12 @@
-﻿TERRATIME4D
+TERRATIME4D
 MEMBER 3 - VERSION 3 PHYSICAL TERRAIN ANALYSIS
 =================================================================
 
 OBJECTIVE
 Analyse global Moon and Mars elevation grids using
 slope and approximately 11 km physical roughness.
-Use the existing processed Earth terrain summary as
-a separate reference.
+Use the latest processed Earth terrain summary as a
+separate reference dataset.
 
 METHOD
 Moon source: NASA Lunar Digital Elevation Model.
@@ -18,7 +18,25 @@ Roughness: local elevation standard deviation.
 Roughness target: approximately 11 km by 11 km.
 Latitude bands: 10-degree intervals.
 Area weighting: cosine of latitude.
-Latitude coordinates assume source grid rows run north to south.
+
+EARTH REFERENCE DATA AUDIT
+Advanced terrain summary records: 648
+Unique Earth locations: 648
+Processing log records: 645
+Classification summary records: 645
+Additional summary-only records: 3
+
+Earth reference values are arithmetic averages of tile-level
+summary values. They are not pooled pixel-level global averages.
+The three additional summary records have valid terrain metrics
+but are absent from the processing log and classification summary.
+
+EARTH TILE-LEVEL REFERENCE AVERAGES
+Mean tile elevation: 1099.7189 m
+Mean tile slope: 3.568734 degrees
+Mean roughness at 270 m: 4.840218 m
+Mean roughness at 630 m: 10.179399 m
+Mean roughness at 1350 m: 17.295887 m
 
 IMPORTANT DATA LIMITATIONS
 1. The Moon TIFF has no per-pixel direct-observation mask.
@@ -29,13 +47,13 @@ IMPORTANT DATA LIMITATIONS
    or circular neighbourhood.
 4. Polar rows at absolute latitudes of 89 degrees or more
    are excluded from slope and roughness calculations.
-5. Earth statistics represent 645 processed tiles only.
-   They are not a complete global Earth dataset.
-6. Earth roughness measurements use different spatial
-   scales and cannot be directly equated with the
-   approximately 11 km Moon and Mars measurements.
-7. Earth summary statistics are based on tile-level
-   values and are not pooled pixel-level global statistics.
+5. Earth reference data contain 648 unique tile summaries;
+   this is not a complete global Earth dataset.
+6. Earth roughness measurements use 270 m, 630 m and 1350 m
+   scales, whereas Moon and Mars use approximately 11 km.
+   These roughness measurements are not directly equivalent.
+7. Earth summary statistics are based on tile-level values,
+   not pooled pixel-level global statistics.
 
 MOON RESULTS
 planet: Moon
@@ -81,16 +99,15 @@ roughness_valid_cells: 16404480
 equatorial_pixel_size_km: 3.7044613373579645
 roughness_target_km: 11.0
 
-EARTH REFERENCE
-Earth processed tiles: 645 (existing Member 1 and Member 2 summary).
+SUMMARY-ONLY EARTH RECORDS
+- Copernicus_DSM_COG_30_S33_00_E117_00_DEM.tif
+- Copernicus_DSM_COG_30_S23_00_E147_00_DEM.tif
+- Copernicus_DSM_COG_30_N67_00_E017_00_DEM.tif
 
 CONCLUSION
 The analysis provides a physical terrain comparison
 between the available Moon and Mars elevation grids.
-The existing Earth results provide a partial reference.
-Differences in source resolution, coverage, observation
-methods and roughness scales must be considered when
-interpreting comparisons.
-
-
-
+The updated 648-record Earth reference provides a partial
+tile-level comparison. Differences in source resolution,
+coverage, observation methods and roughness scales must
+be considered when interpreting planetary analogies.
