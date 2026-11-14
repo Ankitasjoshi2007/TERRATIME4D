@@ -39,7 +39,7 @@ SCIENTIFIC LIMITATIONS
 7. Moon and Mars roughness target is approximately 11 km.
 8. Roughness values at different spatial scales must not be treated as directly equivalent.
 9. Earth tile averages and Moon/Mars area-weighted global averages use different sampling methods.
-10. Moon and Mars latitude-band rows assume north-to-south grid orientation.
+10. Moon latitude-band orientation was verified against the official NASA LRO LOLA PDS LDEM_16_FLOAT grid. After a 180-degree longitude shift, the TIFF matches the PDS grid with a full-grid mean absolute elevation difference of approximately 0.000250 km and correlation of 0.999999996. The TIFF preserves the PDS north-to-south row order. Mars latitude-band orientation is consistent with the official NASA MGS MOLA MEGT90N000EB PDS3 global simple cylindrical projection metadata (16 pixels per degree, latitude limits +90 to -90 degrees, and line projection offset 1440.5). The Mars check is metadata-based, not an independent binary-to-raster validation.
 11. MOLA MEGDR contains interpolated values where direct observations are unavailable.
 12. The comparison is exploratory and does not establish geological similarity.
 

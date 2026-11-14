@@ -88,6 +88,8 @@ The global physical analysis aggregates the elevation grid to 8 pixels per degre
 
 **Important limitation:** MOLA MEGDR products include interpolated values in locations where observations are unavailable. The global grid must not be treated as if every cell were a direct measurement.
 
+**Latitude orientation:** The Mars latitude-band analysis uses north-to-south row order, consistent with the official PDS label's global simple cylindrical projection, 16 pixels-per-degree resolution, latitude limits (+90 to -90 degrees), and equatorial line-projection offset (1440.5). This is a metadata-based orientation check, not an independent binary-to-raster validation.
+
 ## 5. Main Member 3 outputs
 
 ### A. Global physical analysis
