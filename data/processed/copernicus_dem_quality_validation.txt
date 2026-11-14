@@ -5,76 +5,85 @@ COPERNICUS DEM QUALITY VALIDATION REPORT
 1. DATASET OVERVIEW
 -------------------
 Dataset: Copernicus DEM GLO-30
-Number of downloaded TIFF tiles: 7
+Number of downloaded TIFF tiles: 13
 Coordinate reference system: EPSG:4326
 Raster data type: Float32
 
-Tiles cover:
-- Bengaluru, India
-- Hawaii, USA
-- Iceland
-- Atacama Desert, Chile
-- Australian Outback
-- Antarctica (77 degrees South)
-- Antarctica (89 degrees South)
+Current downloaded tiles:
+- N13 E077 - Bengaluru, India
+- N19 W155 - Hawaii, USA
+- N27 W113 - Baja California, Mexico
+- N47 W083 - Ontario, Canada
+- N64 W019 - Iceland / North Atlantic region
+- N67 E017 - Scandinavia / Northern Europe
+- N67 W148 - Alaska, USA
+- S23 E147 - Queensland, Australia
+- S23 W069 - Atacama region, Chile
+- S25 E135 - Australian Outback
+- S33 E117 - Western Australia
+- S77 E000 - Antarctica, 77 degrees South
+- S89 E016 - Antarctica, 89 degrees South
+
+These 13 tiles form the current Earth terrain analysis sample
+used by TERRATIME 4D Member 1.
 
 2. BASIC RASTER VALIDATION
 --------------------------
-All seven TIFF files were successfully opened using Rasterio.
+All 13 TIFF files were successfully opened using Rasterio.
 
-All seven tiles:
+All 13 tiles:
 - Have readable elevation values.
 - Have valid raster dimensions.
 - Use EPSG:4326.
 - Have NoData metadata set to None.
 - Report MaskFlags.all_valid.
-- Have all pixels counted as valid by the raster mask.
+- Have valid raster-mask pixels.
 
 IMPORTANT:
 An all-valid raster mask does not prove that every pixel represents
 a genuine land elevation. Additional scientific checks are required.
 
-3. ELEVATION STATISTICS
------------------------
+3. TERRAIN ANALYSIS
+-------------------
+The current terrain dataset contains the following standardized
+metrics for each downloaded tile:
 
-BENGALURU:
-Minimum: 579.48 m
-Maximum: 1474.37 m
-Mean: 803.05 m
+- Minimum elevation
+- Maximum elevation
+- Average elevation
+- Average slope
+- Maximum slope
+- Relief
+- Average roughness
+- Terrain class
 
-HAWAII:
-Minimum: -0.11 m
-Maximum: 510.81 m
-Mean: 4.71 m
+Terrain classes are TerraTime 4D heuristic categories based on
+average slope and average roughness:
 
-ICELAND:
-Minimum: 463.00 m
-Maximum: 1785.77 m
-Mean: 773.38 m
+- Flat
+- Rolling
+- Hilly
+- Steep
+- Rugged
 
-ATACAMA DESERT:
-Minimum: 2070.52 m
-Maximum: 5948.15 m
-Mean: 3106.13 m
+These terrain classes are project-defined analytical categories
+and are not official NASA or ESA classifications.
 
-AUSTRALIAN OUTBACK:
-Minimum: 163.15 m
-Maximum: 502.44 m
-Mean: 242.39 m
+4. CURRENT TERRAIN DATASET
+--------------------------
+The processed global terrain dataset contains 13 validated tiles.
 
-ANTARCTICA (77 SOUTH):
-Minimum: 2611.38 m
-Maximum: 2825.14 m
-Mean: 2719.79 m
+Output file:
+data/processed/global_terrain_features.csv
 
-ANTARCTICA (89 SOUTH):
-Minimum: 2678.36 m
-Maximum: 2741.94 m
-Mean: 2717.56 m
+The dataset provides elevation, slope, relief, roughness,
+terrain classification, valid-pixel counts, and approximate
+pixel dimensions for each tile.
 
-4. ZERO AND NEGATIVE ELEVATION CHECK
+5. ZERO AND NEGATIVE ELEVATION CHECK
 ------------------------------------
-Only the Hawaii tile contains zero and negative elevations.
+The original detailed zero/negative elevation investigation was
+performed for the Hawaii tile.
 
 Hawaii:
 Zero pixels: 1,390,742
@@ -82,9 +91,11 @@ Negative pixels: 1
 Pixels between 0 and 1 metre: 38
 Zero elevation percentage: 96.58%
 
-The other six tiles contain no zero or negative pixels.
+The Hawaii tile contains a strong spatial concentration of
+zero-elevation pixels. These pixels should not automatically be
+treated as valid land elevation.
 
-5. HAWAII SPATIAL ZERO-VALUE INVESTIGATION
+6. HAWAII SPATIAL ZERO-VALUE INVESTIGATION
 ------------------------------------------
 Total pixels: 1,440,000
 Non-zero pixels: 49,258
@@ -98,16 +109,16 @@ Longitude: 155.0000 to 154.8075 degrees West
 A 10 by 10 block analysis revealed that zero elevations are
 strongly spatially clustered.
 
-Most non-zero elevations occur in the western portion of the tile.
-The eastern and northern portions contain predominantly zero values.
-
 The spatial pattern is consistent with the geography of the
 Big Island of Hawaii and surrounding ocean.
 
-6. WORLD COVER CROSS-VALIDATION
+This demonstrates why raster validity flags alone are insufficient
+for scientific terrain analysis.
+
+7. WORLD COVER CROSS-VALIDATION
 -------------------------------
 An existing ESA WorldCover land-cover analysis was used for
-additional investigation.
+additional investigation of the Hawaii tile.
 
 Total DEM pixels: 1,440,000
 Permanent water pixels (class 80): 449,667
@@ -124,34 +135,60 @@ The maximum observed elevation in class 80 is 135.99 metres.
 
 These disagreements require further independent investigation.
 
-7. SCIENTIFIC LIMITATIONS
+8. SCIENTIFIC LIMITATIONS
 -------------------------
-- NoData metadata is absent from all seven tiles.
-- Raster masks report all pixels as valid.
+- NoData metadata is absent from the examined Copernicus DEM tiles.
+- Raster masks alone cannot guarantee genuine land elevation.
 - Zero elevation must not automatically be interpreted as NoData.
 - Zero elevation must not automatically be interpreted as ocean.
 - WorldCover classification is not assumed to be error-free.
 - Spatial agreement does not independently prove data correctness.
 - High-latitude raster resolution varies geographically.
+- The current dataset is a representative sample of downloaded
+  Copernicus DEM tiles, not a complete global DEM download.
+- Terrain classes are project-defined heuristic categories.
 
 Original DEM and WorldCover values have been preserved.
 
-8. CONCLUSION
--------------
-All seven Copernicus DEM tiles passed basic file and raster-mask
-validation.
+9. CURRENT MEMBER 1 OUTPUTS
+---------------------------
+Primary terrain dataset:
+data/processed/global_terrain_features.csv
 
-The Hawaii tile exhibits an unusual zero-elevation pattern that
-requires additional investigation.
+Terrain roughness summary:
+data/processed/global_roughness_summary.csv
 
-The combination of DEM statistics, spatial distribution analysis,
-and independent land-cover comparison provides a preliminary
-quality-control framework for Earth terrain data collection.
+DEM download plan:
+data/processed/copernicus_dem_download_plan.csv
 
-Further validation using independent elevation, coastline,
-and satellite imagery sources is recommended before using
-ambiguous pixels for scientific terrain analysis.
+Official Copernicus DEM inventory:
+data/processed/copernicus_official_dem_inventory.csv
+
+Global DEM distribution visualization:
+data/processed/global_dem_distribution.png
+
+These outputs support the Earth terrain foundation for
+downstream planetary-analog analysis.
+
+10. CONCLUSION
+--------------
+The current TERRATIME 4D Member 1 dataset contains 13 downloaded
+Copernicus DEM GLO-30 tiles.
+
+All 13 tiles are available locally and have been processed for
+elevation, slope, relief, roughness, and terrain classification.
+
+The quality-control workflow also documents raster validity,
+spatial zero-value investigation, and WorldCover cross-validation.
+
+The resulting standardized terrain dataset provides the Earth
+terrain foundation for comparing terrestrial environments with
+Moon and Mars mission-relevant terrain characteristics.
+
+Further global expansion can be performed later if required,
+but the current 13-tile dataset provides a validated sample
+for downstream TERRATIME 4D analysis.
 
 Prepared for:
 TERRATIME 4D - NASA Challenge
-Member 1: Earth Data Collection
+Member 1: Earth Data Collection and Terrain Foundation
