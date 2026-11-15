@@ -1,4 +1,4 @@
-const discoveryStyle = document.createElement("style");
+﻿const discoveryStyle = document.createElement("style");
 discoveryStyle.textContent = `
 #planetary-discovery {
   margin:35px auto;padding:24px;max-width:1450px;
@@ -80,7 +80,7 @@ discovery.innerHTML = `
     <div class="pd-panel">
       <h3 id="pd-target-title">GLOBAL MOON / MARS ELEVATION</h3>
       <canvas id="pd-target-map" width="720" height="360"></canvas>
-      <p>Click anywhere on this map to select a planetary coordinate. Map is a 1ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â° browsing grid.</p>
+      <p>Click anywhere on this map to select a planetary coordinate. Map is a 1ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â° browsing grid.</p>
     </div>
     <div class="pd-panel">
       <h3>EARTH REFERENCE DISTRIBUTION</h3>
@@ -91,12 +91,12 @@ discovery.innerHTML = `
 
   <div class="pd-map-grid" id="pd-separate-match-maps">
   <div class="pd-panel">
-    <h3>MOON Ã¢â‚¬â€ SELECTED EARTH LOCATION ANALOGUES</h3>
+    <h3>MOON ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â SELECTED EARTH LOCATION ANALOGUES</h3>
     <canvas id="pd-moon-match-map" width="720" height="360" style="width:100%;height:auto;background:#101827"></canvas>
     <p>Global lunar slope map. Highlighted points show the top 10 matches for the selected Earth location.</p>
   </div>
   <div class="pd-panel">
-    <h3>MARS Ã¢â‚¬â€ SELECTED EARTH LOCATION ANALOGUES</h3>
+    <h3>MARS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â SELECTED EARTH LOCATION ANALOGUES</h3>
     <canvas id="pd-mars-match-map" width="720" height="360" style="width:100%;height:auto;background:#101827"></canvas>
     <p>Global Martian slope map. Highlighted points show the top 10 matches for the selected Earth location.</p>
   </div>
@@ -107,17 +107,17 @@ discovery.innerHTML = `
 
     <div class="pd-graph-grid">
       <div class="pd-panel">
-        <h3>EARTH vs MOON Ã¢â‚¬â€ TERRAIN PARAMETERS</h3>
+        <h3>EARTH vs MOON ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â TERRAIN PARAMETERS</h3>
         <canvas id="pd-earth-moon-chart" width="720" height="360" style="display:block;width:100%;height:320px;min-height:320px;"></canvas>
       </div>
 
       <div class="pd-panel">
-        <h3>EARTH vs MARS Ã¢â‚¬â€ TERRAIN PARAMETERS</h3>
+        <h3>EARTH vs MARS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â TERRAIN PARAMETERS</h3>
         <canvas id="pd-earth-mars-chart" width="720" height="360" style="display:block;width:100%;height:320px;min-height:320px;"></canvas>
       </div>
 
       <div class="pd-panel">
-        <h3>MOON vs MARS Ã¢â‚¬â€ SIMILARITY SCORES</h3>
+        <h3>MOON vs MARS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â SIMILARITY SCORES</h3>
         <canvas id="pd-similarity-chart" width="720" height="360" style="display:block;width:100%;height:320px;min-height:320px;"></canvas>
       </div>
 
@@ -128,9 +128,9 @@ discovery.innerHTML = `
     </div>
   </section>
   <div class="pd-stats" id="pd-stats">
-    <div class="pd-stat"><small>MEAN ELEVATION</small><strong id="pd-elevation">ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â</strong></div>
-    <div class="pd-stat"><small>MEAN SLOPE</small><strong id="pd-slope">ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â</strong></div>
-    <div class="pd-stat"><small>ROUGHNESS (~11 KM)</small><strong id="pd-roughness">ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â</strong></div>
+    <div class="pd-stat"><small>MEAN ELEVATION</small><strong id="pd-elevation">ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â</strong></div>
+    <div class="pd-stat"><small>MEAN SLOPE</small><strong id="pd-slope">ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â</strong></div>
+    <div class="pd-stat"><small>ROUGHNESS (~11 KM)</small><strong id="pd-roughness">ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â</strong></div>
   </div>
 
   <div class="pd-panel">
@@ -167,7 +167,7 @@ else document.body.appendChild(discovery);
 const comparisonFooter = existingComparison?.querySelector(".pc-footer");
 if (comparisonFooter) {
   comparisonFooter.textContent =
-    "COMPARISON COMPLETE ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· CONTINUE SCROLLING BELOW FOR PLANETARY ANALOG DISCOVERY";
+    "COMPARISON COMPLETE ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· CONTINUE SCROLLING BELOW FOR PLANETARY ANALOG DISCOVERY";
 }
 
 function pdParseCSV(text) {
@@ -444,7 +444,7 @@ function pdDrawEarthMap() {
   ctx.font = "11px Arial";
   [-60, -30, 0, 30, 60].forEach(lat => {
     const y = (90 - lat) / 180 * 360;
-    ctx.fillText(lat + "Ãƒâ€šÃ‚Â°", 5, y - 4);
+    ctx.fillText(lat + "ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°", 5, y - 4);
   });
 
   let plotted = 0;
@@ -694,7 +694,7 @@ function pdDrawSelectedPlanetMapV2(canvasId, planetName, matches) {
 
   ctx.fillStyle = "#ffffff";
   ctx.font = "bold 15px Arial";
-  ctx.fillText(planetName + " Ã¢â‚¬â€ TOP 10 MATCH LOCATIONS", 14, 22);
+  ctx.fillText(planetName + " ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â TOP 10 MATCH LOCATIONS", 14, 22);
 
   ctx.font = "12px Arial";
   ctx.fillStyle = "#ffdf55";
@@ -766,8 +766,8 @@ function pdRefreshSelectedComparisonV2(earth, moonMatches, marsMatches) {
     "pd-earth-moon-chart",
     ["Earth", "Best Moon"],
     [earth.slope, moon.slope],
-    "EARTH vs MOON Ã¢â‚¬â€ MEAN SLOPE",
-    "Ã‚Â°"
+    "EARTH vs MOON ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â MEAN SLOPE",
+    "Ãƒâ€šÃ‚Â°"
   );
 
   // Earth against the best Mars analogue.
@@ -775,8 +775,8 @@ function pdRefreshSelectedComparisonV2(earth, moonMatches, marsMatches) {
     "pd-earth-mars-chart",
     ["Earth", "Best Mars"],
     [earth.slope, mars.slope],
-    "EARTH vs MARS Ã¢â‚¬â€ MEAN SLOPE",
-    "Ã‚Â°"
+    "EARTH vs MARS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â MEAN SLOPE",
+    "Ãƒâ€šÃ‚Â°"
   );
 
   // Top five similarity scores for each planetary body.
@@ -807,7 +807,7 @@ function pdRefreshSelectedComparisonV2(earth, moonMatches, marsMatches) {
     "pd-parameter-chart",
     ["Earth", "Moon", "Mars"],
     [earth.roughness, moon.roughness * 1000, mars.roughness * 1000],
-    "ROUGHNESS Ã¢â‚¬â€ DISPLAYED IN METRES",
+    "ROUGHNESS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â DISPLAYED IN METRES",
     " m"
   );
 
@@ -815,11 +815,11 @@ function pdRefreshSelectedComparisonV2(earth, moonMatches, marsMatches) {
   if (subtitle) {
     subtitle.textContent =
       "Selected Earth: " + earth.name +
-      " | Best Moon: " + moon.latitude.toFixed(1) + "Ã‚Â°, " +
-      moon.longitude.toFixed(1) + "Ã‚Â° | Best Mars: " +
-      mars.latitude.toFixed(1) + "Ã‚Â°, " +
+      " | Best Moon: " + moon.latitude.toFixed(1) + "Ãƒâ€šÃ‚Â°, " +
+      moon.longitude.toFixed(1) + "Ãƒâ€šÃ‚Â° | Best Mars: " +
+      mars.latitude.toFixed(1) + "Ãƒâ€šÃ‚Â°, " +
       mars.longitude.toFixed(1) +
-      "Ã‚Â°. Slope drives the current ranking. Roughness uses different spatial scales. Elevation datums are not directly comparable.";
+      "Ãƒâ€šÃ‚Â°. Slope drives the current ranking. Roughness uses different spatial scales. Elevation datums are not directly comparable.";
   }
 }
 
@@ -851,7 +851,7 @@ function pdAnalyze() {
       ? (earthElevation / 1000).toFixed(3) + " km" : "N/A";
 
   document.getElementById("pd-slope").textContent =
-    Number.isFinite(earthSlope) ? earthSlope.toFixed(2) + "°" : "N/A";
+    Number.isFinite(earthSlope) ? earthSlope.toFixed(2) + "Â°" : "N/A";
 
   document.getElementById("pd-roughness").textContent =
     Number.isFinite(earthRoughness) ? earthRoughness.toFixed(2) + " m" : "N/A";
@@ -955,8 +955,8 @@ function pdAnalyze() {
       <tr>
         <td>${i + 1}</td>
         <td>${i === 0 ? "Best terrain match" : "Planetary grid location"}</td>
-        <td>${r.latitude.toFixed(3)}°, ${r.longitude.toFixed(3)}°</td>
-        <td>${r.slope.toFixed(2)}°</td>
+        <td>${r.latitude.toFixed(3)}Â°, ${r.longitude.toFixed(3)}Â°</td>
+        <td>${r.slope.toFixed(2)}Â°</td>
         <td>${Number.isFinite(r.roughness)
           ? (r.roughness * 1000).toFixed(2) + " m" : "N/A"}</td>
         <td>${r.score.toFixed(1)}/100</td>
@@ -972,8 +972,8 @@ function pdAnalyze() {
   if (status) {
     status.textContent =
       "EARTH INPUT: " + earth.name +
-      " | Coordinates: " + lat.toFixed(3) + "°, " +
-      lon.toFixed(3) + "°. " +
+      " | Coordinates: " + lat.toFixed(3) + "Â°, " +
+      lon.toFixed(3) + "Â°. " +
       "Moon: " + moonMatches.length + " matching locations. " +
       "Mars: " + marsMatches.length + " matching locations. " +
       "Maps, graphs and terrain comparison updated from local planetary data.";
@@ -1207,9 +1207,9 @@ if (pdPlanetControl) {
 
     const [gridResponse, earthResponse, candidateResponse] =
       await Promise.all([
-        fetch("/data/planetary/planetary_grids.json"),
-        fetch("/data/earth/global_advanced_terrain_summary.csv"),
-        fetch("/data/integrated_candidate_evidence.csv")
+        fetch("./data/planetary/planetary_grids.json"),
+        fetch("./data/earth/global_advanced_terrain_summary.csv"),
+        fetch("./data/integrated_candidate_evidence.csv")
       ]);
 
     if (!gridResponse.ok) throw Error("Planetary grid file unavailable: " + gridResponse.status);
@@ -1521,7 +1521,7 @@ function pdRefreshMissionChoices() {
   select.innerHTML = records.length
     ? '<option value="">Choose an Earth analogue</option>' +
       records.map((r,i) =>
-        `<option value="${i}">${i+1}. ${r.name} (${r.lat.toFixed(1)}ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°, ${r.lon.toFixed(1)}ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°)</option>`
+        `<option value="${i}">${i+1}. ${r.name} (${r.lat.toFixed(1)}ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°, ${r.lon.toFixed(1)}ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°)</option>`
       ).join("")
     : '<option value="">Analyse a planetary location first</option>';
 
@@ -1567,7 +1567,7 @@ function pdRunEarthMission() {
     risk = slopeRisk === "HIGH" || roughRisk === "HIGH" ? "HIGH" :
       slopeRisk === "MEDIUM" || roughRisk === "MEDIUM" ? "MEDIUM" : "LOW";
     reasons = [
-      `Mean terrain slope: ${slope.toFixed(2)}ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°`,
+      `Mean terrain slope: ${slope.toFixed(2)}ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°`,
       `Earth reference roughness at 1.35 km scale: ${rough.toFixed(2)} m`,
       "Roughness is shown as Earth reference evidence, not a scale-equivalent planetary measurement."
     ];
@@ -1578,7 +1578,7 @@ function pdRunEarthMission() {
     risk = slope >= 8 || rough >= 20 ? "HIGH" :
       slope >= 3 || rough >= 5 ? "MEDIUM" : "LOW";
     reasons = [
-      `Mean slope: ${slope.toFixed(2)}ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°`,
+      `Mean slope: ${slope.toFixed(2)}ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°`,
       `Reference roughness: ${rough.toFixed(2)} m`,
       "No validated landing hazard, boulder or subsurface assessment is available in this screening."
     ];
@@ -1590,7 +1590,7 @@ function pdRunEarthMission() {
     risk = count > 0 ? "LOW" : "MEDIUM";
     reasons = [
       `Available geological records at nearest evidence site: ${count}`,
-      `Terrain slope at selected Earth analogue: ${slope.toFixed(2)}ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°`
+      `Terrain slope at selected Earth analogue: ${slope.toFixed(2)}ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°`
     ];
     assessment = "Geological evidence availability screening. A terrain match alone does not establish geological equivalence.";
   }
@@ -1614,7 +1614,7 @@ function pdRunEarthMission() {
     risk = temp === null ? "HIGH" :
       temp < -10 ? "HIGH" : temp < 5 ? "MEDIUM" : "LOW";
     reasons = [
-      `Nearest evidence-site annual mean temperature: ${temp === null ? "Unavailable" : temp.toFixed(2)+" ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°C"}`,
+      `Nearest evidence-site annual mean temperature: ${temp === null ? "Unavailable" : temp.toFixed(2)+" ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°C"}`,
       `Water occurrence at nearest evidence site: ${water.toFixed(3)}%`,
       "Earth climate measurements cannot represent Moon/Mars environmental conditions."
     ];
@@ -1630,8 +1630,8 @@ function pdRunEarthMission() {
     <div style="font-size:25px;font-weight:bold;color:${color};margin:12px 0">${risk} RISK</div>
     <div style="line-height:1.9;color:#d5e8f4">
       <b>Test location:</b> ${earth.name}<br>
-      <b>Coordinates:</b> ${earth.lat.toFixed(2)}ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°, ${earth.lon.toFixed(2)}ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°<br>
-      <b>Mean slope:</b> ${slope.toFixed(2)}ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°<br>
+      <b>Coordinates:</b> ${earth.lat.toFixed(2)}ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°, ${earth.lon.toFixed(2)}ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°<br>
+      <b>Mean slope:</b> ${slope.toFixed(2)}ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°<br>
       <b>Earth reference roughness:</b> ${rough.toFixed(2)} m
     </div>
     <h4 style="color:#63dcff">ASSESSMENT EVIDENCE</h4>
@@ -1646,8 +1646,8 @@ function pdRunEarthMission() {
   if (nearest) {
     evidenceOutput.innerHTML =
       `<b>Nearest detailed Earth mission-evidence location:</b> ${nearest.candidate} ` +
-      `(${Number(nearest.latitude).toFixed(2)}ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°, ${Number(nearest.longitude).toFixed(2)}ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°). ` +
-      `Distance from selected terrain reference: ${nearest.distance.toFixed(2)}ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°.` +
+      `(${Number(nearest.latitude).toFixed(2)}ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°, ${Number(nearest.longitude).toFixed(2)}ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°). ` +
+      `Distance from selected terrain reference: ${nearest.distance.toFixed(2)}ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°.` +
       `<br>Environmental and geological evidence shown above belongs to this nearest evidence location, not necessarily the selected terrain tile.`;
   } else {
     evidenceOutput.textContent =
@@ -1660,11 +1660,11 @@ document.getElementById("pd-run-mission")
 
 // Load the existing integrated mission evidence from local project files.
 Promise.all([
-  fetch("/data/integrated_candidate_evidence.csv").then(r => {
+  fetch("./data/integrated_candidate_evidence.csv").then(r => {
     if (!r.ok) throw Error("Candidate evidence CSV unavailable");
     return r.text();
   }),
-  fetch("/data/integrated_mission_scores.csv").then(r => {
+  fetch("./data/integrated_mission_scores.csv").then(r => {
     if (!r.ok) throw Error("Mission scores CSV unavailable");
     return r.text();
   })
@@ -1993,11 +1993,11 @@ document.getElementById("pd-target-map")?.addEventListener(
 
     ctx.fillStyle = "#eaf1fa";
     ctx.font = "11px Arial";
-    ctx.fillText("90Ã‚Â°N", x + 4, y + 12);
-    ctx.fillText("0Ã‚Â°", x + 4, y + h / 2);
-    ctx.fillText("90Ã‚Â°S", x + 4, y + h - 4);
-    ctx.fillText("180Ã‚Â°W", x + 4, y + h - 8);
-    ctx.fillText("180Ã‚Â°E", x + w - 45, y + h - 8);
+    ctx.fillText("90Ãƒâ€šÃ‚Â°N", x + 4, y + 12);
+    ctx.fillText("0Ãƒâ€šÃ‚Â°", x + 4, y + h / 2);
+    ctx.fillText("90Ãƒâ€šÃ‚Â°S", x + 4, y + h - 4);
+    ctx.fillText("180Ãƒâ€šÃ‚Â°W", x + 4, y + h - 8);
+    ctx.fillText("180Ãƒâ€šÃ‚Â°E", x + w - 45, y + h - 8);
   }
 
   function pdForceDrawMaps() {
@@ -2015,7 +2015,7 @@ document.getElementById("pd-target-map")?.addEventListener(
     const mars = pdData.planets.Mars || pdData.planets.mars;
 
     const target = pdMapCanvas(
-      "pd-target-map", "MOON AND MARS Ã¢â‚¬â€ GLOBAL TERRAIN SLOPE MAPS"
+      "pd-target-map", "MOON AND MARS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â GLOBAL TERRAIN SLOPE MAPS"
     );
 
     if (target) {
@@ -2035,13 +2035,13 @@ document.getElementById("pd-target-map")?.addEventListener(
 
       target.ctx.fillStyle = "#ffdc62";
       target.ctx.font = "12px Arial";
-      target.ctx.fillText("Ã¢â€”Â Top 10 Moon slope matches", gap, 335);
+      target.ctx.fillText("ÃƒÂ¢Ã¢â‚¬â€Ã‚Â Top 10 Moon slope matches", gap, 335);
       target.ctx.fillStyle = "#66e5ff";
-      target.ctx.fillText("Ã¢â€”Â Top 10 Mars slope matches", gap + 250, 335);
+      target.ctx.fillText("ÃƒÂ¢Ã¢â‚¬â€Ã‚Â Top 10 Mars slope matches", gap + 250, 335);
     }
 
     const earthMap = pdMapCanvas(
-      "pd-earth-map", "EARTH Ã¢â‚¬â€ AVAILABLE REFERENCE TERRAIN LOCATIONS"
+      "pd-earth-map", "EARTH ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â AVAILABLE REFERENCE TERRAIN LOCATIONS"
     );
 
     if (earthMap) {
@@ -2087,9 +2087,9 @@ document.getElementById("pd-target-map")?.addEventListener(
       ctx.strokeRect(x, y, w, h);
       ctx.fillStyle = "#eaf1fa";
       ctx.font = "12px Arial";
-      ctx.fillText("Ã¢â€”Â Earth reference tiles", 15, 345);
+      ctx.fillText("ÃƒÂ¢Ã¢â‚¬â€Ã‚Â Earth reference tiles", 15, 345);
       ctx.fillStyle = "#ffdc62";
-      ctx.fillText("Ã¢â€”Â Selected Earth location", 175, 345);
+      ctx.fillText("ÃƒÂ¢Ã¢â‚¬â€Ã‚Â Selected Earth location", 175, 345);
     }
 
     return !!(target || earthMap);
@@ -2273,18 +2273,18 @@ document.getElementById("pd-target-map")?.addEventListener(
 
     ctx.fillStyle = "#ffffff";
     ctx.font = "bold 15px Arial";
-    ctx.fillText(body + " Ã¢â‚¬â€ LOCATION-SPECIFIC ANALOGUE", x + 8, y + 20);
+    ctx.fillText(body + " ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â LOCATION-SPECIFIC ANALOGUE", x + 8, y + 20);
 
     ctx.font = "12px Arial";
     ctx.fillStyle = color;
     ctx.fillText(
-      "Best match: " + best.latitude.toFixed(1) + "Ã‚Â°, " +
-      best.longitude.toFixed(1) + "Ã‚Â°",
+      "Best match: " + best.latitude.toFixed(1) + "Ãƒâ€šÃ‚Â°, " +
+      best.longitude.toFixed(1) + "Ãƒâ€šÃ‚Â°",
       x + 8, y + h - 12
     );
     ctx.fillStyle = "#ffffff";
     ctx.fillText(
-      "Slope difference: " + best.difference.toFixed(3) + "Ã‚Â°",
+      "Slope difference: " + best.difference.toFixed(3) + "Ãƒâ€šÃ‚Â°",
       x + 230, y + h - 12
     );
   }
@@ -2393,8 +2393,8 @@ document.getElementById("pd-target-map")?.addEventListener(
     ctx.font = "13px Arial";
     ctx.fillText(
       "Earth input: " + selected.name + " | " +
-      Number(selected.latitude).toFixed(2) + "Ã‚Â°, " +
-      Number(selected.longitude).toFixed(2) + "Ã‚Â°",
+      Number(selected.latitude).toFixed(2) + "Ãƒâ€šÃ‚Â°, " +
+      Number(selected.longitude).toFixed(2) + "Ãƒâ€šÃ‚Â°",
       20, 25
     );
 
@@ -2418,7 +2418,7 @@ document.getElementById("pd-target-map")?.addEventListener(
         ectx.fillStyle = "#ffffff";
         ectx.font = "13px Arial";
         ectx.fillText(
-          "Local Earth reference tiles Ã¢â‚¬â€ selected location highlighted",
+          "Local Earth reference tiles ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â selected location highlighted",
           14, 292
         );
       }
@@ -2607,16 +2607,16 @@ document.getElementById("pd-target-map")?.addEventListener(
 
     ctx.font = "11px Arial";
     ctx.fillStyle = "#ffffff";
-    ctx.fillText("90Ã‚Â°N", x + 3, top + 12);
-    ctx.fillText("90Ã‚Â°S", x + 3, top + mapH - 3);
+    ctx.fillText("90Ãƒâ€šÃ‚Â°N", x + 3, top + 12);
+    ctx.fillText("90Ãƒâ€šÃ‚Â°S", x + 3, top + mapH - 3);
 
     if (matches.length) {
       ctx.fillStyle = markerColor;
       ctx.font = "12px Arial";
       ctx.fillText(
-        "Best match: " + matches[0].lat.toFixed(1) + "Ã‚Â°, " +
-        matches[0].lon.toFixed(1) + "Ã‚Â° | Slope difference: " +
-        matches[0].difference.toFixed(2) + "Ã‚Â°",
+        "Best match: " + matches[0].lat.toFixed(1) + "Ãƒâ€šÃ‚Â°, " +
+        matches[0].lon.toFixed(1) + "Ãƒâ€šÃ‚Â° | Slope difference: " +
+        matches[0].difference.toFixed(2) + "Ãƒâ€šÃ‚Â°",
         x + 6, y + h - 8
       );
     }
@@ -2755,12 +2755,12 @@ document.getElementById("pd-target-map")?.addEventListener(
       const panelW = (map.width - 3 * gap) / 2;
       drawPlanetMap(
         map.ctx, pdData.planets.Moon || pdData.planets.moon,
-        earth, gap, 35, panelW, 420, "MOON Ã¢â‚¬â€ GLOBAL TERRAIN", "#ffdc60"
+        earth, gap, 35, panelW, 420, "MOON ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â GLOBAL TERRAIN", "#ffdc60"
       );
       drawPlanetMap(
         map.ctx, pdData.planets.Mars || pdData.planets.mars,
         earth, 2 * gap + panelW, 35, panelW, 420,
-        "MARS Ã¢â‚¬â€ GLOBAL TERRAIN", "#54d7ff"
+        "MARS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â GLOBAL TERRAIN", "#54d7ff"
       );
       if (!earth) {
         map.ctx.fillStyle = "#ffffff";
@@ -2779,12 +2779,12 @@ document.getElementById("pd-target-map")?.addEventListener(
     const labels = Array.from({ length: 10 }, (_, i) => "Match " + (i + 1));
     const selectedSlope = earth ? Number(earth.slope) : NaN;
 
-    drawLineGraph("pd-earth-moon-chart", "EARTH vs MOON Ã¢â‚¬â€ SLOPE", labels, [
+    drawLineGraph("pd-earth-moon-chart", "EARTH vs MOON ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â SLOPE", labels, [
       { name: "Earth", values: labels.map(() => selectedSlope) },
       { name: "Moon", values: mm.map(m => m.slope) }
     ], "degrees");
 
-    drawLineGraph("pd-earth-mars-chart", "EARTH vs MARS Ã¢â‚¬â€ SLOPE", labels, [
+    drawLineGraph("pd-earth-mars-chart", "EARTH vs MARS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â SLOPE", labels, [
       { name: "Earth", values: labels.map(() => selectedSlope) },
       { name: "Mars", values: ma.map(m => m.slope) }
     ], "degrees");
@@ -3005,9 +3005,9 @@ document.getElementById("pd-target-map")?.addEventListener(
 
     ctx.fillStyle = "#ffffff";
     ctx.font = "12px Arial";
-    ctx.fillText("0Ã‚Â°", 5, 354);
-    ctx.fillText("180Ã‚Â°", 350, 354);
-    ctx.fillText("360Ã‚Â°", 680, 354);
+    ctx.fillText("0Ãƒâ€šÃ‚Â°", 5, 354);
+    ctx.fillText("180Ãƒâ€šÃ‚Â°", 350, 354);
+    ctx.fillText("360Ãƒâ€šÃ‚Â°", 680, 354);
   }
 
   function pdV3Refresh() {
@@ -3076,6 +3076,7 @@ document.getElementById("pd-target-map")?.addEventListener(
   setTimeout(pdV3Refresh, 500);
   setTimeout(pdV3Refresh, 1500);
 })();
+
 
 
 
