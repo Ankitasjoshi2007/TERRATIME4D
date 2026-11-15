@@ -1,11 +1,232 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TERRATIME 4D | Planetary Mission Control</title>
+
+<style>
+.tt4d-global-nav {
+  position:relative;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  padding:13px 4%;
+  background:#071522;
+  border-bottom:1px solid rgba(76,190,255,.28);
+}
+.tt4d-brand {
+  color:#62d5ff;
+  font-weight:800;
+  letter-spacing:2px;
+  text-decoration:none;
+}
+.tt4d-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.tt4d-nav-link {
+  color:#d8eaf5;
+  text-decoration:none;
+  padding:9px 13px;
+  border:1px solid #24445c;
+  border-radius:7px;
+  font-size:12px;
+}
+.tt4d-nav-link:hover {
+  color:#66d8ff;
+  border-color:#66d8ff;
+}
+@media(max-width:600px) {
+  .tt4d-global-nav {align-items:flex-start;flex-direction:column}
+}
+</style>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+#planetary-comparison {
+  scroll-margin-top: 24px;
+}
+</style>
+<style>
+#planetary-discovery {
+  display: block !important;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 55px clamp(16px, 4vw, 60px);
+  box-sizing: border-box;
+  border-top: 2px solid #28617d;
+  background: linear-gradient(180deg, #071522 0%, #091b2b 45%, #06111d 100%);
+  scroll-margin-top: 20px;
+}
+#planetary-discovery h2 {
+  color: #e6f8ff;
+  font-size: clamp(24px, 3vw, 38px);
+  margin: 12px 0;
+}
+#planetary-discovery .pd-panel {
+  box-shadow: 0 8px 28px #0003;
+}
+#planetary-comparison .pc-footer {
+  color: #63dcff;
+  border-top: 1px solid #24516a;
+  margin-top: 35px;
+}
+</style>
+<style id="tt4d-real-page-scroll-fix">
+html {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+#app {
+  position: relative !important;
+  inset: auto !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  max-height: none !important;
+  overflow: hidden !important;
+  transform: none !important;
+}
+
+#planetary-comparison {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 100vh;
+  overflow: visible !important;
+  clear: both;
+  scroll-margin-top: 20px;
+}
+
+#planetary-discovery {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 100vh !important;
+  overflow: visible !important;
+  clear: both;
+  scroll-margin-top: 20px;
+}
+</style>
+
+<style id="tt4d-organized-layout">
+#app {
+  display:grid !important;
+  grid-template-columns:minmax(220px,280px) minmax(0,1fr) minmax(240px,300px) !important;
+  grid-template-rows:auto minmax(420px,58vh) auto auto !important;
+  gap:14px !important;
+  padding:14px !important;
+  height:auto !important;
+  min-height:100vh !important;
+  align-items:start !important;
+}
+#space {
+  grid-column:1 / -1 !important;
+  grid-row:2 !important;
+  position:relative !important;
+  width:100% !important;
+  height:58vh !important;
+  min-height:420px !important;
+  z-index:1 !important;
+  pointer-events:none;
+}
+.topbar {
+  grid-column:1 / -1 !important;
+  grid-row:1 !important;
+  position:relative !important;
+  z-index:5 !important;
+}
+.left-panel {
+  grid-column:1 !important;
+  grid-row:3 !important;
+  position:relative !important;
+  width:100% !important;
+  max-height:none !important;
+  overflow:visible !important;
+}
+.right-panel {
+  grid-column:3 !important;
+  grid-row:3 !important;
+  position:relative !important;
+  width:100% !important;
+  max-height:none !important;
+  overflow:visible !important;
+}
+.scene-heading {
+  grid-column:2 !important;
+  grid-row:3 !important;
+  position:relative !important;
+  align-self:start !important;
+}
+.scene-coordinates {
+  grid-column:2 !important;
+  grid-row:3 !important;
+  position:relative !important;
+}
+.bottom-panel {
+  grid-column:1 / -1 !important;
+  grid-row:4 !important;
+  position:relative !important;
+  width:100% !important;
+}
+#candidateMap {
+  min-height:180px;
+}
+@media(max-width:850px) {
+  #app {
+    display:flex !important;
+    flex-direction:column !important;
+    height:auto !important;
+  }
+  #space {
+    order:2;
+    height:48vh !important;
+    min-height:300px !important;
+  }
+  .topbar {order:1}
+  .scene-heading {order:3}
+  .scene-coordinates {order:4}
+  .left-panel {order:5}
+  .right-panel {order:6}
+  .bottom-panel {order:7}
+}
+</style>
 </head>
 <body>
+<nav id="tt4d-global-nav" style="position:relative;z-index:99999;background:#101827;color:white;padding:12px 16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-family:Arial,sans-serif;border-bottom:1px solid #334155">
+<strong style="margin-right:12px;color:#67e8f9">TERRATIME4D</strong>
+<a href="./index.html" style="color:white;text-decoration:none;padding:7px">Mission Control</a>
+<a href="./mission-control-dashboard.html" style="color:white;text-decoration:none;padding:7px">Dashboard</a>
+<a href="./comparison.html" style="color:white;text-decoration:none;padding:7px">Earth–Moon–Mars</a>
+<a href="./live-location.html" style="color:white;text-decoration:none;padding:7px">Live Location</a>
+
+</nav>
 <div id="app">
   <canvas id="space"></canvas>
 
@@ -29,19 +250,19 @@
     <button class="planet active" data-target="Earth">
       <span class="planet-icon earth-icon"></span>
       <span><b>Earth</b><small>Reference planet</small></span>
-      <span class="arrow">↗</span>
+      <span class="arrow">Ã¢â€ â€”</span>
     </button>
 
     <button class="planet" data-target="Moon">
       <span class="planet-icon moon-icon"></span>
       <span><b>Moon</b><small>Lunar exploration</small></span>
-      <span class="arrow">↗</span>
+      <span class="arrow">Ã¢â€ â€”</span>
     </button>
 
     <button class="planet" data-target="Mars">
       <span class="planet-icon mars-icon"></span>
       <span><b>Mars</b><small>Martian exploration</small></span>
-      <span class="arrow">↗</span>
+      <span class="arrow">Ã¢â€ â€”</span>
     </button>
 
     <div class="line"></div>
@@ -77,18 +298,18 @@
 
     <label>Animation speed</label>
     <input type="range" id="speed" min="0" max="3" step=".1" value="1">
-    <div class="speed-label"><span>SLOW</span><span id="speedValue">1.0×</span><span>FAST</span></div>
+    <div class="speed-label"><span>SLOW</span><span id="speedValue">1.0Ãƒâ€”</span><span>FAST</span></div>
 
-    <button class="control-button" id="pause">Ⅱ &nbsp; PAUSE ANIMATION</button>
-    <button class="control-button" id="reset">↺ &nbsp; RESET CAMERA</button>
+    <button class="control-button" id="pause">Ã¢â€¦Â¡ &nbsp; PAUSE ANIMATION</button>
+    <button class="control-button" id="reset">Ã¢â€ Âº &nbsp; RESET CAMERA</button>
 
-    <p class="hint">DRAG TO ROTATE · SCROLL TO ZOOM</p>
+    <p class="hint">DRAG TO ROTATE Ã‚Â· SCROLL TO ZOOM</p>
   </aside>
 
   <div class="scene-heading">
     <div class="eyebrow">LIVE PLANETARY VISUALIZATION</div>
     <h1 id="sceneName">EARTH SYSTEM</h1>
-    <p id="sceneDescription">The Blue Planet · Earth–Moon system</p>
+    <p id="sceneDescription">The Blue Planet Ã‚Â· EarthÃ¢â‚¬â€œMoon system</p>
   </div>
 
   <div class="scene-coordinates">
@@ -118,16 +339,16 @@
 
     <div class="line"></div>
     <div class="eyebrow">SCIENTIFIC MODULES / 06</div>
-    <div class="member"><span>Member 1 · Earth</span><i>Pending</i></div>
-    <div class="member"><span>Member 2 · Terrain</span><i>Pending</i></div>
-    <div class="member"><span>Member 3 · Planetary</span><i>Pending</i></div>
-    <div class="member"><span>Member 4 · Missions</span><i>Pending</i></div>
+    <div class="member"><span>Member 1 Ã‚Â· Earth</span><i>Pending</i></div>
+    <div class="member"><span>Member 2 Ã‚Â· Terrain</span><i>Pending</i></div>
+    <div class="member"><span>Member 3 Ã‚Â· Planetary</span><i>Pending</i></div>
+    <div class="member"><span>Member 4 Ã‚Â· Missions</span><i>Pending</i></div>
   </aside>
 
   <div class="bottom-panel">
     <div class="timeline-title">
       <div><div class="eyebrow">MISSION SIMULATION / 07</div><b>4D TEMPORAL EXPLORER</b></div>
-      <span class="live-tag">● VISUAL SIMULATION</span>
+      <span class="live-tag">LIVE | VISUAL SIMULATION</span>
     </div>
     <div class="timeline">
       <span>T + 00:00</span>
@@ -144,5 +365,30 @@
 </div>
 <script type="module" src="/src/main.js"></script>
 
+
+<style>
+#missionExploreLink{
+ position:fixed;z-index:9999;right:26px;bottom:25px;
+ padding:14px 20px;border:1px solid #52dfff;border-radius:9px;
+ background:linear-gradient(120deg,#07304a,#101b38);
+ color:#b8f4ff;text-decoration:none;font:600 12px Arial,sans-serif;
+ letter-spacing:1.5px;box-shadow:0 0 22px #20bfff44;
+ transition:.2s ease;
+}
+#missionExploreLink:hover{transform:translateY(-4px);box-shadow:0 0 30px #20bfff99;background:#124361}
+</style>
+<a id="missionExploreLink" href="#planetary-comparison">âœ¦ PLANETARY MISSIONS</a>
+<script type="module" src="/src/rover-game.js"></script>
+
+<script type="module" src="/src/planetary-comparison.js"></script>
+<script type="module" src="/src/planetary-comparison-enhance.js"></script>
+<script type="module" src="/src/planetary-discovery.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
