@@ -1,0 +1,837 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TERRATIME4D | Planetary Analogue Discovery</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#07111f;
+ color:#eaf2ff;
+ font-family:Arial,sans-serif;
+}
+header{
+ background:#101e32;
+ padding:24px;
+ border-bottom:1px solid #344963;
+}
+header h1{color:#7dd3fc;margin:0}
+header p{color:#b8c9dc}
+main{max-width:1500px;margin:auto;padding:20px}
+.panel{
+ background:#112137;
+ border:1px solid #30445e;
+ border-radius:13px;
+ padding:20px;
+ margin-bottom:18px;
+}
+h2{color:#7dd3fc;margin-top:0}
+h3{color:#dceafa}
+select,button{
+ background:#091728;
+ color:white;
+ border:1px solid #45617d;
+ border-radius:8px;
+ padding:13px;
+ font-size:15px;
+}
+select{width:100%}
+button{
+ background:#087eaa;
+ cursor:pointer;
+ margin-top:12px;
+}
+button:hover{background:#0d9bc9}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:16px;
+}
+.stats{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
+ gap:12px;
+}
+.stat{
+ background:#091728;
+ padding:14px;
+ border-radius:9px;
+ color:#b8c9dc;
+}
+.stat strong{
+ display:block;
+ color:#7dd3fc;
+ font-size:20px;
+ margin-top:8px;
+ overflow-wrap:anywhere;
+}
+canvas{
+ width:100%;
+ display:block;
+ background:#091728;
+ border-radius:8px;
+}
+.map{height:360px}
+.graph{height:290px}
+.status{
+ background:#091728;
+ border-radius:8px;
+ padding:13px;
+ margin-top:13px;
+ color:#cbd5e1;
+}
+.tablewrap{overflow-x:auto}
+table{
+ width:100%;
+ border-collapse:collapse;
+ font-size:13px;
+}
+th,td{
+ padding:11px;
+ border-bottom:1px solid #30445e;
+ text-align:left;
+}
+th{color:#7dd3fc}
+.muted{color:#a9bdd4}
+.legend{
+ display:flex;
+ flex-wrap:wrap;
+ gap:15px;
+ font-size:12px;
+ color:#cbd5e1;
+ margin-top:10px;
+}
+.dot{
+ display:inline-block;
+ width:10px;
+ height:10px;
+ border-radius:50%;
+ margin-right:5px;
+}
+@media(max-width:800px){
+ .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>TERRATIME4D</h1>
+<p>Earth → Moon → Mars | Global Terrain Analogue Discovery</p>
+<small>Offline scientific terrain comparison using local project datasets</small>
+</header>
+
+<main>
+
+<section class="panel">
+<h2>1. Select an Earth Location</h2>
+
+<p>
+Choose one of the actual Earth terrain records from the
+TERRATIME4D Earth dataset.
+</p>
+
+<select id="earthSelect">
+<option>Loading Earth dataset...</option>
+</select>
+
+<button id="analyzeButton">Analyse Selected Earth Location</button>
+
+<div class="status" id="status">
+Loading local Earth, Moon and Mars datasets...
+</div>
+</section>
+
+<section class="panel">
+<h2>2. Selected Earth Terrain</h2>
+
+<h3 id="earthName">Waiting for selection</h3>
+
+<div class="stats">
+<div class="stat">Latitude<strong id="earthLat">—</strong></div>
+<div class="stat">Longitude<strong id="earthLon">—</strong></div>
+<div class="stat">Mean elevation<strong id="earthElev">—</strong></div>
+<div class="stat">Mean slope<strong id="earthSlope">—</strong></div>
+<div class="stat">630 m roughness<strong id="earthRough">—</strong></div>
+<div class="stat">Slope p90<strong id="earthP90">—</strong></div>
+</div>
+</section>
+
+<section class="grid">
+
+<div class="panel">
+<h2>3. Moon Analogue</h2>
+<canvas id="moonMap" class="map" width="1000" height="450"></canvas>
+
+<div class="legend">
+<span><i class="dot" style="background:#ffcc33"></i>Best matching location</span>
+<span><i class="dot" style="background:#38bdf8"></i>Other top matches</span>
+</div>
+
+<h3 id="moonName">Waiting for analysis</h3>
+
+<div class="stats">
+<div class="stat">Latitude<strong id="moonLat">—</strong></div>
+<div class="stat">Longitude<strong id="moonLon">—</strong></div>
+<div class="stat">Mean slope<strong id="moonSlope">—</strong></div>
+<div class="stat">Similarity<strong id="moonScore">—</strong></div>
+</div>
+</div>
+
+<div class="panel">
+<h2>4. Mars Analogue</h2>
+<canvas id="marsMap" class="map" width="1000" height="450"></canvas>
+
+<div class="legend">
+<span><i class="dot" style="background:#ffcc33"></i>Best matching location</span>
+<span><i class="dot" style="background:#38bdf8"></i>Other top matches</span>
+</div>
+
+<h3 id="marsName">Waiting for analysis</h3>
+
+<div class="stats">
+<div class="stat">Latitude<strong id="marsLat">—</strong></div>
+<div class="stat">Longitude<strong id="marsLon">—</strong></div>
+<div class="stat">Mean slope<strong id="marsSlope">—</strong></div>
+<div class="stat">Similarity<strong id="marsScore">—</strong></div>
+</div>
+</div>
+
+</section>
+
+<section class="panel">
+<h2>5. Dynamic Terrain Comparison Graphs</h2>
+
+<p id="graphSubtitle" class="muted">
+Graphs will update when an Earth location is selected.
+</p>
+
+<div class="grid">
+<div>
+<h3>Earth vs Moon — Slope</h3>
+<canvas id="graph1" class="graph" width="800" height="330"></canvas>
+</div>
+
+<div>
+<h3>Earth vs Mars — Slope</h3>
+<canvas id="graph2" class="graph" width="800" height="330"></canvas>
+</div>
+
+<div>
+<h3>Top Moon and Mars Analogue Scores</h3>
+<canvas id="graph3" class="graph" width="800" height="330"></canvas>
+</div>
+
+<div>
+<h3>Terrain Roughness</h3>
+<canvas id="graph4" class="graph" width="800" height="330"></canvas>
+</div>
+</div>
+</section>
+
+<section class="panel">
+<h2>6. Ranked Moon Locations</h2>
+<div class="tablewrap">
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Latitude</th>
+<th>Longitude</th>
+<th>Slope</th>
+<th>Similarity</th>
+</tr>
+</thead>
+<tbody id="moonTable"></tbody>
+</table>
+</div>
+</section>
+
+<section class="panel">
+<h2>7. Ranked Mars Locations</h2>
+<div class="tablewrap">
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Latitude</th>
+<th>Longitude</th>
+<th>Slope</th>
+<th>Similarity</th>
+</tr>
+</thead>
+<tbody id="marsTable"></tbody>
+</table>
+</div>
+</section>
+
+<section class="panel">
+<h2>8. Scientific Notes</h2>
+<p class="muted">
+Analogue ranking uses terrain slope where comparable grid values are available.
+Earth elevation and planetary elevation are not treated as directly equivalent
+because planetary vertical datums differ.
+Earth 630 m roughness and planetary approximately 11 km roughness are
+shown separately and are not treated as measurements at the same scale.
+</p>
+<p class="muted" id="gridInfo"></p>
+</section>
+
+</main>
+
+<script>
+"use strict";
+
+const $ = id => document.getElementById(id);
+
+let earthRecords = [];
+let planetary = null;
+let moonGrid = null;
+let marsGrid = null;
+
+function number(value){
+ const n = Number(value);
+ return Number.isFinite(n) ? n : NaN;
+}
+
+function fmt(value,digits=2){
+ return Number.isFinite(value) ? value.toFixed(digits) : "N/A";
+}
+
+function parseCSV(text){
+ const rows=[];
+ let row=[],field="",quoted=false;
+
+ for(let i=0;i<text.length;i++){
+  const c=text[i];
+  if(c === '"'){
+   if(quoted && text[i+1] === '"'){
+    field+='"';i++;
+   }else{
+    quoted=!quoted;
+   }
+  }else if(c === ',' && !quoted){
+   row.push(field);field="";
+  }else if((c === '\n' || c === '\r') && !quoted){
+   if(c === '\r' && text[i+1] === '\n')i++;
+   row.push(field);
+   if(row.some(x=>x!==""))rows.push(row);
+   row=[];field="";
+  }else{
+   field+=c;
+  }
+ }
+ row.push(field);
+ if(row.some(x=>x!==""))rows.push(row);
+
+ const headers=rows.shift().map(x=>x.trim());
+
+ return rows.map(values=>{
+  const obj={};
+  headers.forEach((h,i)=>obj[h]=(values[i]||"").trim());
+  return obj;
+ });
+}
+
+function earthCoordinates(location){
+ const s=String(location||"");
+ const match=s.match(/_([ns])(\d{2})_(\d{2})_([ew])(\d{3})_(\d{2})_/i);
+
+ if(!match)return {lat:NaN,lon:NaN};
+
+ let lat=Number(match[2])+Number(match[3])/60;
+ let lon=Number(match[5])+Number(match[6])/60;
+
+ if(match[1].toLowerCase()==="s")lat=-lat;
+ if(match[4].toLowerCase()==="w")lon=-lon;
+
+ return {lat,lon};
+}
+
+function makeEarthRecord(row){
+ const coords=earthCoordinates(row.location);
+
+ return {
+  name:row.location,
+  lat:coords.lat,
+  lon:coords.lon,
+  elevation:number(row.elevation_mean_m),
+  slope:number(row.slope_mean_degrees),
+  slopeP90:number(row.slope_p90_degrees),
+  roughness:number(row.roughness_630m_mean),
+  roughness270:number(row.roughness_270m_mean),
+  roughness1350:number(row.roughness_1350m_mean),
+  pixels:number(row.analysis_pixels)
+ };
+}
+
+function setStatus(message){
+ $("status").textContent=message;
+}
+
+async function fetchFirst(paths){
+ for(const path of paths){
+  try{
+   const response=await fetch(path);
+   if(response.ok)return await response.text();
+  }catch(e){}
+ }
+ throw new Error("Could not load: "+paths.join(" or "));
+}
+
+/*
+ Find named terrain arrays inside the real planetary JSON.
+ The JSON is inspected recursively so the map code does not
+ depend on one assumed nesting level.
+*/
+
+function walkObject(root,callback,path="root",depth=0){
+ if(root===null||root===undefined||depth>12)return;
+
+ if(Array.isArray(root)){
+  callback(path,root);
+  if(root.length && typeof root[0]==="object"){
+   root.slice(0,2).forEach((v,i)=>walkObject(v,callback,path+"["+i+"]",depth+1));
+  }
+  return;
+ }
+
+ if(typeof root==="object"){
+  for(const key of Object.keys(root)){
+   walkObject(root[key],callback,path+"."+key,depth+1);
+  }
+ }
+}
+
+function findNamedArray(root,pattern){
+ let found=null;
+ let foundSize=0;
+
+ walkObject(root,(path,value)=>{
+  if(!pattern.test(path))return;
+  if(!Array.isArray(value)||!value.length)return;
+
+  let sample=value;
+  let numeric=false;
+
+  if(Array.isArray(sample[0])){
+   numeric=sample[0].some(v=>Number.isFinite(Number(v)));
+  }else{
+   numeric=sample.some(v=>Number.isFinite(Number(v)));
+  }
+
+  if(!numeric)return;
+
+  const size=value.length*(Array.isArray(value[0])?value[0].length:1);
+  if(size>foundSize){
+   found=value;
+   foundSize=size;
+  }
+ });
+
+ return found;
+}
+
+function numericGrid(array){
+ if(!Array.isArray(array)||!array.length)return null;
+
+ if(Array.isArray(array[0])){
+  const rows=array.length;
+  const cols=Math.max(...array.map(r=>Array.isArray(r)?r.length:0));
+  if(!rows||!cols)return null;
+  return {values:array,rows,cols};
+ }
+
+ return null;
+}
+
+function discoverPlanet(name){
+ const planet=planetary?.planets?.[name];
+ if(!planet)throw new Error(name+" dataset missing from planetary JSON.");
+
+ const slopeArray=findNamedArray(planet,/slope/i);
+ const elevationArray=findNamedArray(planet,/elevation|dem/i);
+ const roughArray=findNamedArray(planet,/roughness/i);
+
+ const slope=numericGrid(slopeArray);
+ const elevation=numericGrid(elevationArray);
+ const roughness=numericGrid(roughArray);
+
+ if(!slope){
+  throw new Error(
+   name+" slope grid could not be identified in planetary_grids.json. "+
+   "The actual JSON grid structure needs inspection."
+  );
+ }
+
+ return {
+  name,
+  slope,
+  elevation,
+  roughness,
+  source:planet
+ };
+}
+
+function validCell(grid,r,c){
+ if(!grid)return false;
+ const value=number(grid.values[r]?.[c]);
+ return Number.isFinite(value);
+}
+
+function gridCoordinates(r,c,rows,cols){
+ return {
+  lat:90-(r/(rows-1))*180,
+  lon:-180+(c/(cols-1))*360
+ };
+}
+
+function rankMatches(grid,earth){
+ const results=[];
+ const slopes=grid.slope;
+ const rough=grid.roughness;
+
+ const rows=slopes.rows;
+ const cols=slopes.cols;
+
+ for(let r=0;r<rows;r++){
+  for(let c=0;c<cols;c++){
+   if(!validCell(slopes,r,c))continue;
+
+   const slope=number(slopes.values[r][c]);
+   const diff=Math.abs(slope-earth.slope);
+
+   if(!Number.isFinite(diff))continue;
+
+   const score=100*Math.exp(-diff/5);
+   const coord=gridCoordinates(r,c,rows,cols);
+
+   results.push({
+    row:r,col:c,
+    lat:coord.lat,lon:coord.lon,
+    slope,
+    score,
+    roughness:rough && validCell(rough,r,c)
+     ? number(rough.values[r][c])
+     : NaN
+   });
+  }
+ }
+
+ results.sort((a,b)=>b.score-a.score);
+
+ return results.slice(0,10);
+}
+
+function colorForSlope(value,min,max){
+ const t=Math.max(0,Math.min(1,(value-min)/(max-min||1)));
+ const red=Math.round(30+220*t);
+ const green=Math.round(100+70*(1-t));
+ const blue=Math.round(190-150*t);
+ return `rgb(${red},${green},${blue})`;
+}
+
+function drawPlanetMap(canvasId,grid,matches){
+ const canvas=$(canvasId);
+ const ctx=canvas.getContext("2d");
+ const width=canvas.width,height=canvas.height;
+
+ ctx.fillStyle="#091728";
+ ctx.fillRect(0,0,width,height);
+
+ const values=grid.slope.values;
+ const rows=grid.slope.rows;
+ const cols=grid.slope.cols;
+
+ const maxDrawRows=Math.min(rows,450);
+ const maxDrawCols=Math.min(cols,900);
+
+ const min=0;
+ const max=30;
+
+ const stepR=Math.max(1,Math.floor(rows/maxDrawRows));
+ const stepC=Math.max(1,Math.floor(cols/maxDrawCols));
+
+ const cellW=width/Math.ceil(cols/stepC);
+ const cellH=height/Math.ceil(rows/stepR);
+
+ for(let r=0;r<rows;r+=stepR){
+  for(let c=0;c<cols;c+=stepC){
+   const v=number(values[r]?.[c]);
+   if(!Number.isFinite(v))continue;
+
+   ctx.fillStyle=colorForSlope(v,min,max);
+   ctx.fillRect(
+    c/stepC*cellW,
+    r/stepR*cellH,
+    Math.ceil(cellW)+1,
+    Math.ceil(cellH)+1
+   );
+  }
+ }
+
+ matches.forEach((m,i)=>{
+  const x=m.col/Math.max(1,cols-1)*width;
+  const y=m.row/Math.max(1,rows-1)*height;
+
+  ctx.beginPath();
+  ctx.arc(x,y,i===0?10:5,0,Math.PI*2);
+  ctx.fillStyle=i===0?"#ffcc33":"#ffffff";
+  ctx.fill();
+
+  if(i===0){
+   ctx.strokeStyle="#07111f";
+   ctx.lineWidth=3;
+   ctx.stroke();
+  }
+ });
+
+ ctx.fillStyle="#ffffff";
+ ctx.font="bold 17px Arial";
+ ctx.fillText(grid.name+" slope terrain map",15,24);
+}
+
+function drawGraph(canvasId,labels,values,title,unit){
+ const canvas=$(canvasId);
+ const ctx=canvas.getContext("2d");
+ const w=canvas.width,h=canvas.height;
+
+ ctx.fillStyle="#091728";
+ ctx.fillRect(0,0,w,h);
+
+ ctx.fillStyle="#ffffff";
+ ctx.font="bold 17px Arial";
+ ctx.fillText(title,20,27);
+
+ const valid=values.map((v,i)=>({
+  label:labels[i],
+  value:number(v)
+ })).filter(x=>Number.isFinite(x.value));
+
+ if(!valid.length){
+  ctx.fillText("No valid data",25,90);
+  return;
+ }
+
+ const max=Math.max(...valid.map(x=>Math.abs(x.value)),0.01);
+ const left=55,right=w-20,top=65,bottom=h-55;
+ const slot=(right-left)/valid.length;
+ const bw=Math.min(75,slot*.55);
+
+ valid.forEach((item,i)=>{
+  const bh=Math.max(2,Math.abs(item.value)/max*(bottom-top));
+  const x=left+i*slot+(slot-bw)/2;
+  const y=bottom-bh;
+
+  ctx.fillStyle=["#38bdf8","#a78bfa","#fb923c","#34d399"][i%4];
+  ctx.fillRect(x,y,bw,bh);
+
+  ctx.fillStyle="#ffffff";
+  ctx.font="bold 13px Arial";
+  ctx.textAlign="center";
+  ctx.fillText(item.value.toFixed(2)+unit,x+bw/2,Math.max(48,y-8));
+
+  ctx.font="12px Arial";
+  ctx.fillStyle="#cbd5e1";
+  ctx.fillText(item.label,x+bw/2,bottom+20);
+ });
+
+ ctx.textAlign="left";
+}
+
+function renderTable(id,matches){
+ $(id).innerHTML=matches.map((m,i)=>`
+ <tr>
+  <td>${i+1}</td>
+  <td>${m.lat.toFixed(3)}°</td>
+  <td>${m.lon.toFixed(3)}°</td>
+  <td>${m.slope.toFixed(3)}°</td>
+  <td>${m.score.toFixed(2)}/100</td>
+ </tr>
+ `).join("");
+}
+
+function showEarth(earth){
+ $("earthName").textContent=earth.name;
+ $("earthLat").textContent=Number.isFinite(earth.lat)?fmt(earth.lat,3)+"°":"Not encoded in location name";
+ $("earthLon").textContent=Number.isFinite(earth.lon)?fmt(earth.lon,3)+"°":"Not encoded in location name";
+ $("earthElev").textContent=fmt(earth.elevation/1000,3)+" km";
+ $("earthSlope").textContent=fmt(earth.slope,3)+"°";
+ $("earthRough").textContent=fmt(earth.roughness,2)+" m";
+ $("earthP90").textContent=fmt(earth.slopeP90,2)+"°";
+}
+
+function analyse(){
+ const index=Number($("earthSelect").value);
+
+ if(!Number.isInteger(index)||!earthRecords[index]){
+  setStatus("Select an Earth location first.");
+  return;
+ }
+
+ const earth=earthRecords[index];
+
+ if(!Number.isFinite(earth.slope)){
+  setStatus("This Earth record has no valid mean slope value.");
+  return;
+ }
+
+ try{
+  showEarth(earth);
+
+  const moon=rankMatches(moonGrid,earth);
+  const mars=rankMatches(marsGrid,earth);
+
+  if(!moon.length||!mars.length){
+   throw new Error("No valid Moon or Mars terrain cells were found.");
+  }
+
+  const m=moon[0];
+  const r=mars[0];
+
+  $("moonName").textContent="Best Moon analogue for "+earth.name;
+  $("moonLat").textContent=fmt(m.lat,3)+"°";
+  $("moonLon").textContent=fmt(m.lon,3)+"°";
+  $("moonSlope").textContent=fmt(m.slope,3)+"°";
+  $("moonScore").textContent=fmt(m.score,2)+"/100";
+
+  $("marsName").textContent="Best Mars analogue for "+earth.name;
+  $("marsLat").textContent=fmt(r.lat,3)+"°";
+  $("marsLon").textContent=fmt(r.lon,3)+"°";
+  $("marsSlope").textContent=fmt(r.slope,3)+"°";
+  $("marsScore").textContent=fmt(r.score,2)+"/100";
+
+  drawPlanetMap("moonMap",moonGrid,moon);
+  drawPlanetMap("marsMap",marsGrid,mars);
+
+  drawGraph(
+   "graph1",
+   ["Earth","Best Moon"],
+   [earth.slope,m.slope],
+   "Earth and Moon mean slope",
+   "°"
+  );
+
+  drawGraph(
+   "graph2",
+   ["Earth","Best Mars"],
+   [earth.slope,r.slope],
+   "Earth and Mars mean slope",
+   "°"
+  );
+
+  const scoreLabels=[];
+  const scoreValues=[];
+
+  for(let i=0;i<5;i++){
+   if(moon[i]){
+    scoreLabels.push("Moon "+(i+1));
+    scoreValues.push(moon[i].score);
+   }
+   if(mars[i]){
+    scoreLabels.push("Mars "+(i+1));
+    scoreValues.push(mars[i].score);
+   }
+  }
+
+  drawGraph(
+   "graph3",
+   scoreLabels,
+   scoreValues,
+   "Top Moon and Mars similarity scores",
+   ""
+  );
+
+  drawGraph(
+   "graph4",
+   ["Earth 630m","Moon grid","Mars grid"],
+   [
+    earth.roughness,
+    Number.isFinite(m.roughness)?m.roughness*1000:NaN,
+    Number.isFinite(r.roughness)?r.roughness*1000:NaN
+   ],
+   "Roughness values — metres",
+   " m"
+  );
+
+  renderTable("moonTable",moon);
+  renderTable("marsTable",mars);
+
+  $("graphSubtitle").textContent=
+   "Selected Earth: "+earth.name+
+   " | Best Moon: "+fmt(m.lat,2)+"°, "+fmt(m.lon,2)+"°"+
+   " | Best Mars: "+fmt(r.lat,2)+"°, "+fmt(r.lon,2)+"°";
+
+  setStatus(
+   "Analysis complete. Compared "+earth.name+
+   " against the available Moon and Mars slope grids."
+  );
+
+ }catch(error){
+  console.error(error);
+  setStatus("Analysis error: "+error.message);
+ }
+}
+
+async function start(){
+ try{
+  setStatus("Loading actual Earth terrain records...");
+
+  const csvText=await fetchFirst([
+   "/data/processed/global_terrain/global_advanced_terrain_summary.csv",
+   "/data/earth/global_advanced_terrain_summary.csv"
+  ]);
+
+  earthRecords=parseCSV(csvText)
+   .map(makeEarthRecord);
+
+  const select=$("earthSelect");
+
+  select.innerHTML=
+   '<option value="">Choose an actual Earth terrain location</option>'+
+   earthRecords.map((e,i)=>
+    `<option value="${i}">${String(i+1).padStart(3,"0")} | ${e.name}</option>`
+   ).join("");
+
+  setStatus("Loaded "+earthRecords.length+" Earth terrain records. Loading Moon and Mars grids...");
+
+  const jsonText=await fetchFirst([
+   "/data/planetary/planetary_grids.json"
+  ]);
+
+  planetary=JSON.parse(jsonText);
+
+  moonGrid=discoverPlanet("Moon");
+  marsGrid=discoverPlanet("Mars");
+
+  $("gridInfo").textContent=
+   "Moon slope grid: "+moonGrid.slope.rows+" × "+moonGrid.slope.cols+
+   " | Mars slope grid: "+marsGrid.slope.rows+" × "+marsGrid.slope.cols+
+   " | Earth records: "+earthRecords.length;
+
+  setStatus(
+   "Ready. "+earthRecords.length+
+   " actual Earth locations and both planetary slope grids loaded."
+  );
+
+  select.addEventListener("change",()=>{
+   if(select.value!=="")analyse();
+  });
+
+  $("analyzeButton").addEventListener("click",analyse);
+
+ }catch(error){
+  console.error(error);
+  setStatus("Dataset error: "+error.message);
+ }
+}
+
+start();
+</script>
+
+</body>
+</html>

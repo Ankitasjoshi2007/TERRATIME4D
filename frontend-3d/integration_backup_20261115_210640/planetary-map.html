@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TERRATIME4D - Planetary Terrain Maps</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#080e1c;color:#e8efff;font-family:Arial,sans-serif}
+header{padding:22px 5%;background:#101b30;border-bottom:1px solid #293956}
+h1{margin:0;color:#8cc8ff;font-size:25px}
+header p{color:#aabbd4;margin-bottom:0}
+main{max-width:1450px;margin:auto;padding:24px}
+.panel{background:#111d31;border:1px solid #293956;border-radius:12px;padding:18px;margin-bottom:20px}
+label{display:block;margin-bottom:9px;color:#a9c9ed}
+select{width:100%;max-width:700px;padding:12px;background:#071426;color:white;border:1px solid #52749c;border-radius:7px;font-size:14px}
+.status{color:#9dc8f4;margin-top:12px;font-size:13px;white-space:pre-wrap}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.stat{background:#0a1628;padding:14px;border-radius:8px;border:1px solid #263c5b}
+.stat small{display:block;color:#91a9c7;margin-bottom:8px}
+.stat strong{font-size:20px;color:#8cc8ff}
+.maps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.mapbox{background:#0a1628;border:1px solid #293956;border-radius:10px;padding:14px;min-width:0}
+.mapbox h2{font-size:19px;margin:0 0 8px}
+canvas{display:block;width:100%;background:#030914;border-radius:6px}
+.mapcanvas{image-rendering:pixelated;aspect-ratio:2/1}
+.legend{font-size:12px;color:#a9bdd8;margin-top:8px}
+.graphs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.graphbox{background:#0a1628;padding:14px;border-radius:10px;border:1px solid #293956;min-width:0}
+.graphbox h3{margin:0 0 10px;font-size:15px}
+.graphcanvas{height:230px}
+table{width:100%;border-collapse:collapse;margin-top:12px}
+th,td{text-align:left;padding:10px;border-bottom:1px solid #293956;font-size:13px}
+th{color:#8cc8ff}
+.note{color:#aabbd4;font-size:13px;line-height:1.6}
+@media(max-width:800px){.maps,.graphs{grid-template-columns:1fr}main{padding:12px}}
+</style>
+</head>
+<body>
+<header>
+<h1>TERRATIME4D | Planetary Terrain Explorer</h1>
+<p>Location-based Earth to Moon and Mars terrain comparison</p>
+</header>
+<main>
+<section class="panel">
+<label for="earthSelect">Select an Earth terrain tile</label>
+<select id="earthSelect"><option>Loading Earth locations...</option></select>
+<div id="status" class="status">Loading local terrain datasets...</div>
+</section>
+
+<section class="panel">
+<h2>Selected Earth Terrain Parameters</h2>
+<div class="stats" id="earthStats"></div>
+</section>
+
+<section class="panel">
+<h2>Global Planetary Terrain Maps</h2>
+<p class="note">Maps use the actual slope grids in your local planetary JSON. The selected best-match locations are marked on each map.</p>
+<div class="maps">
+<div class="mapbox">
+<h2>🌕 Moon Terrain Map</h2>
+<canvas id="moonMap" class="mapcanvas"></canvas>
+<div id="moonInfo" class="legend"></div>
+</div>
+<div class="mapbox">
+<h2>🔴 Mars Terrain Map</h2>
+<canvas id="marsMap" class="mapcanvas"></canvas>
+<div id="marsInfo" class="legend"></div>
+</div>
+</div>
+</section>
+
+<section class="panel">
+<h2>Best Matching Planetary Locations</h2>
+<table>
+<thead><tr><th>Planet</th><th>Grid position</th><th>Latitude</th><th>Longitude</th><th>Slope</th><th>Slope difference</th></tr></thead>
+<tbody id="matchTable"></tbody>
+</table>
+</section>
+
+<section class="panel">
+<h2>Dynamic Terrain Comparison Graphs</h2>
+<div class="graphs">
+<div class="graphbox"><h3>Mean Slope Comparison</h3><canvas id="slopeGraph" class="graphcanvas"></canvas></div>
+<div class="graphbox"><h3>Mean Elevation Comparison</h3><canvas id="elevationGraph" class="graphcanvas"></canvas></div>
+<div class="graphbox"><h3>Terrain Roughness Comparison</h3><canvas id="roughnessGraph" class="graphcanvas"></canvas></div>
+<div class="graphbox"><h3>Planetary Slope Difference</h3><canvas id="differenceGraph" class="graphcanvas"></canvas></div>
+</div>
+<p class="note">Earth roughness is taken from the 630 m summary field. Moon and Mars roughness uses the available approximately 11 km grid field. These different spatial scales are not directly equivalent.</p>
+</section>
+</main>
+
+<script>
+const statusBox=document.getElementById('status');
+let earthRows=[];
+let planetary=null;
+let matches={};
+
+function setStatus(message){statusBox.textContent=message}
+
+function parseCSV(text){
+ const lines=text.replace(/^\uFEFF/,'').trim().split(/\r?\n/);
+ if(lines.length<2)return [];
+ function split(line){
+  const out=[];let value='',quoted=false;
+  for(let i=0;i<line.length;i++){
+   const c=line[i];
+   if(c==='"'&&quoted&&line[i+1]==='"'){value+='"';i++}
+   else if(c==='"')quoted=!quoted;
+   else if(c===','&&!quoted){out.push(value);value=''}
+   else value+=c;
+  }
+  out.push(value);return out;
+ }
+ const headers=split(lines[0]);
+ return lines.slice(1).filter(x=>x.trim()).map(line=>{
+  const vals=split(line),obj={};
+  headers.forEach((h,i)=>obj[h]=vals[i]??'');
+  return obj;
+ });
+}
+
+function num(v){
+ const n=Number(v);
+ return Number.isFinite(n)?n:NaN;
+}
+
+function flattenArray(value){
+ if(!Array.isArray(value))return [];
+ if(value.length&&Array.isArray(value[0]))return value.flat(Infinity);
+ return value;
+}
+
+function getGrid(planet){
+ const p=planetary.planets[planet];
+ const width=Number(p.width),height=Number(p.height);
+ const slope=flattenArray(p.slope_degrees);
+ const elevation=flattenArray(p.elevation_km);
+ const roughness=flattenArray(p.roughness_11km_km);
+ const valid=flattenArray(p.valid);
+ if(!width||!height||slope.length!==width*height){
+  throw new Error(planet+' grid dimensions do not match slope array. Width='+width+', height='+height+', slope values='+slope.length);
+ }
+ return {p,width,height,slope,elevation,roughness,valid};
+}
+
+function isValid(g,i){
+ const s=Number(g.slope[i]);
+ if(!Number.isFinite(s))return false;
+ if(!g.valid.length)return true;
+ const v=g.valid[i];
+ return v===true||v===1||v==='1'||v==='true';
+}
+
+function parseEarthCoordinates(location){
+ const match=String(location).match(/([ns])(\d{2})_(\d{2})_([ew])(\d{3})_(\d{2})/i);
+ if(!match)return null;
+ let lat=Number(match[2])+Number(match[3])/60;
+ let lon=Number(match[5])+Number(match[6])/60;
+ if(match[1].toLowerCase()==='s')lat=-lat;
+ if(match[4].toLowerCase()==='w')lon=-lon;
+ return {lat,lon};
+}
+
+function findBestMatch(g,target){
+ let best=-1,bestDiff=Infinity;
+ for(let i=0;i<g.slope.length;i++){
+  if(!isValid(g,i))continue;
+  const diff=Math.abs(Number(g.slope[i])-target);
+  if(diff<bestDiff){bestDiff=diff;best=i}
+ }
+ if(best<0)return null;
+ const row=Math.floor(best/g.width),col=best%g.width;
+ const lat=90-(row+0.5)*180/g.height;
+ const lon=-180+(col+0.5)*360/g.width;
+ return {index:best,row,col,lat,lon,slope:Number(g.slope[best]),difference:bestDiff};
+}
+
+function colorForSlope(value){
+ const t=Math.max(0,Math.min(1,value/15));
+ const stops=[
+  [5,20,55],[20,75,130],[20,145,150],
+  [160,175,75],[230,145,55],[205,65,55],[245,220,180]
+ ];
+ const scaled=t*(stops.length-1),i=Math.min(stops.length-2,Math.floor(scaled));
+ const f=scaled-i;
+ return stops[i].map((v,k)=>Math.round(v+(stops[i+1][k]-v)*f));
+}
+
+function drawMap(canvasId,g,match){
+ const canvas=document.getElementById(canvasId);
+ canvas.width=g.width;canvas.height=g.height;
+ const ctx=canvas.getContext('2d');
+ const image=ctx.createImageData(g.width,g.height);
+ for(let i=0;i<g.slope.length;i++){
+  const offset=i*4;
+  if(!isValid(g,i)){
+   image.data[offset]=5;image.data[offset+1]=10;image.data[offset+2]=20;image.data[offset+3]=255;
+   continue;
+  }
+  const c=colorForSlope(Number(g.slope[i]));
+  image.data[offset]=c[0];image.data[offset+1]=c[1];image.data[offset+2]=c[2];image.data[offset+3]=255;
+ }
+ ctx.putImageData(image,0,0);
+ if(match){
+  const x=match.col,y=match.row;
+  ctx.strokeStyle='#ffffff';ctx.lineWidth=Math.max(1,g.width/360);
+  ctx.beginPath();ctx.arc(x,y,Math.max(3,g.width/100),0,Math.PI*2);ctx.stroke();
+  ctx.fillStyle='#ffffff';ctx.fillRect(x-1,y-1,3,3);
+ }
+}
+
+function drawBarGraph(id,labels,values,unit){
+ const canvas=document.getElementById(id);
+ const rect=canvas.getBoundingClientRect();
+ const dpr=window.devicePixelRatio||1;
+ canvas.width=Math.max(300,rect.width*dpr);
+ canvas.height=230*dpr;
+ const ctx=canvas.getContext('2d');
+ const w=canvas.width,h=canvas.height;
+ ctx.clearRect(0,0,w,h);
+ const pad={l:48*dpr,r:15*dpr,t:18*dpr,b:42*dpr};
+ const vals=values.map(v=>Number.isFinite(v)?v:0);
+ const max=Math.max(1,...vals.map(v=>Math.abs(v)))*1.2;
+ ctx.strokeStyle='#40536d';ctx.fillStyle='#aabbd4';
+ ctx.font=(11*dpr)+'px Arial';
+ for(let i=0;i<=4;i++){
+  const y=pad.t+(h-pad.t-pad.b)*i/4;
+  ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(w-pad.r,y);ctx.stroke();
+  ctx.fillText((max*(1-i/4)).toFixed(2),3*dpr,y+4*dpr);
+ }
+ const plotW=w-pad.l-pad.r,plotH=h-pad.t-pad.b;
+ const slot=plotW/labels.length;
+ vals.forEach((v,i)=>{
+  const bh=Math.max(0,v/max*plotH);
+  const x=pad.l+i*slot+slot*.2;
+  const y=pad.t+plotH-bh;
+  ctx.fillStyle=['#64b5f6','#d9bd72','#e47764'][i%3];
+  ctx.fillRect(x,y,slot*.6,bh);
+  ctx.fillStyle='#e8efff';
+  ctx.textAlign='center';
+  ctx.fillText(labels[i],x+slot*.3,h-13*dpr);
+  ctx.fillText(Number.isFinite(values[i])?values[i].toFixed(2):'N/A',x+slot*.3,Math.max(12*dpr,y-5*dpr));
+ });
+ ctx.textAlign='left';
+}
+
+function showStats(row){
+ const items=[
+  ['Location',row.location],
+  ['Mean elevation',num(row.elevation_mean_m).toFixed(2)+' m'],
+  ['Mean slope',num(row.slope_mean_degrees).toFixed(2)+'°'],
+  ['Slope P90',num(row.slope_p90_degrees).toFixed(2)+'°'],
+  ['Roughness 630 m',num(row.roughness_630m_mean).toFixed(2)+' m'],
+  ['Roughness 1350 m',num(row.roughness_1350m_mean).toFixed(2)+' m']
+ ];
+ document.getElementById('earthStats').innerHTML=items.map(([a,b])=>
+  '<div class="stat"><small>'+a+'</small><strong>'+b+'</strong></div>'
+ ).join('');
+}
+
+function updateSelection(){
+ const index=Number(document.getElementById('earthSelect').value);
+ const earth=earthRows[index];
+ if(!earth)return;
+ const earthSlope=num(earth.slope_mean_degrees);
+ if(!Number.isFinite(earthSlope)){setStatus('Selected Earth record has no valid mean slope.');return}
+ showStats(earth);
+
+ const moon=getGrid('Moon'),mars=getGrid('Mars');
+ matches.Moon=findBestMatch(moon,earthSlope);
+ matches.Mars=findBestMatch(mars,earthSlope);
+
+ drawMap('moonMap',moon,matches.Moon);
+ drawMap('marsMap',mars,matches.Mars);
+
+ const m=matches.Moon,r=matches.Mars;
+ document.getElementById('moonInfo').textContent=m?
+  'Best slope match: '+m.slope.toFixed(3)+'° | Grid row '+m.row+', column '+m.col+' | '+m.lat.toFixed(2)+'°, '+m.lon.toFixed(2)+'°':'No valid Moon match';
+ document.getElementById('marsInfo').textContent=r?
+  'Best slope match: '+r.slope.toFixed(3)+'° | Grid row '+r.row+', column '+r.col+' | '+r.lat.toFixed(2)+'°, '+r.lon.toFixed(2)+'°':'No valid Mars match';
+
+ document.getElementById('matchTable').innerHTML=[
+  ['Moon',m],['Mars',r]
+ ].map(([name,v])=>v?
+  '<tr><td>'+name+'</td><td>'+v.row+', '+v.col+'</td><td>'+v.lat.toFixed(3)+'</td><td>'+v.lon.toFixed(3)+'</td><td>'+v.slope.toFixed(3)+'°</td><td>'+v.difference.toFixed(3)+'°</td></tr>':
+  '<tr><td>'+name+'</td><td colspan="5">No valid grid match</td></tr>'
+ ).join('');
+
+ const moonElevation=m?num(moon.elevation[m.index]):NaN;
+ const marsElevation=r?num(mars.elevation[r.index]):NaN;
+ const moonRough=m?num(moon.roughness[m.index]):NaN;
+ const marsRough=r?num(mars.roughness[r.index]):NaN;
+
+ drawBarGraph('slopeGraph',['Earth','Moon','Mars'],[earthSlope,m?.slope??NaN,r?.slope??NaN],'°');
+ drawBarGraph('elevationGraph',['Earth','Moon','Mars'],[
+  num(earth.elevation_mean_m)/1000,moonElevation,marsElevation
+ ],'km');
+ drawBarGraph('roughnessGraph',['Earth','Moon','Mars'],[
+  num(earth.roughness_630m_mean)/1000,moonRough,marsRough
+ ],'km');
+ drawBarGraph('differenceGraph',['Moon','Mars'],[
+  m?.difference??NaN,r?.difference??NaN
+ ],'°');
+
+ setStatus('Loaded '+earthRows.length+' Earth terrain records. Selected: '+earth.location+
+  '\nMoon and Mars maps updated. Matching currently uses the closest valid planetary slope value.');
+}
+
+async function loadData(){
+ try{
+  setStatus('Loading local planetary grid...');
+  const planetResponse=await fetch('/data/planetary/planetary_grids.json');
+  if(!planetResponse.ok)throw new Error('Could not load /data/planetary/planetary_grids.json');
+  planetary=await planetResponse.json();
+
+  setStatus('Loading Earth terrain catalogue...');
+  let csvResponse;
+  for(const path of [
+   '/data/earth/global_advanced_terrain_summary.csv',
+   '/data/processed/global_terrain/global_advanced_terrain_summary.csv'
+  ]){
+   const response=await fetch(path);
+   if(response.ok){csvResponse=response;break}
+  }
+  if(!csvResponse)throw new Error('Earth CSV not found in the expected local data folders.');
+
+  earthRows=parseCSV(await csvResponse.text()).filter(r=>r.location);
+  if(!earthRows.length)throw new Error('Earth CSV loaded but contains no location records.');
+
+  const select=document.getElementById('earthSelect');
+  select.innerHTML='';
+  earthRows.forEach((row,i)=>{
+   const option=document.createElement('option');
+   option.value=i;
+   option.textContent=row.location;
+   select.appendChild(option);
+  });
+  select.addEventListener('change',updateSelection);
+
+  const moon=getGrid('Moon'),mars=getGrid('Mars');
+  document.getElementById('status').textContent=
+   'Earth records: '+earthRows.length+
+   '\nMoon grid: '+moon.width+' × '+moon.height+
+   '\nMars grid: '+mars.width+' × '+mars.height+
+   '\nGrid metadata: '+planetary.grid;
+
+  updateSelection();
+ }catch(error){
+  setStatus('ERROR: '+error.message+'\nCheck that the local Vite server is running and the data files are in frontend-3d/public/data/.');
+  console.error(error);
+ }
+}
+window.addEventListener('resize',()=>{
+ if(earthRows.length&&planetary)updateSelection();
+});
+loadData();
+</script>
+</body>
+</html>

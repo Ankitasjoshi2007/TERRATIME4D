@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TERRATIME 4D | Planetary Mission Control</title>
+
+<style>
+.tt4d-global-nav {
+  position:relative;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  padding:13px 4%;
+  background:#071522;
+  border-bottom:1px solid rgba(76,190,255,.28);
+}
+.tt4d-brand {
+  color:#62d5ff;
+  font-weight:800;
+  letter-spacing:2px;
+  text-decoration:none;
+}
+.tt4d-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.tt4d-nav-link {
+  color:#d8eaf5;
+  text-decoration:none;
+  padding:9px 13px;
+  border:1px solid #24445c;
+  border-radius:7px;
+  font-size:12px;
+}
+.tt4d-nav-link:hover {
+  color:#66d8ff;
+  border-color:#66d8ff;
+}
+@media(max-width:600px) {
+  .tt4d-global-nav {align-items:flex-start;flex-direction:column}
+}
+</style>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+#planetary-comparison {
+  scroll-margin-top: 24px;
+}
+</style>
+<style>
+#planetary-discovery {
+  display: block !important;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 55px clamp(16px, 4vw, 60px);
+  box-sizing: border-box;
+  border-top: 2px solid #28617d;
+  background: linear-gradient(180deg, #071522 0%, #091b2b 45%, #06111d 100%);
+  scroll-margin-top: 20px;
+}
+#planetary-discovery h2 {
+  color: #e6f8ff;
+  font-size: clamp(24px, 3vw, 38px);
+  margin: 12px 0;
+}
+#planetary-discovery .pd-panel {
+  box-shadow: 0 8px 28px #0003;
+}
+#planetary-comparison .pc-footer {
+  color: #63dcff;
+  border-top: 1px solid #24516a;
+  margin-top: 35px;
+}
+</style>
+<style id="tt4d-real-page-scroll-fix">
+html {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+#app {
+  position: relative !important;
+  inset: auto !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  max-height: none !important;
+  overflow: hidden !important;
+  transform: none !important;
+}
+
+#planetary-comparison {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 100vh;
+  overflow: visible !important;
+  clear: both;
+  scroll-margin-top: 20px;
+}
+
+#planetary-discovery {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 100vh !important;
+  overflow: visible !important;
+  clear: both;
+  scroll-margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <canvas id="space"></canvas>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">T</div>
+      <div>
+        <div class="brand-name">TERRA<span>TIME</span> 4D</div>
+        <div class="brand-sub">PLANETARY ANALOG DISCOVERY SYSTEM</div>
+      </div>
+    </div>
+    <div class="top-center">SOLAR SYSTEM EXPLORATION</div>
+    <div class="system-status"><i></i> SYSTEM ONLINE</div>
+  </header>
+
+  <aside class="left-panel">
+    <div class="eyebrow">MISSION CONTROL / 01</div>
+    <h2>Explore Space</h2>
+    <p class="muted">Select a celestial body to explore.</p>
+
+    <button class="planet active" data-target="Earth">
+      <span class="planet-icon earth-icon"></span>
+      <span><b>Earth</b><small>Reference planet</small></span>
+      <span class="arrow">Ã¢â€ â€”</span>
+    </button>
+
+    <button class="planet" data-target="Moon">
+      <span class="planet-icon moon-icon"></span>
+      <span><b>Moon</b><small>Lunar exploration</small></span>
+      <span class="arrow">Ã¢â€ â€”</span>
+    </button>
+
+    <button class="planet" data-target="Mars">
+      <span class="planet-icon mars-icon"></span>
+      <span><b>Mars</b><small>Martian exploration</small></span>
+      <span class="arrow">Ã¢â€ â€”</span>
+    </button>
+
+    <div class="line"></div>
+    <div class="eyebrow">MISSION PARAMETERS / 02</div>
+    <label>Mission objective</label>
+    <select id="mission">
+      <option>Rover Mobility</option>
+      <option>Landing Site Assessment</option>
+      <option>Geological Research</option>
+      <option>Resource Exploration</option>
+      <option>Human Operations</option>
+    </select>
+
+    <div class="line"></div>
+    <div class="eyebrow">VISUAL CONTROLS / 03</div>
+
+    <div class="toggle-row">
+      <span>Orbital paths</span>
+      <input type="checkbox" id="orbitToggle" checked>
+    </div>
+    <div class="toggle-row">
+      <span>Satellite</span>
+      <input type="checkbox" id="satToggle" checked>
+    </div>
+    <div class="toggle-row">
+      <span>Rover</span>
+      <input type="checkbox" id="roverToggle" checked>
+    </div>
+    <div class="toggle-row">
+      <span>Star particles</span>
+      <input type="checkbox" id="starsToggle" checked>
+    </div>
+
+    <label>Animation speed</label>
+    <input type="range" id="speed" min="0" max="3" step=".1" value="1">
+    <div class="speed-label"><span>SLOW</span><span id="speedValue">1.0Ãƒâ€”</span><span>FAST</span></div>
+
+    <button class="control-button" id="pause">Ã¢â€¦Â¡ &nbsp; PAUSE ANIMATION</button>
+    <button class="control-button" id="reset">Ã¢â€ Âº &nbsp; RESET CAMERA</button>
+
+    <p class="hint">DRAG TO ROTATE Ã‚Â· SCROLL TO ZOOM</p>
+  </aside>
+
+  <div class="scene-heading">
+    <div class="eyebrow">LIVE PLANETARY VISUALIZATION</div>
+    <h1 id="sceneName">EARTH SYSTEM</h1>
+    <p id="sceneDescription">The Blue Planet Ã‚Â· EarthÃ¢â‚¬â€œMoon system</p>
+  </div>
+
+  <div class="scene-coordinates">
+    <span>3D ENVIRONMENT</span>
+    <span>INTERACTIVE CAMERA</span>
+  </div>
+
+  <aside class="right-panel">
+    <div class="eyebrow">MISSION INTELLIGENCE / 04</div>
+    <h2 id="selectedName">EARTH</h2>
+    <div class="data-block">
+      <small>SELECTED MISSION</small>
+      <b id="missionName">Rover Mobility</b>
+    </div>
+    <div class="data-block">
+      <small>SCIENTIFIC DATA</small>
+      <b class="cyan">Integration pending</b>
+    </div>
+    <div class="data-block">
+      <small>MISSION SUITABILITY</small>
+      <b>Awaiting scientific data</b>
+    </div>
+
+    <div class="line"></div>
+    <div class="eyebrow">EARTH CANDIDATE MAP / 05</div>
+    <div id="candidateMap" class="map-placeholder"></div><p class="map-note" id="mapNote">Loading scientific candidate locations...</p>
+
+    <div class="line"></div>
+    <div class="eyebrow">SCIENTIFIC MODULES / 06</div>
+    <div class="member"><span>Member 1 Ã‚Â· Earth</span><i>Pending</i></div>
+    <div class="member"><span>Member 2 Ã‚Â· Terrain</span><i>Pending</i></div>
+    <div class="member"><span>Member 3 Ã‚Â· Planetary</span><i>Pending</i></div>
+    <div class="member"><span>Member 4 Ã‚Â· Missions</span><i>Pending</i></div>
+  </aside>
+
+  <div class="bottom-panel">
+    <div class="timeline-title">
+      <div><div class="eyebrow">MISSION SIMULATION / 07</div><b>4D TEMPORAL EXPLORER</b></div>
+      <span class="live-tag">LIVE | VISUAL SIMULATION</span>
+    </div>
+    <div class="timeline">
+      <span>T + 00:00</span>
+      <input type="range" id="timeline" min="0" max="100" value="0">
+      <span id="timeLabel">T + 00:00</span>
+    </div>
+  </div>
+
+  <div id="loading">
+    <div class="loader-ring"></div>
+    <h2>INITIALIZING TERRATIME 4D</h2>
+    <p>PREPARING PLANETARY ENVIRONMENT</p>
+  </div>
+</div>
+<script type="module" src="/src/main.js"></script>
+
+
+<style>
+#missionExploreLink{
+ position:fixed;z-index:9999;right:26px;bottom:25px;
+ padding:14px 20px;border:1px solid #52dfff;border-radius:9px;
+ background:linear-gradient(120deg,#07304a,#101b38);
+ color:#b8f4ff;text-decoration:none;font:600 12px Arial,sans-serif;
+ letter-spacing:1.5px;box-shadow:0 0 22px #20bfff44;
+ transition:.2s ease;
+}
+#missionExploreLink:hover{transform:translateY(-4px);box-shadow:0 0 30px #20bfff99;background:#124361}
+</style>
+<a id="missionExploreLink" href="#planetary-comparison">âœ¦ PLANETARY MISSIONS</a>
+<script type="module" src="/src/rover-game.js"></script>
+
+<script type="module" src="/src/planetary-comparison.js"></script>
+<script type="module" src="/src/planetary-comparison-enhance.js"></script>
+<script type="module" src="/src/planetary-discovery.js"></script>
+</body>
+</html>
+
+
+
+

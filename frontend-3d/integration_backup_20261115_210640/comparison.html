@@ -1,0 +1,2059 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TERRATIME4D | Earth to Moon and Mars</title>
+
+<style>
+:root {
+ --bg:#080e1b;--panel:#111c2e;--panel2:#17243a;
+ --text:#edf4ff;--muted:#9babc3;--cyan:#42d9e8;
+ --orange:#ffad65;--green:#65e5ad;--border:#283a54;
+}
+*{box-sizing:border-box}
+body{
+ margin:0;background:var(--bg);color:var(--text);
+ font-family:Arial,sans-serif;
+}
+header{
+ padding:25px 5%;background:linear-gradient(120deg,#122b48,#10182b);
+ border-bottom:1px solid var(--border);
+}
+header h1{margin:0 0 8px;font-size:27px}
+header p{color:var(--muted);margin:0}
+main{max-width:1500px;margin:auto;padding:22px}
+.panel{
+ background:var(--panel);border:1px solid var(--border);
+ border-radius:13px;padding:19px;margin-bottom:18px;
+ min-width:0;
+}
+h2{font-size:19px;margin:0 0 16px}
+h3{font-size:16px;margin:8px 0 13px}
+.controls{
+ display:grid;grid-template-columns:2fr 1fr 1fr;
+ gap:14px;align-items:end;
+}
+label{display:block;color:var(--muted);font-size:13px;margin-bottom:7px}
+select,input{
+ width:100%;padding:12px;background:#0b1424;
+ border:1px solid var(--border);border-radius:7px;
+ color:white;font-size:14px;
+}
+button{
+ background:#087f9b;color:white;border:0;padding:12px 20px;
+ border-radius:7px;cursor:pointer;font-weight:bold;
+}
+button:hover{background:#10a7c3}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+.status{color:var(--muted);font-size:13px;margin-top:12px}
+.cards{
+ display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+ gap:13px;margin-bottom:18px;
+}
+.metric{background:var(--panel2);padding:17px;border-radius:10px}
+.metric small{color:var(--muted)}
+.metric strong{display:block;font-size:23px;margin-top:9px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+canvas{
+ width:100%;height:360px;background:#0b1424;
+ border-radius:9px;display:block;
+}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:11px 8px;text-align:left;border-bottom:1px solid var(--border)}
+th{color:var(--cyan)}
+td{color:#d9e5f5}
+.scroll{overflow-x:auto}
+.score{color:var(--green);font-weight:bold}
+.moon{color:#c5d0e6}
+.mars{color:var(--orange)}
+.note{color:var(--muted);font-size:12px;line-height:1.6}
+#loading{color:var(--cyan)}
+footer{padding:25px;text-align:center;color:var(--muted);font-size:12px}
+@media(max-width:850px){
+ .controls,.two,.three{grid-template-columns:1fr}
+ .cards{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:480px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌍 TERRATIME4D</h1>
+<p>Earth-to-Moon-to-Mars | Global Terrain Similarity and Experimental Site Discovery</p>
+</header>
+
+<main>
+
+<section class="panel">
+<h2>01. Select Earth Location</h2>
+
+<div class="controls">
+ <div>
+  <label>Earth dataset location (648 available records)</label>
+  <select id="earthLocation">
+   <option value="">Loading Earth locations...</option>
+  </select>
+ </div>
+
+ <div>
+  <label>Search by latitude</label>
+  <input id="latInput" type="number" step="any" placeholder="Latitude">
+ </div>
+
+ <div>
+  <label>Search by longitude</label>
+  <input id="lonInput" type="number" step="any" placeholder="Longitude">
+ </div>
+</div>
+
+<div class="actions">
+ <button id="compareButton">COMPARE EARTH → MOON → MARS</button>
+ <button id="coordinateButton">USE COORDINATES</button>
+</div>
+
+<div class="status" id="status">Loading local planetary datasets...</div>
+</section>
+
+<section class="cards">
+ <div class="metric">
+  <small>Earth reference elevation</small>
+  <strong id="earthElevation">--</strong>
+ </div>
+ <div class="metric">
+  <small>Earth mean slope</small>
+  <strong id="earthSlope">--</strong>
+ </div>
+ <div class="metric">
+  <small>Moon best similarity</small>
+  <strong id="moonScore">--</strong>
+ </div>
+ <div class="metric">
+  <small>Mars best similarity</small>
+  <strong id="marsScore">--</strong>
+ </div>
+</section>
+
+<section class="panel">
+<h2>02. Planetary Comparison</h2>
+<div class="three">
+ <div>
+  <h3>🌍 Earth Reference</h3>
+  <p id="earthDetails" class="note">Select an Earth location.</p>
+ </div>
+ <div>
+  <h3 class="moon">🌕 Moon Match</h3>
+  <p id="moonDetails" class="note">Waiting for comparison.</p>
+ </div>
+ <div>
+  <h3 class="mars">🔴 Mars Match</h3>
+  <p id="marsDetails" class="note">Waiting for comparison.</p>
+ </div>
+</div>
+</section>
+
+<section class="two">
+ <div class="panel">
+  <h2>03. Moon Matching Map</h2>
+  <canvas id="moonMap"></canvas>
+  <p class="note">Longitude versus latitude. Highlighted points represent the best matching grid cells.</p>
+ </div>
+ <div class="panel">
+  <h2>04. Mars Matching Map</h2>
+  <canvas id="marsMap"></canvas>
+  <p class="note">Longitude versus latitude. Highlighted points represent the best matching grid cells.</p>
+ </div>
+</section>
+
+<section class="panel">
+<h2>05. Terrain Parameter Comparison</h2>
+<canvas id="terrainGraph"></canvas>
+<p class="note">Comparison of normalized slope, roughness and elevation similarity. Missing parameters are excluded.</p>
+</section>
+
+<section class="two">
+ <div class="panel">
+  <h2>06. Moon Similarity Graph</h2>
+  <canvas id="moonGraph"></canvas>
+ </div>
+ <div class="panel">
+  <h2>07. Mars Similarity Graph</h2>
+  <canvas id="marsGraph"></canvas>
+ </div>
+</section>
+
+<section class="panel">
+<h2>08. Best Matching Moon Locations</h2>
+<div class="scroll">
+<table>
+<thead><tr>
+<th>Rank</th><th>Latitude</th><th>Longitude</th>
+<th>Elevation</th><th>Slope</th><th>Roughness</th><th>Similarity</th>
+</tr></thead>
+<tbody id="moonTable"></tbody>
+</table>
+</div>
+</section>
+
+<section class="panel">
+<h2>09. Best Matching Mars Locations</h2>
+<div class="scroll">
+<table>
+<thead><tr>
+<th>Rank</th><th>Latitude</th><th>Longitude</th>
+<th>Elevation</th><th>Slope</th><th>Roughness</th><th>Similarity</th>
+</tr></thead>
+<tbody id="marsTable"></tbody>
+</table>
+</div>
+</section>
+
+<section class="panel">
+<h2>10. Experimental Site Recommendation</h2>
+<div id="recommendation" class="note">
+Select an Earth location to generate experimental site recommendations.
+</div>
+</section>
+
+<section class="panel">
+<h2>11. Scientific Method and Data Information</h2>
+<p class="note">
+Earth reference records come from the processed global terrain summary.
+Moon and Mars candidates come from the locally stored planetary grid.
+The algorithm ranks locations using terrain feature similarity, including
+slope, roughness and elevation when available. Similarity is a terrain
+analogy score, not proof of environmental, engineering or experimental safety.
+All comparisons use the available static local datasets.
+</p>
+<p class="note" id="dataInfo">Dataset information will appear here.</p>
+</section>
+
+</main>
+
+<footer>TERRATIME4D | Local planetary terrain comparison system</footer>
+
+<script>
+"use strict";
+
+const state = {
+ earth:[],
+ moon:[],
+ mars:[],
+ moonResults:[],
+ marsResults:[],
+ selected:null
+};
+
+const $ = id => document.getElementById(id);
+
+function num(v){
+ if(v===null || v===undefined || v==="") return null;
+ const n=Number(v);
+ return Number.isFinite(n)?n:null;
+}
+
+function first(obj,keys){
+ for(const k of keys){
+  if(obj && obj[k]!==undefined && obj[k]!==null && obj[k]!==""){
+   const v=num(obj[k]);
+   if(v!==null)return v;
+  }
+ }
+ return null;
+}
+
+function parseCSV(text){
+ const rows=[];
+ let row=[],field="",quoted=false;
+ for(let i=0;i<text.length;i++){
+  const c=text[i];
+  if(c==='"'){
+   if(quoted && text[i+1]==='"'){field+='"';i++}
+   else quoted=!quoted;
+  }else if(c==="," && !quoted){
+   row.push(field);field="";
+  }else if((c==="\n"||c==="\r")&&!quoted){
+   if(c==="\r"&&text[i+1]==="\n")i++;
+   row.push(field);
+   if(row.some(x=>x!==""))rows.push(row);
+   row=[];field="";
+  }else field+=c;
+ }
+ if(field!==""||row.length){row.push(field);rows.push(row)}
+ const headers=rows.shift().map(x=>x.trim().replace(/^\uFEFF/,""));
+ return rows.map(r=>{
+  const o={};
+  headers.forEach((h,i)=>o[h]=(r[i]??"").trim());
+  return o;
+ });
+}
+
+function earthRecord(r){
+ 
+ const githubLocationName=String(first(r,["location","Location","location_name","name","tile_name","tile_id","id"])??"").trim();
+const location=String(r.location||"");
+ let lat=first(r,["latitude","lat","center_latitude","tile_latitude"]);
+ let lon=first(r,["longitude","lon","lng","center_longitude","tile_longitude"]);
+
+ if(lat===null||lon===null){
+  let m=location.match(/(-?\d+(?:\.\d+)?)\s*[,/; ]\s*(-?\d+(?:\.\d+)?)/);
+  if(m){
+   lat=lat??Number(m[1]);
+   lon=lon??Number(m[2]);
+  }
+ }
+
+ // Recognize geographic tile names such as N88E000, S05W010.
+ if(lat===null||lon===null){
+  const m=location.match(/([NS])\s*(\d{1,2}(?:\.\d+)?)\D+([EW])\s*(\d{1,3}(?:\.\d+)?)/i);
+  if(m){
+   const ns=m[1].toUpperCase();
+   const ew=m[3].toUpperCase();
+   const tileLat=Number(m[2]);
+   const tileLon=Number(m[4]);
+
+   // Earth records use 5-degree tiles.
+   lat=lat??(ns==="N"?tileLat+2.5:-tileLat+2.5);
+   lon=lon??(ew==="E"?tileLon+2.5:-tileLon-2.5);
+  }
+ }
+
+ // Recognize signed latitude/longitude embedded in location labels.
+ if(lat===null||lon===null){
+  const m=location.match(/lat(?:itude)?[_=: ]*(-?\d+(?:\.\d+)?).*?lon(?:gitude)?[_=: ]*(-?\d+(?:\.\d+)?)/i);
+  if(m){
+   lat=lat??Number(m[1]);
+   lon=lon??Number(m[2]);
+  }
+ }
+
+ return { locationName: githubLocationName, location: githubLocationName,
+  name:location||"Earth terrain record",
+  lat,lon,
+  elevation:first(r,["elevation_mean_m","elevation_mean","mean_elevation_m","elevation_m"]),
+  slope:first(r,["slope_mean_degrees","mean_slope_degrees","slope_mean","slope"]),
+  roughness:first(r,["roughness_630m_mean","roughness_mean_m","mean_roughness","roughness"]),
+  slope90:first(r,["slope_p90_degrees"]),
+  raw:r
+ };
+}
+
+function validRecord(r){
+ return r.lat!==null&&r.lon!==null&&
+  (r.slope!==null||r.roughness!==null||r.elevation!==null);
+}
+
+function validEarthRecord(r){
+ return r.name!=="" &&
+  (r.slope!==null||r.roughness!==null||r.elevation!==null);
+}
+function normalizePlanetRecord(o){
+ const lat=first(o,["latitude","lat","center_lat","grid_latitude"]);
+ const lon=first(o,["longitude","lon","lng","center_lon","grid_longitude"]);
+
+ let elevation=first(o,[
+  "elevation_mean_m","elevation_m","elevation_km",
+  "elevation","mean_elevation","mean_elevation_m","height"
+ ]);
+ let slope=first(o,[
+  "slope_mean_degrees","mean_slope_degrees","slope_degrees",
+  "slope_mean","slope","mean_slope"
+ ]);
+ let roughness=first(o,[
+  "roughness_630m_mean","roughness_mean_m","roughness_m",
+  "roughness_km","roughness","mean_roughness"
+ ]);
+
+ const ek=Object.keys(o).find(k=>/elevation.*km/i.test(k));
+ const rk=Object.keys(o).find(k=>/roughness.*km/i.test(k));
+
+ if(ek&&elevation!==null)elevation*=1000;
+ if(rk&&roughness!==null)roughness*=1000;
+
+ return {lat,lon,elevation,slope,roughness};
+}
+
+function discoverRecords(root){
+ const found=[];
+ const seen=new Set();
+
+ function walk(node,depth){
+  if(!node||depth>20)return;
+
+  if(Array.isArray(node)){
+   for(const item of node)walk(item,depth+1);
+   return;
+  }
+
+  if(typeof node!=="object")return;
+
+  const r=normalizePlanetRecord(node);
+  if(validRecord(r)){
+   const key=[r.lat,r.lon,r.elevation,r.slope,r.roughness].join("|");
+   if(!seen.has(key)){seen.add(key);found.push(r)}
+  }
+
+  for(const [key,value] of Object.entries(node)){
+   if(value&&typeof value==="object")walk(value,depth+1);
+  }
+ }
+
+ walk(root,0);
+ return found;
+}
+
+function getPlanetNode(root,name){
+ const target=name.toLowerCase();
+ let result=null;
+
+ function walk(node,depth){
+  if(!node||typeof node!=="object"||depth>8||result)return;
+  if(!Array.isArray(node)){
+   for(const [k,v] of Object.entries(node)){
+    if(k.toLowerCase()===target && v && typeof v==="object"){
+     result=v;return;
+    }
+   }
+   for(const v of Object.values(node))walk(v,depth+1);
+  }
+ }
+ walk(root,0);
+ return result;
+}
+
+function extractMatrices(root){
+ const arrays={elevation:null,slope:null,roughness:null};
+
+ function walk(node,depth){
+  if(!node||typeof node!=="object"||depth>12)return;
+  if(Array.isArray(node))return;
+
+  for(const [k,v] of Object.entries(node)){
+   const key=k.toLowerCase();
+   let type=null;
+   if(/elevation|height/.test(key))type="elevation";
+   else if(/slope/.test(key))type="slope";
+   else if(/roughness/.test(key))type="roughness";
+
+   if(type&&!arrays[type]&&Array.isArray(v)&&
+      Array.isArray(v[0])&&typeof v[0][0]==="number"){
+    arrays[type]=v;
+   }else if(v&&typeof v==="object")walk(v,depth+1);
+  }
+ }
+ walk(root,0);
+ return arrays;
+}
+
+function fromMatrices(root){
+ const m=extractMatrices(root);
+ const base=m.elevation||m.slope||m.roughness;
+ if(!base)return [];
+
+ const height=base.length,width=base[0]?.length||0;
+ if(!height||!width)return [];
+
+ const output=[];
+ const sampleStep=Math.max(1,Math.floor(Math.sqrt(height*width/100000)));
+
+ for(let y=0;y<height;y+=sampleStep){
+  for(let x=0;x<width;x+=sampleStep){
+   const get=(a)=>a&&a[y]?num(a[y][x]):null;
+   const r={
+    lat:90-(y/(height-1))*180,
+    lon:-180+(x/(width-1))*360,
+    elevation:get(m.elevation),
+    slope:get(m.slope),
+    roughness:get(m.roughness)
+   };
+   if(validRecord(r))output.push(r);
+  }
+ }
+ return output;
+}
+
+function findUnitHint(root,type){
+ let answer="";
+ function walk(node,depth){
+  if(!node||typeof node!=="object"||depth>12||answer)return;
+  if(!Array.isArray(node)){
+   for(const [k,v] of Object.entries(node)){
+    if(new RegExp(type,"i").test(k)&&/km/i.test(k)){answer="km";return}
+    if(v&&typeof v==="object")walk(v,depth+1);
+   }
+  }
+ }
+ walk(root,0);
+ return answer;
+}
+
+function convertPlanetUnits(records,root){
+ const eKm=findUnitHint(root,"elevation");
+ const rKm=findUnitHint(root,"roughness");
+
+ function median(values){
+  const a=values.filter(Number.isFinite).sort((x,y)=>x-y);
+  return a.length?a[Math.floor(a.length/2)]:null;
+ }
+
+ // Handle grids whose unit is not explicitly included in the field name.
+ const eMed=median(records.map(r=>r.elevation));
+ const rMed=median(records.map(r=>r.roughness));
+
+ for(const r of records){
+  if(eKm==="km" || (eKm===""&&eMed!==null&&Math.abs(eMed)<100)) {
+   if(r.elevation!==null)r.elevation*=1000;
+  }
+  if(rKm==="km" || (rKm===""&&rMed!==null&&Math.abs(rMed)<10)){
+   if(r.roughness!==null)r.roughness*=1000;
+  }
+ }
+}
+
+async function loadData(){
+ $("status").textContent="Reading local datasets...";
+
+ const csvPaths=[
+  "data/earth/global_advanced_terrain_summary.csv",
+  "/data/earth/global_advanced_terrain_summary.csv",
+  "public/data/earth/global_advanced_terrain_summary.csv",
+  "/public/data/earth/global_advanced_terrain_summary.csv"
+ ];
+ let csv=null;
+
+ for(const path of csvPaths){
+  try{
+   const response=await fetch(path);
+   if(response.ok){csv=await response.text();break}
+  }catch(e){}
+ }
+
+ if(!csv)throw Error("Cannot load Earth CSV. Check local server and public/data/earth.");
+
+ const rows=parseCSV(csv);
+ state.earth=rows.map(earthRecord).filter(validEarthRecord);
+
+ let json=null;
+ const jsonPaths=[
+  "data/planetary/planetary_grids.json",
+  "/data/planetary/planetary_grids.json",
+  "public/data/planetary/planetary_grids.json",
+  "/public/data/planetary/planetary_grids.json"
+ ];
+
+ for(const path of jsonPaths){
+  try{
+   const response=await fetch(path);
+   if(response.ok){
+    json=await response.json();
+    break;
+   }
+  }catch(e){}
+ }
+
+ if(!json)throw Error("Cannot load Moon/Mars planetary JSON. Check local server.");
+
+ for(const name of ["Moon","Mars"]){
+  const node=getPlanetNode(json,name);
+  if(!node)throw Error(name+" dataset was not found in planetary JSON.");
+
+  let records=discoverRecords(node);
+
+  // Fallback for numeric raster matrices.
+  if(records.length<10)records=fromMatrices(node);
+
+  convertPlanetUnits(records,node);
+
+  if(name==="Moon")state.moon=records;
+  else state.mars=records;
+ }
+
+ if(!state.earth.length)throw Error("No valid Earth coordinate records were found.");
+ if(!state.moon.length||!state.mars.length){
+  throw Error("Planetary grid parser found insufficient coordinate-based terrain records. Grid schema requires additional parser support.");
+ }
+
+ const select=$("earthLocation");
+ select.innerHTML="";
+
+ state.earth.forEach((r,i)=>{
+  const option=document.createElement("option");
+  option.value=i;
+  option.textContent=`${i+1}. ${r.name} | ${format(r.lat)}, ${format(r.lon)}`;
+  select.appendChild(option);
+ });
+
+ $("dataInfo").textContent=
+ `Earth records: ${state.earth.length} | Moon grid records: ${state.moon.length} | Mars grid records: ${state.mars.length} | Grid: 1 degree | Coordinate system: planetocentric simple cylindrical.`;
+
+ $("status").textContent="All three datasets loaded successfully. Select an Earth location.";
+
+ compare();
+}
+
+function featureSimilarity(a,b){
+ const features=[
+  ["slope",0.45,1],
+  ["roughness",0.35,1],
+  ["elevation",0.20,1]
+ ];
+
+ let weighted=0,total=0;
+ const details={};
+
+ for(const [key,weight] of features){
+  if(a[key]===null||b[key]===null)continue;
+
+  // Relative difference with a floor to avoid unstable zero denominators.
+  let scale=Math.max(Math.abs(a[key]),Math.abs(b[key]),key==="slope"?5:100);
+  const difference=Math.abs(a[key]-b[key])/scale;
+  const similarity=Math.max(0,100*(1-Math.min(difference,1)));
+
+  weighted+=similarity*weight;
+  total+=weight;
+  details[key]=similarity;
+ }
+
+ return {score:total?weighted/total:0,details};
+}
+
+function rankPlanet(earth,records){
+ return records.map((r,index)=>{
+  const match=featureSimilarity(earth,r);
+  return {...r,score:match.score,details:match.details,index};
+ }).filter(r=>Number.isFinite(r.score))
+ .sort((a,b)=>b.score-a.score);
+}
+
+function format(v,digits=2){
+ return v===null||v===undefined||!Number.isFinite(v)?"N/A":v.toFixed(digits);
+}
+
+function compare(){
+ const index=Number($("earthLocation").value);
+ const earth=state.earth[index];
+
+ if(!earth)return;
+
+ state.selected=earth;
+ const moon=rankPlanet(earth,state.moon);
+ const mars=rankPlanet(earth,state.mars);
+
+ state.moonResults=moon.slice(0,10);
+ state.marsResults=mars.slice(0,10);
+
+ $("earthElevation").textContent=format(earth.elevation,1)+" m";
+ $("earthSlope").textContent=format(earth.slope)+"°";
+ $("moonScore").textContent=format(moon[0]?.score)+"%";
+ $("marsScore").textContent=format(mars[0]?.score)+"%";
+
+ $("earthDetails").innerHTML=
+ `Location: ${escapeHTML(earth.name)}<br>Latitude: ${format(earth.lat)}°<br>Longitude: ${format(earth.lon)}°<br>Elevation: ${format(earth.elevation)} m<br>Slope: ${format(earth.slope)}°<br>Roughness: ${format(earth.roughness)} m`;
+
+ $("moonDetails").innerHTML=describe(moon[0]);
+ $("marsDetails").innerHTML=describe(mars[0]);
+
+ renderTable("moonTable",state.moonResults);
+ renderTable("marsTable",state.marsResults);
+
+ drawMap("moonMap",state.moonResults);
+ drawMap("marsMap",state.marsResults);
+ drawBars("moonGraph",moon.slice(0,10),"Moon");
+ drawBars("marsGraph",mars.slice(0,10),"Mars");
+ drawTerrainGraph(earth,moon[0],mars[0]);
+ renderRecommendation(earth,moon[0],mars[0]);
+
+ $("status").textContent=
+ `Comparison updated for ${earth.name}. ${state.moon.length} Moon cells and ${state.mars.length} Mars cells evaluated.`;
+}
+
+function escapeHTML(s){
+ return String(s).replace(/[&<>"']/g,c=>({
+ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+ })[c]);
+}
+
+function describe(r){
+ if(!r)return "No matching location available.";
+ return `Latitude: ${format(r.lat)}°<br>
+ Longitude: ${format(r.lon)}°<br>
+ Elevation: ${format(r.elevation)} m<br>
+ Slope: ${format(r.slope)}°<br>
+ Roughness: ${format(r.roughness)} m<br>
+ Similarity: <b>${format(r.score)}%</b>`;
+}
+
+function renderTable(id,rows){
+ $(id).innerHTML=rows.map((r,i)=>`
+ <tr>
+ <td>${i+1}</td>
+ <td>${format(r.lat)}</td>
+ <td>${format(r.lon)}</td>
+ <td>${format(r.elevation)}</td>
+ <td>${format(r.slope)}</td>
+ <td>${format(r.roughness)}</td>
+ <td class="score">${format(r.score)}%</td>
+ </tr>`).join("");
+}
+
+function canvasSetup(id){
+ const canvas=$(id);
+ const rect=canvas.getBoundingClientRect();
+ const dpr=window.devicePixelRatio||1;
+ const height=360;
+
+ canvas.width=Math.max(320,Math.round(rect.width*dpr));
+ canvas.height=height*dpr;
+
+ const ctx=canvas.getContext("2d");
+ ctx.scale(dpr,dpr);
+
+ return {ctx,w:canvas.width/dpr,h:height};
+}
+function drawMap(id,rows){
+ const {ctx,w,h}=canvasSetup(id);
+
+ ctx.clearRect(0,0,w,h);
+ ctx.fillStyle="#07111f";
+ ctx.fillRect(0,0,w,h);
+
+ const planet=id.toLowerCase().includes("moon")?"MOON":
+              id.toLowerCase().includes("mars")?"MARS":"EARTH";
+
+ const colors={
+  EARTH:{main:"#2476ad",light:"#62b9d7",dark:"#092b4c",point:"#54f5c5"},
+  MOON:{main:"#858d9b",light:"#d5d9e0",dark:"#303846",point:"#fff1a8"},
+  MARS:{main:"#b65d3d",light:"#efaa79",dark:"#542b27",point:"#ffe0a5"}
+ };
+
+ const color=colors[planet];
+ const cx=w/2;
+ const cy=h/2+8;
+ const radius=Math.min(w*.34,h*.39);
+
+ // Background stars
+ for(let i=0;i<65;i++){
+  const x=(i*97+31)%w;
+  const y=(i*53+17)%h;
+  ctx.fillStyle="rgba(210,225,255,.35)";
+  ctx.fillRect(x,y,1.3,1.3);
+ }
+
+ // Globe shadow
+ ctx.beginPath();
+ ctx.ellipse(cx+8,cy+radius*.92,radius*.85,radius*.13,0,0,Math.PI*2);
+ ctx.fillStyle="rgba(0,0,0,.42)";
+ ctx.fill();
+
+ // Sphere base and lighting
+ const gradient=ctx.createRadialGradient(
+  cx-radius*.38,cy-radius*.45,radius*.05,
+  cx,cy,radius
+ );
+ gradient.addColorStop(0,color.light);
+ gradient.addColorStop(.55,color.main);
+ gradient.addColorStop(1,color.dark);
+
+ ctx.beginPath();
+ ctx.arc(cx,cy,radius,0,Math.PI*2);
+ ctx.fillStyle=gradient;
+ ctx.fill();
+
+ // Clip all globe details inside sphere
+ ctx.save();
+ ctx.beginPath();
+ ctx.arc(cx,cy,radius,0,Math.PI*2);
+ ctx.clip();
+
+ const rotation=-25*Math.PI/180;
+
+ function project(lat,lon){
+  const p=lat*Math.PI/180;
+  const l=lon*Math.PI/180+rotation;
+
+  const x=Math.cos(p)*Math.sin(l);
+  const y=Math.sin(p);
+  const z=Math.cos(p)*Math.cos(l);
+
+  return {
+   x:cx+radius*x,
+   y:cy-radius*y,
+   visible:z>=0
+  };
+ }
+
+ // Latitude lines
+ ctx.lineWidth=1;
+ ctx.strokeStyle="rgba(220,240,255,.35)";
+
+ for(let lat=-75;lat<=75;lat+=15){
+  ctx.beginPath();
+  let started=false;
+
+  for(let lon=-180;lon<=180;lon+=2){
+   const p=project(lat,lon);
+
+   if(p.visible){
+    if(!started){
+     ctx.moveTo(p.x,p.y);
+     started=true;
+    }else{
+     ctx.lineTo(p.x,p.y);
+    }
+   }else{
+    started=false;
+   }
+  }
+  ctx.stroke();
+ }
+
+ // Longitude lines
+ for(let lon=-180;lon<180;lon+=15){
+  ctx.beginPath();
+  let started=false;
+
+  for(let lat=-90;lat<=90;lat+=2){
+   const p=project(lat,lon);
+
+   if(p.visible){
+    if(!started){
+     ctx.moveTo(p.x,p.y);
+     started=true;
+    }else{
+     ctx.lineTo(p.x,p.y);
+    }
+   }else{
+    started=false;
+   }
+  }
+  ctx.stroke();
+ }
+
+ // Equator
+ ctx.strokeStyle="rgba(255,255,255,.65)";
+ ctx.lineWidth=1.5;
+ ctx.beginPath();
+
+ for(let lon=-90;lon<=90;lon+=2){
+  const p=project(0,lon);
+  if(lon===-90)ctx.moveTo(p.x,p.y);
+  else ctx.lineTo(p.x,p.y);
+ }
+ ctx.stroke();
+
+ // Plot actual dataset coordinates
+ let plotted=0;
+
+ (rows||[]).forEach(r=>{
+  const lat=Number(r.lat??r.latitude??r.center_latitude);
+  const lon=Number(r.lon??r.longitude??r.center_longitude);
+
+  if(!Number.isFinite(lat)||!Number.isFinite(lon))return;
+  if(lat < -90 || lat > 90 || lon < -180 || lon > 180)return;
+
+  const p=project(lat,lon);
+  if(!p.visible)return;
+
+  ctx.beginPath();
+  ctx.arc(p.x,p.y,3.1,0,Math.PI*2);
+  ctx.fillStyle=color.point;
+  ctx.fill();
+
+  ctx.strokeStyle="rgba(255,255,255,.8)";
+  ctx.lineWidth=.7;
+  ctx.stroke();
+
+  plotted++;
+ });
+
+ ctx.restore();
+
+ // Globe outline
+ ctx.beginPath();
+ ctx.arc(cx,cy,radius,0,Math.PI*2);
+ ctx.strokeStyle="rgba(220,235,255,.8)";
+ ctx.lineWidth=1.6;
+ ctx.stroke();
+
+ // Heading and information
+ ctx.fillStyle="#ffffff";
+ ctx.font="bold 15px Arial";
+ ctx.textAlign="center";
+ ctx.fillText(planet+" GLOBE",cx,22);
+
+ ctx.fillStyle="#c6d7eb";
+ ctx.font="11px Arial";
+ ctx.fillText("Planetary coordinate view",cx,h-24);
+
+ ctx.fillStyle=color.point;
+ ctx.beginPath();
+ ctx.arc(cx-65,h-8,3,0,Math.PI*2);
+ ctx.fill();
+
+ ctx.fillStyle="#c6d7eb";
+ ctx.textAlign="left";
+ ctx.fillText("Visible dataset points: "+plotted,cx-55,h-4);
+}
+function drawBars(id,rows,planet){
+ const {ctx,w,h}=canvasSetup(id);
+
+ ctx.clearRect(0,0,w,h);
+ ctx.fillStyle="#0b1424";
+ ctx.fillRect(0,0,w,h);
+
+ const left=100;
+ const right=w-35;
+ const top=40;
+ const bottom=h-42;
+ const plotWidth=right-left;
+ const plotHeight=bottom-top;
+
+ ctx.font="12px Arial";
+ ctx.fillStyle="#edf4ff";
+ ctx.textAlign="left";
+ ctx.fillText(planet+" - Top 10 Terrain Similarity (%)",left,20);
+
+ // X axis grid and labels
+ for(let value=0;value<=100;value+=20){
+  const x=left+plotWidth*value/100;
+
+  ctx.strokeStyle="#30435c";
+  ctx.lineWidth=1;
+  ctx.beginPath();
+  ctx.moveTo(x,top);
+  ctx.lineTo(x,bottom);
+  ctx.stroke();
+
+  ctx.fillStyle="#b6c5d9";
+  ctx.textAlign="center";
+  ctx.fillText(value+"%",x,bottom+20);
+ }
+
+ // Y axis
+ ctx.strokeStyle="#a5b7cd";
+ ctx.beginPath();
+ ctx.moveTo(left,top);
+ ctx.lineTo(left,bottom);
+ ctx.stroke();
+
+ ctx.textAlign="right";
+ ctx.fillStyle="#edf4ff";
+
+ if(!rows.length){
+  ctx.textAlign="center";
+  ctx.fillText("No matching data",w/2,h/2);
+  return;
+ }
+
+ const step=plotHeight/rows.length;
+ const barHeight=Math.min(20,step*.55);
+
+ rows.forEach((r,i)=>{
+  const y=top+i*step+step/2;
+  const score=Math.max(0,Math.min(100,r.score||0));
+  const barWidth=plotWidth*score/100;
+
+  // Grid category labels
+  ctx.fillStyle="#cbd8e9";
+  ctx.textAlign="right";
+  ctx.font="11px Arial";
+  ctx.fillText("Rank "+(i+1),left-12,y+4);
+
+  // Bars
+  ctx.fillStyle=i===0?"#65e5ad":
+   planet==="Moon"?"#9bafd0":"#ffad65";
+
+  ctx.fillRect(left,y-barHeight/2,barWidth,barHeight);
+
+  // Value labels
+  ctx.fillStyle="#ffffff";
+  ctx.textAlign="left";
+  ctx.fillText(score.toFixed(1)+"%",Math.min(right-36,left+barWidth+6),y+4);
+ });
+
+ // Axis titles
+ ctx.fillStyle="#b6c5d9";
+ ctx.textAlign="center";
+ ctx.fillText("Terrain similarity score (%)",w/2,h-7);
+
+ ctx.save();
+ ctx.translate(17,h/2);
+ ctx.rotate(-Math.PI/2);
+ ctx.fillText("Ranked locations",0,0);
+ ctx.restore();
+}
+function drawTerrainGraph(earth,moon,mars){
+ const {ctx,w,h}=canvasSetup("terrainGraph");
+
+ ctx.clearRect(0,0,w,h);
+ ctx.fillStyle="#0b1424";
+ ctx.fillRect(0,0,w,h);
+
+ const series=[
+  {name:"Earth",record:earth,color:"#42d9e8"},
+  {name:"Moon",record:moon,color:"#b6c5df"},
+  {name:"Mars",record:mars,color:"#ffad65"}
+ ];
+
+ const features=[
+  {key:"elevation",label:"Elevation",unit:"m"},
+  {key:"slope",label:"Mean Slope",unit:"degrees"},
+  {key:"roughness",label:"Roughness",unit:"m"}
+ ];
+
+ const panelGap=22;
+ const panelWidth=(w-75-panelGap*2)/3;
+ const startX=55;
+
+ ctx.font="12px Arial";
+ ctx.fillStyle="#edf4ff";
+ ctx.textAlign="left";
+ ctx.fillText("Earth vs Moon vs Mars - Actual Terrain Measurements",12,17);
+
+ features.forEach((feature,index)=>{
+  const x=startX+index*(panelWidth+panelGap);
+  const top=65;
+  const bottom=h-65;
+  const chartHeight=bottom-top;
+
+  const values=series.map(s=>{
+   const v=s.record?s.record[feature.key]:null;
+   return v!==null&&v!==undefined&&Number.isFinite(v)?v:null;
+  });
+
+  const available=values.filter(v=>v!==null);
+
+  ctx.fillStyle="#dce8f7";
+  ctx.textAlign="center";
+  ctx.font="bold 12px Arial";
+  ctx.fillText(feature.label,x+panelWidth/2,40);
+
+  ctx.font="10px Arial";
+  ctx.fillStyle="#9fb1c8";
+  ctx.fillText(feature.unit,x+panelWidth/2,54);
+
+  if(!available.length){
+   ctx.fillText("No data",x+panelWidth/2,(top+bottom)/2);
+   return;
+  }
+
+  let min=Math.min(0,...available);
+  let max=Math.max(0,...available);
+
+  if(max===min)max=min+1;
+
+  const padding=(max-min)*.12;
+  min-=padding;
+  max+=padding;
+
+  const yValue=v=>bottom-(v-min)/(max-min)*chartHeight;
+  const zeroY=yValue(0);
+
+  // Y-axis grid
+  for(let i=0;i<=4;i++){
+   const value=min+(max-min)*i/4;
+   const y=yValue(value);
+
+   ctx.strokeStyle="#30435c";
+   ctx.lineWidth=1;
+   ctx.beginPath();
+   ctx.moveTo(x,y);
+   ctx.lineTo(x+panelWidth,y);
+   ctx.stroke();
+
+   ctx.fillStyle="#b6c5d9";
+   ctx.font="9px Arial";
+   ctx.textAlign="right";
+   ctx.fillText(value.toFixed(1),x-5,y+3);
+  }
+
+  // Zero baseline
+  ctx.strokeStyle="#9bacc2";
+  ctx.beginPath();
+  ctx.moveTo(x,zeroY);
+  ctx.lineTo(x+panelWidth,zeroY);
+  ctx.stroke();
+
+  // Bars
+  const groupWidth=panelWidth/3;
+  const barWidth=Math.min(22,groupWidth*.48);
+
+  series.forEach((s,j)=>{
+   const value=values[j];
+   const bx=x+j*groupWidth+(groupWidth-barWidth)/2;
+
+   if(value===null){
+    ctx.fillStyle="#778397";
+    ctx.textAlign="center";
+    ctx.font="10px Arial";
+    ctx.fillText("N/A",bx+barWidth/2,bottom+14);
+    return;
+   }
+
+   const y=yValue(value);
+   const barTop=Math.min(y,zeroY);
+   const barHeight=Math.max(1,Math.abs(zeroY-y));
+
+   ctx.fillStyle=s.color;
+   ctx.fillRect(bx,barTop,barWidth,barHeight);
+
+   ctx.fillStyle="#edf4ff";
+   ctx.font="9px Arial";
+   ctx.textAlign="center";
+
+   const labelY=value>=0?
+    Math.max(top+11,y-5):
+    Math.min(bottom-2,y+13);
+
+   ctx.fillText(
+    value.toFixed(1),
+    bx+barWidth/2,
+    labelY
+   );
+
+   ctx.fillStyle="#cbd8e9";
+   ctx.fillText(s.name,bx+barWidth/2,bottom+25);
+  });
+
+  // Y axis
+  ctx.strokeStyle="#aabbd0";
+  ctx.beginPath();
+  ctx.moveTo(x,top);
+  ctx.lineTo(x,bottom);
+  ctx.stroke();
+ });
+
+ // Legend
+ ctx.textAlign="center";
+ ctx.font="11px Arial";
+
+ const legendStart=w/2-105;
+
+ series.forEach((s,i)=>{
+  const x=legendStart+i*100;
+  ctx.fillStyle=s.color;
+  ctx.fillRect(x, h-20, 10, 10);
+  ctx.fillStyle="#e4edf8";
+  ctx.fillText(s.name,x+35,h-11);
+ });
+}
+function renderRecommendationBase(earth,moon,mars){
+ let text="<h3>Recommended terrain analogues</h3>";
+
+ const best=[
+  {name:"Moon",r:moon},
+  {name:"Mars",r:mars}
+ ].filter(x=>x.r);
+
+ best.sort((a,b)=>b.r.score-a.r.score);
+
+ if(!best.length){
+  $("recommendation").textContent="No matching locations found.";
+  return;
+ }
+
+ best.forEach(x=>{
+  text+=`<p><b>${x.name}</b>: ${format(x.r.score)}% terrain similarity.
+  Candidate coordinates: ${format(x.r.lat)}° latitude,
+  ${format(x.r.lon)}° longitude.
+  Slope: ${format(x.r.slope)}°.
+  Roughness: ${format(x.r.roughness)} m.</p>`;
+ });
+
+ text+=`<p>Best terrain analogue: <b>${best[0].name}</b>.
+ Ranking considers available terrain parameters only.
+ This is a preliminary terrain-based recommendation, not a mission
+ safety assessment or guarantee of experimental suitability.</p>`;
+
+ $("recommendation").innerHTML=text;
+}
+
+$("compareButton").addEventListener("click",compare);
+
+$("earthLocation").addEventListener("change",()=>{
+ const r=state.earth[Number($("earthLocation").value)];
+ if(r){
+  $("latInput").value=r.lat;
+  $("lonInput").value=r.lon;
+  compare();
+ }
+});
+
+$("coordinateButton").addEventListener("click",()=>{
+ const lat=num($("latInput").value);
+ const lon=num($("lonInput").value);
+
+ if(lat===null||lon===null||lat < -90||lat > 90||lon < -180||lon > 180){
+  $("status").textContent="Enter valid latitude (-90 to 90) and longitude (-180 to 180).";
+  return;
+ }
+
+ // Select nearest available Earth dataset record.
+ let best=Infinity,index=-1;
+ state.earth.forEach((r,i)=>{
+  if(r.lat===null||r.lon===null)return; const distance=Math.hypot(r.lat-lat,(r.lon-lon)*Math.cos(lat*Math.PI/180));
+  if(distance<best){best=distance;index=i}
+ });
+
+ if(index<0)return;
+ $("earthLocation").value=String(index);
+ compare();
+ $("status").textContent+=" Custom coordinates mapped to the nearest available Earth dataset record.";
+});
+
+window.addEventListener("resize",()=>{
+ if(state.selected){
+  drawMap("moonMap",state.moonResults);
+  drawMap("marsMap",state.marsResults);
+  drawBars("moonGraph",state.moonResults,"Moon");
+  drawBars("marsGraph",state.marsResults,"Mars");
+  drawTerrainGraph(state.selected,state.moonResults[0],state.marsResults[0]);
+ }
+});
+
+loadData().catch(error=>{
+ console.error(error);
+ $("status").textContent="DATA ERROR: "+error.message;
+ $("dataInfo").textContent="Check browser console for dataset parsing details. No dataset was modified.";
+});
+</script>
+<script>
+(function(){
+
+ function missionValue(record,keys){
+  if(!record)return null;
+  for(const key of keys){
+   const value=record[key];
+   if(value!==null&&value!==undefined&&value!==""&&Number.isFinite(Number(value))){
+    return Number(value);
+   }
+  }
+  return null;
+ }
+
+ function missionName(record,fallback){
+  if(!record)return fallback;
+  return record.locationName || record.location || record.name ||
+   record.tile_name || fallback;
+ }
+
+ function missionScore(record){
+  if(!record)return null;
+
+  const keys=["score","similarity","similarity_score","match_score","terrain_similarity"];
+  for(const key of keys){
+   const value=Number(record[key]);
+   if(Number.isFinite(value)){
+    return value>=0&&value<=1?value*100:value;
+   }
+  }
+  return null;
+ }
+
+ function metricLine(label,earthValue,targetValue,unit){
+  if(earthValue===null||targetValue===null){
+   return `<div class="mission-metric">
+    <span>${label}</span><b>Data unavailable</b>
+   </div>`;
+  }
+
+  const difference=targetValue-earthValue;
+  const sign=difference>0?"+":"";
+
+  return `<div class="mission-metric">
+   <span>${label}</span>
+   <b>Earth: ${earthValue.toFixed(2)} ${unit}</b>
+   <b>Target: ${targetValue.toFixed(2)} ${unit}</b>
+   <small>Difference: ${sign}${difference.toFixed(2)} ${unit}</small>
+  </div>`;
+ }
+
+ function missionExplanation(earth,target,planet){
+  if(!earth||!target){
+   return `<p>Waiting for valid Earth and ${planet} comparison records.</p>`;
+  }
+
+  const eSlope=missionValue(earth,["slope","slope_mean_degrees","mean_slope"]);
+  const tSlope=missionValue(target,["slope","slope_mean_degrees","mean_slope"]);
+
+  const eRough=missionValue(earth,["roughness","roughness_1350m_mean","roughness_630m_mean","roughness_270m_mean"]);
+  const tRough=missionValue(target,["roughness","roughness_mean","roughness_11km_mean"]);
+
+  const eElev=missionValue(earth,["elevation","elevation_mean_m","mean_elevation"]);
+  const tElev=missionValue(target,["elevation","elevation_mean_m","mean_elevation"]);
+
+  const score=missionScore(target);
+  const location=missionName(target,planet+" candidate");
+
+  let explanation=[];
+
+  if(eSlope!==null&&tSlope!==null){
+   const diff=Math.abs(eSlope-tSlope);
+   explanation.push(
+    diff<1?
+    "The selected locations have closely matching mean slopes.":
+    diff<3?
+    "The mean slopes show a moderate difference that should be considered when evaluating surface mobility.":
+    "The mean slopes differ considerably, so landing and rover mobility conditions may not be directly comparable."
+   );
+  }
+
+  if(eRough!==null&&tRough!==null){
+   explanation.push(
+    "Roughness measurements are available for both records. Surface-scale differences should be considered before interpreting this comparison."
+   );
+  }
+
+  if(eElev!==null&&tElev!==null){
+   explanation.push(
+    "Elevation measurements are available for both locations and can help describe their relative terrain setting."
+   );
+  }
+
+  if(!explanation.length){
+   explanation.push("The available records do not contain enough matching terrain measurements for a detailed explanation.");
+  }
+
+  return `
+   <div class="mission-explanation">
+    <h4>${planet}: ${location}</h4>
+    <div class="mission-score">
+     <strong>${score===null?"Not calculated":score.toFixed(1)+"%"}</strong>
+     <span>${score===null?"No existing similarity score found":"Existing terrain similarity score"}</span>
+    </div>
+    <p>${explanation.join(" ")}</p>
+
+    <div class="mission-metrics">
+     ${metricLine("Mean elevation",eElev,tElev,"m")}
+     ${metricLine("Mean slope",eSlope,tSlope,"degrees")}
+     ${metricLine("Terrain roughness",eRough,tRough,"m")}
+    </div>
+
+    <h5>Mission interpretation</h5>
+    <p>
+     Similar terrain measurements can help identify locations worth investigating
+     for landing-site studies, surface mobility tests and terrain experiments.
+     They do not independently establish mission safety or operational suitability.
+    </p>
+
+    <h5>Evidence limitations</h5>
+    <p>
+     Environmental conditions and geological characteristics have not been
+     independently evaluated unless corresponding measurements are available
+     in the project datasets. Roughness values may use different spatial scales
+     between planetary datasets.
+    </p>
+   </div>`;
+ }
+
+ window.renderRecommendation = function(earth,moon,mars){
+  if(typeof window.renderRecommendationBase==="function"){
+   window.renderRecommendationBase(earth,moon,mars);
+  }
+
+  let panel=document.getElementById("missionEvidencePanel");
+
+  if(!panel){
+   panel=document.createElement("section");
+   panel.id="missionEvidencePanel";
+   panel.style.cssText=
+    "margin:28px 0;padding:24px;background:#101d30;border:1px solid #344963;border-radius:16px;color:#edf4ff;";
+   const heading=document.createElement("h2");
+   heading.textContent="MISSION 04 / EVIDENCE-BASED SUITABILITY";
+   panel.appendChild(heading);
+
+   const subtitle=document.createElement("p");
+   subtitle.textContent="Understand why a planetary location matches the selected Earth terrain.";
+   subtitle.style.color="#a9bdd5";
+   panel.appendChild(subtitle);
+
+   const content=document.createElement("div");
+   content.id="missionEvidenceContent";
+   panel.appendChild(content);
+
+   document.body.appendChild(panel);
+  }
+
+  const content=document.getElementById("missionEvidenceContent");
+
+  content.innerHTML=
+   missionExplanation(earth,moon,"MOON")+
+   missionExplanation(earth,mars,"MARS");
+ };
+
+ const style=document.createElement("style");
+ style.textContent=`
+  #missionEvidencePanel h2{font-size:19px;margin:0 0 10px}
+  #missionEvidencePanel h4{font-size:16px;color:#73d9ed;margin:20px 0 12px}
+  #missionEvidencePanel h5{font-size:13px;color:#8fe1bd;margin:16px 0 7px}
+  #missionEvidencePanel p{color:#c3d1e2;line-height:1.65;font-size:13px}
+  .mission-explanation{padding:17px;margin-top:16px;background:#0b1728;border:1px solid #30445e;border-radius:12px}
+  .mission-score{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0}
+  .mission-score strong{font-size:27px;color:#72e1b2}
+  .mission-score span{font-size:12px;color:#a9bdd5}
+  .mission-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:14px}
+  .mission-metric{padding:12px;background:#15253b;border-radius:9px;display:flex;flex-direction:column;gap:6px}
+  .mission-metric span{color:#9db4ce;font-size:12px}
+  .mission-metric b{font-size:13px;color:#edf4ff}
+  .mission-metric small{color:#8fe1bd}
+ `;
+ document.head.appendChild(style);
+
+})();
+</script>
+<style>
+#rover4DPanel{
+ margin:30px 0;
+ padding:22px;
+ background:#0b1628;
+ color:#edf4ff;
+ border:1px solid #344963;
+ border-radius:16px;
+ font-family:Arial,sans-serif;
+}
+#rover4DPanel h2{font-size:21px;margin:0 0 8px}
+#rover4DPanel .rover-sub{color:#a9bdd5;font-size:13px;line-height:1.6}
+#rover4DPanel .rover-key{
+ margin:18px 0;
+ padding:15px;
+ background:#142c3a;
+ border-left:4px solid #65e5ad;
+ border-radius:8px;
+ font-size:15px;
+ line-height:1.6;
+ font-weight:bold;
+}
+#rover4DPanel .rover-controls{
+ display:flex;flex-wrap:wrap;gap:10px;
+ align-items:center;margin:16px 0;
+}
+#rover4DPanel button,#rover4DPanel select{
+ background:#203651;color:#fff;
+ border:1px solid #526a87;
+ padding:10px 15px;border-radius:8px;
+ cursor:pointer;
+}
+#rover4DPanel button:hover{background:#315273}
+#rover4DPanel input[type=range]{width:100%;accent-color:#65e5ad}
+#rover4DCanvas{
+ display:block;width:100%;height:360px;
+ background:#07111f;border:1px solid #31445e;
+ border-radius:12px;
+}
+.rover-time-label{
+ display:flex;justify-content:space-between;
+ color:#b7c8dc;font-size:12px;margin-top:8px;
+}
+.rover-stats{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+ gap:10px;margin:18px 0;
+}
+.rover-stat{
+ background:#14243a;padding:14px;
+ border-radius:10px;border:1px solid #2e435e;
+}
+.rover-stat span{display:block;color:#9fb3cc;font-size:11px;margin-bottom:7px}
+.rover-stat strong{font-size:19px;color:#72e1b2}
+.rover-phase{
+ padding:13px;background:#172b40;border-radius:9px;
+ margin:12px 0;color:#d9e8f7;line-height:1.6;
+}
+#rover4DPanel .rover-disclaimer{
+ color:#9fb3cc;font-size:11px;line-height:1.6;
+ margin-top:16px;
+}
+@media(max-width:600px){
+ #rover4DCanvas{height:280px}
+ #rover4DPanel{padding:13px}
+}
+</style>
+
+<style>
+#rover4DPanel{margin:30px 0;padding:22px;background:#0b1628;color:#edf4ff;border:1px solid #344963;border-radius:16px;font-family:Arial,sans-serif}
+#rover4DPanel h2{font-size:21px;margin:0 0 8px}
+#rover4DPanel .rover-sub{color:#a9bdd5;font-size:13px;line-height:1.6}
+#rover4DPanel .rover-key{margin:18px 0;padding:15px;background:#142c3a;border-left:4px solid #65e5ad;border-radius:8px;font-size:15px;line-height:1.6;font-weight:bold}
+.dual-rover-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+.dual-rover-card{min-width:0;background:#101f33;border:1px solid #344963;border-radius:13px;padding:14px}
+.dual-rover-card h3{margin:0 0 10px;font-size:18px}
+.dual-rover-card.moon h3{color:#d5dce8}
+.dual-rover-card.mars h3{color:#ffad85}
+.dual-rover-card canvas{display:block;width:100%;height:300px;background:#07111f;border:1px solid #31445e;border-radius:10px}
+.dual-rover-card .rover-controls{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}
+.dual-rover-card button{background:#203651;color:white;border:1px solid #526a87;padding:8px 11px;border-radius:7px;cursor:pointer}
+.dual-rover-card button:hover{background:#315273}
+.dual-rover-card select{background:#203651;color:white;border:1px solid #526a87;padding:7px;border-radius:7px}
+.dual-rover-card input[type=range]{width:100%;accent-color:#65e5ad}
+.dual-rover-card .rover-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+.dual-rover-card .rover-stat{background:#14243a;padding:10px;border-radius:8px;border:1px solid #2e435e}
+.dual-rover-card .rover-stat span{display:block;color:#9fb3cc;font-size:10px;margin-bottom:6px}
+.dual-rover-card .rover-stat strong{font-size:16px;color:#72e1b2}
+.dual-rover-card .rover-phase{padding:11px;background:#172b40;border-radius:8px;margin:10px 0;color:#d9e8f7;font-size:12px;line-height:1.6;min-height:65px}
+.dual-rover-card .rover-score{padding:11px;background:#142c3a;border-radius:8px;margin:10px 0}
+.dual-rover-card .rover-score strong{font-size:23px;color:#72e1b2}
+.dual-rover-card .rover-score span{display:block;color:#a9bdd5;font-size:11px;margin-top:4px}
+#rover4DPanel .rover-disclaimer{color:#9fb3cc;font-size:11px;line-height:1.6;margin-top:16px}
+@media(max-width:750px){.dual-rover-grid{grid-template-columns:1fr}.dual-rover-card canvas{height:270px}}
+</style>
+
+<section id="rover4DPanel">
+ <h2>ROVER + TIME | DUAL PLANETARY 4D SIMULATION</h2>
+ <p class="rover-sub">
+  Compare Moon and Mars rover missions simultaneously. Each planet has
+  its own animated rover, timeline, mission phases and terrain similarity evidence.
+ </p>
+
+ <div class="rover-key">
+  "Instead of only giving a similarity score, it explains why the match is strong or weak for the selected mission."
+ </div>
+
+ <div class="dual-rover-grid">
+
+  <div class="dual-rover-card moon">
+   <h3>🌕 MOON ROVER MISSION</h3>
+   <div class="rover-score">
+    <strong id="moonRoverScore">Loading score...</strong>
+    <span>Moon terrain similarity score from the comparison analysis</span>
+   </div>
+   <canvas id="moonRoverCanvas"></canvas>
+   <div class="rover-controls">
+    <button id="moonPlay">▶ Play</button>
+    <button id="moonReset">↺ Reset</button>
+    <label>Speed
+     <select id="moonSpeed">
+      <option value="0.5">0.5×</option>
+      <option value="1" selected>1×</option>
+      <option value="2">2×</option>
+      <option value="4">4×</option>
+     </select>
+    </label>
+   </div>
+   <input id="moonTimeline" type="range" min="0" max="1000" value="0"/>
+   <div class="rover-stats">
+    <div class="rover-stat"><span>DISTANCE TRAVELLED</span><strong id="moonDistance">0.0 m</strong></div>
+    <div class="rover-stat"><span>BATTERY ESTIMATE</span><strong id="moonBattery">100%</strong></div>
+    <div class="rover-stat"><span>TERRAIN SLOPE</span><strong id="moonSlope">2.0°</strong></div>
+    <div class="rover-stat"><span>MISSION TIME</span><strong id="moonTime">0.00 sols</strong></div>
+    <div class="rover-stat"><span>ROVER POSITION</span><strong id="moonPosition">0.0 m</strong></div>
+    <div class="rover-stat"><span>MISSION PHASE</span><strong id="moonPhase">Initialisation</strong></div>
+   </div>
+   <div class="rover-phase" id="moonExplanation">
+    Moon rover is at its starting position.
+   </div>
+  </div>
+
+  <div class="dual-rover-card mars">
+   <h3>🔴 MARS ROVER MISSION</h3>
+   <div class="rover-score">
+    <strong id="marsRoverScore">Loading score...</strong>
+    <span>Mars terrain similarity score from the comparison analysis</span>
+   </div>
+   <canvas id="marsRoverCanvas"></canvas>
+   <div class="rover-controls">
+    <button id="marsPlay">▶ Play</button>
+    <button id="marsReset">↺ Reset</button>
+    <label>Speed
+     <select id="marsSpeed">
+      <option value="0.5">0.5×</option>
+      <option value="1" selected>1×</option>
+      <option value="2">2×</option>
+      <option value="4">4×</option>
+     </select>
+    </label>
+   </div>
+   <input id="marsTimeline" type="range" min="0" max="1000" value="0"/>
+   <div class="rover-stats">
+    <div class="rover-stat"><span>DISTANCE TRAVELLED</span><strong id="marsDistance">0.0 m</strong></div>
+    <div class="rover-stat"><span>BATTERY ESTIMATE</span><strong id="marsBattery">100%</strong></div>
+    <div class="rover-stat"><span>TERRAIN SLOPE</span><strong id="marsSlope">2.0°</strong></div>
+    <div class="rover-stat"><span>MISSION TIME</span><strong id="marsTime">0.00 sols</strong></div>
+    <div class="rover-stat"><span>ROVER POSITION</span><strong id="marsPosition">0.0 m</strong></div>
+    <div class="rover-stat"><span>MISSION PHASE</span><strong id="marsPhase">Initialisation</strong></div>
+   </div>
+   <div class="rover-phase" id="marsExplanation">
+    Mars rover is at its starting position.
+   </div>
+  </div>
+
+ </div>
+
+ <p class="rover-sub">
+  <strong>4D visualization:</strong> X, Y and elevation represent spatial
+  position; T represents mission time. Both timelines can be controlled
+  independently to compare mission progression.
+ </p>
+
+ <p class="rover-disclaimer">
+  Simulation notice: rover movement, distance, battery consumption, slope
+  variation and mission events are illustrative model outputs, not actual
+  rover telemetry or validated engineering predictions. The similarity
+  scores are read from the existing comparison analysis. A terrain similarity
+  score is not an overall mission safety certification.
+ </p>
+</section>
+
+<script>
+(function(){
+ "use strict";
+
+ const $=id=>document.getElementById(id);
+
+ function createMission(prefix,planet){
+  const canvas=$(prefix+"RoverCanvas");
+  const ctx=canvas.getContext("2d");
+  const timeline=$(prefix+"Timeline");
+  const playButton=$(prefix+"Play");
+  const speed=$(prefix+"Speed");
+
+  let progress=0;
+  let playing=false;
+  let lastFrame=0;
+  let animationId=null;
+
+  function metrics(t){
+   const distance=(planet==="Moon"?95:120)*t;
+   const slope=(planet==="Moon"?1.5:2)+
+    (planet==="Moon"?3.5:4)*Math.pow(Math.sin(t*Math.PI*2),2)+
+    (planet==="Moon"?2:3)*Math.exp(-Math.pow((t-.64)/.09,2));
+
+   const battery=100-(planet==="Moon"?21:24)*t-5*t*t;
+
+   let phase="Surface exploration";
+   let explanation="The rover is travelling across the planetary surface and monitoring terrain conditions.";
+
+   if(t<.12){
+    phase="Initialisation";
+    explanation="The rover begins its mission and establishes its starting position.";
+   }else if(t<.35){
+    phase="Surface traversal";
+    explanation="The rover follows its illustrative route while monitoring surface slope and mobility conditions.";
+   }else if(t<.58){
+    phase="Terrain investigation";
+    explanation="The rover reaches an investigation region and performs simulated terrain observations.";
+   }else if(t<.78){
+    phase="Obstacle navigation";
+    explanation="A simulated obstacle region is encountered. The rover slows and follows an adjusted route.";
+   }else{
+    phase="Science operations";
+    explanation="The rover reaches the final investigation region and performs a simulated science observation.";
+   }
+
+   if(slope>6){
+    explanation+=" The local slope is relatively steep in this scenario, so mobility caution is required.";
+   }
+
+   return {distance,slope,battery,phase,explanation};
+  }
+
+  function resize(){
+   const rect=canvas.getBoundingClientRect();
+   const dpr=window.devicePixelRatio||1;
+   canvas.width=Math.max(320,Math.round(rect.width*dpr));
+   canvas.height=Math.max(240,Math.round(rect.height*dpr));
+   ctx.setTransform(dpr,0,0,dpr,0,0);
+   draw();
+  }
+
+  function draw(){
+   const dpr=window.devicePixelRatio||1;
+   const w=canvas.width/dpr;
+   const h=canvas.height/dpr;
+   const t=progress/1000;
+   const isMoon=planet==="Moon";
+
+   const worldOffset=t*1050;
+   const roverX=w*.12+w*.76*t;
+   const roverY=h*.68+Math.sin(t*Math.PI*2)*5;
+
+   ctx.clearRect(0,0,w,h);
+
+   // Planet-specific atmospheric sky
+   const sky=ctx.createLinearGradient(0,0,0,h*.75);
+
+   if(isMoon){
+    sky.addColorStop(0,"#080d1b");
+    sky.addColorStop(.55,"#252c3a");
+    sky.addColorStop(1,"#59616d");
+   }else{
+    sky.addColorStop(0,"#271b2b");
+    sky.addColorStop(.45,"#9b5141");
+    sky.addColorStop(1,"#d18a60");
+   }
+
+   ctx.fillStyle=sky;
+   ctx.fillRect(0,0,w,h);
+
+   // Stars visible in the lunar sky
+   if(isMoon){
+    for(let i=0;i<65;i++){
+     const x=((i*137+43-worldOffset*.025)%w+w)%w;
+     const y=(i*71+19)%(h*.48);
+
+     ctx.fillStyle="rgba(255,255,255,.55)";
+     ctx.fillRect(x,y,1.3,1.3);
+    }
+   }
+
+   // Distant mountains move slowly: parallax effect
+   function mountainLayer(color,base,amplitude,frequency,speed){
+    ctx.fillStyle=color;
+    ctx.beginPath();
+    ctx.moveTo(0,h);
+
+    for(let x=0;x<=w+5;x+=4){
+     const worldX=x+worldOffset*speed;
+     const y=base+
+      Math.sin(worldX*frequency)*amplitude+
+      Math.sin(worldX*frequency*.43)*amplitude*.7+
+      Math.sin(worldX*frequency*1.7)*amplitude*.18;
+
+     ctx.lineTo(x,y);
+    }
+
+    ctx.lineTo(w,h);
+    ctx.closePath();
+    ctx.fill();
+   }
+
+   if(isMoon){
+    mountainLayer("#343b48",h*.52,18,.008,.13);
+    mountainLayer("#535b68",h*.59,12,.014,.24);
+   }else{
+    mountainLayer("#61372f",h*.48,22,.009,.12);
+    mountainLayer("#874638",h*.57,17,.015,.22);
+    mountainLayer("#a65740",h*.61,10,.022,.30);
+   }
+
+   // Distant surface horizon
+   const horizon=h*.63;
+
+   // Surface color
+   const ground=ctx.createLinearGradient(0,horizon,0,h);
+
+   if(isMoon){
+    ground.addColorStop(0,"#a4a8b0");
+    ground.addColorStop(.35,"#777e89");
+    ground.addColorStop(1,"#303743");
+   }else{
+    ground.addColorStop(0,"#d28a62");
+    ground.addColorStop(.35,"#a65d43");
+    ground.addColorStop(1,"#592e2b");
+   }
+
+   ctx.fillStyle=ground;
+   ctx.beginPath();
+   ctx.moveTo(0,horizon);
+
+   // Procedural rolling ground profile
+   for(let x=0;x<=w;x+=3){
+    const worldX=x+worldOffset;
+
+    let roughness=isMoon?3.2:4.5;
+
+    const smoothPatch=Math.sin(worldX*.004);
+    const smallBumps=Math.sin(worldX*.045)*roughness;
+    const largeBumps=Math.sin(worldX*.012)*roughness*2;
+
+    let y=horizon+
+     largeBumps+
+     smallBumps+
+     smoothPatch*5;
+
+    // Simulated larger terrain formations
+    const craterCenter=worldX%410;
+    const craterDistance=Math.abs(craterCenter-205);
+
+    if(isMoon && craterDistance<90){
+     const craterShape=Math.sqrt(
+      Math.max(0,1-Math.pow(craterDistance/90,2))
+     );
+     y-=craterShape*16;
+    }
+
+    if(!isMoon){
+     y+=Math.sin(worldX*.018)*5;
+    }
+
+    ctx.lineTo(x,y);
+   }
+
+   ctx.lineTo(w,h);
+   ctx.lineTo(0,h);
+   ctx.closePath();
+   ctx.fill();
+
+   // Surface details move with the rover
+   // Deterministic procedural rocks and terrain particles
+   const spacing=58;
+
+   for(let i=-2;i<Math.ceil(w/spacing)+3;i++){
+    const worldIndex=Math.floor(worldOffset/spacing)+i;
+    const hash=Math.abs(Math.sin(worldIndex*127.1)*43758.5453);
+    const random=hash-Math.floor(hash);
+
+    const x=i*spacing-
+     (worldOffset%spacing);
+
+    const size=3+random*10;
+    const y=h*.72+random*h*.19;
+
+    if(isMoon){
+     // Lunar scattered rocks
+     ctx.fillStyle=random>.5?"#535b66":"#727986";
+     ctx.beginPath();
+     ctx.ellipse(x,y,size*1.35,size*.72,
+      random*.5,0,Math.PI*2);
+     ctx.fill();
+
+     ctx.strokeStyle="rgba(220,225,235,.18)";
+     ctx.stroke();
+
+     // Dust highlights
+     ctx.fillStyle="rgba(220,225,235,.15)";
+     ctx.fillRect(x-size*.5,y-size*.3,size*.7,1.5);
+    }else{
+     // Martian reddish boulders
+     ctx.fillStyle=random>.5?"#713c32":"#98523b";
+     ctx.beginPath();
+     ctx.moveTo(x-size,y);
+     ctx.lineTo(x-size*.5,y-size*.8);
+     ctx.lineTo(x+size*.6,y-size*.65);
+     ctx.lineTo(x+size,y);
+     ctx.closePath();
+     ctx.fill();
+
+     ctx.strokeStyle="rgba(255,190,145,.2)";
+     ctx.stroke();
+    }
+   }
+
+   // Lunar crater rims and shadowed depressions
+   if(isMoon){
+    for(let i=-1;i<5;i++){
+     const craterX=
+      ((i*210+120-worldOffset*.75)%w+w)%w;
+
+     const craterY=h*.75+(i%3)*22;
+     const radius=17+(i%3)*7;
+
+     ctx.fillStyle="rgba(30,35,44,.35)";
+     ctx.beginPath();
+     ctx.ellipse(craterX,craterY,radius*1.5,
+      radius*.48,0,0,Math.PI*2);
+     ctx.fill();
+
+     ctx.strokeStyle="rgba(210,216,226,.45)";
+     ctx.lineWidth=2;
+     ctx.beginPath();
+     ctx.ellipse(craterX,craterY-3,radius*1.5,
+      radius*.48,0,Math.PI,Math.PI*2);
+     ctx.stroke();
+    }
+   }
+
+   // Martian sand and surface streaks
+   if(!isMoon){
+    for(let i=0;i<34;i++){
+     const x=((i*79-worldOffset*1.2)%w+w)%w;
+     const y=h*.72+(i*37)%(h*.23);
+
+     ctx.strokeStyle="rgba(245,178,133,.22)";
+     ctx.lineWidth=1;
+     ctx.beginPath();
+     ctx.moveTo(x,y);
+     ctx.lineTo(x+12+(i%5)*3,y-2);
+     ctx.stroke();
+    }
+   }
+
+   // Rover tracks follow the moving vehicle
+   ctx.strokeStyle=isMoon?
+    "rgba(35,42,52,.55)":"rgba(75,37,31,.55)";
+   ctx.lineWidth=3;
+
+   ctx.beginPath();
+   ctx.moveTo(0,roverY+23);
+   ctx.lineTo(roverX-20,roverY+23);
+   ctx.stroke();
+
+   // Rover shadow
+   ctx.fillStyle="rgba(0,0,0,.42)";
+   ctx.beginPath();
+   ctx.ellipse(roverX,roverY+23,34,8,0,0,Math.PI*2);
+   ctx.fill();
+
+   // Wheels
+   for(let i=-1;i<=1;i+=2){
+    ctx.fillStyle="#151b24";
+    ctx.beginPath();
+    ctx.arc(roverX+i*19,roverY+13,8,0,Math.PI*2);
+    ctx.fill();
+
+    ctx.strokeStyle="#b8c4d0";
+    ctx.lineWidth=1;
+    ctx.stroke();
+
+    ctx.fillStyle="#8494a5";
+    ctx.beginPath();
+    ctx.arc(roverX+i*19,roverY+13,3,0,Math.PI*2);
+    ctx.fill();
+   }
+
+   // Rover body
+   ctx.fillStyle="#d7dee5";
+   ctx.fillRect(roverX-22,roverY-5,44,15);
+
+   ctx.fillStyle="#7d91a5";
+   ctx.fillRect(roverX-13,roverY-16,26,12);
+
+   // Solar panel detail
+   ctx.fillStyle="#284f72";
+   ctx.fillRect(roverX-32,roverY-8,9,12);
+   ctx.fillRect(roverX+23,roverY-8,9,12);
+
+   ctx.strokeStyle="#b8c8d7";
+   ctx.lineWidth=2;
+   ctx.beginPath();
+   ctx.moveTo(roverX,roverY-15);
+   ctx.lineTo(roverX,roverY-32);
+   ctx.stroke();
+
+   ctx.fillStyle="#65e5ad";
+   ctx.beginPath();
+   ctx.arc(roverX,roverY-33,4,0,Math.PI*2);
+   ctx.fill();
+
+   // Scene labels
+   ctx.fillStyle="#ffffff";
+   ctx.font="bold 13px Arial";
+   ctx.textAlign="left";
+   ctx.fillText(planet.toUpperCase()+" ROVER",14,22);
+
+   ctx.font="11px Arial";
+   ctx.fillText("Mission progress: "+(t*100).toFixed(1)+"%",14,41);
+
+   ctx.textAlign="center";
+   ctx.fillText("ROVER",roverX,roverY-43);
+
+   ctx.textAlign="right";
+   ctx.fillStyle="rgba(255,255,255,.8)";
+   ctx.fillText(
+    isMoon?"LUNAR REGOLITH / CRATERED TERRAIN":
+           "MARTIAN SOIL / ROCKY TERRAIN",
+    w-12,22
+   );
+  }
+  function update(){
+   const t=progress/1000;
+   const m=metrics(t);
+
+   $(prefix+"Distance").textContent=m.distance.toFixed(1)+" m";
+   $(prefix+"Position").textContent=m.distance.toFixed(1)+" m";
+   $(prefix+"Battery").textContent=m.battery.toFixed(1)+"%";
+   $(prefix+"Slope").textContent=m.slope.toFixed(1)+"°";
+   $(prefix+"Time").textContent=(t*2).toFixed(2)+" sols";
+   $(prefix+"Phase").textContent=m.phase;
+   $(prefix+"Explanation").textContent=m.explanation;
+
+   timeline.value=progress;
+   draw();
+  }
+
+  function stop(){
+   playing=false;
+   playButton.textContent="▶ Play";
+   if(animationId!==null){
+    cancelAnimationFrame(animationId);
+    animationId=null;
+   }
+  }
+
+  function animate(timestamp){
+   if(!playing)return;
+   if(!lastFrame)lastFrame=timestamp;
+   const delta=Math.min(timestamp-lastFrame,100);
+   lastFrame=timestamp;
+
+   progress+=delta*.035*Number(speed.value);
+
+   if(progress>=1000){
+    progress=1000;
+    stop();
+   }
+
+   update();
+   if(playing)animationId=requestAnimationFrame(animate);
+  }
+
+  playButton.addEventListener("click",()=>{
+   if(playing){
+    stop();
+    return;
+   }
+   if(progress>=1000)progress=0;
+   playing=true;
+   lastFrame=0;
+   playButton.textContent="Ⅱ Pause";
+   animationId=requestAnimationFrame(animate);
+  });
+
+  $(""+prefix+"Reset").addEventListener("click",()=>{
+   stop();
+   progress=0;
+   update();
+  });
+
+  timeline.addEventListener("input",()=>{
+   stop();
+   progress=Number(timeline.value);
+   update();
+  });
+
+  window.addEventListener("resize",resize);
+
+  resize();
+  update();
+ }
+
+ function syncScores(){
+  const scores=document.querySelectorAll(
+   "#missionEvidencePanel .mission-explanation .mission-score strong"
+  );
+
+  if(scores.length>=2){
+   $("moonRoverScore").textContent=scores[0].textContent;
+   $("marsRoverScore").textContent=scores[1].textContent;
+  }else{
+   $("moonRoverScore").textContent="Awaiting comparison";
+   $("marsRoverScore").textContent="Awaiting comparison";
+  }
+ }
+
+ createMission("moon","Moon");
+ createMission("mars","Mars");
+ syncScores();
+
+ const evidence=document.getElementById("missionEvidencePanel");
+ if(evidence){
+  new MutationObserver(syncScores).observe(evidence,{
+   childList:true,subtree:true,characterData:true
+  });
+ }
+
+})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

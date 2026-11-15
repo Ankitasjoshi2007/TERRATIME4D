@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TERRATIME 4D | Space Explorer</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+ --bg:#030711; --panel:rgba(9,19,36,.84); --line:rgba(111,170,230,.19);
+ --cyan:#65d9ff; --blue:#428cff; --muted:#8297b4; --white:#edf6ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,sans-serif;overflow:hidden}
+#space{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+#overlay{position:relative;z-index:2;height:100vh;display:flex;flex-direction:column;pointer-events:none}
+header,.panel,.bottom{pointer-events:auto}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,rgba(3,7,17,.96),rgba(3,7,17,.48))}
+.brand{font-family:Orbitron,sans-serif;letter-spacing:3px;font-weight:700;font-size:19px}
+.brand span{color:var(--cyan)}
+.tag{font-size:9px;letter-spacing:2px;color:var(--muted);margin-top:5px}
+.status{font-size:10px;letter-spacing:1.5px;color:#79e6c0}
+.status:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#62e8b2;margin-right:9px;box-shadow:0 0 12px #62e8b2}
+main{display:grid;grid-template-columns:260px 1fr 290px;gap:14px;padding:16px 18px;flex:1;min-height:0}
+.panel{background:linear-gradient(145deg,rgba(13,27,48,.91),rgba(5,13,27,.79));border:1px solid var(--line);border-radius:13px;backdrop-filter:blur(14px);overflow:hidden}
+.left,.right{padding:17px;overflow:auto}
+.section-label{font:10px Orbitron,sans-serif;letter-spacing:2px;color:var(--cyan);margin:2px 0 15px}
+.eyebrow{font-size:9px;letter-spacing:1.8px;color:var(--muted);text-transform:uppercase}
+h1{font:600 clamp(23px,3vw,38px) Orbitron,sans-serif;letter-spacing:1px;margin:8px 0}
+h2{font:500 13px Orbitron,sans-serif;letter-spacing:1px;margin:0 0 12px}
+p{font-size:11px;line-height:1.65;color:var(--muted)}
+button,select{font:11px Inter,sans-serif;color:var(--white);background:#10243c;border:1px solid var(--line);border-radius:7px;padding:10px 12px;cursor:pointer}
+button:hover{border-color:var(--cyan);color:var(--cyan)}
+button.active{background:#123958;border-color:var(--cyan);color:#8ce5ff}
+.planet-list{display:grid;gap:8px}
+.planet-btn{display:flex;align-items:center;gap:12px;text-align:left;width:100%;padding:11px}
+.planet-dot{width:27px;height:27px;border-radius:50%;box-shadow:inset -7px -4px 10px #0008,0 0 12px #65d9ff33}
+.earth{background:linear-gradient(135deg,#68d4e9,#1461a1 55%,#183c35)}
+.moon{background:linear-gradient(135deg,#e6e6df,#737c8a)}
+.mars{background:linear-gradient(135deg,#ffb16f,#a83b28 65%,#521b1b)}
+.planet-name{font-size:12px;font-weight:600}
+.planet-sub{font-size:9px;color:var(--muted);margin-top:3px}
+.divider{height:1px;background:var(--line);margin:17px 0}
+.control-row{display:flex;align-items:center;justify-content:space-between;font-size:10px;color:var(--muted);margin:12px 0}
+input[type=range]{width:100%;accent-color:var(--cyan)}
+.center{position:relative;min-width:0;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+#scene-title{position:absolute;top:18px;left:20px;z-index:3;pointer-events:none}
+#scene-title h1{font-size:clamp(20px,2.6vw,34px);text-shadow:0 0 25px #50bfff55}
+#scene-title p{margin:5px 0}
+#scene-hint{position:absolute;top:105px;left:20px;color:#92a9c5;font-size:9px;letter-spacing:1.5px;pointer-events:none}
+.scene-actions{position:absolute;top:18px;right:18px;display:flex;gap:7px;z-index:3}
+#focus-label{position:absolute;bottom:93px;left:20px;font:10px Orbitron,sans-serif;letter-spacing:2px;color:#a9dfff}
+.right .metric{padding:12px 0;border-bottom:1px solid var(--line)}
+.metric strong{font:19px Orbitron,sans-serif;display:block;margin-top:7px}
+.metric small{font-size:9px;color:var(--muted)}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:5px 8px;font-size:9px;color:var(--cyan)}
+.map{height:132px;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#071b2b}
+.map svg{width:100%;height:100%}
+.member{padding:9px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-size:10px}
+.member span:last-child{color:#7c91ad}
+.bottom{margin:0 18px 15px;padding:13px 18px;background:rgba(7,16,31,.91);border:1px solid var(--line);border-radius:12px}
+.timeline-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.timeline-head h2{margin:0}
+.timeline{display:grid;grid-template-columns:75px 1fr 80px;align-items:center;gap:14px}
+.timeline input{width:100%}
+.time-label{font:10px Orbitron,sans-serif;color:var(--cyan)}
+.legend{display:flex;gap:13px;flex-wrap:wrap;font-size:9px;color:var(--muted);margin-top:9px}
+.legend i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+#loading{position:absolute;inset:0;display:grid;place-items:center;background:#030711;z-index:10;font:12px Orbitron,sans-serif;letter-spacing:3px;color:var(--cyan);transition:opacity 1s}
+@media(max-width:1050px){
+ main{grid-template-columns:210px 1fr}
+ .right{display:none}
+}
+@media(max-width:700px){
+ body{overflow:auto}
+ #overlay{height:auto;min-height:100vh}
+ main{grid-template-columns:1fr;padding:9px}
+ .left{order:2}
+ .center{height:58vh;min-height:400px;order:1}
+ header{padding:0 13px}
+ .bottom{margin:0 9px 10px}
+}
+</style>
+</head>
+<body>
+<nav id="tt4d-global-nav" style="position:relative;z-index:99999;background:#101827;color:white;padding:12px 16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-family:Arial,sans-serif;border-bottom:1px solid #334155">
+<strong style="margin-right:12px;color:#67e8f9">TERRATIME4D</strong>
+<a href="./index.html" style="color:white;text-decoration:none;padding:7px">Mission Control</a>
+<a href="./mission-control-dashboard.html" style="color:white;text-decoration:none;padding:7px">Dashboard</a>
+<a href="./comparison.html" style="color:white;text-decoration:none;padding:7px">Earth–Moon–Mars</a>
+<a href="./live-location.html" style="color:white;text-decoration:none;padding:7px">Live Location</a>
+<a href="./planetary-map.html" style="color:white;text-decoration:none;padding:7px">Planetary Maps</a>
+</nav>
+<div id="loading">INITIALIZING TERRATIME 4D</div>
+<canvas id="space"></canvas>
+<div id="overlay">
+<header>
+ <div><div class="brand">TERRA<span>TIME</span> 4D</div><div class="tag">PLANETARY ANALOG DISCOVERY SYSTEM</div></div>
+ <div class="status">SYSTEM ONLINE · VISUAL PREVIEW</div>
+</header>
+<main>
+ <aside class="panel left">
+  <div class="section-label">01 / NAVIGATION</div>
+  <div class="eyebrow">Celestial bodies</div>
+  <div class="planet-list" style="margin-top:12px">
+   <button class="planet-btn active" data-planet="Earth"><i class="planet-dot earth"></i><span><div class="planet-name">Earth</div><div class="planet-sub">Reference world</div></span></button>
+   <button class="planet-btn" data-planet="Moon"><i class="planet-dot moon"></i><span><div class="planet-name">Moon</div><div class="planet-sub">Lunar terrain</div></span></button>
+   <button class="planet-btn" data-planet="Mars"><i class="planet-dot mars"></i><span><div class="planet-name">Mars</div><div class="planet-sub">Martian terrain</div></span></button>
+  </div>
+  <div class="divider"></div>
+  <div class="section-label">02 / MISSION PROFILE</div>
+  <div class="eyebrow">Mission objective</div>
+  <select id="mission" style="width:100%;margin-top:10px">
+   <option>Rover Mobility</option><option>Landing Site Assessment</option>
+   <option>Geological Research</option><option>Resource Exploration</option>
+   <option>Robotics and Construction</option><option>Human Operations</option>
+  </select>
+  <div class="divider"></div>
+  <div class="section-label">03 / SCENE CONTROLS</div>
+  <div class="control-row"><span>Animation</span><button id="pause">PAUSE</button></div>
+  <div class="control-row"><span>Orbital paths</span><input id="orbits" type="checkbox" checked></div>
+  <div class="control-row"><span>Satellite</span><input id="satellite" type="checkbox" checked></div>
+  <div class="control-row"><span>Rover</span><input id="rover" type="checkbox" checked></div>
+  <div class="control-row"><span>Animation speed</span><b id="speedval">1.0×</b></div>
+  <input id="speed" type="range" min="0" max="3" step=".1" value="1">
+  <p>Drag to rotate the view. Scroll to zoom. Select a planet to focus the camera.</p>
+ </aside>
+
+ <section class="panel center">
+  <div id="scene-title"><div class="eyebrow">Deep space / planetary system</div><h1 id="focus-name">EARTH SYSTEM</h1><p id="focus-desc">The reference world · Earth–Moon system</p></div>
+  <div id="scene-hint">LIVE 3D SCENE · INTERACTIVE CAMERA</div>
+  <div class="scene-actions"><button id="reset">RESET VIEW</button><button id="cinema">CINEMATIC</button></div>
+  <div id="focus-label">SOLAR SYSTEM EXPLORER</div>
+ </section>
+
+ <aside class="panel right">
+  <div class="section-label">04 / MISSION INTELLIGENCE</div>
+  <div class="eyebrow">Selected destination</div>
+  <h2 id="right-planet" style="margin-top:9px">EARTH</h2>
+  <div class="metric"><small>MISSION OBJECTIVE</small><strong id="right-mission" style="font-size:13px">Rover Mobility</strong></div>
+  <div class="metric"><small>SCIENTIFIC DATA CONNECTION</small><strong style="font-size:13px">Pending</strong><span class="pill">Integration stage</span></div>
+  <div class="divider"></div>
+  <div class="section-label">05 / EARTH CANDIDATE MAP</div>
+  <div class="map">
+   <svg viewBox="0 0 300 140" preserveAspectRatio="xMidYMid slice">
+    <defs><pattern id="grid" width="25" height="20" patternUnits="userSpaceOnUse"><path d="M25 0H0V20" fill="none" stroke="#28516b" stroke-width=".5"/></pattern></defs>
+    <rect width="300" height="140" fill="#092238"/><rect width="300" height="140" fill="url(#grid)"/>
+    <path d="M25 35l22-17 30 5 13 17-13 13-8 22-18 4-15-22z M110 24l26-12 30 10 8 20-19 14-9 25-16-9-8-27z M177 25l30-12 38 8 23 23-14 22-26-4-16 18-21-20z M210 94l21-7 17 15-17 19-20-9z" fill="#245344" stroke="#4d927a" stroke-width="1"/>
+    <g fill="#64ddff"><circle cx="62" cy="50" r="3"/><circle cx="128" cy="62" r="3"/><circle cx="208" cy="48" r="3"/><circle cx="235" cy="90" r="3"/></g>
+    <g fill="none" stroke="#64ddff" opacity=".55"><circle cx="62" cy="50" r="9"/><circle cx="128" cy="62" r="9"/><circle cx="208" cy="48" r="9"/></g>
+    <text x="9" y="132" fill="#8daec5" font-size="8">ILLUSTRATIVE MAP · REAL CANDIDATES NOT YET CONNECTED</text>
+   </svg>
+  </div>
+  <p>Candidate locations will appear here after Member 1 and 2 Earth data integration.</p>
+  <div class="divider"></div>
+  <div class="section-label">06 / SCIENTIFIC MODULES</div>
+  <div class="member"><b>Member 1 · Earth data</b><span>Pending connection</span></div>
+  <div class="member"><b>Member 2 · Terrain</b><span>Pending connection</span></div>
+  <div class="member"><b>Member 3 · Planetary</b><span>Pending connection</span></div>
+  <div class="member"><b>Member 4 · Mission scores</b><span>Pending connection</span></div>
+ </aside>
+</main>
+<div class="bottom">
+ <div class="timeline-head"><h2>07 / 4D MISSION TIMELINE</h2><span class="pill" id="timeline-state">SIMULATION PREVIEW</span></div>
+ <div class="timeline"><span class="time-label">T + 00:00</span><input id="time" type="range" min="0" max="100" value="0"><span class="time-label" id="timeval">T + 00:00</span></div>
+ <div class="legend"><span><i style="background:#ffbd65"></i>Solar illumination</span><span><i style="background:#65d9ff"></i>Orbital motion</span><span><i style="background:#ff795e"></i>Rover movement</span><span><i style="background:#a78bfa"></i>Mission timeline</span></div>
+</div>
+</div>
+
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+
+const scene=new THREE.Scene();
+scene.background=new THREE.Color(0x030711);
+scene.fog=new THREE.FogExp2(0x030711,.0005);
+const camera=new THREE.PerspectiveCamera(48,1,.1,3000);
+camera.position.set(0,105,205);
+const renderer=new THREE.WebGLRenderer({canvas:document.querySelector('#space'),antialias:true,alpha:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+renderer.setSize(innerWidth,innerHeight);
+renderer.outputColorSpace=THREE.SRGBColorSpace;
+renderer.toneMapping=THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure=1.25;
+const controls=new OrbitControls(camera,renderer.domElement);
+controls.enableDamping=true;controls.dampingFactor=.045;controls.minDistance=25;controls.maxDistance=500;
+scene.add(new THREE.AmbientLight(0x8ba8d5,1.3));
+const sunLight=new THREE.PointLight(0xffd5a0,16000,1500,1.5);
+sunLight.position.set(0,0,0);scene.add(sunLight);
+const loader=new THREE.TextureLoader();
+const tex=(url)=>loader.load(url,t=>{t.colorSpace=THREE.SRGBColorSpace});
+const earthTex=tex('https://threejs.org/examples/textures/planets/earth_atmos_2048.jpg');
+const earthNormal=loader.load('https://threejs.org/examples/textures/planets/earth_normal_2048.jpg');
+const moonTex=tex('https://threejs.org/examples/textures/planets/moon_1024.jpg');
+const marsTex=tex('https://threejs.org/examples/textures/planets/mars_1k_color.jpg');
+
+function sphere(name,r,texture,color,x,y,z){
+ const material=texture?new THREE.MeshStandardMaterial({map:texture,roughness:.94}):new THREE.MeshStandardMaterial({color,roughness:.9});
+ const mesh=new THREE.Mesh(new THREE.SphereGeometry(r,72,48),material);
+ mesh.position.set(x,y,z);mesh.name=name;scene.add(mesh);return mesh;
+}
+const sun=sphere('Sun',15,null,0xffaa45,0,0,0);
+const sunGlow=new THREE.Sprite(new THREE.SpriteMaterial({map:glowTexture(),color:0xffa94d,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false}));
+sunGlow.scale.set(75,75,1);sun.add(sunGlow);
+function glowTexture(){
+ const c=document.createElement('canvas');c.width=c.height=128;const ctx=c.getContext('2d');
+ const g=ctx.createRadialGradient(64,64,1,64,64,64);g.addColorStop(0,'#fff5cb');g.addColorStop(.18,'#ffb64d');g.addColorStop(1,'#ff7b2200');ctx.fillStyle=g;ctx.fillRect(0,0,128,128);
+ return new THREE.CanvasTexture(c);
+}
+const earth=sphere('Earth',8,earthTex,0x2c75be,65,0,0);
+if(earthNormal)earth.material.normalMap=earthNormal;
+const atmosphere=new THREE.Mesh(new THREE.SphereGeometry(8.35,64,48),new THREE.MeshBasicMaterial({color:0x3d9dff,transparent:true,opacity:.13,side:THREE.BackSide}));
+earth.add(atmosphere);
+const moon=sphere('Moon',2.15,moonTex,0x999999,0,0,0);
+const mars=sphere('Mars',5.7,marsTex,0xb34a32,145,0,-35);
+const marsAtmos=new THREE.Mesh(new THREE.SphereGeometry(5.82,48,32),new THREE.MeshBasicMaterial({color:0xc66c4b,transparent:true,opacity:.07,side:THREE.BackSide}));
+mars.add(marsAtmos);
+
+function orbit(radius,color=0x39769d,opacity=.4,parent=scene){
+ const points=[];for(let i=0;i<=256;i++){let a=i/256*Math.PI*2;points.push(new THREE.Vector3(Math.cos(a)*radius,0,Math.sin(a)*radius))}
+ const line=new THREE.Line(new THREE.BufferGeometry().setFromPoints(points),new THREE.LineBasicMaterial({color,transparent:true,opacity}));
+ parent.add(line);return line;
+}
+const earthOrbit=orbit(65,0x4c8cba,.45);
+const marsOrbit=orbit(145,0x9e604d,.32);
+const moonOrbit=orbit(18,0x83bde2,.65,earth);
+
+const starGeo=new THREE.BufferGeometry(),starCount=5000,starPos=new Float32Array(starCount*3);
+for(let i=0;i<starCount;i++){let r=250+Math.random()*950,a=Math.random()*Math.PI*2,b=Math.acos(2*Math.random()-1);starPos[i*3]=r*Math.sin(b)*Math.cos(a);starPos[i*3+1]=r*Math.sin(b)*Math.sin(a);starPos[i*3+2]=r*Math.cos(b)}
+starGeo.setAttribute('position',new THREE.BufferAttribute(starPos,3));
+const stars=new THREE.Points(starGeo,new THREE.PointsMaterial({color:0xbad8ff,size:1.15,transparent:true,opacity:.85}));
+scene.add(stars);
+
+const particleGeo=new THREE.BufferGeometry(),particleCount=500,particlePos=new Float32Array(particleCount*3);
+for(let i=0;i<particleCount;i++){particlePos[i*3]=(Math.random()-.5)*350;particlePos[i*3+1]=(Math.random()-.5)*180;particlePos[i*3+2]=(Math.random()-.5)*350}
+particleGeo.setAttribute('position',new THREE.BufferAttribute(particlePos,3));
+const particles=new THREE.Points(particleGeo,new THREE.PointsMaterial({color:0x66bfff,size:.7,transparent:true,opacity:.5}));
+scene.add(particles);
+
+const satellite=new THREE.Group();scene.add(satellite);
+const satBody=new THREE.Mesh(new THREE.BoxGeometry(1.3,.8,1),new THREE.MeshStandardMaterial({color:0xd5dce8,metalness:.7,roughness:.3}));satellite.add(satBody);
+for(const side of [-1,1]){const panel=new THREE.Mesh(new THREE.BoxGeometry(2.3,.08,1),new THREE.MeshStandardMaterial({color:0x2361b3,metalness:.4,roughness:.5}));panel.position.x=side*1.8;satellite.add(panel)}
+const satPath=orbit(13,0x60d8ff,.0,satellite);
+const satLine=orbit(13,0x62c8e8,.45,earth);satLine.rotation.x=.35;
+
+const rover=new THREE.Group();scene.add(rover);
+const chassis=new THREE.Mesh(new THREE.BoxGeometry(2.2,.65,1.4),new THREE.MeshStandardMaterial({color:0xc4cbd3,metalness:.5,roughness:.55}));
+chassis.position.y=1.1;rover.add(chassis);
+const mast=new THREE.Mesh(new THREE.BoxGeometry(.18,1.1,.18),new THREE.MeshStandardMaterial({color:0xcbd5e1}));mast.position.set(.3,1.9,0);rover.add(mast);
+const cameraHead=new THREE.Mesh(new THREE.BoxGeometry(.75,.35,.45),new THREE.MeshStandardMaterial({color:0x79caff,metalness:.3}));cameraHead.position.set(.3,2.5,0);rover.add(cameraHead);
+const wheels=[];
+for(const x of [-.8,.8])for(const z of [-.85,.85]){const w=new THREE.Mesh(new THREE.CylinderGeometry(.37,.37,.24,16),new THREE.MeshStandardMaterial({color:0x252b36,roughness:1}));w.rotation.x=Math.PI/2;w.position.set(x,.65,z);rover.add(w);wheels.push(w)}
+// A small local terrain patch is a visual animation preview, not scientific DEM.
+const terrain=new THREE.Mesh(new THREE.PlaneGeometry(42,42,70,70),new THREE.MeshStandardMaterial({color:0x8e4938,roughness:1,wireframe:false}));
+terrain.rotation.x=-Math.PI/2;terrain.position.set(145,-5,-35);scene.add(terrain);
+const pos=terrain.geometry.attributes.position;
+for(let i=0;i<pos.count;i++){const x=pos.getX(i),y=pos.getY(i);pos.setZ(i,Math.sin(x*.3)*.7+Math.cos(y*.23)*.9+Math.sin((x+y)*.12)*.6)}
+terrain.geometry.computeVertexNormals();
+
+const comet=new THREE.Group();scene.add(comet);
+const cometHead=new THREE.Mesh(new THREE.SphereGeometry(.8,12,8),new THREE.MeshBasicMaterial({color:0xbdeeff}));comet.add(cometHead);
+const tail=new THREE.Mesh(new THREE.ConeGeometry(.65,17,12),new THREE.MeshBasicMaterial({color:0x64caff,transparent:true,opacity:.23}));tail.rotation.z=Math.PI/2;tail.position.x=-8;comet.add(tail);
+
+const planetButtons=document.querySelectorAll('[data-planet]');
+let selected='Earth',paused=false,clock=new THREE.Clock(),elapsed=0,cinematic=false;
+const focusTargets={Earth:new THREE.Vector3(65,0,0),Moon:new THREE.Vector3(65,0,0),Mars:new THREE.Vector3(145,0,-35)};
+function selectPlanet(name){
+ selected=name;planetButtons.forEach(b=>b.classList.toggle('active',b.dataset.planet===name));
+ document.querySelector('#focus-name').textContent=name.toUpperCase()+' SYSTEM';
+ document.querySelector('#right-planet').textContent=name.toUpperCase();
+ document.querySelector('#focus-desc').textContent={Earth:'The reference world · Earth–Moon system',Moon:'Lunar exploration · LOLA terrain connection pending',Mars:'Martian exploration · MOLA terrain connection pending'}[name];
+ document.querySelector('#focus-label').textContent=name.toUpperCase()+' EXPLORER';
+ const target=focusTargets[name];const offset=name==='Mars'?new THREE.Vector3(25,30,65):new THREE.Vector3(22,23,52);
+ const destination=target.clone().add(offset);camera.position.copy(destination);controls.target.copy(target);controls.update();
+}
+planetButtons.forEach(b=>b.addEventListener('click',()=>selectPlanet(b.dataset.planet)));
+document.querySelector('#mission').addEventListener('change',e=>document.querySelector('#right-mission').textContent=e.target.value);
+document.querySelector('#pause').onclick=()=>{paused=!paused;document.querySelector('#pause').textContent=paused?'PLAY':'PAUSE'};
+document.querySelector('#speed').oninput=e=>document.querySelector('#speedval').textContent=Number(e.target.value).toFixed(1)+'×';
+document.querySelector('#reset').onclick=()=>{camera.position.set(0,105,205);controls.target.set(0,0,0);controls.update()};
+document.querySelector('#cinema').onclick=()=>{cinematic=!cinematic;document.querySelector('#cinema').classList.toggle('active',cinematic)};
+document.querySelector('#orbits').onchange=e=>[earthOrbit,marsOrbit,moonOrbit,satLine].forEach(o=>o.visible=e.target.checked);
+document.querySelector('#satellite').onchange=e=>satellite.visible=e.target.checked;
+document.querySelector('#rover').onchange=e=>rover.visible=e.target.checked;
+document.querySelector('#time').oninput=e=>{document.querySelector('#timeval').textContent='T + '+String(Math.floor(e.target.value/10)).padStart(2,'0')+':'+String(e.target.value%10*6).padStart(2,'0')};
+
+const loading=document.querySelector('#loading');
+function resize(){const w=innerWidth,h=innerHeight;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h)}
+addEventListener('resize',resize);
+function animate(){
+ requestAnimationFrame(animate);
+ const dt=Math.min(clock.getDelta(),.04),speed=Number(document.querySelector('#speed').value);
+ if(!paused){elapsed+=dt*speed;
+ earth.rotation.y+=dt*.055*speed;moon.rotation.y+=dt*.025*speed;mars.rotation.y+=dt*.035*speed;sun.rotation.y+=dt*.008*speed;
+ const ma=elapsed*.35;moon.position.set(65+Math.cos(ma)*18,Math.sin(ma*.6)*2,Math.sin(ma)*18);
+ const sa=elapsed*.8;satellite.position.set(65+Math.cos(sa)*13,Math.sin(sa*.7)*4,Math.sin(sa)*13);satellite.rotation.y+=dt*.3;
+ const ra=elapsed*.16;rover.position.set(145+Math.cos(ra)*10,-4,-35+Math.sin(ra)*10);rover.rotation.y=-ra+.8;wheels.forEach(w=>w.rotation.x+=dt*speed*1.7);
+ comet.position.set(((elapsed*18)%380)-190,45+Math.sin(elapsed*.4)*20,-130);comet.rotation.z=.1;
+ stars.rotation.y+=dt*.0015;particles.rotation.y+=dt*.003;
+ if(cinematic){camera.position.x=Math.sin(elapsed*.09)*210;camera.position.z=205+Math.cos(elapsed*.09)*25;controls.target.lerp(new THREE.Vector3(50,0,0),.01)}
+ }
+ controls.update();renderer.render(scene,camera);
+}
+animate();
+setTimeout(()=>{loading.style.opacity='0';setTimeout(()=>loading.remove(),1100)},1300);
+</script>
+</body>
+</html>
+

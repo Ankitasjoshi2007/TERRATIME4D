@@ -1,0 +1,838 @@
+﻿const discoveryStyle = document.createElement("style");
+discoveryStyle.textContent = `
+#planetary-discovery {
+  margin:35px auto;padding:24px;max-width:1450px;
+  color:#e5f5ff;background:#071827;border:1px solid #24516a;
+  border-radius:14px;font-family:inherit;
+}
+#planetary-discovery h2 {color:#63dcff;letter-spacing:2px;font-size:22px}
+#planetary-discovery p {color:#9bb6c9;line-height:1.6;font-size:13px}
+#planetary-discovery .pd-controls {
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:20px 0
+}
+#planetary-discovery label {display:flex;flex-direction:column;gap:7px;color:#91b4ca;font-size:11px}
+#planetary-discovery input,#planetary-discovery select,#planetary-discovery button {
+  background:#102b40;color:#e5f5ff;border:1px solid #315b73;
+  border-radius:6px;padding:11px;min-width:0
+}
+#planetary-discovery button {cursor:pointer}
+#planetary-discovery button:hover {border-color:#5bdcff}
+#planetary-discovery .pd-map-grid {
+  display:grid;grid-template-columns:1fr 1fr;gap:16px
+}
+#planetary-discovery .pd-panel {
+  background:#0b2033;border:1px solid #24516a;border-radius:9px;padding:14px;min-width:0
+}
+#planetary-discovery .pd-panel h3 {font-size:13px;color:#62dcff;margin:0 0 12px}
+#planetary-discovery canvas {width:100%;height:auto;display:block;cursor:crosshair;background:#06111c}
+#planetary-discovery .pd-stats {
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0
+}
+#planetary-discovery .pd-stat {
+  padding:14px;background:#10283b;border:1px solid #254a61;border-radius:8px
+}
+#planetary-discovery .pd-stat small {display:block;color:#91b4ca;font-size:10px}
+#planetary-discovery .pd-stat strong {display:block;color:#e6f8ff;font-size:19px;margin-top:6px}
+#planetary-discovery .pd-results {width:100%;border-collapse:collapse;font-size:12px}
+#planetary-discovery .pd-results th,#planetary-discovery .pd-results td {
+  text-align:left;padding:10px;border-bottom:1px solid #24445a
+}
+#planetary-discovery .pd-results th {color:#63dcff}
+#planetary-discovery .pd-note {
+  border-left:3px solid #e5b45b;padding:10px 13px;background:#18283a;
+  color:#c8d5df;font-size:11px;line-height:1.6;margin-top:15px
+}
+#planetary-discovery .pd-status {color:#63dcff;font-size:12px;margin:12px 0}
+@media(max-width:760px) {
+  #planetary-discovery .pd-controls {grid-template-columns:1fr 1fr}
+  #planetary-discovery .pd-map-grid {grid-template-columns:1fr}
+  #planetary-discovery .pd-stats {grid-template-columns:1fr 1fr}
+  #planetary-discovery {padding:13px}
+}
+`;
+document.head.appendChild(discoveryStyle);
+
+const discovery = document.createElement("section");
+discovery.id = "planetary-discovery";
+discovery.innerHTML = `
+  <div style="color:#63dcff;font-size:10px;letter-spacing:3px">INTERACTIVE SCIENTIFIC EXPLORATION</div>
+  <h2>PLANETARY ANALOG DISCOVERY</h2>
+  <p>FIRST, CHOOSE YOUR EXPLORATION LOCATION. Select the Moon or Mars, enter coordinates or click the planetary map. TERRATIME 4D will analyse your selected region and find matching real Earth locations.</p>
+
+  <div class="pd-controls">
+    <label>Choose planetary body
+      <select id="pd-planet">
+        <option value="Moon">Moon</option>
+        <option value="Mars">Mars</option>
+      </select>
+    </label>
+
+    <label>Choose a place to explore
+      <input id="pd-place-search" type="text" placeholder="Search latitude or longitude (e.g. 75, -45)" autocomplete="off">
+      <select id="pd-place" size="6">
+        <option value="">Loading locations...</option>
+      </select>
+    </label>
+
+    <input id="pd-lat" type="hidden" value="">
+    <input id="pd-lon" type="hidden" value="">
+
+    <label>Start analysis
+      <button id="pd-analyze" disabled>ANALYZE LOCATION</button>
+    </label>
+  </div>
+
+  <div class="pd-map-grid">
+    <div class="pd-panel">
+      <h3 id="pd-target-title">GLOBAL MOON ELEVATION â€” SELECT A LOCATION</h3>
+      <canvas id="pd-target-map" width="720" height="360"></canvas>
+      <p>Click anywhere on this map to select a planetary coordinate. Map is a 1Â° browsing grid.</p>
+    </div>
+    <div class="pd-panel">
+      <h3>EARTH REFERENCE DISTRIBUTION â€” 648 RECORDS</h3>
+      <canvas id="pd-earth-map" width="720" height="360"></canvas>
+      <p>Dots represent available Earth reference tile coordinates. They do not represent continuous DEM coverage.</p>
+    </div>
+  </div>
+
+  <div class="pd-stats" id="pd-stats">
+    <div class="pd-stat"><small>MEAN ELEVATION</small><strong id="pd-elevation">â€”</strong></div>
+    <div class="pd-stat"><small>MEAN SLOPE</small><strong id="pd-slope">â€”</strong></div>
+    <div class="pd-stat"><small>ROUGHNESS (~11 KM)</small><strong id="pd-roughness">â€”</strong></div>
+  </div>
+
+  <div class="pd-panel">
+    <h3>RANKED EARTH TERRAIN ANALOGUES</h3>
+    <div id="pd-status" class="pd-status">Loading local planetary grids and Earth reference recordsâ€¦</div>
+    <div style="overflow-x:auto">
+      <table class="pd-results">
+        <thead><tr><th>Rank</th><th>Earth reference</th><th>Coordinates</th><th>Slope</th><th>Earth roughness (1.35 km; not ranked)</th><th>Screening score</th></tr></thead>
+        <tbody id="pd-results"><tr><td colspan="6">Waiting for local dataâ€¦</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+  <div class="pd-note">
+    SCIENTIFIC LIMITATION: Earth slope and roughness measurements use different native spatial scales from the planetary grids. The displayed slope similarity index is a preliminary screening measure, not a probability or validated scientific equivalence. Roughness is displayed separately and excluded from ranking because the spatial scales differ. Elevation is excluded because planetary elevation datums differ. Earth results are limited to the 648 available reference tiles.
+  </div>
+`;
+const existingComparison = document.getElementById("planetary-comparison");
+const existingApp = document.getElementById("app");
+
+if (existingApp) existingApp.before(discovery);
+else if (existingComparison) existingComparison.before(discovery);
+else document.body.appendChild(discovery);
+
+
+const comparisonFooter = existingComparison?.querySelector(".pc-footer");
+if (comparisonFooter) {
+  comparisonFooter.textContent =
+    "COMPARISON COMPLETE Â· CONTINUE SCROLLING BELOW FOR PLANETARY ANALOG DISCOVERY";
+}
+
+function pdParseCSV(text) {
+  const lines = text.trim().split(/\r?\n/);
+  return lines.map(line => {
+    const cells = [];
+    let value = "", quoted = false;
+    for (let i = 0; i < line.length; i++) {
+      const c = line[i];
+      if (c === '"' && line[i + 1] === '"' && quoted) { value += '"'; i++; }
+      else if (c === '"') quoted = !quoted;
+      else if (c === "," && !quoted) { cells.push(value); value = ""; }
+      else value += c;
+    }
+    cells.push(value);
+    return cells;
+  });
+}
+
+function pdRecords(csv) {
+  const rows = pdParseCSV(csv);
+  const headers = rows.shift();
+  return rows.map(row => Object.fromEntries(headers.map((h,i)=>[h,row[i]])));
+}
+
+let pdData = null;
+let pdEarth = [];
+let pdTarget = null;
+
+function pdRegionStats(planet, lat, lon) {
+  const fields = ["elevation_km", "slope_degrees", "roughness_11km_km"];
+  const sums = { elevation_km: 0, slope_degrees: 0, roughness_11km_km: 0 };
+  let totalWeight = 0;
+  let cells = 0;
+  const visited = new Set();
+
+  const centerRow = Math.max(0, Math.min(179, Math.floor(90 - lat)));
+  const centerCol = ((Math.floor(lon) + 360) % 360);
+
+  for (let dr = -1; dr <= 1; dr++) {
+    for (let dc = -1; dc <= 1; dc++) {
+      const row = centerRow + dr;
+      const col = (centerCol + dc + 360) % 360;
+
+      if (row < 0 || row >= 180) continue;
+
+      const key = `${row},${col}`;
+      if (visited.has(key)) continue;
+      visited.add(key);
+
+      if (!planet.valid || Number(planet.valid[row][col]) <= 0) continue;
+
+      const values = {};
+      let usable = true;
+
+      for (const field of fields) {
+        values[field] = Number(planet[field][row][col]);
+        if (!Number.isFinite(values[field])) usable = false;
+      }
+
+      if (!usable) continue;
+
+      // Approximate area weighting for latitude-longitude grid cells.
+      const cellLat = 89.5 - row;
+      const weight = Math.max(0.000001, Math.cos(cellLat * Math.PI / 180));
+
+      for (const field of fields) {
+        sums[field] += values[field] * weight;
+      }
+
+      totalWeight += weight;
+      cells++;
+    }
+  }
+
+  if (!cells || totalWeight <= 0) return null;
+
+  return {
+    elevation: sums.elevation_km / totalWeight,
+    slope: sums.slope_degrees / totalWeight,
+    roughness: sums.roughness_11km_km / totalWeight,
+    cells
+  };
+}
+
+function pdColor(value, min, max) {
+  if (!Number.isFinite(value)) return "rgb(8,22,36)";
+
+  const range = Math.max(max - min, 0.000001);
+  const t = Math.max(0, Math.min(1, (value - min) / range));
+
+  const stops = [
+    [8, 24, 48],
+    [20, 75, 115],
+    [35, 145, 165],
+    [130, 180, 130],
+    [220, 190, 110],
+    [245, 230, 190]
+  ];
+
+  const position = t * (stops.length - 1);
+  const index = Math.min(Math.floor(position), stops.length - 2);
+  const fraction = position - index;
+
+  const a = stops[index];
+  const b = stops[index + 1];
+
+  const r = Math.round(a[0] + (b[0] - a[0]) * fraction);
+  const g = Math.round(a[1] + (b[1] - a[1]) * fraction);
+  const blue = Math.round(a[2] + (b[2] - a[2]) * fraction);
+
+  return `rgb(${r},${g},${blue})`;
+}
+function pdDrawPlanetMap() {
+  if (!pdData) return;
+  const name = document.getElementById("pd-planet").value;
+  const planet = pdData.planets[name];
+  const canvas = document.getElementById("pd-target-map");
+  const ctx = canvas.getContext("2d");
+  const values = planet.elevation_km.flat().filter(Number.isFinite);
+  const sorted = [...values].sort((a,b) => a-b);
+  const min = sorted[Math.floor(sorted.length * .02)];
+  const max = sorted[Math.floor(sorted.length * .98)];
+  const image = ctx.createImageData(360,180);
+
+  for (let y=0; y<180; y++) {
+    for (let x=0; x<360; x++) {
+      const col=(x+180)%360;
+      const color=pdColor(planet.elevation_km[y][col],min,max);
+      const rgb=color.match(/\d+/g).map(Number);
+      const k=(y*360+x)*4;
+      image.data[k]=rgb[0];
+      image.data[k+1]=rgb[1];
+      image.data[k+2]=rgb[2];
+      image.data[k+3]=255;
+    }
+  }
+
+  const temp=document.createElement("canvas");
+  temp.width=360;
+  temp.height=180;
+  temp.getContext("2d").putImageData(image,0,0);
+  ctx.clearRect(0,0,720,360);
+  ctx.imageSmoothingEnabled=true;
+  ctx.drawImage(temp,0,0,720,360);
+
+  if(pdTarget){
+    const x=(pdTarget.lon+180)/360*720;
+    const y=(90-pdTarget.lat)/180*360;
+    ctx.fillStyle="#ffdf63";
+    ctx.strokeStyle="#06111c";
+    ctx.lineWidth=3;
+    ctx.beginPath();
+    ctx.arc(x,y,8,0,Math.PI*2);
+    ctx.fill();
+    ctx.stroke();
+  }
+
+  document.getElementById("pd-target-title").textContent =
+    `GLOBAL ${name.toUpperCase()} ELEVATION â€” CLICK TO SELECT`;
+}
+
+function pdDrawEarthMap() {
+  const canvas=document.getElementById("pd-earth-map");
+  const ctx=canvas.getContext("2d");
+  ctx.fillStyle="#081624";
+  ctx.fillRect(0,0,720,360);
+  ctx.strokeStyle="#24465c";
+  ctx.lineWidth=1;
+
+  for(let x=0;x<=720;x+=120){
+    ctx.beginPath();
+    ctx.moveTo(x,0);
+    ctx.lineTo(x,360);
+    ctx.stroke();
+  }
+
+  for(let y=0;y<=360;y+=90){
+    ctx.beginPath();
+    ctx.moveTo(0,y);
+    ctx.lineTo(720,y);
+    ctx.stroke();
+  }
+
+  ctx.fillStyle="#55d7ff";
+  for(const r of pdEarth){
+    const x=(r.lon+180)/360*720;
+    const y=(90-r.lat)/180*360;
+    ctx.fillRect(x-2,y-2,4,4);
+  }
+}
+
+function pdAnalyze() {
+  if(!pdData || !pdEarth.length) return;
+
+  const name=document.getElementById("pd-planet").value;
+  const lat=Number(document.getElementById("pd-lat").value);
+  const lon=Number(document.getElementById("pd-lon").value);
+
+  if(!Number.isFinite(lat)||!Number.isFinite(lon)||
+     lat < -90||lat > 90||lon < -180||lon > 180){
+    document.getElementById("pd-status").textContent =
+      "Enter a valid latitude (-90 to 90) and longitude (-180 to 180).";
+    return;
+  }
+
+  const planet=pdData.planets[name];
+  const stats=pdRegionStats(planet,lat,lon);
+
+  if(!stats){
+    document.getElementById("pd-status").textContent =
+      "No valid planetary terrain cells were found in this regional window. Select another location.";
+    return;
+  }
+
+  pdTarget={lat,lon};
+  document.getElementById("pd-elevation").textContent =
+    stats.elevation.toFixed(3)+" km";
+  document.getElementById("pd-slope").textContent =
+    stats.slope.toFixed(2)+"Â°";
+  document.getElementById("pd-roughness").textContent =
+    (stats.roughness*1000).toFixed(1)+" m";
+
+  pdDrawPlanetMap();
+
+  // Slope-only screening: roughness is displayed separately because
+  // Earth and planetary roughness measurements use different scales.
+  const ranked=pdEarth.map(r=>{
+    const slopeDiff=Math.abs(r.slope-stats.slope);
+    const score=100/(1+(slopeDiff/5));
+    return {...r,score,slopeDiff};
+  }).sort((a,b)=>b.score-a.score).slice(0,10);
+
+  document.getElementById("pd-results").innerHTML=ranked.map((r,i)=>`
+    <tr>
+      <td>${i+1}</td>
+      <td>${r.name}</td>
+      <td>${r.lat.toFixed(1)}Â°, ${r.lon.toFixed(1)}Â°</td>
+      <td>${r.slope.toFixed(2)}Â°</td>
+      <td>${r.rough.toFixed(2)} m</td>
+      <td>${r.score.toFixed(1)}/100</td>
+    </tr>`).join("");
+
+  document.getElementById("pd-status").textContent =
+    `${name} regional analysis at ${lat.toFixed(2)}Â°, ${lon.toFixed(2)}Â°: `+
+    `${stats.cells} valid 1Â° grid cells analyzed. `+
+    `Ranked ${pdEarth.length} available Earth references by slope similarity. `+
+    `This is a preliminary screening index, not a validated analogue probability.`;
+}
+let pdPlaceCatalog = { Moon: [], Mars: [] };
+
+function pdBuildPlaceCatalog() {
+  if (!pdData || !pdData.planets) return;
+
+  for (const name of ["Moon", "Mars"]) {
+    const grid = pdData.planets[name];
+    const places = [];
+
+    // Include named observation locations from local repository data.
+    if (name === "Moon") {
+      places.push({
+        label: "Diviner North Polar sample location",
+        lat: 75.905227661,
+        lon: -45.015949249
+      });
+      places.push({
+        label: "Diviner South Polar sample location",
+        lat: -75.905227661,
+        lon: -45.015949249
+      });
+    }
+
+    if (name === "Mars") {
+      places.push({
+        label: "THEMIS IA7300002EQR observation footprint",
+        lat: -36.4449245,
+        lon: 89.9485855
+      });
+    }
+
+    // Add every valid cell from the complete local 1-degree planetary grid.
+    for (let row = 0; row < grid.height; row++) {
+      for (let col = 0; col < grid.width; col++) {
+        if (!grid.valid[row] || !grid.valid[row][col]) continue;
+
+        const lat = 89.5 - row;
+        const lon = ((col + 180) % 360) - 179.5;
+
+        const region = lat >= 60 ? "North Polar Region" :
+                       lat >= 20 ? "Northern Region" :
+                       lat > -20 ? "Equatorial Region" :
+                       lat > -60 ? "Southern Region" :
+                       "South Polar Region";
+        const sector = Math.floor((lon + 180) / 30) + 1;
+
+        places.push({
+          label: region + " | Sector " + String(sector).padStart(2, "0") +
+                 " | Grid Cell " + String(row + 1).padStart(3, "0") +
+                 "-" + String(col + 1).padStart(3, "0"),
+          lat,
+          lon
+        });
+      }
+    }
+
+    pdPlaceCatalog[name] = places;
+  }
+}
+
+function pdPopulatePlaces() {
+  if (!pdData) return;
+
+  const planet = document.getElementById("pd-planet").value;
+  const placeSelect = document.getElementById("pd-place");
+  const search = document.getElementById("pd-place-search");
+  const analyzeButton = document.getElementById("pd-analyze");
+  const places = pdPlaceCatalog[planet] || [];
+
+  placeSelect.innerHTML = '<option value="">Select a location</option>';
+  for (let i = 0; i < Math.min(places.length, 300); i++) {
+    const option = document.createElement("option");
+    option.value = String(i);
+    option.textContent = places[i].label;
+    placeSelect.appendChild(option);
+  }
+
+  search.value = "";
+  document.getElementById("pd-lat").value = "";
+  document.getElementById("pd-lon").value = "";
+  analyzeButton.disabled = true;
+  document.getElementById("pd-status").textContent =
+    places.length.toLocaleString() + " local " + planet +
+    " locations available. Search coordinates to find a location.";
+}
+
+document.getElementById("pd-place-search").addEventListener("input", () => {
+  const planet = document.getElementById("pd-planet").value;
+  const places = pdPlaceCatalog[planet] || [];
+  const query = document.getElementById("pd-place-search").value.trim().toLowerCase();
+  const select = document.getElementById("pd-place");
+  select.innerHTML = '<option value="">Select a location</option>';
+
+  if (!query) {
+    for (let i = 0; i < Math.min(places.length, 300); i++) {
+      const option = document.createElement("option");
+      option.value = String(i);
+      option.textContent = places[i].label;
+      select.appendChild(option);
+    }
+    return;
+  }
+
+  let matches = 0;
+  for (let i = 0; i < places.length && matches < 300; i++) {
+    if (places[i].label.toLowerCase().includes(query) ||
+        String(places[i].lat).includes(query) ||
+        String(places[i].lon).includes(query)) {
+      const option = document.createElement("option");
+      option.value = String(i);
+      option.textContent = places[i].label;
+      select.appendChild(option);
+      matches++;
+    }
+  }
+
+  document.getElementById("pd-status").textContent =
+    matches + " matching locations shown.";
+});
+
+document.getElementById("pd-place").addEventListener("change", () => {
+  const planet = document.getElementById("pd-planet").value;
+  const selected = document.getElementById("pd-place").value;
+  const analyzeButton = document.getElementById("pd-analyze");
+
+  if (selected === "") {
+    document.getElementById("pd-lat").value = "";
+    document.getElementById("pd-lon").value = "";
+    analyzeButton.disabled = true;
+    return;
+  }
+
+  const place = pdPlaceCatalog[planet][Number(selected)];
+
+  if (!place) return;
+
+  document.getElementById("pd-lat").value = place.lat;
+  document.getElementById("pd-lon").value = place.lon;
+  analyzeButton.disabled = false;
+
+  document.getElementById("pd-status").textContent =
+    "Selected " + place.label +
+    ". Coordinates loaded from the local planetary catalogue. Press ANALYZE LOCATION.";
+});
+
+pdPopulatePlaces();
+document.getElementById("pd-target-map").addEventListener("click",e=>{
+  const rect=e.currentTarget.getBoundingClientRect();
+  const x=(e.clientX-rect.left)/rect.width;
+  const y=(e.clientY-rect.top)/rect.height;
+  const lon=x*360-180,lat=90-y*180;
+  document.getElementById("pd-lat").value=lat.toFixed(2);
+  document.getElementById("pd-lon").value=lon.toFixed(2);
+  pdAnalyze();
+});
+document.getElementById("pd-analyze").addEventListener("click",pdAnalyze);
+document.getElementById("pd-planet").addEventListener("change",()=>{
+  pdDrawPlanetMap();
+  pdPopulatePlaces();
+});
+
+Promise.all([
+  fetch("/data/planetary/planetary_grids.json").then(r=>{if(!r.ok)throw Error("Planetary grids not found");return r.json();}),
+  fetch("/data/earth/global_advanced_terrain_summary.csv").then(r=>{if(!r.ok)throw Error("Earth summary CSV not found");return r.text();})
+]).then(([data,csv])=>{
+  pdData=data;
+  pdBuildPlaceCatalog();
+  pdPopulatePlaces();
+  const rows=pdRecords(csv);
+  pdEarth=rows.map(r=>{
+    const m=r.location.match(/_(n|s)(\d+)_00_(e|w)(\d+)_00_/i);
+    if(!m)return null;
+    let lat=Number(m[2]),lon=Number(m[4]);
+    if(m[1].toLowerCase()==="s")lat=-lat;
+    if(m[3].toLowerCase()==="w")lon=-lon;
+    return {name:r.location,lat,lon,slope:Number(r.slope_mean_degrees),rough:Number(r.roughness_1350m_mean)};
+  }).filter(r=>r&&Number.isFinite(r.slope)&&Number.isFinite(r.rough));
+  pdDrawEarthMap();pdDrawPlanetMap();
+}).catch(err=>{
+  document.getElementById("pd-status").textContent="Could not load local data: "+err.message;
+});
+
+
+
+// TT4D_EARTH_MISSION_TEST_V1
+// Earth analogue mission assessment using local repository evidence.
+
+const pdMissionPanel = document.createElement("div");
+pdMissionPanel.id = "pd-earth-mission-test";
+pdMissionPanel.className = "pd-panel";
+pdMissionPanel.style.cssText = "margin-top:22px;padding:20px;border:1px solid #3685a5;background:#0b2033;border-radius:10px";
+
+pdMissionPanel.innerHTML = `
+  <div style="color:#63dcff;font-size:11px;letter-spacing:2px">MISSION PREPARATION / EARTH ANALOGUE TESTING</div>
+  <h3 style="font-size:20px;color:#e5f5ff;margin:12px 0">TEST YOUR PLANETARY MISSION ON EARTH</h3>
+  <p>Select one of the ranked Earth terrain matches and evaluate your proposed mission using available local terrain and mission evidence.</p>
+
+  <div class="pd-controls" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px">
+    <label>Selected Earth analogue
+      <select id="pd-earth-choice"><option value="">Analyse a planetary location first</option></select>
+    </label>
+    <label>Mission objective
+      <select id="pd-mission-choice">
+        <option value="rover">Rover mobility</option>
+        <option value="landing">Landing site assessment</option>
+        <option value="geology">Geological research</option>
+        <option value="resource">Resource exploration</option>
+        <option value="human">Human operations</option>
+      </select>
+    </label>
+  </div>
+
+  <button id="pd-run-mission" style="background:#07516c;border:1px solid #56d9ff;padding:13px 20px;margin-top:12px">
+    RUN EARTH ANALOGUE MISSION TEST
+  </button>
+
+  <div id="pd-mission-output" style="margin-top:18px;padding:15px;background:#071827;border-radius:8px">
+    <div style="color:#63dcff">AWAITING EARTH ANALOGUE SELECTION</div>
+    Select a planetary location, choose an Earth match and run the mission assessment.
+  </div>
+  <div id="pd-mission-evidence" style="margin-top:12px;color:#a9c4d8;font-size:12px"></div>
+`;
+
+const pdNote = document.querySelector("#planetary-discovery .pd-note");
+if (pdNote) pdNote.before(pdMissionPanel);
+
+let pdMissionCandidates = [];
+let pdMissionProfiles = [];
+
+function pdMissionNumber(v) {
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+}
+
+function pdMissionNearest(lat, lon) {
+  if (!pdMissionCandidates.length) return null;
+
+  return pdMissionCandidates.map(r => {
+    const dlat = Number(r.latitude) - lat;
+    const dlon = (Number(r.longitude) - lon) *
+      Math.cos(lat * Math.PI / 180);
+    return {...r, distance: Math.hypot(dlat, dlon)};
+  }).sort((a,b) => a.distance-b.distance)[0];
+}
+
+function pdRefreshMissionChoices() {
+  const select = document.getElementById("pd-earth-choice");
+  if (!select) return;
+
+  const previous = select.value;
+  const rows = [...document.querySelectorAll("#pd-results tr")];
+
+  const names = rows.map(row => {
+    const cells = row.querySelectorAll("td");
+    if (cells.length < 6) return null;
+    return cells[1].textContent.trim();
+  }).filter(Boolean);
+
+  const records = names.map(name => pdEarth.find(r => r.name === name))
+    .filter(Boolean);
+
+  select.innerHTML = records.length
+    ? '<option value="">Choose an Earth analogue</option>' +
+      records.map((r,i) =>
+        `<option value="${i}">${i+1}. ${r.name} (${r.lat.toFixed(1)}°, ${r.lon.toFixed(1)}°)</option>`
+      ).join("")
+    : '<option value="">Analyse a planetary location first</option>';
+
+  if (previous && Number(previous) < records.length) {
+    select.value = previous;
+  }
+
+  window.pdMissionEarthRecords = records;
+}
+
+// Wrap the existing analysis without changing its scientific calculations.
+const pdOriginalAnalyzeForMission = pdAnalyze;
+pdAnalyze = function() {
+  pdOriginalAnalyzeForMission();
+  pdRefreshMissionChoices();
+};
+
+function pdRunEarthMission() {
+  const select = document.getElementById("pd-earth-choice");
+  const mission = document.getElementById("pd-mission-choice").value;
+  const output = document.getElementById("pd-mission-output");
+  const evidenceOutput = document.getElementById("pd-mission-evidence");
+
+  const records = window.pdMissionEarthRecords || [];
+  const earth = records[Number(select.value)];
+
+  if (!earth) {
+    output.innerHTML = "Please analyse a Moon/Mars location and select an Earth analogue first.";
+    return;
+  }
+
+  const slope = Number(earth.slope);
+  const rough = Number(earth.rough);
+  const nearest = pdMissionNearest(earth.lat, earth.lon);
+
+  let risk = "LOW";
+  let reasons = [];
+  let assessment = "";
+
+  if (mission === "rover") {
+    const slopeRisk = slope >= 15 ? "HIGH" : slope >= 8 ? "MEDIUM" : "LOW";
+    const roughRisk = rough >= 30 ? "HIGH" : rough >= 10 ? "MEDIUM" : "LOW";
+    risk = slopeRisk === "HIGH" || roughRisk === "HIGH" ? "HIGH" :
+      slopeRisk === "MEDIUM" || roughRisk === "MEDIUM" ? "MEDIUM" : "LOW";
+    reasons = [
+      `Mean terrain slope: ${slope.toFixed(2)}°`,
+      `Earth reference roughness at 1.35 km scale: ${rough.toFixed(2)} m`,
+      "Roughness is shown as Earth reference evidence, not a scale-equivalent planetary measurement."
+    ];
+    assessment = "Preliminary rover terrain screening based on available Earth slope and roughness.";
+  }
+
+  if (mission === "landing") {
+    risk = slope >= 8 || rough >= 20 ? "HIGH" :
+      slope >= 3 || rough >= 5 ? "MEDIUM" : "LOW";
+    reasons = [
+      `Mean slope: ${slope.toFixed(2)}°`,
+      `Reference roughness: ${rough.toFixed(2)} m`,
+      "No validated landing hazard, boulder or subsurface assessment is available in this screening."
+    ];
+    assessment = "Preliminary terrain screening only; not a certified landing safety assessment.";
+  }
+
+  if (mission === "geology") {
+    const count = nearest ? Number(nearest.mineral_geological_records || 0) : 0;
+    risk = count > 0 ? "LOW" : "MEDIUM";
+    reasons = [
+      `Available geological records at nearest evidence site: ${count}`,
+      `Terrain slope at selected Earth analogue: ${slope.toFixed(2)}°`
+    ];
+    assessment = "Geological evidence availability screening. A terrain match alone does not establish geological equivalence.";
+  }
+
+  if (mission === "resource") {
+    const water = nearest ? Number(nearest.mean_water_occurrence_percent || 0) : 0;
+    const minerals = nearest ? Number(nearest.mineral_geological_records || 0) : 0;
+    risk = water > 5 || minerals > 0 ? "LOW" :
+      water > 0 ? "MEDIUM" : "HIGH";
+    reasons = [
+      `Water occurrence at nearest evidence site: ${water.toFixed(3)}%`,
+      `Mineral/geological records: ${minerals}`,
+      "Resource evidence is available only for the nearest supplied Earth evidence location."
+    ];
+    assessment = "Evidence availability screening, not confirmation of recoverable resources.";
+  }
+
+  if (mission === "human") {
+    const temp = nearest ? Number(nearest.annual_mean_temperature_c) : null;
+    const water = nearest ? Number(nearest.mean_water_occurrence_percent || 0) : 0;
+    risk = temp === null ? "HIGH" :
+      temp < -10 ? "HIGH" : temp < 5 ? "MEDIUM" : "LOW";
+    reasons = [
+      `Nearest evidence-site annual mean temperature: ${temp === null ? "Unavailable" : temp.toFixed(2)+" °C"}`,
+      `Water occurrence at nearest evidence site: ${water.toFixed(3)}%`,
+      "Earth climate measurements cannot represent Moon/Mars environmental conditions."
+    ];
+    assessment = "Earth environmental analogue context only; not a human habitability assessment.";
+  }
+
+  const color = risk === "HIGH" ? "#ff7474" :
+    risk === "MEDIUM" ? "#ffd078" : "#65e6a5";
+
+  output.innerHTML = `
+    <div style="font-size:11px;letter-spacing:2px;color:#63dcff">EARTH ANALOGUE MISSION REPORT</div>
+    <h3 style="color:#e5f5ff;font-size:19px">${mission.toUpperCase()} TEST</h3>
+    <div style="font-size:25px;font-weight:bold;color:${color};margin:12px 0">${risk} RISK</div>
+    <div style="line-height:1.9;color:#d5e8f4">
+      <b>Test location:</b> ${earth.name}<br>
+      <b>Coordinates:</b> ${earth.lat.toFixed(2)}°, ${earth.lon.toFixed(2)}°<br>
+      <b>Mean slope:</b> ${slope.toFixed(2)}°<br>
+      <b>Earth reference roughness:</b> ${rough.toFixed(2)} m
+    </div>
+    <h4 style="color:#63dcff">ASSESSMENT EVIDENCE</h4>
+    <ul>${reasons.map(x=>`<li>${x}</li>`).join("")}</ul>
+    <p>${assessment}</p>
+    <div style="border-top:1px solid #315b73;padding-top:10px;font-size:11px;color:#a9c4d8">
+      Risk categories are preliminary screening rules, not validated engineering safety thresholds.
+      This test uses the selected Earth terrain record and does not simulate actual Moon/Mars physics.
+    </div>
+  `;
+
+  if (nearest) {
+    evidenceOutput.innerHTML =
+      `<b>Nearest detailed Earth mission-evidence location:</b> ${nearest.candidate} ` +
+      `(${Number(nearest.latitude).toFixed(2)}°, ${Number(nearest.longitude).toFixed(2)}°). ` +
+      `Distance from selected terrain reference: ${nearest.distance.toFixed(2)}°.` +
+      `<br>Environmental and geological evidence shown above belongs to this nearest evidence location, not necessarily the selected terrain tile.`;
+  } else {
+    evidenceOutput.textContent =
+      "Detailed mission-evidence records were unavailable. Assessment uses the selected terrain reference only.";
+  }
+}
+
+document.getElementById("pd-run-mission")
+  .addEventListener("click", pdRunEarthMission);
+
+// Load the existing integrated mission evidence from local project files.
+Promise.all([
+  fetch("/data/integrated_candidate_evidence.csv").then(r => {
+    if (!r.ok) throw Error("Candidate evidence CSV unavailable");
+    return r.text();
+  }),
+  fetch("/data/integrated_mission_scores.csv").then(r => {
+    if (!r.ok) throw Error("Mission scores CSV unavailable");
+    return r.text();
+  })
+]).then(([candidateCsv, scoreCsv]) => {
+  pdMissionCandidates = pdRecords(candidateCsv);
+  pdMissionProfiles = pdRecords(scoreCsv);
+  pdRefreshMissionChoices();
+
+  document.getElementById("pd-mission-evidence").textContent =
+    `Loaded ${pdMissionCandidates.length} detailed Earth mission-evidence locations and ` +
+    `${pdMissionProfiles.length} existing mission screening records from local repository data.`;
+}).catch(error => {
+  document.getElementById("pd-mission-evidence").textContent =
+    "Detailed mission evidence unavailable: " + error.message +
+    ". Terrain-based assessment remains available.";
+});
+
+
+// TT4D_USER_FIRST_LOCATION_FLOW
+const tt4dApp = document.getElementById("app");
+const tt4dComparison = document.getElementById("planetary-comparison");
+
+if (tt4dApp) tt4dApp.style.display = "none";
+if (tt4dComparison) tt4dComparison.style.display = "none";
+
+const tt4dRevealResults = () => {
+    if (!pdTarget) return;
+
+    if (tt4dApp) tt4dApp.style.display = "";
+    if (tt4dComparison) tt4dComparison.style.display = "";
+
+    const status = document.getElementById("pd-status");
+    if (status) {
+        status.scrollIntoView({behavior:"smooth",block:"center"});
+    }
+};
+
+document.getElementById("pd-analyze")?.addEventListener(
+    "click", tt4dRevealResults
+);
+
+document.getElementById("pd-target-map")?.addEventListener(
+    "click", () => {
+        if (pdTarget) tt4dRevealResults();
+    }
+);
+
+
+
+
+
+
