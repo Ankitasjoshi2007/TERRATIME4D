@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TERRATIME 4D | Planetary Mission Control</title>
+</head>
+<body>
+<div id="app">
+  <canvas id="space"></canvas>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">T</div>
+      <div>
+        <div class="brand-name">TERRA<span>TIME</span> 4D</div>
+        <div class="brand-sub">PLANETARY ANALOG DISCOVERY SYSTEM</div>
+      </div>
+    </div>
+    <div class="top-center">SOLAR SYSTEM EXPLORATION</div>
+    <div class="system-status"><i></i> SYSTEM ONLINE</div>
+  </header>
+
+  <aside class="left-panel">
+    <div class="eyebrow">MISSION CONTROL / 01</div>
+    <h2>Explore Space</h2>
+    <p class="muted">Select a celestial body to explore.</p>
+
+    <button class="planet active" data-target="Earth">
+      <span class="planet-icon earth-icon"></span>
+      <span><b>Earth</b><small>Reference planet</small></span>
+      <span class="arrow">↗</span>
+    </button>
+
+    <button class="planet" data-target="Moon">
+      <span class="planet-icon moon-icon"></span>
+      <span><b>Moon</b><small>Lunar exploration</small></span>
+      <span class="arrow">↗</span>
+    </button>
+
+    <button class="planet" data-target="Mars">
+      <span class="planet-icon mars-icon"></span>
+      <span><b>Mars</b><small>Martian exploration</small></span>
+      <span class="arrow">↗</span>
+    </button>
+
+    <div class="line"></div>
+    <div class="eyebrow">MISSION PARAMETERS / 02</div>
+    <label>Mission objective</label>
+    <select id="mission">
+      <option>Rover Mobility</option>
+      <option>Landing Site Assessment</option>
+      <option>Geological Research</option>
+      <option>Resource Exploration</option>
+      <option>Human Operations</option>
+    </select>
+
+    <div class="line"></div>
+    <div class="eyebrow">VISUAL CONTROLS / 03</div>
+
+    <div class="toggle-row">
+      <span>Orbital paths</span>
+      <input type="checkbox" id="orbitToggle" checked>
+    </div>
+    <div class="toggle-row">
+      <span>Satellite</span>
+      <input type="checkbox" id="satToggle" checked>
+    </div>
+    <div class="toggle-row">
+      <span>Rover</span>
+      <input type="checkbox" id="roverToggle" checked>
+    </div>
+    <div class="toggle-row">
+      <span>Star particles</span>
+      <input type="checkbox" id="starsToggle" checked>
+    </div>
+
+    <label>Animation speed</label>
+    <input type="range" id="speed" min="0" max="3" step=".1" value="1">
+    <div class="speed-label"><span>SLOW</span><span id="speedValue">1.0×</span><span>FAST</span></div>
+
+    <button class="control-button" id="pause">Ⅱ &nbsp; PAUSE ANIMATION</button>
+    <button class="control-button" id="reset">↺ &nbsp; RESET CAMERA</button>
+
+    <p class="hint">DRAG TO ROTATE · SCROLL TO ZOOM</p>
+  </aside>
+
+  <div class="scene-heading">
+    <div class="eyebrow">LIVE PLANETARY VISUALIZATION</div>
+    <h1 id="sceneName">EARTH SYSTEM</h1>
+    <p id="sceneDescription">The Blue Planet · Earth–Moon system</p>
+  </div>
+
+  <div class="scene-coordinates">
+    <span>3D ENVIRONMENT</span>
+    <span>INTERACTIVE CAMERA</span>
+  </div>
+
+  <aside class="right-panel">
+    <div class="eyebrow">MISSION INTELLIGENCE / 04</div>
+    <h2 id="selectedName">EARTH</h2>
+    <div class="data-block">
+      <small>SELECTED MISSION</small>
+      <b id="missionName">Rover Mobility</b>
+    </div>
+    <div class="data-block">
+      <small>SCIENTIFIC DATA</small>
+      <b class="cyan">Integration pending</b>
+    </div>
+    <div class="data-block">
+      <small>MISSION SUITABILITY</small>
+      <b>Awaiting scientific data</b>
+    </div>
+
+    <div class="line"></div>
+    <div class="eyebrow">EARTH CANDIDATE MAP / 05</div>
+    <div id="candidateMap" class="map-placeholder"></div><p class="map-note" id="mapNote">Loading scientific candidate locations...</p>
+
+    <div class="line"></div>
+    <div class="eyebrow">SCIENTIFIC MODULES / 06</div>
+    <div class="member"><span>Member 1 · Earth</span><i>Pending</i></div>
+    <div class="member"><span>Member 2 · Terrain</span><i>Pending</i></div>
+    <div class="member"><span>Member 3 · Planetary</span><i>Pending</i></div>
+    <div class="member"><span>Member 4 · Missions</span><i>Pending</i></div>
+  </aside>
+
+  <div class="bottom-panel">
+    <div class="timeline-title">
+      <div><div class="eyebrow">MISSION SIMULATION / 07</div><b>4D TEMPORAL EXPLORER</b></div>
+      <span class="live-tag">● VISUAL SIMULATION</span>
+    </div>
+    <div class="timeline">
+      <span>T + 00:00</span>
+      <input type="range" id="timeline" min="0" max="100" value="0">
+      <span id="timeLabel">T + 00:00</span>
+    </div>
+  </div>
+
+  <div id="loading">
+    <div class="loader-ring"></div>
+    <h2>INITIALIZING TERRATIME 4D</h2>
+    <p>PREPARING PLANETARY ENVIRONMENT</p>
+  </div>
+</div>
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
